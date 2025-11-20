@@ -1,0 +1,3084 @@
+﻿Moments
+Supplementary Reader in English
+
+for Class IX
+
+Reprint 2025-26
+
+
+
+0960 – MOMENTS
+ISBN  81-7450-503-2
+
+Textbook for Class 9
+
+First Edition ALL RIGHTS RESERVED
+
+February 2006  Phalguna 1927 q No part of this publication may be reproduced, stored in a retrieval system or
+transmitted, in any form or by any means, electronic, mechanical, photocopying,
+
+Reprinted recording or otherwise without the prior permission of the publisher.
+
+November 2006, October 2007, q This book is sold subject to the condition that it shall not, by way of trade,  be lent,
+
+December 2009, November 2010, re-sold, hired out or otherwise disposed of without the publisher’s consent, in
+any form of binding or cover other than that in which it is published.
+
+January 2012, December 2012,
+q The correct price of this publication is the price printed on this page, Any revised
+
+November 2013, December 2014, price indicated by a rubber stamp or by a sticker or by any other means is incorrect
+December 2015, December 2016, and should be unacceptable.
+
+December 2017, December 2018,
+OFFICES OF THE PUBLICATION
+
+August 2019, January 2021,
+DIVISION, NCERT
+
+August 2021 and November 2021
+NCERT Campus
+
+Revised Edition Sri Aurobindo Marg
+
+January 2023  Pausha 1944 New  Delhi 110 016 Phone :  011-26562708
+
+108, 100 Feet Road
+Reprinted Hosdakere Halli Extension
+
+March 2024  Chaitra 1946 Banashankari III Stage
+Bengaluru 560 085 Phone : 080-26725740
+
+December 2024 Agrahayana 1946
+Navjivan Trust Building
+P.O. Navjivan
+Ahmedabad 380 014 Phone :  079-27541446
+
+PD 130T BS CWC Campus
+Opp. Dhankal Bus Stop
+
+© National Council of Educational Panihati
+Kolkata 700 114 Phone :  033-25530454
+
+Research and Training, 2006, 2023
+CWC Complex
+Maligaon
+Guwahati 781 021 Phone :  0361-2674869
+
+Publication Team
+` 40.00
+
+Head, Publication : M.V. Srinivasan
+Division
+Chief Editor : Bijnan Sutar
+
+Chief Production Officer : Jahan Lal
+(In charge)
+
+Chief Business Manager : Amitabh Kumar
+Printed on 80 GSM paper with
+NCERT watermark Editor : Vijayam
+
+Sankaranarayanan
+Published at the Publication Division
+by the Secretary, National Council of Production Officer : Deepak Jaiswal
+
+Educational Research and Training,
+Sri Aurobindo Marg, New Delhi 110016                  Illustrations
+and printed at Kalyan Enterprises, Bhushan Shaligram and Nidhi Wadhwa
+D-20, Sector B-3, Trans Delhi Cover and Layout
+Signature City (Tronica City) Industrial Nidhi Wadhwa
+Area, Loni, Ghaziabad (U.P.) 201101
+
+Reprint 2025-26
+
+
+
+FOREWORD
+
+THE National Curriculum Framework (NCF), 2005, recommends that
+children’s life at school must be linked to their life outside the school.
+This principle marks a departure from the legacy of bookish learning
+which continues to shape our system and causes a gap between the
+school, home and community. The syllabi and textbooks developed on
+the basis of NCF signify an attempt to implement this basic idea. They
+also attempt to discourage rote learning and the maintenance of sharp
+boundaries between different subject areas. We hope these measures
+will take us significantly further in the direction of a child-centred
+system of education outlined in the National Policy of Education (1986).
+
+The success of this effort depends on the steps that school principals
+and teachers will take to encourage children to reflect on their own
+learning and to pursue imaginative activities and questions.  We must
+recognise that, given space, time and freedom, children generate new
+knowledge by engaging with the information passed on to them by adults.
+Treating the prescribed textbook as the sole basis of examination is one
+of the key reasons why other resources and sites of learning are ignored.
+Inculcating creativity and initiative is possible if we perceive and treat
+children as participants in learning, not as receivers of a fixed body of
+knowledge.
+
+These aims imply considerable change in school routines and mode
+of functioning. Flexibility in the daily time-table is as necessary as
+rigour in implementing the annual calendar so that the required
+number of teaching days are actually devoted to teaching.  The methods
+used for teaching and evaluation will also determine how effective this
+book proves for making children’s life at school a happy experience,
+rather than a source of stress or boredom.  Syllabus designers have
+tried to address the problem of curricular burden by restructuring
+and reorienting knowledge at different stages with greater consideration
+for child psychology and the time available for teaching. The
+supplementary reader attempts to enhance this endeavour by giving
+higher priority and space to opportunities for contemplation and
+wondering, discussion in small groups, and activities requiring
+hands-on experience.
+
+The National Council of Educational Research and Training
+(NCERT) appreciates the hard work done by the textbook development
+
+Reprint 2025-26
+
+
+
+iv
+
+committee responsible for this book.  We wish to thank the Chairperson
+of the advisory group in languages, Professor Namwar Singh and the
+Chief Advisor for this book, Professor R. Amritavalli for guiding the
+work of this committee. Several teachers contributed to the
+development of this supplementary reader; we are grateful to their
+principals for making this possible. We are indebted to the institutions
+and organisations which have generously permitted us to draw upon
+their resources, materials and personnel. We are especially grateful
+to the members of the National Monitoring Committee, appointed by
+the Department of Secondary and Higher Education, Ministry of
+Human Resource Development under the Chairpersonship of
+Professor Mrinal Miri and Professor G.P. Deshpande for their valuable
+time and contribution. As an organisation committed to systemic
+reform and continuous improvement in the quality of its products,
+NCERT welcomes comments and suggestions which will enable us to
+undertake further revision and refinements.
+
+Director
+New Delhi National Council of Educational
+20 December 2005 Research and Training
+
+Reprint 2025-26
+
+
+
+v
+
+RATIONALISATION OF CONTENT IN THE
+
+TEXTBOOK
+
+In view of the COVID-19 pandemic, it is imperative to reduce content load
+on students. The National Education Policy 2020 also emphasises reducing
+the content load and providing opportunities for experiential learning with
+creative mindset. In this background, the NCERT has undertaken the
+exercise to rationalise the textbooks across all classes. Learning Outcomes
+developed by the NCERT across classes have been taken into consideration
+in this exercise.
+
+Contents of the textbooks have been rationalised in view of the following:
+
+• Content based on genres of literature in the textbooks and supplementary
+readers at different stages of school education
+
+• Content that is meant for achieving Learning Outcomes for developing
+language proficiency and is accessible at different stages
+
+• For reducing the curriculum load and examination stress in view of the
+prevailing condition of the pandemic
+
+• Content, which is easily accessible to students without much
+interventions from teachers and can be learnt by children through
+self-learning or peer-learning
+
+• Content, which is irrelevant in the present context
+
+This present edition is a reformatted version after carrying out the changes
+given above.
+
+Reprint 2025-26
+
+
+
+Reprint 2025-26
+
+
+
+A NOTE FOR THE TEACHER
+
+MOMENTS, a supplementary reader in English for Class IX, is meant for
+extensive reading. It is designed to promote a love for reading by exposing
+the learners to a variety of materials.
+
+An attempt has been made to provide learners with a rich reading
+experience through stories of mystery, adventure, courage, growing
+up, romance, wit and humour. These carefully selected pieces would
+cater to the needs and interests of adolescents and hold the mirror up
+to different aspects of life and people.
+
+A deliberate effort has been made to gloss only some potentially
+difficult words in the stories to aid the reading process. The few
+questions given under ‘Think About It’ are all global questions, designed
+to help learners develop their ability of intelligent and imaginative
+reading. The ‘Talk about It’ section has discussion topics which take a
+constructive approach to the analysis of contemporary issues. The
+learners may be encouraged to interact with their classmates or seniors,
+integrate their understanding of the issues and make a purposeful,
+personalised, and imaginative oral presentation. A list of suggested
+readings is given at the end of each story to encourage learners to
+read extensively and independently.
+
+Reprint 2025-26
+
+
+
+THE CONSTITUTION OF
+
+INDIA
+
+PREAMBLE
+
+Reprint 2025-26
+
+
+
+TEXTBOOK DEVELOPMENT
+
+COMMITTEE
+
+CHAIRPERSON, ADVISORY GROUP IN LANGUAGES
+
+Professor Namwar Singh, formerly Chairman, School of Languages,
+Jawaharlal Nehru University, New Delhi
+
+CHIEF ADVISOR
+
+R. Amritavalli, Professor, Central Institute of English and Foreign
+Languages (CIEFL), Hyderabad
+
+CHIEF COORDINATOR
+
+Ram Janma Sharma, Professor and Head, Department of Languages,
+NCERT, New Delhi
+
+MEMBERS
+
+Amber Banerjee, Principal, Dehli Public School, Dagapur, Darjeeling
+Road, Pradhan Nagar, Siliguri
+
+Nasiruddin Khan, Reader in English, Department of Languages, NCERT,
+New Delhi
+
+S. Neerada, Principal, Kendriya Vidyalaya, AF 8, Rajokri, New Delhi
+
+Sadhana Parashar, AEO (ELT), CBSE, 17, Rouse Avenue, Institutional
+Area, New Delhi
+
+Shruti Sircar, Lecturer, Centre for ESL Studies, CIEFL, Hyderabad
+
+Sonia Makhija, TGT (English), Govt Girls’ Secondary School No. 3, Uttam
+Nagar, New Delhi
+
+MEMBER-COORDINATOR
+
+Sandhya Rani Sahoo, Reader in English, Department of Languages,
+NCERT, New Delhi
+
+Reprint 2025-26
+
+
+
+CONSTITUTION OF INDIA
+Part  IV A (Article  51 A)
+
+Fundamental Duties
+
+Fundamental Duties – It shall be the duty of every citizen of India —
+
+(a) to abide by the Constitution and respect its ideals and institutions, the
+National Flag and the National Anthem;
+
+(b) to cherish and follow the noble ideals which inspired our national struggle
+for freedom;
+
+(c) to uphold and protect the sovereignty, unity and integrity of India;
+
+(d) to defend the country and render national service when called upon to
+do so;
+
+(e) to promote harmony and the spirit of common brotherhood amongst all the
+people of India transcending religious, linguistic and regional or sectional
+diversities; to renounce practices derogatory to the dignity of women;
+
+(f) to value and preserve the rich heritage of our composite culture;
+
+(g) to protect and improve the natural environment including forests, lakes,
+rivers, wildlife and to have compassion for living creatures;
+
+(h) to develop the scientific temper, humanism and the spirit of inquiry
+and reform;
+
+(i) to safeguard public property and to abjure violence;
+
+(j) to strive towards excellence in all spheres of individual and collective
+activity so that the nation constantly rises to higher levels of endeavour
+and achievement;
+
+(k) who is a parent or guardian, to provide opportunities for education to
+his child or, as the case may be, ward between the age of six and fourteen
+years.
+
+Reprint 2025-26
+
+
+
+ACKNOWLEDGEMENTS
+
+THE National Council of Educational Research and Training is
+grateful to Professor M.L. Tickoo, formerly of the Central Institute
+of English and Foreign Languages, Hyderabad, and the Regional
+Language Centre, Singapore, for going through the manuscript
+and making valuable suggestions.
+
+NCERT would like to thank Westland Books Pvt. Ltd., Chennai
+for ‘A House Is Not a Home’ by Zan Gaudioso; Black Swan
+Transworld Publishers, London for ‘The Accidental Tourist’ by
+Bill Bryson; and R. K. Laxman for ‘Iswaran the Storyteller’ along
+with the illustrations.
+
+Special thanks are also due to the Publication Department,
+NCERT, for their support. NCERT gratefully acknowledges
+the contributions made by Matthew John, Proofreader, and
+Uttam Kumar, DTP Operator.
+
+Reprint 2025-26
+
+
+
+CONSTITUTION OF INDIA
+Part III (Articles 12 – 35)
+
+(Subject to certain conditions, some exceptions
+and reasonable restrictions)
+
+guarantees these
+
+Fundamental Rights
+
+Right to Equality
+
+• before law and equal protection of laws;
+
+• irrespective of religion, race, caste, sex or place of birth;
+
+• of opportunity in public employment;
+
+• by abolition of untouchability and titles.
+
+Right to Freedom
+
+• of expression, assembly, association, movement, residence and profession;
+
+• of certain protections in respect of conviction for offences;
+
+• of protection of life and personal liberty;
+
+• of free and compulsory education for children between the age of six and fourteen years;
+
+• of protection against arrest and detention in certain cases.
+
+Right against Exploitation
+
+• for prohibition of traffic in human beings and forced labour;
+
+• for prohibition of employment of children in hazardous jobs.
+
+Right to Freedom of Religion
+
+• freedom of conscience and free profession, practice and propagation of religion;
+
+• freedom to manage religious affairs;
+
+• freedom as to payment of taxes for promotion of any particular religion;
+
+• freedom as to attendance at religious instruction or religious worship in
+educational institutions wholly maintained by the State.
+
+Cultural and Educational Rights
+
+• for protection of interests of minorities to conserve their language, script and culture;
+
+• for minorities to establish and administer educational institutions of their choice.
+
+Right to Constitutional Remedies
+
+• by issuance of directions or orders or writs by the Supreme Court and High
+Courts for enforcement of these Fundamental Rights.
+
+Reprint 2025-26
+
+
+
+Contents
+Foreword . . . . .  iii
+Rationalisation of Content in the Textbook.....v
+A Note for the Teacher . . . . .  vii
+
+1. The Lost Child . . . . .  1
+Mulk Raj Anand
+
+2. The Adventures of Toto  . . . . .  7
+Ruskin Bond
+
+3. Iswaran the Storyteller . . . . .  12
+R. K. Laxman
+
+4. In the Kingdom of Fools . . . . .  19
+Kannada Folktale (ed.) A. K. Ramanujan
+
+5. The Happy Prince . . . . .  28
+Oscar Wilde
+
+6. Weathering the Storm in Ersama . . . . .  37
+Harsh Mander
+
+7. The Last Leaf . . . . . 44
+O. Henry
+
+8. A House Is Not a Home . . . . .  49
+Zan Gaudioso
+
+9. The Beggar . . . . .  56
+Anton Chekhov
+
+Reprint 2025-26
+
+
+
+xiv
+
+Reprint 2025-26
+
+
+
+
+##1##
+1.  The Lost Child
+
+A child goes to a fair with his parents. He is happy
+and excited and wants the sweets and toys
+displayed there. But his parents don’t buy them for
+him. Why then does he refuse when someone else
+offers them to him?
+
+IT was the festival of spring. From the wintry shades of narrow
+lanes and alleys emerged a gaily clad humanity. Some walked,
+some rode on horses, others sat, being carried in bamboo and
+bullock carts. One little boy ran between his father’s legs,
+brimming over with life and laughter.
+
+Reprint 2025-26
+
+
+
+“Come, child, come,” called his parents, as he lagged behind,
+fascinated by the toys in the shops that lined the way.
+
+He hurried towards his parents, his feet obedient to their call,
+his eyes still lingering on the receding toys. As he came to where
+they had stopped to wait for him, he could not suppress the desire
+of his heart, even though he well knew the old, cold stare of refusal
+in their eyes.
+
+“I want that toy,” he pleaded.
+His father looked at him red-eyed, in his familiar tyrant’s way.
+
+His mother, melted by the free spirit of the day was tender and,
+giving him her finger to hold, said, “Look, child, what is before you!”
+
+It was  a flowering mustard-field, pale like melting gold as it
+swept across miles and miles of even land.
+
+A group of dragon-flies were bustling about on their gaudy
+purple wings, intercepting the flight of a lone black bee or butterfly
+in search of sweetness from the flowers. The child followed them
+in the air with his gaze, till one of them would still its wings and
+rest, and he would try to catch it. But it would go fluttering,
+flapping, up into the air, when he had almost caught it in his
+hands. Then his mother gave a cautionary call: “Come, child,
+come, come on to the footpath.”
+
+He ran towards his parents gaily and walked abreast of them
+for a while, being, however, soon left behind, attracted by the
+little insects and worms along the footpath that were teeming out
+from their hiding places to enjoy the sunshine.
+
+“Come, child, come!” his parents  called from the shade  of a
+grove where they had seated themselves on the edge of a well. He
+ran towards them.
+
+A shower of young flowers fell upon the child as he entered
+the grove, and, forgetting his parents, he began to gather the
+raining petals in his hands. But lo! he heard the cooing of  doves
+and ran towards his parents, shouting, “The dove! The dove!” The
+raining petals dropped from his forgotten hands.
+
+“Come, child, come!” they called to the child, who had now
+gone running in wild capers round  the banyan tree, and  gathering
+him up they took the narrow, winding footpath which led to the
+fair through the mustard fields.
+
+2 / Moments
+
+Reprint 2025-26
+
+
+
+As they neared the village the child could see many other
+footpaths full of throngs, converging to the whirlpool of the fair,
+and felt at once repelled and fascinated by the confusion of the
+world he was entering.
+
+A sweetmeat seller hawked, “gulab-jaman, rasagulla, burfi,
+jalebi,” at the corner of the entrance and a crowd pressed round
+his counter at the foot of an architecture of many coloured  sweets,
+decorated with leaves of silver and gold. The child stared open-
+eyed and his mouth watered for the burfi that was his favourite
+sweet. “I want that burfi,”  he slowly murmured. But he half knew
+as he begged that his plea would not be heeded because his
+parents would say he was greedy. So without waiting for an answer
+he moved on.
+
+A flower-seller hawked, “A garland of gulmohur, a garland of
+gulmohur!” The child seemed irresistibly drawn. He went towards
+the basket where the flowers lay heaped and half murmured, “I
+want that garland.” But he well knew his parents would refuse to
+buy him those flowers because they would say that they were
+cheap. So, without waiting for an answer, he moved on.
+
+A man stood holding a pole with yellow, red, green and purple
+balloons flying from it. The child was simply carried away by the
+rainbow glory of their silken colours and he was filled with an
+overwhelming desire to possess them all. But he well knew his
+parents would never buy him the balloons because they would
+say he was too old to play with such toys. So he walked on farther.
+
+A snake-charmer stood playing a flute to a snake which coiled
+itself in a basket, its head raised in a graceful bend like the neck
+of a swan, while the music stole into its invisible ears like the
+gentle rippling of an invisible waterfall. The child went towards
+the snake-charmer. But, knowing his parents had forbidden him
+to hear such coarse music as the snake-charmer played, he
+proceeded farther.
+
+There was a roundabout in full swing. Men, women and
+children, carried away in a whirling motion, shrieked and cried
+with dizzy laughter. The child watched them intently and then he
+made a bold request: “I want to go on the roundabout, please,
+Father, Mother.”
+
+The Lost Child / 3
+
+Reprint 2025-26
+
+
+
+There was no reply. He turned to look at his parents. They were
+not there, ahead of him. He turned to look on either side. They
+were not there. He looked behind. There was no sign of them.
+
+A full, deep cry rose within his dry throat and with a sudden
+jerk of his body he ran from where he stood, crying in real fear,
+“Mother, Father.” Tears rolled down from his eyes, hot and fierce;
+his flushed face was convulsed with fear. Panic-stricken, he ran
+to one side first, then to the other, hither and thither in all
+directions, knowing not where to go. “Mother, Father,” he wailed.
+His yellow turban came untied and his clothes  became muddy.
+
+Having run to and fro in a rage of running for a while, he
+stood defeated, his cries suppressed into sobs. At little distances
+on the green grass he could see, through his filmy eyes, men and
+women talking.  He tried to look intently among the patches of
+bright yellow clothes, but there was no sign of his father and
+mother among these people, who seemed to laugh and talk just
+for the sake of laughing and talking.
+
+He ran quickly again, this time to a shrine to which people
+seemed to be crowding. Every little inch of space here was
+congested with men, but he ran through people’s legs, his little
+sob lingering: “Mother, Father!” Near the entrance to the temple,
+however, the crowd became very thick: men jostled each other,
+heavy men, with flashing, murderous eyes and hefty shoulders.
+The poor child struggled to thrust a way between their feet but,
+knocked to and fro by their brutal movements, he might have
+been trampled underfoot, had he not shrieked at the highest
+pitch of his voice, “Father, Mother!” A man in the surging crowd
+heard his cry and, stooping with great difficulty, lifted him up
+in his arms.
+
+“How did you get here, child? Whose baby are you?” the man
+asked as he steered clear of the mass.  The child wept more
+bitterly than ever now and only cried, “I want my mother, I
+want my father!”
+
+The man tried to soothe him by taking him to the roundabout.
+“Will you have a ride on the horse?” he gently asked as he
+approached the ring.  The child’s throat tore into a thousand shrill
+sobs and he only shouted, “I want my mother, I want my father!”
+
+4 / Moments
+
+Reprint 2025-26
+
+
+
+The man headed towards the place where the snake-charmer
+still played on the flute to the swaying cobra. “Listen to that
+nice music, child!” he pleaded. But the child shut his ears with
+his fingers and shouted his double-pitched strain: “I want my
+mother, I want my father!” The man took him near the balloons,
+thinking the bright colours of the balloons would distract the
+child’s attention and quieten him. “Would you like a rainbow-
+coloured balloon?” he persuasively asked.  The child turned his
+eyes from the flying balloons and just sobbed, “I want my mother,
+I want my father!”
+
+The man, still trying to make the child happy, bore him to the
+gate where the flower-seller sat. “Look! Can you smell those nice
+flowers, child!  Would you like a garland to put round your neck?”
+
+The Lost Child / 5
+
+Reprint 2025-26
+
+
+
+The child turned his nose away from the basket and reiterated
+his sob, “I want my mother, I want my father!”
+
+Thinking to humour his disconsolate charge by a gift of
+sweets, the man took him to the counter of the sweet shop.
+“What sweets would you like, child?” he asked. The child turned
+his face from the sweet shop and only sobbed, “I want my
+mother, I want my father!”
+
+MULK RAJ ANAND
+
+THINK ABOUT IT
+
+1. What are the things the child sees on his way to the fair?
+Why does he lag behind?
+
+2. In the fair he wants many things. What are they? Why does
+he move on without waiting for an answer?
+
+3. When does he realise that he has lost his way? How have his
+anxiety and insecurity been described?
+
+4. Why does the lost child lose interest in the things that he
+had wanted earlier?
+
+5. What do you think happens in the end? Does the child find
+his parents?
+
+TALK ABOUT IT
+
+How to ensure not to get lost.
+
+SUGGESTED READING
+
+l The Coolie by Mulk Raj Anand
+
+l ‘Kabuliwallah’ by Rabindranath Tagore
+
+6 / Moments
+
+Reprint 2025-26
+
+
+
+
+##2##
+2.  The Adventures of Toto
+
+Have you ever had a baby monkey as a pet? Toto
+is a baby monkey. Let’s find out whether he is
+mischievous or docile.
+
+GRANDFATHER bought Toto from a tonga-driver for the sum of five
+rupees. The tonga-driver used to keep the little red monkey tied
+to a feeding-trough, and the monkey looked so out of place there
+that Grandfather decided he would add the little fellow to his
+private zoo.
+
+Toto was a pretty monkey. His bright eyes sparkled with
+mischief beneath deep-set eyebrows, and his teeth, which were a
+pearly white, were very often displayed in a smile that frightened
+the life out of elderly Anglo-lndian ladies. But his hands looked
+dried-up as though they had been pickled in the sun for many
+years. Yet his fingers were quick and wicked; and his tail, while
+adding to his good looks (Grandfather believed a tail would add
+to anyone’s good looks), also served as a third hand. He could
+use it to hang from a branch; and it was capable of scooping up
+any delicacy that might be out of reach of his hands.
+
+Grandmother always fussed when Grandfather brought home
+some new bird or animal. So it was decided that Toto’s presence
+should be kept a secret from her until she was in a particularly
+good mood. Grandfather and I put him away in a little closet opening
+into my bedroom wall, where he was tied securely — or so we
+thought  — to a peg fastened into the wall.
+
+A few hours later, when Grandfather and I came back to
+release Toto, we found that the walls, which had been covered
+with some ornamental paper chosen by Grandfather, now stood
+out as naked brick and plaster. The peg in the wall had been
+wrenched from its socket, and my school blazer, which had been
+hanging there, was in shreds. I wondered what Grandmother
+
+Reprint 2025-26
+
+
+
+would say. But Grandfather didn’t worry; he seemed pleased
+with Toto’s performance.
+ “He’s clever,” said Grandfather. “Given time, I’m sure he could
+have tied the torn pieces of your blazer into a rope, and made his
+escape from the window!”
+
+His presence in the house still a secret, Toto was now
+transferred to a big cage in the servants’ quarters where a number
+of Grandfather’s pets lived very sociably together — a tortoise, a
+pair of rabbits, a tame squirrel and, for a while, my pet goat. But
+the monkey wouldn’t allow any of his companions to sleep at
+night; so Grandfather, who had to leave Dehra Dun next day to
+collect his pension in Saharanpur, decided to take him along.
+
+Unfortunately I could not accompany Grandfather on that trip,
+but he told me about it afterwards. A big black canvas kit-bag
+was provided for Toto. This, with some straw at the bottom, became
+his new abode. When the bag was closed, there was no escape.
+Toto could not get his hands through the opening, and the canvas
+was too strong for him to bite his way through.  His efforts to get
+out only had the effect of making the bag roll about on the floor
+or occasionally jump into the air — an exhibition that attracted a
+curious crowd of onlookers on the Dehra Dun railway platform.
+
+Toto remained in the bag as far as Saharanpur, but while
+Grandfather was producing his ticket at the railway turnstile,
+Toto suddenly poked his head out of the bag and gave the ticket-
+collector a wide grin.
+
+The poor man was taken aback; but, with great presence of
+mind and much to Grandfather’s annoyance, he said, “Sir, you
+have a dog with you.  You’ll have to pay for it accordingly.”
+
+In vain did Grandfather take Toto out of the bag; in vain did
+he try to prove that a monkey did not qualify as a dog, or even
+as a quadruped. Toto was classified a dog by the ticket-collector;
+and three rupees was the sum handed over as his fare.
+
+Then Grandfather, just to get his own back, took from his
+pocket our pet tortoise, and said, “What must I pay for this, since
+you charge for all animals?”
+
+The ticket-collector looked closely at the tortoise, prodded it
+with his forefinger, gave Grandfather a pleased and triumphant
+look, and said, “No charge.  It is not a dog.”
+
+8 / Moments
+
+Reprint 2025-26
+
+
+
+When Toto was finally accepted by Grandmother he was given
+a comfortable home in the stable, where he had for a companion
+the family donkey, Nana.  On Toto’s first night in the stable,
+Grandfather paid him a visit to see if he was comfortable. To his
+surprise he found Nana, without apparent cause, pulling at her
+halter and trying to keep her head as far as possible from a
+bundle of hay.
+
+Grandfather gave Nana a slap across her haunches, and she
+jerked back, dragging Toto with her. He had fastened on to  her
+long ears with his sharp little teeth.
+
+Toto and Nana never became friends.
+A great treat for Toto during cold winter evenings was the
+
+large bowl of warm water given him by Grandmother for his bath.
+He would cunningly test the temperature with his hand, then
+gradually step into the bath, first one foot, then the other (as he
+had seen me doing), until he was into the water up to his neck.
+
+The Adventures of Toto/ 9
+
+Reprint 2025-26
+
+
+
+Once comfortable, he would take the soap in his hands or feet,
+and rub himself all over.  When the water became cold, he would
+get out and run as quickly as he could to the kitchen-fire in order
+to dry himself. If anyone laughed at him during this performance,
+Toto’s feelings would be hurt and he would refuse to go on with
+his bath. One day Toto nearly succeeded in boiling himself alive.
+
+A large kitchen kettle had been left on the fire to boil for tea
+and Toto, finding himself with nothing better to do, decided to
+remove the lid. Finding the water just warm enough for a bath,
+he got in, with his head sticking out from the open kettle. This
+was just fine for a while, until the water began to boil. Toto then
+raised himself a little; but, finding it cold outside, sat down again.
+He continued hopping up and down for some time, until
+Grandmother arrived and hauled him, half-boiled, out of the kettle.
+
+If there is a part of the brain especially devoted to mischief, that
+part was largely developed in Toto. He was always tearing things to
+pieces. Whenever one of my aunts came near him, he made every
+effort to get hold of her dress and tear a hole in it.
+
+One day, at lunch-time, a large dish of pullao stood in the
+centre of the dining-table. We entered the room to find Toto stuffing
+himself with rice. My grandmother screamed — and Toto threw a
+plate at her. One of my aunts rushed forward — and received a glass
+of water in the face. When Grandfather arrived, Toto picked up the
+dish of pullao and made his exit through a window. We found
+him in the branches of the jackfruit tree, the dish still in his
+arms. He remained there all afternoon, eating slowly through the
+rice, determined on finishing every grain. And then, in order to
+spite Grandmother, who had screamed at him, he threw the dish
+down from the tree, and chattered with delight when it broke into
+a hundred pieces.
+
+Obviously Toto was not the sort of pet we could keep for long.
+Even Grandfather realised that. We were not well-to-do, and could
+not afford the frequent loss of dishes, clothes, curtains and
+wallpaper. So Grandfather found the tonga-driver, and sold Toto
+back to him — for only three rupees.
+
+RUSKIN BOND
+
+10 / Moments
+
+Reprint 2025-26
+
+
+
+Glossary
+
+turnstile: a mechanical gate consisting of
+revolving horizontal arms fixed to a vertical
+post, allowing only one person at a time to
+pass through
+
+halter: a rope or strap placed around the head
+of a horse or other animal, used for leading or tethering it
+
+THINK ABOUT IT
+
+1. How does Toto come to grandfather’s private zoo?
+
+2. “Toto was a pretty monkey.” In what sense is Toto pretty?
+
+3. Why does grandfather take Toto to Saharanpur and how?
+Why does the ticket collector insist on calling Toto a dog?
+
+4. How does Toto take a bath? Where has he learnt to do
+this? How does Toto almost boil himself alive?
+
+5. Why does the author say, “Toto was not the sort of pet we
+could keep for long”?
+
+TALK ABOUT IT
+
+Do you have a pet? Is your pet mischievous? Tell the class
+about it.
+
+SUGGESTED READING
+
+l My Family and Other Animals by Gerald Durrell
+
+l ‘Grandfather’s Private Zoo’ by Ruskin Bond
+
+l Jungle Book  by Rudyard Kipling
+
+The Adventures of Toto/ 11
+
+Reprint 2025-26
+
+
+##3##
+
+
+3.  Iswaran the Storyteller
+
+One night Mahendra woke up from his sleep and
+saw “a dark cloudy form”. He broke out into a cold
+sweat. Was it a ghost?
+
+THE story was narrated to Ganesh by a young man, Mahendra by
+name. He was a junior supervisor in a firm which offered on hire
+supervisors at various types of construction sites: factories, bridges,
+dams, and so on. Mahendra’s job was to keep an eye on the activities
+at the work site. He had to keep moving from place to place every
+now and then as ordered by his head office: from a coal mining
+area to a railway bridge construction site, from there after a few
+months to a chemical plant which was coming up somewhere.
+
+Reprint 2025-26
+
+
+
+He was a bachelor. His needs were simple and he was able to
+adjust himself to all kinds of odd conditions, whether it was an
+ill-equipped circuit house or a makeshift canvas tent in the
+middle of a stone quarry. But one asset he had was his cook,
+Iswaran. The cook was quite attached to Mahendra and followed
+him uncomplainingly wherever he was posted. He cooked for
+Mahendra, washed his clothes and chatted away with his master
+at night. He could weave out endless stories and anecdotes on
+varied subjects.
+
+Iswaran also had an amazing capacity to produce vegetables
+and cooking ingredients, seemingly out of nowhere, in the middle
+of a desolate landscape with no shops visible for miles around.
+He would miraculously conjure up the most delicious dishes made
+with fresh vegetables within an hour of arriving at the zinc-sheet
+shelter at the new workplace.
+
+Mahendra would be up early in the morning and leave for
+work after breakfast, carrying some prepared food with him.
+Meanwhile Iswaran would tidy up the shed, wash the clothes,
+and have a leisurely bath, pouring several buckets of water over
+his head, muttering a prayer all the while. It would be lunchtime
+by then. After eating, he would read for a while before dozing
+off. The book was usually some popular Tamil thriller running
+to hundreds of pages. Its imaginative descriptions and  narrative
+flourishes would hold Iswaran in thrall.
+
+His own descriptions were greatly influenced by the Tamil
+authors that he read.  When he was narrating even the smallest
+of incidents, he would try to work in suspense and a surprise
+ending into the account. For example, instead of saying that
+he had come across an uprooted tree on the highway, he would
+say, with eyebrows suitably arched and hands held out in a
+dramatic gesture, “The road was deserted and I was all alone.
+Suddenly I spotted something that looked like an enormous
+bushy beast lying sprawled across the road. I was half inclined
+to turn and go back. But as I came closer I saw that it was a
+fallen tree, with its dry branches spread out.” Mahendra would
+stretch himself back in his canvas chair and listen to Iswaran’s
+tales uncritically.
+
+Iswaran the Storyteller/ 13
+
+Reprint 2025-26
+
+
+
+“The place I come from is famous for timber,” Iswaran would
+begin. “There is a richly wooded forest all around. The logs are
+hauled on to the lorries by elephants. They are huge well-fed
+beasts. When they turn wild even the most experienced mahout
+is not able to control them.” After this prologue Iswaran would
+launch into an elaborate anecdote involving an elephant.
+
+“One day a tusker escaped from the timber yard and began to
+roam about, stamping on bushes, tearing up wild creepers and
+breaking branches at will. You know, sir, how an elephant behaves
+when it goes mad.” Iswaran would get so caught up in the
+excitement of his own story that he would get up from the floor
+and jump about, stamping his feet in emulation of the mad elephant.
+
+“The elephant reached the outskirts of our town; breaking the
+fences down like matchsticks,” he would continue. “It came into
+the main road and smashed all the stalls selling fruits, mud pots
+and clothes. People ran helter-skelter in panic! The elephant now
+entered a school ground where children were playing, breaking
+through the brick wall. All the boys ran into the classrooms and
+shut the doors tight. The beast grunted and wandered about,
+pulling out the football goal-post, tearing down the volleyball net,
+kicking and flattening the drum kept for water, and uprooting
+the shrubs. Meanwhile all the teachers had climbed up to the
+terrace of the school building; from there they helplessly watched
+the depredations of the elephant. There was not a soul below on
+the ground. The streets were empty as if the inhabitants of the
+entire town had suddenly disappeared.
+
+“I was studying in the junior class at that time, and was
+watching the whole drama from the rooftop. I don’t know what
+came over me suddenly. I grabbed a cane from the hands of one
+of the teachers and ran down the stairs and into the open. The
+elephant grunted and menacingly swung a branch of a tree  which
+it held in its trunk. It stamped its feet, kicking up a lot of mud
+and dust. It looked frightening. But I moved slowly towards it,
+stick in hand. People were watching the scene hypnotised from
+nearby housetops. The elephant looked at me red-eyed, ready to
+rush towards me. It lifted its trunk and trumpeted loudly. At that
+moment I moved forward and, mustering all my force, whacked
+
+14 / Moments
+
+Reprint 2025-26
+
+
+
+its third toenail on the quick. The beast looked stunned for a
+moment; then it shivered from head to foot — and collapsed.”
+
+At this point Iswaran would leave the story unfinished, and
+get up mumbling, “I will be back after lighting the gas and warming
+up the dinner.” Mahendra who had been listening with rapt
+attention would be left hanging. When he returned, Iswaran
+would not pick up the thread of the story right away. Mahendra
+would have to remind him that the conclusion was pending.
+“Well, a veterinary doctor was summoned to revive the animal,”
+Iswaran would shrug casually. “Two days later it was led away by
+its mahout to the jungle.”
+
+“Well, how did you manage to do it, Iswaran — how did you
+bring down the beast?”
+
+“It has something to do with a Japanese art, I think, sir. Karate
+or ju-jitsu it is called. I had read about it somewhere.  It temporarily
+paralyses the nervous system, you see.”
+
+Not a day passed without Iswaran recounting some story
+packed with adventure, horror and suspense. Whether the story
+was credible or not, Mahendra enjoyed listening to it because
+of the inimitable way in which it was told. Iswaran seemed to
+more than make up for the absence of a TV in Mahendra’s
+living quarters.
+
+One morning when Mahendra was having breakfast Iswaran
+asked, “Can I make something special for dinner tonight, sir?
+After all today is an auspicious day — according to tradition we
+prepare various delicacies to feed the spirits of our ancestors
+today, sir.”
+
+That night Mahendra enjoyed the most delicious dinner and
+complimented Iswaran on his culinary skills. He seemed very
+pleased but, unexpectedly, launched into a most garish account
+involving the supernatural.
+
+“You know, sir, this entire factory area  we are occupying was
+once a burial ground,” he started. Mahendra was jerked out of
+the pleasant reverie he had drifted into after the satisfying meal.
+
+“I knew on the first day itself when I saw a human  skull lying
+on the path. Even now I come across a number of skulls and
+bones,” Iswaran continued.
+
+Iswaran the Storyteller/ 15
+
+Reprint 2025-26
+
+
+
+He went on to narrate how he sometimes saw ghosts at night.
+“I am not easily frightened by these things, sir. I am a brave
+fellow. But one horrible ghost of a woman which appears off
+and on at midnight during the full moon... It is an ugly creature
+with matted hair and a shrivelled face, like a skeleton holding a
+foetus in its arms.”
+
+Mahendra shivered at the description and interrupted rather
+sharply, “You are crazy, Iswaran. There are no such things as
+ghosts or spirits. It is all a figment of your imagination. Get your
+digestive system examined — and maybe your head as well. You
+are talking nonsense.”
+
+He left the room and retired for the night, expecting Iswaran
+to sulk for a couple of days. But the next morning he was surprised
+to find the cook as cheerful and talkative as ever.
+
+From that day on Mahendra, for all his brave talk, went to bed
+with a certain unease. Every night he peered into the darkness
+
+16 / Moments
+
+Reprint 2025-26
+
+
+
+outside through the window next to his bed, trying to make sure
+that there was no movement of dark shapes in the vicinity. But
+he could only see a sea of darkness with the twinkling lights of
+the factory miles away.
+
+He had always liked to admire the milk-white landscape on
+full-moon nights. But after hearing Iswaran’s story of the female
+ghost he avoided looking  out of his window altogether when the
+moon was full.
+
+One night, Mahendra was woken up from his sleep by a low
+moan close to his window. At first he put it down to a cat
+prowling around for mice. But the sound was too guttural for a
+cat. He resisted the curiosity to look out lest he should behold
+a sight which would stop his heart. But the wailing became
+louder and less feline. He could not resist the temptation any
+more. Lowering himself to the level of the windowsill he looked
+out at the white sheet of moonlight outside. There, not too far
+away, was a dark cloudy form clutching a bundle. Mahendra
+broke into a cold sweat and fell back on the pillow, panting.
+As he gradually recovered from the ghastly experience he
+began to reason with himself, and finally concluded that it
+must have been some sort of auto suggestion, some trick that
+his subconscious had played on him.
+
+By the time he had got up in the morning, had a bath and
+come out to have his breakfast, the horror of the previous night
+had faded from his memory. Iswaran greeted him at the door
+with his lunch packet and his bag. Just as Mahendra was
+stepping out Iswaran grinned and said, “Sir, remember the other
+day when I was telling you about the female ghost with a foetus
+in its arms, you were so angry with me for imagining things?
+Well, you saw her yourself last night. I came running hearing
+the sound of moaning that was coming from your room...”
+
+A chill went down Mahendra’s spine. He did not wait for
+Iswaran to complete his sentence. He hurried away to his office
+and handed in his papers, resolving to leave the haunted place
+the very next day!
+
+R.K. LAXMAN
+
+Iswaran the Storyteller/ 17
+
+Reprint 2025-26
+
+
+
+Glossary
+
+in thrall: the state of being in someone’s power
+
+depredations: attacks which are made to destroy something
+
+guttural sound: sound produced in the throat; harsh-sounding
+
+feline: relating to cats or other members of the cat family
+
+THINK ABOUT IT
+
+1. In what way is Iswaran an asset to Mahendra?
+
+2. How does Iswaran describe the uprooted tree on the highway?
+What effect does he want to create in his listeners?
+
+3. How does he narrate the story of the tusker? Does it appear
+to be plausible?
+
+4. Why does the author say that Iswaran seemed to more than
+make up for the absence of a TV in Mahendra’s living quarters?
+
+5. Mahendra calls ghosts or spirits a figment of the imagination.
+What happens to him on a full-moon night?
+
+6. Can you think of some other ending for the story?
+
+TALK ABOUT IT
+
+Is Iswaran a fascinating storyteller? Discuss with your friends
+the qualities of a good storyteller. Try to use these qualities and
+tell a story.
+
+SUGGESTED READING
+
+l ‘The Story Teller’ by Saki (H.H. Munro)
+
+l Ghost Stories (ed.) Ruskin Bond
+
+l ‘The Canterville Ghost’ by Oscar Wilde
+
+l ‘Pret in the House’ by Ruskin Bond
+
+18 / Moments
+
+Reprint 2025-26
+
+##4##
+
+4. In the Kingdom of Fools
+
+It is believed that fools are so dangerous that only
+very wise people can manage them. Who are the
+fools in this story? What happens to them?
+
+IN the Kingdom of Fools, both the king and the minister were idiots.
+They didn’t want to run things like other kings, so they decided to
+change night into day and day into night. They ordered that everyone
+should be awake at night, till their fields and run their businesses
+only after dark, and go to bed as soon as the sun came up. Anyone
+who disobeyed would be punished with death. The people did as
+they were told for fear of death. The king and the minister were
+delighted at the success of their project. One day a guru and his
+disciple arrived in the city. It was a beautiful city, it was broad
+daylight, but there was no one about. Everyone was asleep, not a
+mouse stirring. Even the cattle had been taught to sleep by day.
+The two strangers were amazed by what they saw around them
+and wandered around town till evening, when suddenly the whole
+town woke up and went about its nightly business.
+
+The two men were hungry. Now that the shops were open,
+they went to buy some groceries. To their astonishment, they
+found that everything cost the same, a single duddu — whether
+they bought a measure of rice or a bunch of bananas, it cost a
+duddu. The guru and his disciple were delighted. They had never
+heard of anything like this. They could buy all the food they
+wanted for a rupee.
+
+When they had cooked and eaten, the guru realised that this
+was a kingdom of fools and it wouldn’t be a good idea for them to
+stay there. “This is no place for us. Let’s go,” he said to his disciple.
+But the disciple didn’t want to leave the place. Everything was
+cheap here. All he wanted was good, cheap food. The guru said,
+
+Reprint 2025-26
+
+
+
+“They are all fools. This won’t last very long, and you can’t tell
+what they’ll do to you next.”
+
+But the disciple wouldn’t listen to the guru’s wisdom. He
+wanted to stay. The guru finally gave up and said, “Do what you
+want. I’m going,” and left. The disciple stayed on, ate his fill every
+day — bananas and ghee and rice and wheat, and grew fat like a
+street-side sacred bull.
+
+One bright day, a thief broke into a rich merchant’s house. He
+had made a hole in the wall and sneaked in, and as he was carrying
+out his loot, the wall of the old house collapsed on his head and
+killed him on the spot.  His brother ran to the king and complained,
+“Your Highness, when my brother was pursuing his ancient trade,
+a wall fell on him and killed him. This merchant is to blame. He
+should have built a good, strong wall. You must
+punish the wrongdoer and compensate the family
+for this injustice.”
+
+The king said, “Justice will be done. Don’t
+worry,” and at once summoned the owner of
+the house.
+
+20 / Moments
+
+Reprint 2025-26
+
+
+
+When the merchant arrived, the king questioned him.
+“What’s your name?”
+“Such and Such, Your Highness.”
+“Were you at home when the dead man burgled your house?”
+“Yes, My Lord. He broke in and the wall was weak. It fell on him.”
+“The accused pleads guilty. Your wall killed this man’s brother.
+
+You have murdered a man. We have to punish you.”
+“Lord,” said the helpless merchant, “I didn’t put up the wall.
+
+It’s really the fault of the man who built the wall. He didn’t build
+it right. You should punish him.”
+
+“Who is that?”
+“My Lord, this wall was built in my father’s time. I know the
+
+man. He’s an old man now. He lives nearby.”
+The king sent out messengers to bring in the bricklayer who
+
+had built the wall. They brought him, tied hand and foot.
+“You there, did you build this man’s wall in his father’s time?”
+“Yes, My Lord, I did.”
+“What kind of a wall is this that you built? It has fallen on a
+
+poor man and killed him. You’ve murdered him. We have to punish
+you by death.”
+
+Before the king could order the execution, the poor bricklayer
+pleaded, “Please listen to me before you give your orders. It’s true
+I built this wall and it was no good. But that was because my
+mind was not on it. I remember very well a dancing girl  who was
+going up and down that street all day with her anklets jingling,
+and I couldn’t keep my eyes or my mind on the wall I was building.
+You must get that dancing girl. I know where she lives.”
+
+“You’re right. The case deepens. We must look into it. It is not
+easy to judge such complicated cases. Let’s get that dancer,
+wherever she is.”
+
+The dancing girl, now an old woman, came trembling to
+the court.
+
+“Did you walk up and down that street many years ago, while
+this poor man was building a wall? Did you see him?”
+
+“Yes, My Lord, I remember it very well.”
+“So you did walk up and down, with your anklets jingling.
+
+You were young and you distracted him, so he built a bad wall.
+
+In the Kingdom of Fools/ 21
+
+Reprint 2025-26
+
+
+
+It has fallen on a poor burglar and
+killed him. You’ve killed an innocent
+man. You’ll have to be punished.”
+
+She thought for a minute and said,
+“My Lord, wait. I know now why I was
+walking up and down that street. I
+had given some gold to the goldsmith
+to make some jewellery for me. He
+was a lazy scoundrel. He made so
+many excuses, said he would give it
+now and he would give it then and
+so on all day. He made me walk up
+and down to his house a dozen times.
+
+That was when this bricklayer saw me. It’s
+not my fault, My Lord, it’s the damned
+goldsmith’s fault.”
+
+“Poor thing, she’s absolutely right,”
+thought the king, weighing the evidence.
+“We’ve got the real culprit at last. Get the
+goldsmith, wherever he is hiding. At once!”
+
+The king’s bailiffs searched for the
+goldsmith, who was hiding in a corner of
+his shop. When he heard the accusation
+against him, he had his own story to tell.
+
+“My Lord,” he said, “I ’m a poor
+goldsmith. It’s true I made this dancer
+come many times to my door. I gave her
+excuses because I couldn’t finish making
+her jewellery before I finished the rich
+merchant’s orders. They had a wedding
+coming, and they wouldn’t wait. You know
+how impatient rich men are!”
+
+“Who is this rich merchant who kept
+you from finishing this poor woman’s
+jewellery, made her walk up and down,
+which distracted this bricklayer, which
+made a mess of his wall, which has now
+
+22 / Moments
+
+Reprint 2025-26
+
+
+
+fallen on an innocent man and killed him?
+Can you name him?”
+
+The goldsmith named the merchant, and
+he was none other than the original owner of
+the house whose wall had fallen. Now justice
+had come full circle, thought the king, back to
+the merchant. When he was rudely summoned
+back to the court, he arrived crying, “It wasn’t
+me but my father who ordered the jewellery!
+He’s dead! I’m innocent!”
+
+But the king consulted his minister and ruled
+decisively: “It’s true your father is the true
+murderer. He’s dead, but somebody must be
+punished in his place. You’ve inherited
+everything from that criminal father of yours,
+his riches as well as his sins. I knew at once,
+even when I first set eyes on you, that you were
+at the root of this horrible crime. You must die.”
+
+And he ordered a new stake to be made
+ready for the execution. As the servants
+sharpened the stake and got it ready for the
+final impaling of the criminal, it occurred to
+the minister that the rich merchant was
+somehow too thin to be properly executed on
+the stake. He appealed to the king’s common
+sense. The king too worried about it.
+
+“What shall we do?” he said, when
+suddenly it struck him that all they needed
+to do was to find a man fat
+enough to fit the stake. The
+servants were immediately sent
+all over the town looking for a
+man who would fit the stake,
+and their eyes fel l  on the
+disciple who had fattened
+himself for months on bananas
+and rice and wheat and ghee.
+
+In the Kingdom of Fools/ 23
+
+Reprint 2025-26
+
+
+
+“What have I done wrong? I’m innocent. I’m a sanyasi!” he cried.
+“That may be true. But it’s the royal decree that we should
+
+find a man fat enough to fit the stake,” they said, and carried him
+to the place of execution. He remembered his wise guru’s words:
+“This is a city of fools. You don’t know what they will do next.”
+While he was waiting for death, he prayed to his guru in his heart,
+asking him to hear his cry wherever he was. The guru saw
+everything in a vision; he had magic powers, he could see far,
+and he could see the future as he could see the present and the
+past. He arrived at once to save his disciple, who had got himself
+into such a scrape through love of food.
+
+As soon as he arrived, he scolded the disciple and told him
+something in a whisper. Then he went to the king and addressed
+him, “O wisest of kings, who is greater? The guru or the disciple?”
+
+“Of course, the guru. No doubt about it. Why  do you ask?”
+“Then put me to the stake first. Put my disciple to death after me.”
+
+24 / Moments
+
+Reprint 2025-26
+
+
+
+When the disciple heard this, he understood and began to
+clamour, “Me first!  You brought me here first! Put me to death
+first, not him!”
+
+The guru and the disciple now got into a fight about who should
+go first. The king was puzzled by this behaviour. He asked the
+guru, “Why do you want to die? We chose him because we needed
+a fat man for the stake.”
+
+“You shouldn’t ask me such questions. Put me to death first,”
+replied the guru.
+
+“Why? There’s some mystery here. As a wise man you must
+make me understand.”
+
+“Will you promise to put me to death if I tell you?” asked the
+guru. The king gave him his solemn word. The guru took him
+aside, out of the servants’ earshot, and whispered to him, “Do you
+know why we want to die right now, the two of us? We’ve been all
+over the world but we’ve never found a city like this or a king like
+you. That stake is the stake of the god of justice. It’s new, it has
+never had a criminal on it. Whoever dies on it first will be reborn as
+the king of this country. And whoever goes next will be the future
+minister of this country. We’re sick of our ascetic life. It would be
+nice to enjoy ourselves as king and minister for a while. Now keep
+your word, My Lord, and put us to death. Me first, remember?”
+
+The king was now thrown into deep thought. He didn’t want
+to lose the kingdom to someone else in the next round of life. He
+needed time. So he ordered the execution postponed to the next
+day and talked in secret with his minister. “It’s not right for us to
+give over the kingdom to others in the next life. Let’s go on the
+stake ourselves and we’ll be reborn as king and minister again.
+Holy men do not tell lies,” he said, and the minister agreed.
+
+So he told the executioners, “We’ll send the criminals tonight.
+When the first man comes to you, put him to death first. Then do
+the same to the second man. Those are my orders. Don’t make
+any mistake.”
+
+That night, the king and his minister went secretly to the
+prison, released the guru and the disciple, disguised themselves
+as the two, and as arranged beforehand with loyal servants, were
+taken to the stake and promptly executed.
+
+In the Kingdom of Fools/ 25
+
+Reprint 2025-26
+
+
+
+When the bodies were taken down to be thrown to crows and
+vultures the people panicked. They saw before them the dead
+bodies of the king and the minister. The city was in confusion.
+
+All night they mourned and discussed the future of the
+kingdom. Some people suddenly thought of the guru and the
+disciple and caught up with them as they were preparing to leave
+town unnoticed. “We people need a king and a minister,” said
+someone. Others agreed. They begged the guru and the disciple
+to be their king and their minister. It didn’t take many arguments
+to persuade the disciple, but it took longer to persuade the guru.
+They finally agreed to rule the kingdom of the foolish king and
+the silly minister, on the condition that they could change all the
+old laws.
+
+From then on, night would again be night and day would again
+be day, and you could get nothing for a duddu. It became like any
+other place.
+
+[A Kannada folktale from A.K. Ramanujan’s
+Folk Tales from India]
+
+26 / Moments
+
+Reprint 2025-26
+
+
+
+Glossary
+
+bailiff: a law officer who makes sure that the decisions of a court
+are obeyed
+
+scrape: a difficult situation that one has got into
+
+THINK ABOUT IT
+
+1. What are the two strange things the guru and his disciple
+find in the Kingdom of Fools?
+
+2. Why does the disciple decide to stay in the Kingdom of Fools?
+Is it a good idea?
+
+3. Name all the people who are tried in the king’s court, and give
+the reasons for their trial.
+
+4. Who is the real culprit according to the king? Why does he
+escape punishment?
+
+5. What are the Guru’s words of wisdom? When does the disciple
+remember them?
+
+6. How does the guru manage to save his disciple’s life?
+
+TALK ABOUT IT
+
+In Shakespeare’s plays the fool is not really foolish. If you have
+read or seen Shakespeare’s plays such as King Lear, As You Like
+It, Twelfth Night, you may talk about the role of the fool.
+Do you know any stories in your language about wise fools, such
+as Tenali Rama or Gopal Bhar? You can also read about them in
+Ramanujan’s collection of folk tales.
+
+SUGGESTED READING
+
+l Tales from Shakespeare by Charles and Mary Lamb
+l Folk Tales from India: A Selection of Oral Tales from Twenty-
+
+two Languages  Selected and Edited by  A.K. Ramanujan
+l Classic Folk Tales from Around the World Edited by Robert Nye
+
+In the Kingdom of Fools/ 27
+
+Reprint 2025-26
+
+
+##5##
+5. The Happy Prince
+
+The Happy Prince was a beautiful statue. He was
+covered with gold, he had sapphires for eyes, and a
+ruby in his sword. Why did he want to part with all
+the gold that he had, and his precious stones?
+
+HIGH above the city, on a tall column, stood the statue of the
+Happy Prince. He was gilded all over with thin leaves of fine gold,
+for eyes he had  two bright sapphires, and a large red ruby glowed
+on his sword hilt.
+
+One night there flew over the city a little swallow. His friends
+had gone away to Egypt six weeks before, but he had stayed
+behind; then he decided to go to Egypt too.
+
+All day long he flew,
+and at night time he
+arrived at the city.
+
+“Where shall I put
+up?” he said. “I hope
+the town has made
+preparations.”
+
+Then he saw the
+statue on the tall column.
+
+“I will put up there,”
+he cried. “It is a fine
+position with plenty of
+fresh air.” So he alighted
+just between the feet of
+the Happy Prince.
+
+“I have a golden
+bed-room,” he said
+softly to himself as he
+looked round, and he
+
+Reprint 2025-26
+
+
+
+prepared to go to sleep; but just as he was putting his head under
+his wing a large drop of water fell on him. “What a curious thing!”
+he cried. “There is not a single cloud in the sky, the stars are
+quite clear and bright, and yet it is raining.”
+
+Then another drop fell.
+“What is the use of a statue if it cannot keep the rain off ?” he said.
+
+“I must look for a good chimney pot,” and he determined to fly away.
+But before he had opened his wings, a third drop fell, and he
+
+looked up, and saw — Ah! What did he see?
+The eyes of the Happy Prince were filled with tears, and tears
+
+were running down his golden cheeks. His face was so beautiful
+in the moonlight that the little swallow was filled with pity.
+
+“Who are you?” he said.
+“I am the Happy Prince.”
+“Why are you weeping then?” asked the swallow. “You have
+
+quite drenched me.”
+“When I was alive and had a human heart,” answered the
+
+statue, “I did not know what tears were, for I lived in the Palace,
+where sorrow is not allowed to enter.  My courtiers called me the
+Happy Prince, and happy indeed I was. So I lived, and so I died.
+And now that I am dead they have set me up here so high that I
+can see the ugliness and all the misery of my city, and though my
+heart is made of lead yet I cannot choose but weep.”
+
+‘What! Is he not solid gold?’ said the swallow to himself. He
+was too polite to make any personal remarks.
+
+“Far away,” continued the statue in a low musical voice, “far
+away in a little street there is a poor house. One of the windows is
+open, and through it I can see a woman seated at a table. Her
+face is thin and worn, and she has coarse, red hands, all pricked
+by the needle, for she is a seamstress. She is embroidering flowers
+on a satin gown for the loveliest of the Queen’s maids of honour,
+to wear at the next Court ball. In a bed in the corner of the room
+her little boy is lying ill. He has a fever, and is asking his mother
+to give him oranges. His mother has nothing to give him but river
+water, so he is crying. Swallow, Swallow, little Swallow, will you
+not bring her the ruby out of my sword hilt?  My feet are fastened
+to this pedestal and I cannot move.”
+
+The Happy Prince/ 29
+
+Reprint 2025-26
+
+
+
+“I am waited for in Egypt,” said the swallow. “My friends are
+flying up and down the Nile, and talking to the large lotus flowers.
+Soon they will go to sleep.”
+
+The Prince asked the swallow to stay with him for one night
+and be his messenger. “The boy is so thirsty, and the mother so
+sad,” he said.
+
+“I don’t think I like boys,” answered the swallow. “I want to go
+to Egypt.”
+
+But the Happy Prince looked so sad that the little swallow was
+sorry. “It is very cold here,” he said. But he agreed to stay with
+him for one night and be his messenger.
+
+“Thank you, little Swallow,” said the Prince.
+The swallow picked out the great ruby from the Prince’s sword,
+
+and flew away with it in his beak over the roofs of the town.
+He passed by the cathedral tower, where the white marble angels
+
+were sculptured.  He passed by the palace and heard the sound of
+dancing. A beautiful girl came out on the balcony with her lover.
+
+“I hope my dress will be ready in time for the State ball,” she
+said. “I have ordered flowers to be embroidered on it, but the
+seamstresses are so lazy.”
+
+He passed over the river, and saw the lanterns hanging on the
+masts of the ships. At last he came to the poor woman’s house
+and looked in. The boy was tossing feverishly on his bed, and the
+mother had fallen asleep, she was so tired. In he hopped, and
+laid the great ruby on the table beside the woman’s thimble. Then
+he flew gently round the bed, fanning the boy’s forehead with his
+wings. “How cool I feel!” said the boy, “I must be getting better;”
+and he sank into a delicious slumber.
+
+Then the swallow flew back to the Happy Prince, and told him
+what he had done. “It is curious,” he remarked, “but I feel quite
+warm now, although it is so cold.”
+
+“That is because you have done a good action,” said the Prince.
+And the little swallow began to think, and then fell asleep. Thinking
+always made him sleepy.
+
+When day broke he flew down to the river and had a bath.
+“Tonight I go to Egypt,” said the swallow, and he was in high
+
+30 / Moments
+
+Reprint 2025-26
+
+
+
+spirits at the prospect. He visited all the monuments and sat a
+long time on top of the church steeple.
+
+When the moon rose he flew back to the Happy Prince.
+“Have you any commissions for Egypt?” he cried. “I am
+
+just starting.”
+“Swallow, Swallow, little Swallow,” said the Prince, “will you
+
+stay with me one night longer?”
+“I am waited for in Egypt,” answered the swallow.
+“Swallow, Swallow, little Swallow,” said the Prince, “far away
+
+across the city I see a young man in a garret. He is leaning over a
+desk covered with papers, and in the glass by his side there is a
+bunch of withered violets. His hair is brown and crisp, and his
+lips are red as a pomegranate, and he has large and dreamy eyes.
+He is trying to finish a play for the Director of the Theatre, but he
+is too cold to write any more. There is no fire in the grate, and
+hunger has made him faint.”
+
+“I will wait with you one night longer,” said the swallow, who
+really had a good heart. He asked if he should take another ruby
+to the young playwright.
+
+“Alas! I have no ruby now,” said the Prince. “My eyes are all
+that I have left. They are made of rare sapphires, which were
+
+The Happy Prince/ 31
+
+Reprint 2025-26
+
+
+
+brought out of India a thousand
+years ago.” He ordered the
+swallow to pluck out one of
+them and take it to the
+playwright. “He will sell it to the
+jeweller, and buy firewood, and
+finish his play,” he said.
+
+“Dear Prince,” said the
+swallow, “I cannot do that,” and
+he began to weep.
+
+“Swallow, Swallow, little
+Swallow,” said the Prince, “do
+as I command you.”
+
+So the swallow plucked out
+the Prince’s eye, and flew away
+to the young man’s garret. It
+
+was easy enough to get in, as there was a hole in the roof. Through
+this he darted, and came into the room. The young man had his
+head buried in his hands, so he did not hear the flutter of the
+bird’s wings, and when he looked up he found the beautiful
+sapphire lying on the withered violets.
+
+“I am beginning to be appreciated,” he cried. “This is from some
+great admirer. Now I can finish my play,” and he looked quite happy.
+
+The next day the swallow flew down to the harbour. He sat on
+the mast of a large vessel and watched the sailors working. “I am
+going to Egypt,” cried the swallow, but nobody minded, and when
+the moon rose he flew back to the Happy Prince.
+
+“I have come to bid you goodbye,” he cried.
+“Swallow, Swallow, little Swallow,” said the Prince, “will you
+
+not stay with me one night longer?”
+“It is winter,” answered the swallow, “and the snow will soon
+
+be here. In Egypt the sun is warm on the green palm trees, and
+the crocodiles lie in the mud and look lazily about them.”
+
+“In the square below,” said the Happy Prince, “there stands a
+little matchgirl. She has let her matches fall in the gutter, and
+they are all spoiled. Her father will beat her if she does not bring
+home some money, and she is crying. She has no shoes or
+
+32 / Moments
+
+Reprint 2025-26
+
+
+
+stockings, and her little head is bare. Pluck out my other eye,
+and give it to her, and her father will not beat her.”
+
+“I will stay with you one night longer,” said the swallow, “but I
+cannot pluck out your eye. You would be quite blind then.”
+
+“Swallow, Swallow, little Swallow,” said the Prince, “do as I
+command you.”
+
+So he plucked out the Prince’s other eye, and darted down
+with it. He swooped past the matchgirl, and slipped the jewel into
+the palm of her hand.
+
+“What a lovely bit of glass!” cried the little girl; and she ran
+home, laughing.
+
+Then the swallow came back to the Prince. “You are blind
+now,” he said, “so I will stay with you always.”
+
+“No, little Swallow,” said the poor Prince, “you must go away
+to Egypt.”
+
+“No, I will stay with you always,” said the swallow, and he
+slept at the Prince’s feet.
+
+All the next day he sat on the Prince’s shoulder, and told him
+stories of what he had seen in strange lands.
+
+“Dear little Swallow,” said the Prince, “you tell me of marvellous
+things, but more marvellous than anything is the suffering of
+men and women. There is no Mystery so great as Misery. Fly over
+my city, little Swallow, and tell me what you see there.”
+
+So the swallow flew over the great city, and saw the rich making
+merry in their beautiful houses, while the beggars were sitting at
+the gates. He flew into dark lanes, and saw the white faces of
+starving children looking out listlessly at the black streets. Under
+the archway of a bridge two little boys were lying in each other’s
+arms to try and keep themselves warm. “How hungry we are!”
+they said. “You must not lie here,” shouted the watchman, and
+they wandered out into the rain.
+
+Then he flew back and told the Prince what he had seen.
+“I am covered with fine gold,” said the Prince. “You must take
+
+it off, leaf by leaf, and give it to the poor; the living always think
+that gold can make them happy.”
+
+Leaf after leaf of the fine gold the swallow picked off, till the
+Happy Prince looked quite dull and grey. Leaf after leaf of the
+
+The Happy Prince/ 33
+
+Reprint 2025-26
+
+
+
+fine gold he brought to the poor, and the children’s faces grew
+rosier, and they laughed and played in the street. “We have bread
+now!” they cried.
+
+Then the snow came, and after the snow came the frost. The
+streets looked as if they were made of silver. Everybody went about
+in furs, and the little boys wore scarlet caps and skated on the ice.
+
+The poor little swallow grew colder and colder, but he would
+not leave the Prince, he loved him too well. He picked up crumbs
+outside the baker’s door when the baker was not looking, and
+tried to keep himself warm by flapping his wings.
+
+But at last he knew that he was going to die. He had just
+enough strength to fly up to the Prince’s shoulder once more.
+“Goodbye, dear Prince!” he murmured. “Will you let me kiss your
+hand?
+
+“I am glad that you are going to Egypt at last, little Swallow,”
+said the Prince. “You have stayed too long here but you must kiss
+me on the lips, for I love you.”
+
+“It is not to Egypt that I am going,” said the swallow. “I am going
+to the House of Death. Death is the brother of Sleep, is he not?”
+
+And he kissed the Happy Prince on the lips, and fell down
+dead at his feet.
+
+At that moment a curious crack sounded inside the statue, as
+if something had broken. The fact is that the leaden heart had
+snapped right in two. It certainly was a dreadfully hard frost.
+
+Early the next morning the Mayor was walking in the square
+below in company with the Town Councillors. As they passed the
+column he looked up at the statue. “Dear me! How shabby the
+Happy Prince looks!” he said.
+
+“How shabby, indeed!” cried the Town Councillors, who always
+agreed with the Mayor and they went up to look at it.
+
+“The ruby has fallen out of his sword, his eyes are gone, and
+he is golden no longer,” said the Mayor. “In fact, he is little better
+than a beggar!”
+
+“Little better than a beggar,” said the Town Councillors.
+“And here is actually a dead bird at his feet!” continued the
+
+Mayor. “We must really issue a proclamation that birds are not
+
+34 / Moments
+
+Reprint 2025-26
+
+
+
+to be allowed to die here.” And the Town Clerk made a note of
+the suggestion.
+
+So they pulled down the statue of the Happy Prince. “As he is
+no longer beautiful he is no longer useful,” said the Art Professor
+at the University.
+
+Then they melted the statue in a furnace. “What a strange
+thing!” said the overseer of the workmen at the foundry. “This
+broken lead heart will not melt in the furnace. We must throw it
+away.” So they threw it on a dust heap where the dead swallow
+was also lying.
+
+“Bring me the two most precious things in the city,” said God
+to one of His Angels; and the Angel brought Him the leaden
+heart and the dead bird.
+“You have rightly chosen,” said God, “for in my garden of
+
+Paradise this little bird shall sing for ever more and in my city
+of gold the Happy Prince shall praise me.”
+
+OSCAR WILDE
+
+The Happy Prince/ 35
+
+Reprint 2025-26
+
+
+
+Glossary
+
+seamstress: a woman who makes a living by sewing
+
+thimble: a metal or plastic cap with a closed end,
+worn to protect the finger and push the needle in
+sewing
+
+garret: small dark room at the top of the house
+
+THINK ABOUT IT
+
+1. Why do the courtiers call the prince ‘the Happy Prince’? Is he
+really happy? What does he see all around him?
+
+2. Why does the Happy Prince send a ruby for the seamstress?
+What does the swallow do in the seamstress’ house?
+
+3. For whom does the prince send the sapphires and why?
+
+4. What does the swallow see when it flies over the city?
+
+5. Why did the swallow not leave the prince and go to Egypt?
+
+6. What are the precious things mentioned in the story? Why are
+they precious?
+
+TALK ABOUT IT
+
+The little swallow says, “It is curious, but I feel quite warm now,
+although it is so cold.” Have you ever had such a feeling? Share
+your experience with your friends.
+
+SUGGESTED READING
+
+l ‘The Selfish Giant’ by Oscar Wilde.
+l ‘How Much Land Does a Man Require?’ by Leo Tolstoy
+
+36 / Moments
+
+Reprint 2025-26
+
+ ##6##
+
+6. Weathering the Storm in Ersama
+
+The cyclone that hit Orissa in October 1999
+killed thousands of people and devastated
+hundreds of villages. For two dreadful nights
+Prashant, a young man, was  marooned on the
+roof of a house. On the third day he decided to
+go to his village. Did he find his family?
+
+ON 27 October 1999, seven years after his mother’s death,
+Prashant had gone to the block headquarters of Ersama, a small
+town in coastal Orissa, some eighteen kilometres from his village,
+to spend the day with a friend.  In the evening, a dark and
+menacing storm quickly gathered. Winds beat against the houses
+with a speed and fury that Prashant had never witnessed before.
+Heavy and incessant rain filled the darkness, ancient trees were
+
+Reprint 2025-26
+
+
+
+uprooted and crashed to the earth.  Screams rent the air as people
+and houses were swiftly washed away. The angry waters swirled
+into his friend’s house, neck deep. The building was of brick and
+mortar and was strong enough to survive the devastation of the
+wind’s velocity of 350 km per hour. But the cold terror of the
+family grew with the crashing of trees that had got uprooted and
+fallen on their house, some time in the middle of the night,
+damaging its roof and walls.
+
+The crazed destruction wrought by the cyclone and the surge
+of the ocean continued for the next thirty-six hours, although wind
+speeds had reduced somewhat by the next morning.  To escape
+the waters rising in the house, Prashant and his friend’s family
+had taken refuge on the roof.  Prashant will never forget the shock
+he experienced at his first glimpse of the devastation wrought by
+the super cyclone, in the grey light of the early morning.  A raging,
+deadly, brown sheet of water covered everything as far as the eye
+could see; only fractured cement houses still stood in a few places.
+Bloated animal carcasses and human corpses floated in every
+direction.  All round even huge old trees had fallen.  Two coconut
+trees had fallen on the roof of their house.  This was a blessing in
+disguise, because the tender coconuts from the trees kept the
+trapped family from starving in the several days that followed.
+
+For the next two days, Prashant sat huddled with his friend’s
+family in the open on the rooftop.  They froze in the cold and incessant
+rain; the rain water washed away Prashant’s tears.  The only thought
+that flashed through his mind was whether his family had survived
+the fury of the super cyclone. Was he to be bereaved once again?
+
+Two days later, which seemed to Prashant like two years, the
+rain ceased and the rain waters slowly began to recede. Prashant
+was determined to seek out his family without further delay.  But
+the situation was still dangerous, and his friend’s family pleaded
+with Prashant to stay back a little while longer.  But Prashant
+knew he had to go.
+
+He equipped himself with a long, sturdy stick, and then started
+on his eighteen-kilometre expedition back to his village through
+the swollen flood waters.  It was a journey he would never forget.
+He constantly had to use his stick to locate the road, to determine
+
+38 / Moments
+
+Reprint 2025-26
+
+
+
+where the water was most shallow.  At places it was waist deep,
+and progress was slow.  At several points, he lost the road and
+had to swim.  After some distance, he was relieved to find two
+friends of his uncle who were also returning to their village. They
+decided to move ahead together.
+
+As they waded through the waters, the scenes they witnessed
+grew more and more macabre.  They had to push away many
+human bodies — men, women, children — and carcasses of dogs,
+goats and cattle that the current swept against them as they moved
+ahead.  In every village that they passed, they could barely see a
+house standing.  Prashant now wept out loud and long.  He was
+sure that his family could not have survived this catastrophe.
+
+Eventually, Prashant reached his village, Kalikuda. His heart
+went cold. Where their home once stood, there were only
+remnants of its roof.  Some of their belongings were caught,
+mangled and twisted in the branches of trees just visible above
+the dark waters. Young Prashant decided to go to the Red Cross
+shelter to look for his family.
+
+Among the first people he saw in the crowd was his maternal
+grandmother.  Weak with hunger, she rushed to him, her hands
+outstretched, her eyes brimming.  It was a miracle.  They had
+long given him up for dead.
+
+Quickly word spread and his extended family gathered around
+him, and hugged him tight in relief. Prashant anxiously scanned
+the motley, battered group. His brother and sister, his uncles
+and aunts, they all seemed to be there.
+
+Weathering the Storm in Ersama/ 39
+
+Reprint 2025-26
+
+
+
+By the next morning, as he took in the desperate situation in
+the shelter, he decided to get a grip over himself.  He sensed a
+deathly grief settling upon the 2500 strong crowd in the shelter.
+Eighty-six lives were lost in the village.  All the ninety-six houses
+had been washed away. It was their fourth day at the shelter.  So
+far they had survived on green coconuts, but there were too few
+to go around such a tumult of people.
+
+Prashant, all of nineteen years, decided to step in
+as leader of his village, if no one else did. He organised
+a group of youths and elders to jointly pressurise the
+merchant once again to part with his rice.  This time
+the delegation succeeded and returned triumphantly,
+wading through the receding waters with food for the
+entire shelter.  No one cared that the rice was already
+rotting. Branches from fallen trees were gathered to
+light a reluctant and slow fire, on which to cook the
+rice.  For the first time in four days, the survivors at
+the cyclone shelter were able to fill their bellies. His
+next task was to organise a team of youth volunteers to
+clean the shelter of filth, urine, vomit and floating
+carcasses, and to tend to the wounds and fractures of
+the many who had been injured.
+
+On the fifth day, a military helicopter flew over the
+shelter and dropped some food parcels.  It then did
+not return. The youth task force gathered empty
+
+40 / Moments
+
+Reprint 2025-26
+
+
+
+utensils from the shelter.
+Then they deputed the
+children to lie in the sand
+left by the waters around
+the shelter with these
+utensils on their stomachs,
+to communicate to the
+passing helicopters that they
+were hungry.  The message
+got through, and after that
+the helicopter made regular
+rounds of the shelter,
+airdropping food and other
+basic needs.
+
+Prashant found that a
+large number of children had
+been orphaned.  He brought
+them together and put up a
+polythene sheet shelter for
+them. Women were mobilised
+to look after them, while the
+men secured food and
+materials for the shelter.
+
+As the weeks passed,
+Prashant was quick to
+recognise that the women
+and children were sinking
+deeper and deeper in their
+grief. He persuaded the women to start working in the food-for-
+work programme started by an NGO, and for the children he
+organised sports events. He himself loved to play cricket, and so
+he organised cricket matches for children.  Prashant engaged,
+with other volunteers, in helping the widows and children to pick
+up the broken pieces of their lives. The initial government plan
+was to set up institutions for orphans and widows. However, this
+step was successfully resisted, as it was felt that in such
+institutions, children would grow up without love, and widows
+
+Weathering the Storm in Ersama/ 41
+
+Reprint 2025-26
+
+
+
+would suffer from stigma and loneliness. Prashant’s group believed
+orphans should be resettled in their own community itself, possibly
+in new foster families made up of childless widows and children
+without adult care.
+
+It is six months after the devastation of the super cyclone.
+This time Prashant’s wounded spirit has healed simply because
+he had no time to bother about his own pain.  His handsome,
+youthful face is what the widows and orphaned children of his
+village seek out most in their darkest hour of grief.
+
+HARSH MANDER
+
+Glossary
+
+menacing: dangerous and harmful
+
+incessant: unceasing; continual
+
+swirled: moved or flowed along with a whirling motion
+
+carcasses: dead bodies of animals
+
+bereaved: lost a close relation or friend through his/her death
+
+remnants: small remaining quantities
+
+motley: disparate; varied  in  appearance or character
+
+tumult: uproar of a disorderly crowd
+
+THINK ABOUT IT
+
+1. What havoc has the super cyclone wreaked in the life of the
+people of Orissa?
+
+2. How has Prashant, a teenager, been able to help the people
+of his village?
+
+3. How have the people of the community helped one another?
+What role do the women of Kalikuda play during these days?
+
+4. Why do Prashant and other volunteers resist the plan to set
+up institutions for orphans and widows? What alternatives
+do they consider?
+
+42 / Moments
+
+Reprint 2025-26
+
+
+
+5. Do you think Prashant is a good leader? Do you think young
+people can get together to help people during natural
+calamities?
+
+TALK ABOUT IT
+
+Talk about the preparedness of the community for a natural
+disaster.
+
+(You can talk about evacuation plans and rehabilitation; permanent
+safe shelters; warning systems; relief efforts; building materials
+to withstand cyclone/flood/earthquake, i.e. safe housing; peoples’
+organisation of their own rescue; the survival instinct, etc.)
+
+SUGGESTED READING
+
+l ‘A Home on the Street’ by Harsh Mander
+l ‘Paying for His Tea’ by Harsh Mander
+l Eton Munda Won the Battle by Mahasweta Devi
+
+Weathering the Storm in Ersama/ 43
+
+Reprint 2025-26
+
+
+##7##
+7. The Last Leaf
+
+It is autumn. The wind is blowing hard and it is
+raining heavily. All the leaves on an ivy creeper
+have fallen, except one. Why doesn’t the last
+leaf fall?
+
+SUE and Johnsy, two young artists, shared a small flat. The flat
+was on the third storey of an old house.
+
+Johnsy fell very seriously ill in November. She had pneumonia.
+She would lie in her bed without moving, just gazing out of the
+window. Sue, her friend, became very worried. She sent for the
+doctor. Although he came every day there was no change in
+Johnsy’s condition.
+
+One day the doctor took Sue aside and asked her, ”Is anything
+worrying Johnsy?”
+
+“No,” replied Sue. “But why do you ask?”
+The doctor said “Johnsy, it seems, has made up her mind that
+
+she is not going to get well. If she doesn’t want to live, medicines
+will not help her.”
+
+Sue tried her best to make Johnsy take an interest in things
+around her. She talked about clothes and fashions, but Johnsy
+did not respond. Johnsy continued to lie still on her bed. Sue
+brought her drawing-board into Johnsy’s room and started
+painting. To take Johnsy’s mind off her illness, she whistled
+while working.
+
+Suddenly Sue heard Johnsy whisper something. She quickly
+rushed to the bed and heard Johnsy counting backwards. She was
+looking out of the window and was saying, “Twelve!” After sometime
+she whispered “eleven”, then “ten”, then “nine”, “eight”, “seven”. Sue
+anxiously looked out of the window. She saw an old ivy creeper
+climbing half-way up the brick wall opposite their window.  In the
+strong wind outside, the creeper was shedding its leaves.
+
+Reprint 2025-26
+
+
+
+“What is it, dear?” Sue asked.
+“Six,” whispered Johnsy. “They are falling faster now. Three days
+
+ago there were almost a hundred leaves. There are only five left now.”
+“It is autumn,” said Sue, “and the leaves will fall.”
+“When the last leaf falls, I will die,” said Johnsy with finality.
+
+“I have known this for the last three days.”
+“Oh, that’s nonsense,” replied Sue. “What have old ivy leaves
+
+to do with your getting well? The doctor is confident that you will
+get better.”
+
+Johnsy did not say anything. Sue went and brought her a
+bowl of soup.
+
+“I don’t want any soup,” said Johnsy. “I am not hungry…  Now
+there are only four leaves left. I want to see the last one fall before
+it gets dark. Then I will sleep forever.”
+
+Sue sat on Johnsy’s bed, kissed her and said, “You are not
+going to die. I can’t draw the curtain for I need the light. I want to
+finish the painting and get some money for us. Please, my dear
+
+The Last Leaf/ 45
+
+Reprint 2025-26
+
+
+
+friend,” she begged Johnsy, “promise not to look out of the window
+while I paint.”
+
+“All right,” said Johnsy. “Finish your painting soon for I want
+to see the last leaf fall. I’m tired of waiting. I have to die, so let me
+go away peacefully like one of those poor, tired leaves.”
+
+“Try to sleep,” said Sue. “I have to paint an old miner. I will
+call Behrman up to be my model.”
+
+Sue rushed down. Behrman lived on the ground floor.
+He was a sixty-year-old painter. His lifelong dream was to
+
+paint a masterpiece but that had remained a dream. Sue poured
+out her worries to Behrman. She told him how Johnsy was
+convinced that she would die when the last leaf fell.
+
+“Is she stupid?” asked Behrman. “How can she be so foolish?”
+“She is running a high temperature,”complained Sue. “She
+
+refuses to eat or drink and that worries me a lot.”
+“I will come with you and see Johnsy,” Behrman said.
+They tiptoed into the room. Johnsy was sleeping. Sue drew
+
+the curtains together and they went to the next room. She peeped
+out through the window. There was only one leaf on the creeper.
+It was raining heavily and an icy-cold wind was blowing. It seemed
+
+as though the leaf
+would fall any minute
+now. Behrman did not
+say a word. He went
+back to his room.
+
+Johnsy woke up
+next morning. In a
+feeble voice she asked
+Sue to draw the
+curtains. Sue was
+nervous. She drew
+back the curtains very
+reluctantly.
+
+“Oh!” Sue exclaimed
+as she looked at the
+vine creeper. “Look,
+there is still one leaf
+
+46 / Moments
+
+Reprint 2025-26
+
+
+
+on the creeper. It looks quite green and healthy. In spite of the storm
+and the fierce winds, it didn’t fall.”
+
+“I heard the wind last night,” said Johnsy. “I thought it would
+have fallen. It will surely fall today. Then I’ll die.”
+
+“You won’t die,” said Sue energetically. “You have to live for
+your friends. What would happen to me if you die?”
+
+Johnsy smiled weakly and closed her eyes. After every hour or
+so she would look out of the window and find the leaf still there.
+It seemed to be clinging to the creeper.
+
+In the evening, there was another storm but the leaf did not
+fall. Johnsy lay for a long time looking at the leaf. Then she called
+out to Sue.
+
+“I have been a bad girl. You have looked after me so lovingly
+and I have not cooperated with you. I have been depressed and
+gloomy. The last leaf has shown me how wicked I have been. I
+have realised that it is a sin to want to die.”
+
+Sue hugged Johnsy. Then she gave her lots of hot soup and a
+mirror. Johnsy combed her hair and smiled brightly.
+
+In the afternoon the doctor came. After examining his patient  he
+told Sue, “Johnsy now has the will to live. I am confident she’ll recover
+soon. Now I must go downstairs and see Behrman. He is also suffering
+from pneumonia. But I am afraid, there is no hope for him.”
+
+The next morning
+Sue came and sat on
+Johnsy’s bed. Taking
+Johnsy’s hand in hers
+she said, “I have
+something to tell you.
+Mr Behrman died
+of pneumonia this
+morning. He was ill for
+only two days. The first
+day the janitor found him
+on his bed. His clothes
+and shoes were wet and
+he was shivering. He
+had been out in that
+stormy night.”
+
+The Last Leaf/ 47
+
+Reprint 2025-26
+
+
+
+Then they found a ladder and a lantern still lighted lying near
+his bed. There were also some brushes and green and yellow
+paints on the floor near the ladder. “Johnsy dear,” said Sue, “look
+out of the window. Look at that ivy leaf. Haven’t you wondered
+why it doesn’t flutter when the wind blows? That’s Behrman’s
+masterpiece. He painted it the night the last leaf fell.”
+
+O. HENRY
+
+Glossary
+
+janitor: a person whose job is to look after a building
+
+THINK ABOUT IT
+
+1. What is Johnsy’s illness? What can cure her, the medicine or
+the willingness to live?
+
+2. Do you think the feeling of depression Johnsy has is common
+among teenagers?
+
+3. Behrman has a dream. What is it? Does it come true?
+
+4. What is Behrman’s masterpiece? What makes Sue say so?
+
+TALK ABOUT IT
+
+Have you ever felt depressed and rejected? How did you overcome
+such feelings? Share your experience with your classmates.
+
+SUGGESTED READING
+
+l ‘The Gift of the Magi’ by O.Henry
+l ‘Dusk’ by Saki (H.H. Munro)
+l Chicken Soup for the Teenage Soul on Tough Stuff: Compiled
+
+and edited by Jack Canfield, Mark Victor Hansen, Kimberly
+Kirberger
+
+48 / Moments
+
+Reprint 2025-26
+
+
+##8##
+
+8. A House Is Not a Home
+
+This story reflects the challenges of being a teenager,
+and the problems of growing up. How does the author
+overcome his problems?
+
+MY first year of high school felt awkward. After leaving junior
+high at the head of my class with all the seniority the upper grade
+levels could afford me, it felt strange starting over as a freshman.
+The school was twice as big as my old school, and to make matters
+worse, my closest friends were sent to a different high school. I
+felt very isolated.
+
+I missed my old teachers so much that I would go back and
+visit them. They would encourage me to get involved in school
+activities so that I could meet new people. They told me that in
+time I would adjust and probably end up loving my new school
+more than I had my old one. They made me promise that when
+that happened I would still come by and visit them from time to
+time. I understood the psychology in what they were saying, but
+I took some comfort in it nonetheless.
+
+One Sunday afternoon, not long after I had started high
+school, I was sitting at home at our dining-room table doing
+homework. It was a cold and windy fall day, and we had a fire
+going in our fireplace. As usual, my red tabby cat was lying on
+top of all my papers, purring loudly and occasionally swatting at
+my pen for entertainment’s sake.
+
+She was never far from me. I had rescued her when she was
+a kitten, and somehow she knew that I was the one responsible
+for giving her ‘the good life’.
+
+My mother kept stoking the fire to keep the house nice and
+warm. Suddenly, I smelled something strange, and then I noticed
+it... smoke pouring in through the seams of the ceiling. The smoke
+began to fill the room so quickly that we could barely see. Groping
+
+Reprint 2025-26
+
+
+
+our way to the front door, we all ran out into the front yard. By
+the time we made our way outside, the whole roof was engulfed
+in flames and it was spreading quickly. I ran to the neighbours to
+call the fire department, while I watched my mother run back
+into the house.
+
+My mother then ran out of the house carrying a small metal
+box full of important documents. She dropped the case on the
+lawn and, in a crazed state, ran back into the house. I knew what
+she was after. My father had died when I was young, and I was
+certain that she was not going to let his pictures and letters go up
+in flames. They were the only things that she had to remember
+him by. Still I screamed at her, “Mom! No!”
+
+I was about to run after her when I felt a large hand hold me
+back. It was a fireman. I hadn’t even noticed that the street had
+already filled with fire trucks. I was trying to free myself from his
+grasp, yelling, “You don’t understand, my mother’s in there!”
+
+He held on to me while other firefighters ran into the house.
+He knew that I wasn’t acting very logically and that if he were to
+let go, I’d run. He was right.
+
+“It’s all right, they’ll get her,” he said.
+He wrapped a blanket around me and sat me down in our
+
+car. Soon after that, a fireman emerged from our house with
+
+50 / Moments
+
+Reprint 2025-26
+
+
+
+my mom in tow. He quickly took her over to the truck and put
+an oxygen mask on her. I ran over and hugged her. All those
+times I ever argued with her and hated her vanished at the
+thought of losing her.
+
+“She’s going to be okay,” said the fireman. “She just
+inhaled a little smoke.” And then he ran back to fight the fire
+while my mother and I sat there dazed. I remember watching
+my house burn down and thinking that there was nothing I
+could do about it.
+
+Five hours later, the fire was finally out. Our house was almost
+completely burned down. But then it struck me ... I hadn’t seen
+my cat. Where was my cat? Much to my horror, I realised that
+she was nowhere to be found. Then all at once it hit me — the
+new school, the fire, my cat — I broke down in tears and cried
+and cried. I was suffering loss, big time.
+
+The firemen wouldn’t let us go back into the house that night.
+It was still too dangerous. Dead or alive, I couldn’t imagine leaving
+without knowing about my cat. Regardless, I had to go. We piled
+into the car with just the clothes on our backs and a few of the
+firemen’s blankets, and made our way to my grandparents’ house
+to spend the night.
+
+The next day, Monday, I went to school. When the fire broke
+out, I was still wearing the dress I had worn to church that morning
+but I had no shoes! I had kicked them off when I was doing my
+homework. They became yet another casualty of the fire. So I had
+to borrow some tennis shoes from my aunt. Why couldn’t I just
+stay home from school? My mother wouldn’t hear of it, but I was
+totally embarrassed by everything. The clothes I was wearing
+looked weird, I had no books or homework, and my backpack
+was gone. I had my life in that backpack! The more I tried to fit in,
+the worse it got. Was I destined to be an outcast and a geek all my
+life? That’s what it felt like. I didn’t want to grow up, change or
+have to handle life if it was going to be this way. I just wanted to
+curl up and die.
+
+I walked around school like a zombie. Everything felt surreal,
+and I wasn’t sure what was going to happen. All the security I
+had known, from my old school, my friends, my house and my
+cat had all been ripped away.
+
+A House Is Not a Home/ 51
+
+Reprint 2025-26
+
+
+
+When I walked through what used to be my house after school
+that day, I was shocked to see how much damage there was —
+whatever hadn’t burned was destroyed by the water and chemicals
+they had used to put out the fire. The only material things not
+destroyed were the photo albums, documents and some other
+personal items that my mother had managed to heroically rescue.
+But my cat was gone and my heart ached for her.
+
+There was no time to grieve. My mother rushed me out of the
+house. We would have to find a place to live, and I would have to
+go buy some clothes for school.
+
+We had to borrow money from my grandparents because there
+were no credit cards, cash or even any identification to be able to
+withdraw money from the bank. Everything had gone up in smoke.
+
+That week the rubble that used to be our house was being
+cleared off the lot. Even though we had rented an apartment
+nearby, I would go over to watch them clear away debris, hoping
+that my cat was somewhere to be found. She was gone. I kept
+thinking about her as that vulnerable little kitten. In the early
+morning when I would disturb her and get out of bed, she would
+tag along after me, climb up my robe and crawl into my pocket to
+fall asleep. I was missing her terribly.
+
+It always seems that bad news spreads quickly, and in my
+case it was no different. Everyone in high school, including the
+teachers, was aware of my plight. I was embarrassed as if somehow
+I were responsible. What a way to start off at a new school! This
+was not the kind of attention I was looking for.
+
+The next day at school, people were acting even more strange
+than usual. I was getting ready for gym class at my locker. People
+were milling around me, asking me to hurry up. I thought it
+strange, but in the light of the past few weeks, nothing would
+surprise me. It almost seemed that they were trying to shove me
+into the gym — then I saw why. There was a big table set up with
+all kinds of stuff on it, just for me. They had taken up a collection
+and bought me school supplies, notebooks, all kinds of different
+clothes — jeans, tops, sweatsuits. It was like Christmas. I was
+overcome by emotion. People who had never spoken to me before
+were coming up to me to introduce themselves. I got all kinds of
+invitations to their houses. Their genuine outpouring of concern
+
+52 / Moments
+
+Reprint 2025-26
+
+
+
+really touched me. In that instant, I finally breathed a sigh of
+relief and thought for the first time that things were going to be
+okay. I made friends that day.
+
+A month later, I was at my house watching them rebuild it.
+But this time it was different — I wasn’t alone. I was with two of
+my new friends from school. It took a fire for me to stop focusing
+on my feelings of insecurity and open up to all the wonderful
+people around me. Now I was sitting there watching my house
+being rebuilt when I realised my life was doing the same thing.
+
+While we sat there on the curb, planning my new bedroom,
+I heard someone walk up to me from behind and say, “Does this
+belong to you?” When I turned around to see who it was, I couldn’t
+believe my eyes. A woman was standing there holding my cat! I
+leapt up and grabbed her out of the woman’s arms. I held her
+
+A House Is Not a Home/ 53
+
+Reprint 2025-26
+
+
+
+close to me and cried into that beautiful orange fur. She purred
+happily. My friends were hugging me, hugging the cat and
+jumping around.
+
+Apparently, my cat had been so freaked by the fire that she
+ran over a mile away. Her collar had our phone number on it, but
+our phones had been destroyed and disconnected. This wonderful
+woman took her in and worked hard to find out whose cat it was.
+Somehow, she knew this cat was loved and sorely missed.
+
+As I sat there with my friends and my cat curled up in my
+lap, all the overwhelming feelings of loss and tragedy seemed to
+diminish. I felt gratitude for my life, my new friends, the kindness
+of a stranger and the loud purr of my beloved cat. My cat was
+back and so was I.
+
+ZAN GAUDIOSO
+
+Glossary
+
+stoking the fire: feeding and tending the fire
+
+zombie: a dull and apathetic person
+
+surreal: strange; bizarre
+
+milling around: moving in an aimless manner
+
+shove: push hard
+
+THINK ABOUT IT
+
+1. What does the author notice one Sunday afternoon? What is
+his mother’s reaction? What does she do?
+
+2. Why does he break down in tears after the fire?
+
+3. Why is the author deeply embarrassed the next day in school?
+Which words show his fear and insecurity?
+
+4. The cat and the author are very fond of each other. How has
+this been shown in the story? Where was the cat after the
+fire? Who brings it back and how?
+
+5. What actions of the schoolmates change the author’s
+understanding of life and people, and comfort him
+
+54 / Moments
+
+Reprint 2025-26
+
+
+
+emotionally? How does his loneliness vanish and how does
+he start participating in life?
+
+6. What is the meaning of “My cat was back and so was I”?
+Had the author gone anywhere? Why does he say that he
+is also back?
+
+TALK ABOUT IT
+
+Have any of your classmates/schoolmates had an experience
+like the one described in the story where they needed help?
+Describe how they were helped.
+
+SUGGESTED READING
+
+l Her Story So Far: Tales of the Girl Child in India edited by
+Monica Das
+
+l Modern Hindi Stories edited by Indu Jain
+l Malgudi Days by R.K. Narayan
+
+A House Is Not a Home/ 55
+
+Reprint 2025-26
+
+
+##9##
+9. The Beggar
+
+What induced the beggar, Lushkoff, to change his
+ways?  Let’s read and find out.
+
+“KIND sir, have pity; turn your attention to a poor, hungry man!
+For three days I have had nothing to eat; I haven’t five copecks
+for a lodging, I swear it before God.  For eight years I was a
+village schoolteacher and then I lost my place through intrigues.
+I fell a victim to calumny.  It is a year now since I have had
+anything to do.”
+
+The advocate, Sergei, looked at the ragged, fawn-coloured
+overcoat of the suppliant, at his dull, drunken eyes, at the red
+spot on either cheek, and it seemed to him as if he had seen this
+man somewhere before.
+
+“I have now had an offer of a position in the province of Kaluga,”
+the mendicant went on, “but I haven’t the money to get there.
+Help me kindly; I am ashamed to ask, but — I am obliged to
+by circumstances.”
+
+Sergei’s eyes fell on the man’s overshoes, one of which was
+high and the other low, and he suddenly remembered something.
+
+“Look here, it seems to me I met you the day before yesterday
+in Sadovya Street,” he said; “but you told me then that you were
+a student who had been expelled, and not a village schoolteacher.
+Do you remember?”
+
+“N-no, that can’t be so,” mumbled the beggar, taken aback. “I
+am a village schoolteacher, and if you like I can show you
+my papers.”
+
+“Have done with lying! You called yourself a student and even
+told me what you had been expelled for. Don’t you remember?”
+
+Sergei flushed and turned from the ragged creature with an
+expression of disgust.
+
+Reprint 2025-26
+
+
+
+“This is dishonesty, my dear sir!” he cried angrily. “This is
+swindling — I shall send the police for you, damn you!”
+
+“Sir!” he said, laying his hand on his heart, “the fact is I was
+lying! I am neither a  student nor a schoolteacher.  All that was
+fiction.  Formerly I sang in a Russian choir and was sent away
+for drunkenness.  But what else can I do?  I can’t get along
+without lying.  No one will give me anything when I tell the truth,
+what can I do?”
+
+“What can you do?  You ask what you can do?” cried
+Sergei, coming close to him. “Work! That’s what you can do!
+You must work!”
+
+“Work — yes. I know that myself; but where can I find work?”
+“How would you like to chop wood for me?”
+“I wouldn’t refuse to do that, but in these days even skilled
+
+wood-cutters find themselves sitting without bread.”
+“Will you come and chop wood for me?”
+“Yes sir, I will.”
+“Very well; we’ll soon find out.”
+Sergei hastened along, rubbing his hands. He called his cook
+
+out of the kitchen.
+“Here, Olga,” he said, “take this gentleman into the wood-shed
+
+and let him chop wood.”
+The scarecrow of a beggar shrugged his shoulders, as if in
+
+perplexity, and went irresolutely after the cook.  It was obvious
+from his gait that he had not consented to go and chop wood
+because he was hungry and wanted work, but simply from pride
+and shame and because he had been trapped by his own words.
+It was obvious, too, that his strength had been undermined by
+vodka and that he was unhealthy and did not feel the slightest
+inclination for toil.
+
+Sergei hurried into the dining-room. From its windows one
+could see the wood-shed and everything that went on in the yard.
+Standing at the window, Sergei saw the cook and the beggar come
+out into the yard by the back door and make their way across the
+dirty snow to the shed. Olga glared wrathfully at her companion,
+shoved him aside with her elbow, unlocked the shed, and angrily
+banged the door.
+
+The Beggar/ 57
+
+Reprint 2025-26
+
+
+
+Next he saw the pseudo-teacher seat himself on a log and
+become lost in thought with his red cheeks resting on his fists.
+The woman flung down an axe at his feet, spat angrily, and,
+judging from the expression of her lips, began to scold him. The
+beggar irresolutely pulled a billet of wood towards him, set it up
+between his feet, and tapped it feebly with the axe. The billet
+wavered and fell down.  The beggar again pulled it to him, blew
+on his freezing hands, and tapped it with his axe cautiously, as if
+afraid of hitting his overshoe or of cutting off his finger; the stick
+of wood again fell to the ground.
+
+Sergei’s anger had vanished and he now began to feel a little
+sorry and ashamed of himself for having set a spoiled, drunken,
+perhaps sick man to work at menial labour in the cold.
+
+An hour later Olga came in and announced that the wood had
+all been chopped.
+
+“Good! Give him half a rouble,” said Sergei.  “If he wants to he
+can come back and cut wood on the first day of each month.  We
+can always find work for him.”
+
+On the first of the month the waif made his appearance and
+again earned half a rouble, although he could barely stand on his
+legs. From that day on he often appeared in the yard and every
+
+58 / Moments
+
+Reprint 2025-26
+
+
+
+time work was found for him. Now he would shovel snow, now put
+the wood-shed in order, now beat the dust out of rugs and
+mattresses. Every time he received from twenty to forty copecks,
+and once, even a pair of old trousers were sent out to him.
+
+When Sergei moved into another house he hired him to help
+in the packing and hauling of the furniture. This time the waif
+was sober, gloomy, and silent. He hardly touched the furniture,
+and walked behind the wagons hanging his head, not even making
+a pretence of appearing busy. He only shivered in the cold and
+became embarrassed when the carters jeered at him for his
+idleness, his feebleness, and his tattered, fancy overcoat. After
+the moving was over Sergei sent for him.
+
+“Well, I am happy that my words have taken effect,’” he said,
+handing him a rouble. “Here’s for your pains.  I see you are sober
+and have no objection to work.  What is your name?’”
+
+“Lushkoff.”
+“Well, Lushkoff, I can now offer you some other, cleaner
+
+employment.  Can you write?’”
+“I can.”
+“Then take this letter to a friend of mine tomorrow and you
+
+will be given some copying to do.  Work hard, don’t drink, and
+remember what I have said to you. Goodbye!”
+
+Pleased at having put a man on the right path, Sergei tapped
+Lushkoff kindly on the shoulder and even gave him his hand at
+parting.  Lushkoff took the letter, and from that day forth came
+no more to the yard for work.
+
+Two years went by. Then one evening, as Sergei was standing
+at the ticket window of a theatre paying for his seat, he noticed a
+little man beside him with a coat collar of curly fur and a worn
+sealskin cap. This little individual timidly asked the ticket seller
+for a seat in the gallery and paid for it in copper coins.
+
+“Lushkoff, is that you?” cried Sergei, recognising in the little
+man his former wood-chopper. “How are you? What are you doing?
+How is everything with you?”
+
+“All right. I am a notary now and am paid thirty-five roubles
+a month.”
+
+The Beggar/ 59
+
+Reprint 2025-26
+
+
+
+“Thank Heaven! That’s
+fine! I am delighted for
+your sake. I am very, very
+glad, Lushkoff.  You see,
+you are my godson, in a
+sense.  I gave you a push
+along the right path, you
+know. Do you remember
+what a roasting I gave you,
+eh? I nearly had you
+sinking into the ground at
+my feet that day.  Thank
+you, old man, for not
+forgetting my words.”
+
+“Thank you, too.” said
+Lushkof f. “If I hadn’t
+come to you then I might
+still have been calling
+myself a teacher or a
+student to this day. Yes, by flying to your protection I dragged
+myself out of a pit.”
+
+“I am very glad, indeed.”
+“Thank you for your kind words and deeds. I am very grateful
+
+to you and to your cook. God bless that good and noble woman!
+You spoke finely then, and I shall be indebted to you to my
+dying day; but, strictly speaking, it was your cook, Olga,
+who saved me.”
+
+“How is that?”
+“When I used to come to your house to chop wood she used to
+
+begin: ‘Oh, you sot, you! Oh, you miserable creature! There’s
+nothing for you but ruin.’ And then she would sit down opposite
+me and grow sad, look into my face and weep. ‘Oh, you unlucky
+man! There is no pleasure for you in this world and there will be
+none in the world to come.  You drunkard!  You will burn in hell.
+Oh, you unhappy one!’ And so she would carry on, you know, in
+that strain.  I can’t tell you how much misery she suffered, how
+many tears she shed for my sake.  But the chief thing was — she
+
+60 / Moments
+
+Reprint 2025-26
+
+
+
+used to chop the wood for me.  Do you know, sir, that I did not
+chop one single stick of wood for you?  She did it all. Why this
+saved me, why I changed, why I stopped drinking at the sight of
+her I cannot explain. I only know that, owing to her words and
+noble deeds, a change took place in my heart; she set me right
+and I shall never forget it.  However, it is time to go now; there
+goes the bell.” Lushkoff bowed and departed to the gallery.
+
+ANTON CHEKHOV
+
+Glossary
+
+copeck (also spelt kopeck): Russian coin equal to one hundredth
+of a rouble
+
+calumny: the making of false and defamatory statements about
+someone in order to damage his/her reputation
+
+suppliant (or supplicant): a person making a humble plea to
+someone in power or authority
+
+mendicant: beggar
+
+swindling: cheating a person of money
+
+perplexity: state of being puzzled; bewilderment
+
+irresolutely: hesitantly; undecidedly
+
+billet: here, a thick piece of wood
+
+waif: a homeless person
+
+shovel: remove snow with a shovel (a tool resembling a spade
+with a broad blade and typically upturned sides)
+
+roasting (an informal or humorous word): here, scolding
+
+sot: a habitual drunkard
+
+THINK ABOUT IT
+
+1. Has Lushkoff become a beggar by circumstance or by choice?
+
+2. What reasons does he give to Sergei for his telling lies?
+
+3. Is Lushkoff a willing worker? Why, then, does he agree to
+chop wood for Sergei?
+
+The Beggar/ 61
+
+Reprint 2025-26
+
+
+
+4. Sergei says, “I am happy that my words have taken effect.”
+Why does he say so? Is he right in saying this?
+
+5. Lushkoff is earning thirty five roubles a month. How is he
+obliged to Sergei for this?
+
+6. During their conversation Lushkoff reveals that Sergei’s cook,
+Olga, is responsible for the positive change in him. How has
+Olga saved Lushkoff?
+
+TALK  ABOUT  IT
+
+How can we help beggars/abolish begging?
+
+S U G G E S T E D  R E A D I N G
+
+l ‘The Man with the Twisted Lip’ by Arthur Conan Doyle
+l The Three Sisters by Anton Chekhov
+
+62 / Moments
+
+Reprint 2025-26
