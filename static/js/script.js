@@ -1,9 +1,12 @@
+// MCQ Generator JavaScript
+
 const boardSelect = document.getElementById('board');
 const classSelect = document.getElementById('class');
 const subjectSelect = document.getElementById('subject');
-const topicSelect = document.getElementById('topic');
-const subtopicsSelect = document.getElementById('subtopics');
 const form = document.getElementById('mcqForm');
+
+// Store current MCQ data for PDF download
+let currentMCQData = null;
 
 // Load classes when board is selected
 boardSelect.addEventListener('change', async function () {
@@ -12,9 +15,6 @@ boardSelect.addEventListener('change', async function () {
 
     classSelect.disabled = true;
     subjectSelect.disabled = true;
-    topicSelect.disabled = true;
-    subtopicsSelect.disabled = true;
-    subtopicsSelect.innerHTML = '<option value="">-- Select Topic First --</option>';
 
     classSelect.innerHTML = '<option value="">-- Loading... --</option>';
 
@@ -40,9 +40,6 @@ classSelect.addEventListener('change', async function () {
     if (!board || !classNum) return;
 
     subjectSelect.disabled = true;
-    topicSelect.disabled = true;
-    subtopicsSelect.disabled = true;
-    subtopicsSelect.innerHTML = '<option value="">-- Select Topic First --</option>';
 
     subjectSelect.innerHTML = '<option value="">-- Loading... --</option>';
 
@@ -61,61 +58,38 @@ classSelect.addEventListener('change', async function () {
     }
 });
 
-// Load topics when subject is selected
+// Load chapters when subject is selected
 subjectSelect.addEventListener('change', async function () {
     const board = boardSelect.value;
     const classNum = classSelect.value;
     const subject = this.value;
+    const topicContainer = document.getElementById('topicContainer');
+
     if (!board || !classNum || !subject) return;
 
-    topicSelect.disabled = true;
-    subtopicsSelect.disabled = true;
-    subtopicsSelect.innerHTML = '<option value="">-- Select Topic First --</option>';
-    topicSelect.innerHTML = '<option value="">-- Loading... --</option>';
+    topicContainer.innerHTML = '<p class="placeholder-text">Loading chapters...</p>';
+    topicContainer.classList.add('disabled');
 
     try {
         const response = await fetch(`/get_topics/${board}/${classNum}/${subject}`);
         const topics = await response.json();
 
-        topicSelect.innerHTML = '<option value="">-- Select Topic --</option>';
+        // Clear and populate with checkboxes
+        topicContainer.innerHTML = '';
+        topicContainer.classList.remove('disabled');
+
         Object.entries(topics).forEach(([num, name]) => {
-            topicSelect.innerHTML += `<option value="${num}">${num}. ${name}</option>`;
+            const checkboxHtml = `
+                <label class="topic-checkbox">
+                    <input type="checkbox" name="topic" value="${num}">
+                    <span>${num}. ${name}</span>
+                </label>
+            `;
+            topicContainer.innerHTML += checkboxHtml;
         });
-        topicSelect.disabled = false;
     } catch (error) {
         console.error('Error loading topics:', error);
-        topicSelect.innerHTML = '<option value="">-- Error loading topics --</option>';
-    }
-});
-
-// Load subtopics when topic is selected
-topicSelect.addEventListener('change', async function () {
-    const board = boardSelect.value;
-    const classNum = classSelect.value;
-    const subject = subjectSelect.value;
-    const topic = this.value;
-
-    if (!board || !classNum || !subject || !topic) return;
-
-    subtopicsSelect.disabled = true;
-    subtopicsSelect.innerHTML = '<option value="">-- Loading... --</option>';
-
-    try {
-        const response = await fetch(`/get_subtopics/${board}/${classNum}/${subject}/${topic}`);
-        const subtopics = await response.json();
-
-        subtopicsSelect.innerHTML = '';
-        if (subtopics.length === 0) {
-            subtopicsSelect.innerHTML = '<option value="">No subtopics available</option>';
-        } else {
-            subtopics.forEach(sub => {
-                subtopicsSelect.innerHTML += `<option value="${sub.id}">${sub.id === 'all' ? '' : sub.id + ' - '}${sub.name}</option>`;
-            });
-        }
-        subtopicsSelect.disabled = false;
-    } catch (error) {
-        console.error('Error loading subtopics:', error);
-        subtopicsSelect.innerHTML = '<option value="">-- Error loading subtopics --</option>';
+        topicContainer.innerHTML = '<p class="placeholder-text" style="color: #dc3545;">Error loading chapters</p>';
     }
 });
 
@@ -123,15 +97,22 @@ topicSelect.addEventListener('change', async function () {
 form.addEventListener('submit', async function (e) {
     e.preventDefault();
 
-    // Get selected subtopics
-    const selectedSubtopics = Array.from(subtopicsSelect.selectedOptions).map(option => option.value);
+    // Collect selected chapter numbers
+    const selectedTopics = Array.from(
+        document.querySelectorAll('input[name="topic"]:checked')
+    ).map(cb => cb.value);
+
+    // Validate at least one chapter is selected
+    if (selectedTopics.length === 0) {
+        alert('Please select at least one chapter');
+        return;
+    }
 
     const formData = {
         board: boardSelect.value,
         class: classSelect.value,
         subject: subjectSelect.value,
-        topic: topicSelect.value,
-        subtopics: selectedSubtopics,
+        topics: selectedTopics,  // Send as array
         num_questions: document.getElementById('num_questions').value,
         difficulty_level: document.getElementById('difficulty_level').value
     };
@@ -165,18 +146,21 @@ form.addEventListener('submit', async function (e) {
 });
 
 function displayResults(data) {
+    // Store data for PDF download
+    currentMCQData = data;
+
     const topicInfo = document.getElementById('topicInfo');
     const mcqsContainer = document.getElementById('mcqsContainer');
 
     // Display topic info
     topicInfo.innerHTML = `
-                <h3>Topic Information</h3>
-                <p><strong>Board:</strong> ${data.topic_info.board}</p>
-                <p><strong>Class:</strong> ${data.topic_info.class}</p>
-                <p><strong>Subject:</strong> ${data.topic_info.subject}</p>
-                <p><strong>Topic:</strong> ${data.topic_info.topic_name}</p>
-                <p><strong>Book:</strong> ${data.topic_info.book_name}</p>
-            `;
+        <h3>Topic Information</h3>
+        <p><strong>Board:</strong> ${data.topic_info.board}</p>
+        <p><strong>Class:</strong> ${data.topic_info.class}</p>
+        <p><strong>Subject:</strong> ${data.topic_info.subject}</p>
+        <p><strong>Topic:</strong> ${data.topic_info.topic_name}</p>
+        <p><strong>Book:</strong> ${data.topic_info.book_name}</p>
+    `;
 
     // Display MCQs
     mcqsContainer.innerHTML = '';
@@ -188,20 +172,20 @@ function displayResults(data) {
         Object.entries(mcq.options).forEach(([key, value]) => {
             const isCorrect = key === mcq.correct_answer;
             optionsHtml += `
-                        <div class="mcq-option ${isCorrect ? 'correct' : ''}">
-                            <strong>${key}.</strong> ${value}
-                        </div>
-                    `;
+                <div class="mcq-option ${isCorrect ? 'correct' : ''}">
+                    <strong>${key}.</strong> ${value}
+                </div>
+            `;
         });
 
         mcqCard.innerHTML = `
-                    <div class="mcq-question">Q${index + 1}. ${mcq.question}</div>
-                    ${optionsHtml}
-                    <div class="mcq-answer">
-                        <strong>✓ Correct Answer:</strong> ${mcq.correct_answer}<br>
-                        <strong>💡 Explanation:</strong> ${mcq.explanation}
-                    </div>
-                `;
+            <div class="mcq-question">Q${index + 1}. ${mcq.question}</div>
+            ${optionsHtml}
+            <div class="mcq-answer">
+                <strong>✓ Correct Answer:</strong> ${mcq.correct_answer}<br>
+                <strong>💡 Explanation:</strong> ${mcq.explanation}
+            </div>
+        `;
 
         mcqsContainer.appendChild(mcqCard);
     });
@@ -217,7 +201,43 @@ function resetForm() {
     form.reset();
     classSelect.disabled = true;
     subjectSelect.disabled = true;
-    topicSelect.disabled = true;
-    subtopicsSelect.disabled = true;
-    subtopicsSelect.innerHTML = '<option value="">-- Select Topic First --</option>';
+    document.getElementById('topicContainer').innerHTML = '<p class="placeholder-text">-- Select a subject first --</p>';
+    currentMCQData = null;
+}
+
+function downloadPDF() {
+    if (!currentMCQData) {
+        alert('No MCQ data available');
+        return;
+    }
+
+    // Send data to backend for PDF generation
+    fetch('/download_pdf', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(currentMCQData)
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to generate PDF');
+            }
+            return response.blob();
+        })
+        .then(blob => {
+            // Create download link
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `MCQ_${currentMCQData.topic_info.subject}_${Date.now()}.pdf`;
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+        })
+        .catch(error => {
+            console.error('Error downloading PDF:', error);
+            alert('Error downloading PDF: ' + error.message);
+        });
 }

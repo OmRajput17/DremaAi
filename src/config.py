@@ -36,7 +36,7 @@ class Config:
         self.embeddings = None
         logger.info("Configuration initialized successfully")
         
-    def initialize_llm(self, model="llama-3.3-70b-versatile", temperature=0):
+    def initialize_llm(self, model="qwen/qwen3-32b", temperature=0):
         """
         Initialize the language model.
         

@@ -42,19 +42,10 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="topic">Select Topic</label>
-                    <select id="topic" name="topic" required disabled>
-                        <option value="">-- Select Topic --</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="subtopics">Select Subtopics (Optional)</label>
-                    <select id="subtopics" name="subtopics" multiple disabled style="height: 120px;">
-                        <option value="">-- Select Topic First --</option>
-                    </select>
-                    <small style="color: #666; display: block; margin-top: 5px;">Hold Ctrl/Cmd to select multiple. Leave
-                        empty for full chapter.</small>
+                    <label for="topicContainer">Select Chapters (you can select multiple)</label>
+                    <div id="topicContainer" class="topic-checkbox-container">
+                        <p class="placeholder-text">-- Select a subject first --</p>
+                    </div>
                 </div>
 
                 <div class="form-group">
@@ -85,7 +76,10 @@
         <div class="results" id="results">
             <div class="topic-info" id="topicInfo"></div>
             <div id="mcqsContainer"></div>
-            <button class="btn-primary back-button" onclick="resetForm()">Generate More MCQs</button>
+            <div class="button-group">
+                <button class="btn-primary" onclick="downloadPDF()">Download PDF</button>
+                <button class="btn-primary back-button" onclick="resetForm()">Generate More MCQs</button>
+            </div>
         </div>
     </div>
 

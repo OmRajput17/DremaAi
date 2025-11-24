@@ -32,8 +32,8 @@ class Routes:
         self.app.add_url_rule('/get_classes/<board>', 'get_classes', self.get_classes)
         self.app.add_url_rule('/get_subjects/<board>/<class_num>', 'get_subjects', self.get_subjects)
         self.app.add_url_rule('/get_topics/<board>/<class_num>/<subject>', 'get_topics', self.get_topics)
-        self.app.add_url_rule('/get_subtopics/<board>/<class_num>/<subject>/<topic>', 'get_subtopics', self.get_subtopics)
         self.app.add_url_rule('/generate', 'generate', self.generate, methods=['POST'])
+        self.app.add_url_rule('/download_pdf', 'download_pdf', self.download_pdf, methods=['POST'])
     
     def index(self):
         """Render the main form page."""
@@ -62,13 +62,6 @@ class Routes:
         topics = self.fetcher.get_topics(board, class_num, subject)
         logger.debug(f"Found {len(topics)} topics for {board} class {class_num} {subject}")
         return jsonify(topics)
-
-    def get_subtopics(self, board, class_num, subject, topic):
-        """Get subtopics for a selected topic."""
-        logger.info(f"GET /get_subtopics/{board}/{class_num}/{subject}/{topic}")
-        subtopics = self.fetcher.get_subtopics(board, class_num, subject, topic)
-        logger.debug(f"Found {len(subtopics)} subtopics for {topic}")
-        return jsonify(subtopics)
     
     def generate(self):
         """Generate MCQs based on form input."""
@@ -80,24 +73,59 @@ class Routes:
             board = data.get('board')
             class_num = data.get('class')
             subject = data.get('subject')
-            topic = data.get('topic')
-            subtopics = data.get('subtopics', []) # List of subtopic IDs
+            
+            # Handle both single chapter and multiple chapters
+            topics = data.get('topics', [])  # Expect list of chapter numbers
+            if not isinstance(topics, list):
+                # Backward compatibility: single topic/chapter
+                single_topic = data.get('topic')
+                topics = [single_topic] if single_topic else []
+            
+            # Validate at least one chapter is selected
+            if not topics or len(topics) == 0:
+                logger.warning("No chapters selected")
+                return jsonify({'error': 'Please select at least one chapter'}), 400
+            
             num_questions = int(data.get('num_questions', 5))
             difficulty_level = data.get('difficulty_level', 'medium')
             
-            # Fetch content
-            result = self.fetcher.fetch_content(board, class_num, subject, topic, subtopics)
+            logger.info(f"Generating MCQs for {len(topics)} chapter(s): {topics}")
             
-            if result['status'] != 'success':
-                logger.warning(f"Content fetch failed: {result['message']}")
-                return jsonify({'error': result['message']}), 400
+            # Fetch content for all selected chapters
+            all_content = []
+            topic_names = []
+            book_name = None
+            
+            for topic_num in topics:
+                logger.debug(f"Fetching content for chapter {topic_num}")
+                result = self.fetcher.fetch_content(board, class_num, subject, topic_num)
+                
+                if result['status'] == 'success':
+                    all_content.append(result['content'])
+                    topic_names.append(result['topic_name'])
+                    if not book_name:
+                        book_name = result['book_name']
+                    logger.info(f"Successfully fetched chapter {topic_num}: {result['topic_name']}")
+                else:
+                    logger.warning(f"Failed to fetch chapter {topic_num}: {result['message']}")
+            
+            # Check if any content was fetched
+            if not all_content:
+                logger.error(f"No content found for any of the selected chapters: {topics}")
+                return jsonify({'error': f'Could not find content for the selected chapter(s)'}), 400
+            
+            # Merge content from all chapters
+            merged_content = '\n\n=== CHAPTER SEPARATOR ===\n\n'.join(all_content)
+            merged_topic_names = ', '.join(topic_names)
+            
+            logger.info(f"Merged content from {len(all_content)} chapter(s), total length: {len(merged_content)} characters")
             
             # Generate MCQs
             mcqs = self.mcq_generator.generate_mcqs(
                 num_questions, 
                 difficulty_level, 
-                result['topic_name'], 
-                result['content']
+                merged_topic_names,  # Combined chapter names
+                merged_content
             )
             
             if not mcqs:
@@ -111,12 +139,136 @@ class Routes:
                     'board': board,
                     'class': class_num,
                     'subject': subject,
-                    'topic_name': result['topic_name'],
-                    'book_name': result['book_name']
+                    'topic_name': merged_topic_names,
+                    'book_name': book_name,
+                    'chapters_selected': len(topic_names)
                 },
                 'mcqs': mcqs
             })
         
         except Exception as e:
             logger.error(f"Error in generate endpoint: {str(e)}", exc_info=True)
+            return jsonify({'error': str(e)}), 500
+    
+    def download_pdf(self):
+        """Generate and download PDF of MCQs."""
+        logger.info("POST /download_pdf - PDF download request received")
+        try:
+            from flask import send_file, make_response
+            from reportlab.lib.pagesizes import letter, A4
+            from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+            from reportlab.lib.units import inch
+            from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak
+            from reportlab.lib.enums import TA_LEFT, TA_CENTER
+            import io
+            
+            data = request.json
+            logger.debug(f"Received MCQ data for PDF: {len(data.get('mcqs', []))} questions")
+            
+            # Create PDF in memory
+            buffer = io.BytesIO()
+            doc = SimpleDocTemplate(buffer, pagesize=A4,
+                                  rightMargin=72, leftMargin=72,
+                                  topMargin=72, bottomMargin=18)
+            
+            # Container for PDF elements
+            story = []
+            styles = getSampleStyleSheet()
+            
+            # Custom styles
+            title_style = ParagraphStyle(
+                'CustomTitle',
+                parent=styles['Heading1'],
+                fontSize=24,
+                textColor='#667eea',
+                spaceAfter=30,
+                alignment=TA_CENTER
+            )
+            
+            heading_style = ParagraphStyle(
+                'CustomHeading',
+                parent=styles['Heading2'],
+                fontSize=14,
+                textColor='#764ba2',
+                spaceAfter=12
+            )
+            
+            question_style = ParagraphStyle(
+                'Question',
+                parent=styles['Normal'],
+                fontSize=12,
+                fontName='Helvetica-Bold',
+                spaceAfter=10
+            )
+            
+            option_style = ParagraphStyle(
+                'Option',
+                parent=styles['Normal'],
+                fontSize=11,
+                leftIndent=20,
+                spaceAfter=6
+            )
+            
+            answer_style = ParagraphStyle(
+                'Answer',
+                parent=styles['Normal'],
+                fontSize=10,
+                textColor='#007bff',
+                leftIndent=20,
+                spaceAfter=6
+            )
+            
+            # Title
+            story.append(Paragraph("📚 MCQ Generator", title_style))
+            story.append(Spacer(1, 12))
+            
+            # Topic Information
+            topic_info = data.get('topic_info', {})
+            story.append(Paragraph(f"<b>Board:</b> {topic_info.get('board', 'N/A')}", styles['Normal']))
+            story.append(Paragraph(f"<b>Class:</b> {topic_info.get('class', 'N/A')}", styles['Normal']))
+            story.append(Paragraph(f"<b>Subject:</b> {topic_info.get('subject', 'N/A')}", styles['Normal']))
+            story.append(Paragraph(f"<b>Topic:</b> {topic_info.get('topic_name', 'N/A')}", styles['Normal']))
+            story.append(Paragraph(f"<b>Book:</b> {topic_info.get('book_name', 'N/A')}", styles['Normal']))
+            story.append(Spacer(1, 20))
+            
+            # MCQs
+            mcqs = data.get('mcqs', [])
+            for index, mcq in enumerate(mcqs, 1):
+                # Question
+                question_text = f"Q{index}. {mcq.get('question', '')}"
+                story.append(Paragraph(question_text, question_style))
+                
+                # Options
+                options = mcq.get('options', {})
+                correct_answer = mcq.get('correct_answer', '')
+                for key, value in options.items():
+                    if key == correct_answer:
+                        option_text = f"<b>{key}. {value} ✓</b>"
+                    else:
+                        option_text = f"{key}. {value}"
+                    story.append(Paragraph(option_text, option_style))
+                
+                # Answer and Explanation
+                story.append(Spacer(1, 6))
+                story.append(Paragraph(f"<b>Correct Answer:</b> {correct_answer}", answer_style))
+                explanation = mcq.get('explanation', 'No explanation provided.')
+                story.append(Paragraph(f"<b>Explanation:</b> {explanation}", answer_style))
+                story.append(Spacer(1, 20))
+            
+            # Build PDF
+            doc.build(story)
+            buffer.seek(0)
+            
+            logger.info(f"PDF generated successfully with {len(mcqs)} questions")
+            
+            # Send PDF
+            return send_file(
+                buffer,
+                mimetype='application/pdf',
+                as_attachment=True,
+                download_name=f"MCQs_{topic_info.get('subject', 'Unknown')}_{topic_info.get('class', '')}".replace(' ', '_') + '.pdf'
+            )
+            
+        except Exception as e:
+            logger.error(f"Error generating PDF: {str(e)}", exc_info=True)
             return jsonify({'error': str(e)}), 500
