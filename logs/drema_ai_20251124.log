@@ -2027,3 +2027,2615 @@ Built-in Functions
 2025-11-24 16:15:11 - src.components.mcq_generator - DEBUG - [mcq_generator.py:118] - LLM response received
 2025-11-24 16:15:11 - src.components.mcq_generator - INFO - [mcq_generator.py:148] - Successfully generated 15 MCQs
 2025-11-24 16:15:11 - src.routes - INFO - [routes.py:107] - Successfully generated 15 MCQs
+2025-11-24 16:20:00 - src.routes - INFO - [routes.py:47] - GET /get_classes/UP Board
+2025-11-24 16:20:00 - src.routes - DEBUG - [routes.py:49] - Found 6 classes for board: UP Board
+2025-11-24 16:20:02 - src.routes - INFO - [routes.py:54] - GET /get_subjects/UP Board/5
+2025-11-24 16:20:02 - src.routes - DEBUG - [routes.py:56] - Found 9 subjects for UP Board class 5
+2025-11-24 16:20:06 - src.routes - INFO - [routes.py:61] - GET /get_topics/UP Board/5/Maths
+2025-11-24 16:20:06 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for UP Board/5/Maths: 13 topics found
+2025-11-24 16:20:06 - src.routes - DEBUG - [routes.py:63] - Found 13 topics for UP Board class 5 Maths
+2025-11-24 16:20:08 - src.routes - INFO - [routes.py:68] - GET /get_subtopics/UP Board/5/Maths/4
+2025-11-24 16:20:08 - src.components.content_fetcher - INFO - [content_fetcher.py:183] - Fetching content for: Board=UP Board, Class=5, Subject=Maths, Topic=4, Subtopics=None
+2025-11-24 16:20:08 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for UP Board/5/Maths: 13 topics found
+2025-11-24 16:20:08 - src.components.content_fetcher - DEBUG - [content_fetcher.py:202] - Topic name found: Fractions
+2025-11-24 16:20:08 - src.components.content_fetcher - INFO - [content_fetcher.py:214] - Searching in 1 book(s)...
+2025-11-24 16:20:08 - src.components.content_fetcher - DEBUG - [content_fetcher.py:224] - Checking book: Mathematics (ID: C5MAT01MAT0IB)
+2025-11-24 16:20:08 - src.components.content_fetcher - DEBUG - [content_fetcher.py:227] - Book file not found: data\C5MAT01MAT0IB.txt
+2025-11-24 16:20:08 - src.components.content_fetcher - WARNING - [content_fetcher.py:278] - Topic 4 not found in any available books. Checked: C5MAT01MAT0IB
+2025-11-24 16:20:08 - src.routes - DEBUG - [routes.py:70] - Found 0 subtopics for 4
+2025-11-24 16:20:11 - src.routes - INFO - [routes.py:68] - GET /get_subtopics/UP Board/5/Maths/6
+2025-11-24 16:20:11 - src.components.content_fetcher - INFO - [content_fetcher.py:183] - Fetching content for: Board=UP Board, Class=5, Subject=Maths, Topic=6, Subtopics=None
+2025-11-24 16:20:11 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for UP Board/5/Maths: 13 topics found
+2025-11-24 16:20:11 - src.components.content_fetcher - DEBUG - [content_fetcher.py:202] - Topic name found: Geometry
+2025-11-24 16:20:11 - src.components.content_fetcher - INFO - [content_fetcher.py:214] - Searching in 1 book(s)...
+2025-11-24 16:20:11 - src.components.content_fetcher - DEBUG - [content_fetcher.py:224] - Checking book: Mathematics (ID: C5MAT01MAT0IB)
+2025-11-24 16:20:11 - src.components.content_fetcher - DEBUG - [content_fetcher.py:227] - Book file not found: data\C5MAT01MAT0IB.txt
+2025-11-24 16:20:11 - src.components.content_fetcher - WARNING - [content_fetcher.py:278] - Topic 6 not found in any available books. Checked: C5MAT01MAT0IB
+2025-11-24 16:20:11 - src.routes - DEBUG - [routes.py:70] - Found 0 subtopics for 6
+2025-11-24 16:20:13 - src.routes - INFO - [routes.py:68] - GET /get_subtopics/UP Board/5/Maths/8
+2025-11-24 16:20:13 - src.components.content_fetcher - INFO - [content_fetcher.py:183] - Fetching content for: Board=UP Board, Class=5, Subject=Maths, Topic=8, Subtopics=None
+2025-11-24 16:20:13 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for UP Board/5/Maths: 13 topics found
+2025-11-24 16:20:13 - src.components.content_fetcher - DEBUG - [content_fetcher.py:202] - Topic name found: Money
+2025-11-24 16:20:13 - src.components.content_fetcher - INFO - [content_fetcher.py:214] - Searching in 1 book(s)...
+2025-11-24 16:20:13 - src.components.content_fetcher - DEBUG - [content_fetcher.py:224] - Checking book: Mathematics (ID: C5MAT01MAT0IB)
+2025-11-24 16:20:13 - src.components.content_fetcher - DEBUG - [content_fetcher.py:227] - Book file not found: data\C5MAT01MAT0IB.txt
+2025-11-24 16:20:13 - src.components.content_fetcher - WARNING - [content_fetcher.py:278] - Topic 8 not found in any available books. Checked: C5MAT01MAT0IB
+2025-11-24 16:20:13 - src.routes - DEBUG - [routes.py:70] - Found 0 subtopics for 8
+2025-11-24 16:20:33 - src.routes - INFO - [routes.py:75] - POST /generate - MCQ generation request received
+2025-11-24 16:20:33 - src.routes - DEBUG - [routes.py:78] - Request data: {'board': 'UP Board', 'class': '5', 'subject': 'Maths', 'topic': '8', 'subtopics': [], 'num_questions': '5', 'difficulty_level': 'medium'}
+2025-11-24 16:20:33 - src.components.content_fetcher - INFO - [content_fetcher.py:183] - Fetching content for: Board=UP Board, Class=5, Subject=Maths, Topic=8, Subtopics=[]
+2025-11-24 16:20:33 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for UP Board/5/Maths: 13 topics found
+2025-11-24 16:20:33 - src.components.content_fetcher - DEBUG - [content_fetcher.py:202] - Topic name found: Money
+2025-11-24 16:20:33 - src.components.content_fetcher - INFO - [content_fetcher.py:214] - Searching in 1 book(s)...
+2025-11-24 16:20:33 - src.components.content_fetcher - DEBUG - [content_fetcher.py:224] - Checking book: Mathematics (ID: C5MAT01MAT0IB)
+2025-11-24 16:20:33 - src.components.content_fetcher - DEBUG - [content_fetcher.py:227] - Book file not found: data\C5MAT01MAT0IB.txt
+2025-11-24 16:20:33 - src.components.content_fetcher - WARNING - [content_fetcher.py:278] - Topic 8 not found in any available books. Checked: C5MAT01MAT0IB
+2025-11-24 16:20:33 - src.routes - WARNING - [routes.py:92] - Content fetch failed: Topic 8 not found in any available books. Checked: C5MAT01MAT0IB
+2025-11-24 16:20:39 - src.routes - INFO - [routes.py:47] - GET /get_classes/CBSE
+2025-11-24 16:20:39 - src.routes - DEBUG - [routes.py:49] - Found 12 classes for board: CBSE
+2025-11-24 16:20:42 - src.routes - INFO - [routes.py:54] - GET /get_subjects/CBSE/10
+2025-11-24 16:20:42 - src.routes - DEBUG - [routes.py:56] - Found 8 subjects for CBSE class 10
+2025-11-24 16:20:44 - src.routes - INFO - [routes.py:61] - GET /get_topics/CBSE/10/Social Science
+2025-11-24 16:20:44 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CBSE/10/Social Science: 1 topics found
+2025-11-24 16:20:44 - src.routes - DEBUG - [routes.py:63] - Found 1 topics for CBSE class 10 Social Science
+2025-11-24 16:20:46 - src.routes - INFO - [routes.py:68] - GET /get_subtopics/CBSE/10/Social Science/1
+2025-11-24 16:20:46 - src.components.content_fetcher - INFO - [content_fetcher.py:183] - Fetching content for: Board=CBSE, Class=10, Subject=Social Science, Topic=1, Subtopics=None
+2025-11-24 16:20:46 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CBSE/10/Social Science: 1 topics found
+2025-11-24 16:20:46 - src.components.content_fetcher - DEBUG - [content_fetcher.py:202] - Topic name found: Sample Paper
+2025-11-24 16:20:46 - src.components.content_fetcher - INFO - [content_fetcher.py:214] - Searching in 1 book(s)...
+2025-11-24 16:20:46 - src.components.content_fetcher - DEBUG - [content_fetcher.py:224] - Checking book: Sample Papers (ID: C10SSO0SAMPLE0NCERT)
+2025-11-24 16:20:46 - src.components.content_fetcher - INFO - [content_fetcher.py:267] - Topic found in book: Sample Papers
+2025-11-24 16:20:46 - src.components.content_fetcher - INFO - [content_fetcher.py:268] - Retrieved Content:
+SOCIAL SCIENCE-Code- 087
+SAMPLE QUESTION PAPER
+CLASS: X (2025-26)
+Time Allowed: 3 Hours
+
+Maximum Marks: 80
+
+General Instructions:
+1. There are 38 questions in the Question paper. All questions are compulsory.
+2. The question paper has Four Sections – A-History, B-Geography C- Political Science, and DEconomics.
+3. Each Section is of 20 Marks and has MCQs, VSA, SA, LAs and CBQ.
+4. Very Short Answer Type Questions (VSA), carry 2 marks each. Answers to each question should
+not exceed 40 words.
+5. Short Answer Type Questions (SA), carry 3 marks each. Answers to each question should not
+exceed 60 words.
+6. Long answer type questions (LA), carry 5 marks each. Answers to each question should not
+exceed 120 words.
+7. There are case based questions (CBQ) with three sub questions and are of 4 marks each.
+Answers to each question should not exceed 100 words.
+8. The map-based questions, carry 5 marks with two parts- Q9. In Section A-History (2 marks) and
+Q19. In Section B -Geography (3 marks)
+9. There is no overall choice in the question paper. However, an internal choice has been provided
+in few questions. Only one of the choices in such questions must be attempted.
+10. In addition to this, NOTE that a separate question has been provided for Visually Impaired
+candidates in lieu of questions having visual inputs, map etc. Such questions are to be attempted
+by Visually Impaired candidates only.
+Sr.No
+1.
+
+SECTION A
+HISTORY (20 marks)
+Match the following and Choose the correct option:
+
+A
+B
+C
+D
+
+COLUMN I
+Frederic Sorrieu
+Statue of Liberty
+Foreground in front of the Statue
+of Liberty
+Sorrieu’s utopian vision.
+
+1
+2
+3
+4
+
+Marks
+1
+
+COLUMN II
+Torch of enlightenments
+Shattered remains of absolutist
+Institutions
+Democratic and Social
+Republics
+French Artist
+
+1.A-4, B-1, C-2, D-3
+2.A-2, B-4, C-4, D-1
+3.A-1, B-2, C-4, D-3
+4.A-4, B-1, C-3, D-4
+1
+Please note that the assessment scheme of the Academic Session 2024-25 will continue in the current session i.e. 2025-26
+
+2.
+
+Identify and name the leader shown in the picture given below: -
+
+1
+
+Source-India and the Contemporary World-II, NCERT
+
+A. Lala Lajpat Rai
+B. Bal Gangadhar Tilak
+C. Gopal Krishan Gokhale
+D. Raja Rammohan Roy
+Note: The following question is for Visually Impaired Candidates only in lieu of
+Q. No. 2
+Which one option from the following is the appropriate reason for the formation of the
+Swaraj party?
+A. To ask for Poorna Swaraj for Indians.
+B. To return to Council Politics.
+C. To ask Dominion State for India.
+D. To oppose Simon Commission.
+3.
+
+Thousands of people fled Europe for America in the 19th century due to -
+
+1
+
+A. Widespread poverty and deadly diseases
+B. Frequent famines and poor living conditions
+C. Continuous wars and political instability
+D. Harsh climate and repeated natural disasters
+4.
+
+Louise-Sebastien Mercier proclaimed “Tremble, therefore, tyrants of the world!
+Tremble before the virtual writer!” Who are referred to as the tyrants in this context?
+
+1
+
+A. Educated classes who wanted to change the society
+B. Absolutist institutions like monarchy and church
+C. Authors of the new books
+D. Printing press
+
+2
+Please note that the assessment scheme of the Academic Session 2024-25 will continue in the current session i.e. 2025-26
+
+5A.
+
+“The Silk route was a good example of vibrant pre-modern trade and cultural links
+between distant parts of the world.” Explain the statement with any two examples.
+
+2
+
+OR
+5B.
+
+‘Sometimes the new crops could make the difference between life and death.’.
+Explain the statement with any two examples.
+
+6 A.
+
+‘A variety of cultural processes played an important role in developing a sense of
+nationalism in India’. Support the statement with suitable examples.
+
+3
+
+OR
+6 B.
+
+Salt March 'became an effective tool of resistance against colonialism.’ Analyse the
+statement with suitable reasons.
+
+7A.
+
+‘In Britain the formation of the nation-state was not the result of a sudden upheaval
+or revolution but was the result of a long-drawn-out process.’ Analyse this statement
+with suitable reasons.
+
+5
+
+OR
+7B.
+
+‘The Treaty of Vienna was drawn up in 1815 with the object of undoing most of the
+changes that had come about in Europe during the Napoleonic wars.’ Highlight the
+significant provisions of this treaty.
+
+8.
+
+Read the given text and answer the following questions:(4)
+Why Newspapers?
+Krishnaji Trimbuck Ranade inhabitant of Poona intends to publish a Newspaper in
+the Marathi Language with a view of affording useful information on every topic of
+local interest. It will be open for free discussion on subjects of general utility, scientific
+investigation and the speculations connected with the antiquities, statistics,
+curiosities, history and geography of the country and of the Deccan especially... the
+patronage and support of all interested in the diffusion of knowledge and Welfare of
+the People is earnestly solicited.
+Bombay Telegraph and Courier, 6 January 1849
+
+"The task of the native newspapers and political associations is identical to the role
+of the Opposition in the House of Commons in Parliament in England. That is to
+critically examine government policy to suggest improvements, by removing those
+parts that will not be to the benefit of the people, and also by ensuring speedy
+implementation.
+These associations ought to carefully study the particular issues, gather diverse
+relevant information on the nation as well as on what are the possible and desirable
+improvements, and this will surely earn it considerable influence”.
+Source: Native Opinion, 3 April 1870
+.
+
+8.1. Explain the main reason for publishing newspapers by Krishna ji.
+
+1
+
+3
+Please note that the assessment scheme of the Academic Session 2024-25 will continue in the current session i.e. 2025-26
+
+8.2. How was the task of native newspaper and political association seen identical
+to the role of the opposition?
+8.3. Analyze the reasons for the popularity of newspapers during the 19th century.
+
+1
+2
+
+MAP SKILL-BASED QUESTION (2 marks)
+9.
+
+Two places A and B have been marked on the given outline map of India. Identify
+them and write their correct names on the lines marked on the map.
+A)
+B)
+
+(1+1=
+2)
+
+The place where the Civil Disobedience Movement was launched.
+The city where Indian National Congress session was held in September
+1920.
+
+Note: The following question is for Visually Impaired Candidates only in lieu of
+Question 9.
+A) The place where the Civil Disobedience Movement was launched.
+B) The place where Indian National Congress session was held in September 1920
+SECTION B
+GEOGRAPHY (20 marks)
+10.
+
+What is essential for resource development to contribute to overall development?
+
+1
+
+A. The availability of resources alone is enough.
+B. The presence of foreign invaders and their governance.
+C. Technological development and institutional changes.
+D. Only human resources can contribute to development.
+11.
+
+Identify the appropriate option to fill in the empty boxes:
+
+1
+
+Classification of Soils
+
+Alluvial
+
+?
+
+Ideal for the growth of sugarcane, paddy, Ideal for
+wheat and other cereal and pulse crops. growing cotton
+
+?
+suitable for crops
+like cashew nut.
+
+A. Black soil, Red and Yellow soils
+B. Laterite soil, Black soil.
+C. Red & Yellow soils & Black soil.
+D. Black soil & Laterite soil.
+
+4
+Please note that the assessment scheme of the Academic Session 2024-25 will continue in the current session i.e. 2025-26
+
+12.
+
+A total of 628 tigers died in India during the past five years due to natural causes and
+other reasons, including poaching, according to government data. Meanwhile, 349
+people were killed in tiger attacks during this period, with one state alone recording
+200 deaths.
+[source: https://www.ptinews.com/story/national/628-tigers-died-in-india-in-past-five-years-govt-data/1685133t/]
+
+1
+
+Which of the following is the most significant indirect consequence of poaching on
+the tiger population?
+A. Reduction in the prey species, dwindling tiger's food supply.
+B. Increase in human-wildlife conflicts in protected areas
+C. Rise in the tiger population.
+D. Decrease in tourism revenue in national parks
+13.
+
+Based on the classification of forests, which of the following statements would most
+likely apply to places like Jammu and Kashmir, Andhra Pradesh, and Kerala etc.?
+
+1
+
+A. These places mostly have forests managed as reserved or protected forests for
+conservation.
+B. They rely on unclassed forests and local community management for forest
+conservation.
+C. They have forest resources and primarily focus on industrial development.
+D. There are no classified forests and forest management is entirely left to private
+ownership.
+14.
+
+Which one of the following states has made roof top water harvesting compulsory in
+India?
+
+1
+
+A. Haryana
+B. Punjab
+C. Assam
+D. Tamil Nadu.
+15.
+
+Which of the following statements best evaluates the overall goal of the Pradhan
+Mantri Krishi Sinchaee Yojana?
+
+1
+
+A. Addressing the negative ecological effects of large dams by reducing water usage.
+B. To provide better irrigation systems and sustainable water conservation practices
+for farmers.
+C. Shifting farmers from traditional crops to more commercial, water-intensive crops.
+D. Preserve the natural river flow and prevent the fragmentation of aquatic
+ecosystems.
+16.
+
+Rice is grown as a commercial crop in Haryana and Punjab, but as a subsistence
+crop in Odisha. Using your understanding of geographical factors and economic
+practices, explain why rice cultivation differs in these regions.
+
+2
+
+17A.
+
+Person P is willing to establish a mineral based industry. He has been advised to set
+up a bauxite industry in Odisha as a suitable way to make a profitable venture.
+Analyse the possible reasons behind the advice given to her.
+
+5
+
+5
+Please note that the assessment scheme of the Academic Session 2024-25 will continue in the current session i.e. 2025-26
+
+OR
+17B.
+
+‘Coal is the most important and abundant fossil fuel in India.’ Justify the statement
+by evaluating the significant role it plays in the growth of the Indian economy in its
+different forms.
+
+18.
+
+Read the given text and answer the following questions:(1+2+1=4)
+
+4
+
+Global pollution is rising due to rapid economic growth, population increases, and
+insufficient environmental management. This poses serious health risks for people
+and ecosystems, particularly in low- and middle-income countries. Contributing to
+these challenges, the global economy relies on deeply intertwined supply chains,
+sustained by more than 100 billion tons of raw materials entering the system each
+year. Intensive material consumption depletes natural resources and causes
+negative environmental impacts at every stage of the product lifecycle. Global waste
+is expected to increase to 3.4 billion tons by 2050.
+Pollution of all types hinders development outcomes. Exposure to air pollution, water
+pollution, and hazardous chemicals and wastes like mercury, lead and persistent
+organic pollutants (POPs) causes debilitating and fatal illnesses, creates harmful
+living conditions, and destroys ecosystems. Pollution undermines sustainable
+economic growth, exacerbates poverty and inequality in both urban and rural areas,
+and significantly contributes to climate change. Poor people, who cannot afford to
+protect themselves from the negative impacts of pollution, end up suffering the most.
+Pollution is the largest environmental cause of disease and premature death. It is
+estimated to be several times more deaths than from AIDS, tuberculosis, and malaria
+combined. Global health crises, such as the COVID-19 pandemic, are reminders of
+the strong linkages between environment and health and of the need to address such
+linkages systematically.
+[Source: https://www.worldbank.org/en/topic/pollution]
+18.1 Why do you think is global waste expected to increase by 2050?
+18.2 How do manufacturing industries cause pollution of different types? Explain with
+examples.
+18.3 Is it correct to consider pollution as a possible cause for worsening of the current
+global trends of poverty and inequality? Justify.
+
+MAP SKILL-BASED QUESTION (3 marks)
+19.
+
+On the same outline map of India locate and label the following with suitable symbols:
+I.(p)
+
+The dam in the Sutlej-Beas river basin, which is being used both for hydel
+power production and irrigation.
+OR
+
+(q)
+
+The dam in the Mahanadi basin that integrates conservation of water with
+flood control.
+
+1
+
+6
+Please note that the assessment scheme of the Academic Session 2024-25 will continue in the current session i.e. 2025-26
+
+II. Any two of the following:
+(i) A major sea port in West Bengal
+(ii) An international airport in Tamil Nadu
+(iii) An international airport in Punjab
+
+(1x2=
+2)
+
+Note: The following question is for Visually Impaired Candidates only in lieu of
+Q. No. 19.
+b) Answer any three of the following:
+i Name the dam in the Mahanadi basin that integrates conservation of water
+with flood control.
+ii Specify the name of a major sea port in West Bengal.
+iii Name an international airport in Tamil Nadu.
+iv State the name of an international airport in Punjab.
+SECTION C
+POLITICAL SCIENCE (20 marks)
+20.
+
+Which of the following statement(s) are true with respect to the ethnic composition of
+Belgium?
+I. 59 percent of the total population of Belgium lives in the Wallonia region and
+speaks French.
+II. 40 percent live in the Flemish region and speak Dutch.
+III. One percent of the Belgians speak German.
+IV. In the capital city Brussels, 80 percent people speak French while 20 per cent
+are Dutch speaking.
+
+1
+
+Choose the correct option:
+A. I and II
+B. III and IV
+C. I, II and III
+D. I and IV
+21.
+
+The cartoon below depicts Germany’s government that was formed after the 2005
+elections. It included the two major parties of the country, namely the Christian
+Democratic Union and the Social Democratic Party. The two parties are historically
+competing with each other. Which of the following options best explains the cartoon?
+
+1
+
+Source-Democratic Politics, NCERT
+
+7
+Please note that the assessment scheme of the Academic Session 2024-25 will continue in the current session i.e. 2025-26
+
+A. Coalition Government.
+B. Two Party System.
+C. Democratic government.
+D. Bi-party system.
+Note: The following question is for Visually Impaired Candidates only in lieu of
+Q. No. 21
+Consider the following statements on Power Sharing and choose the correct
+statement(s) I.
+Imposing the will of the majority community over others.
+II. It helps in reducing the possibility of conflict between the social groups.
+III. Power Sharing is a good way to ensure the stability of political order.
+IV. It brings socio- political opposition among parties.
+Choose the correct option:
+A. I and II
+B. I and III
+C. II and IV
+D. II and III
+22.
+
+Consider the following case and choose the correct option-
+
+1
+
+Suppose the Government of India plans to issue new currency notes of different
+denominations in order to curb the influence of black money. The Government of one
+state is opposed to this policy of the Central Government. Can the state government
+stop the union government from implementing this policy?
+A. Yes, because Currency is the subject of State List
+B. No, because Currency is a subject of Union List
+C. Yes, because the approval of both the governments is necessary to implement
+this change.
+D. No, because any such change must be approved by the local government also.
+
+23.
+
+Two statements are given as Assertion (A) and Reason(R). Study the statements
+carefully and identify the correct alternative:
+ASSERTION (A): Exclusive attention to caste can produce negative results in
+democracy.
+REASON (R): It can divert attention from other important issues thus leading to
+tensions, conflicts and even violence.
+
+1
+
+Choose the correct option:
+A. Both A and R are true, and R is the correct explanation of A.
+B. Both A and R are true, but R is not the correct explanation of A.
+C. A is true but R is false.
+D. A is false but R is true
+
+8
+Please note that the assessment scheme of the Academic Session 2024-25 will continue in the current session i.e. 2025-26
+
+24.
+
+Highlight any two key features of federalism.
+
+2
+
+25.
+
+‘Women in India face discrimination, disadvantages and oppression in many ways.’
+Highlight any two aspects of life where you witness this inequality.
+
+2
+
+26.
+
+‘Democracy leads to peaceful and harmonious life among citizens in every sphere.’
+Support this statement with suitable arguments.
+
+3
+
+27A.
+
+‘Political parties play a significant role in the effective working of a democracy.’
+Explain.
+
+5
+
+OR
+27B.
+
+Analyse how the issue of leadership succession poses a challenge to political parties
+in India.
+
+28.
+
+Read the given text and answer the following questions:(1+1+2=4)
+
+4
+
+Sri Lanka emerged as an independent country in 1948. The leaders of the Sinhala
+community sought to secure dominance over government by virtue of their majority.
+As a result, the democratically elected government adopted a series of
+MAJORITARIAN measures to establish Sinhala supremacy. Over the years, it
+created feelings of alienation among the Sri Lankan Tamils. They felt that none of
+the major political parties led by the Buddhist Sinhala leaders was sensitive to their
+language and culture. As a result, the relations between the Sinhala and Tamil
+communities strained over time. On the other hand, the Belgian leaders took a
+different path. They recognised the existence of regional differences and cultural
+diversities. Between 1970 and 1993, they amended their constitution four times to
+work out an arrangement that would enable everyone to live together within the same
+country.
+Source-Adapted from Power Sharing,NCERT
+28. 1 State any two demands of Tamils in Sri Lanka.
+28. 2 State the results of the Majoritarian Government in Sri Lanka.
+28. 3 Explain any two provisions of the Belgian model of power sharing.
+SECTION D
+ECONOMICS (20 marks)
+29.
+
+Underemployment is caused when -
+
+1
+
+A. More workers are employed than actually required
+B. Fewer workers are employed than actually required
+C. Workers are paid more than their actual output
+D. Jobs are given only to highly educated workers
+
+9
+Please note that the assessment scheme of the Academic Session 2024-25 will continue in the current session i.e. 2025-26
+
+30.
+
+What can be inferred about the limitations of using per capita income (average
+income) to compare well-being across countries? Choose the correct option as the
+answer.
+
+1
+
+A. It shows how equally or unequally income is distributed among the people in a
+country.
+B. The only measure needed to understand a country’s development is Per capita
+income.
+C. It gives a basic idea of economic well-being but hides the income inequality.
+D. It only reflects the industrial growth of a country and does not consider other
+important factors.
+31.
+
+Which of the following examples best demonstrates how the tertiary sector supports
+both the primary and secondary sectors?
+
+1
+
+A. Farmers grow vegetables and sell them directly to consumers, with no
+transportation or storage involved.
+B. A factory makes shoes and uses raw materials like leather to create the product,
+relying on transport and retail stores to distribute the shoes.
+C. A bakery bakes bread and uses delivery services to send the bread to local
+shops for sale, without any direct involvement of raw materials.
+D. A company produces furniture from wood, but does not require any transport or
+retail services to sell the product.
+32.
+
+Which one of the following issues currency notes in India?
+
+1
+
+A. Finance Ministry.
+B. Reserve Bank of India.
+C. State Bank of India.
+D. Central Bank of India.
+33.
+
+Person Z tries to explain how the requirement of a double coincidence of wants in a
+barter system limits trade and exchange. Which of the following justification do you
+think will be used by him/her?
+
+1
+
+A. It makes trade more complicated, as each person must have what the other
+person wants, limiting the pool of potential trade partners.
+B. The barter system allows trade to be conducted more efficiently since both parties
+already know what they need from the transaction.
+C. It increases the number of exchanges because each person can trade for exactly
+what they want.
+D. The system creates value for goods by ensuring that both parties have a direct
+need for each other’s goods.
+
+10
+Please note that the assessment scheme of the Academic Session 2024-25 will continue in the current session i.e. 2025-26
+
+34.
+
+Recognize and choose the option that correctly matches the effects and consequent
+outcomes of globalization.
+Column A
+(Effects of globalisation)
+
+Column B
+(Outcomes)
+
+1.Increased foreign investment
+
+i. Expansion of global markets and access to
+technology
+
+2.Cultural exchange and
+awareness
+
+ii. Loss of traditional jobs due to automation and
+cheaper labor elsewhere
+
+3.Techonological exchange
+and awareness
+
+iii. Spread of cultural practices, ideas, and values
+across borders
+
+4.Growth of multinational
+corporations
+
+iv. Large companies becoming dominant players
+in global markets
+
+1
+
+Choose the correct option:
+A. 1-iii, 2-ii, 3-i, 4-iv
+B. 1-iv, 2-ii, 3-i, 4-iii
+C. 1-ii, 2-iv, 3-iii, 4-i
+D. 1-i, 2-iii, 3-ii, 4-iv
+35.
+
+Evaluate the utility of public services in contributing to the overall well-being of
+individuals and society.
+
+3
+
+36.
+
+‘Expanding access to loans in the formal sector is important, yet it is equally critical
+that these loans are accessible to all people for national development.’ Justify the
+statement.
+
+3
+
+37.
+
+Highlight the significant three factors that have contributed to the growth of
+globalisation.
+
+3
+
+38A.
+
+A research student spoke with two people, M and N to learn about their work-related
+differences. On the basis of the interview conducted with both of them, the student
+concludes that while person M was working in an organized sector, person N was an
+employee of a workplace that was functioning in an unorganised way. Analyse the
+key differences between the two sectors that must have enabled the research
+student to come to this conclusion.
+
+5
+
+OR
+38B.
+
+Privatisation can have both positive and negative effects on the economy. Support
+the statement with argument.
+
+11
+Please note that the assessment scheme of the Academic Session 2024-25 will continue in the current session i.e. 2025-26
+
+Map for Q. no. 9 (Section A) & Q. no. 19 (Section B)
+
+12
+Please note that the assessment scheme of the Academic Session 2024-25 will continue in the current session i.e. 2025-26
+
+
+MARKING SCHEME
+SOCIAL SCIENCE (087)
+CLASS-X (2025-26)
+Time Allowed: 3hrs
+
+Max. Marks:80
+SECTION A
+HISTORY (20 marks)
+
+1
+
+1- A-4, B-1, C-2, D-3
+
+1
+
+2
+
+B- Bal Gangadhar Tilak
+
+1
+
+V.I candidates –
+B - To return to Council Politics
+3
+
+A - Widespread poverty and deadly diseases
+
+1
+
+4
+
+B - Absolutist institutions like monarchy and church
+
+1
+
+5A.
+
+1. Chinese pottery, textiles and spices from India and Southeast Asia also travelled
+the same route. In return, precious metals - gold and silver - flowed from Europe to
+Asia.
+2. Trade and cultural exchange went hand in hand. Buddhism from India spread
+in several directions through intersecting points on the silk routes.
+3. Early Christian missionaries travelled this route to reach Asia and Muslim
+preachers took the same route a few centuries later.
+(Any 2 points)
+
+2
+
+OR
+5B.
+
+1. Sometimes new crops like potatoes could make the difference between life and
+death. It was with the introduction of the humble potato that Europe’s poor began
+to eat well, eat better and live longer.
+2. Ireland’s poor peasants became so dependent on potatoes that when the
+potato crop was destroyed by disease in the mid-1840s, hundreds of thousands of
+peasants died of starvation
+
+6A.
+
+1. Figure or Image – The identity of India came to be visually associated with the
+image of Bharat Mata. This image was created by Bankim Chandra Chattopadhyay.
+Rabindranath Tagore painted his famous image of Bharat Mata. In this painting,
+Bharat Mata is portrayed as an ascetic figure; she is calm, composed, divine and
+spiritual.
+2. Songs – Bankim Chandra Chattopadhyay wrote ‘VandeMataram’ as a hymn to
+the motherland. It was included in his novel Anandmath and widely sung during the
+Swadeshi Movement in Bengal.
+3. Folklore – Indian folklore was revived. In late-nineteenth-century India,
+nationalists began recording folk tales sung by bards and they toured villages to
+gather folk songs and legends. These tales gave a true picture of traditional culture.
+It helped to restore a sense of pride in our past. In Bengal, Rabindranath Tagore
+himself began collecting ballads, nursery rhymes and myths, and led the movement
+
+1
+
+3
+
+for folk revival. In Madras, Natesa Sastri published a massive four-volume collection
+of Tamil folk tales, The Folklore of Southern India.
+4.– Flag (A). During the Swadeshi movement in Bengal, a tricolour flag (red, green
+and yellow) was designed. It had eight lotuses representing eight provinces of
+British India, and a crescent moon, representing Hindus and Muslims.
+(B). By 1921, Gandhiji had designed the Swaraj flag. It was again a tricolour (red,
+green and white) and had a spinning wheel in the centre, representing the Gandhian
+ideal of self-help. Carrying the flag, holding it aloft, during marches became a
+symbol of defiance.
+5. Re – interpretation of History – Indians began looking into the past to discover
+India’s great achievements. They wrote about art and architecture, Science and
+Maths, religion and culture, law, philosophy etc. Indians were asked to take pride in
+India’s great achievements in the past and struggle to change the miserable
+conditions of life under British rule.
+(Any three points to be considered)
+OR
+6B.
+
+1. Salt became an effective tool of resistance against colonialism because of the
+following reasons: Gandhiji found in salt a powerful bond that would unite the
+nations as it – was consumed by all rich and poor alike.
+2. Gandhiji’s letter to Viceroy Irwin stated eleven demands. Most of them were of
+general interest but the most stirring was to abolish the salt tax imposed by the
+colonial government.
+3. Irwin’s unwillingness to negotiate forced Gandhiji to start his salt March which
+was joined by thousands. It developed the feeling of nationalism.
+4. People in different parts of the country broke salt law and manufactured salt and
+demonstrated in front of government salt factories.
+5. People unitedly followed Gandhiji’s words. They refused to pay taxes, revenues,
+picketed liquor shops, boycotted foreign clothes, resigned from government jobs
+and violated forest laws.
+(Any three points to be considered)]
+
+7A.
+
+1. In Britain the formation of the nation-state was not the result of a sudden upheaval
+or revolution. The primary identities of the people who inhabited the British Isles
+were ethnic ones - such as English, Welsh, Scot or Irish.
+2. The Act of Union (1707) between England and Scotland resulted in the formation
+of the 'United Kingdom of Great Britain' meant that England was able to impose its
+influence on Scotland. Scotland's distinctive culture and political institutions were
+systematically suppressed.
+3. The Scottish Highlanders were forbidden to speak their Gaelic language or wear
+their national dress and large numbers were forcibly driven out of their homeland.
+4. The English helped the Protestants of Ireland to establish their dominance over
+a largely Catholic country. Catholic revolts against British dominance were
+suppressed. Ireland was forcibly incorporated into the United Kingdom in 1801.
+5. The symbols of the new Britain - the British flag, the national anthem, the English
+language were actively promoted and the older nations survived only as
+subordinate partners in this union.
+OR
+
+2
+
+5
+
+7B
+
+1. The Bourbon dynasty, which had been deposed during the French Revolution,
+was restored to power, and France lost the territories it had annexed under
+Napoleon.
+2. A series of states were set up on the boundaries of France to prevent French
+expansion in future. Thus the kingdom of the Netherlands, which included
+Belgium, was set up in the north and Genoa was added to Piedmont in the south.
+3. Prussia was given important new territories on its western frontiers, while Austria
+was given control of northern Italy.
+4. The German confederation of 39 states that had been set up by Napoleon was
+left untouched. In the east, Russia was given part of Poland while Prussia was
+given a portion of Saxony.
+5. The main intention was to restore the monarchies that had been overthrown by
+Napoleon, and create a new conservative order in Europe.
+
+8.
+
+8.1 Krishnaji wanted to publish significant information about societal developments (1+1+
+in the areas of politics, science, and other fields in order to inform the public.
+2=4)
+8.2 The media used to criticise and analyse government policies were local
+newspapers and political organisations. As a result, both of these served as the
+government's opposition.
+8.3 Reasons for popularity of newspapers during 19th century are:
+i. The political developments in the country began to interest a sizable portion of
+society, and this information was skillfully presented in the newspapers.
+ii. Newspapers started to serve as a source for societal advancements in social,
+cultural, and scientific
+
+9.
+
+Marked on the map.
+(1+1=
+(Answers to the questions for the V.I candidates are also the same-though only
+2)
+naming of the locations is required.)
+SECTION B
+GEOGRAPHY (20 marks)
+
+10.
+
+C - echnological development and institutional changes.
+
+1
+
+11.
+
+D - Black soil & Laterite soil.
+
+1
+
+12.
+
+A. Reduction in the prey species leading to the tiger's dwindling food supp
+
+1
+
+13.
+
+A - These places have a significant portion of forests managed as reserved or
+protected forests for conservation.
+
+1
+
+14.
+
+D – Tamil Nadu
+
+1
+
+15.
+
+B - To provide better irrigation systems and sustainable water conservation
+practices for farmers.
+
+1
+
+16.
+
+Climate and Irrigation:
+
+2
+
+● Haryana and Punjab have a well-developed irrigation system (e.g., canal
+irrigation from the Sutlej-Yamuna Link Canal), which allows for large-scale
+3
+
+commercial cultivation of rice. The climate is suitable for high-yielding
+varieties, and irrigation ensures water availability.
+● In contrast, Odisha has a more monsoonal climate, and while rice is grown,
+the farming is often rainfed and primarily for local consumption. The lack of
+large-scale irrigation systems limits its commercialization.
+Economic Factors (Market Access):
+● In Punjab and Haryana, rice is grown for commercial purposes to meet
+national and international demand. The proximity to markets, government
+procurement systems, and well-developed transport networks enable these
+states to export surplus rice.
+● In Odisha, rice is mostly grown for personal or local use, with less access to
+large markets for profit-driven farming, making it a subsistence crop.
+Farming Practices:
+● In Punjab and Haryana, the use of modern farming techniques, machinery,
+and high-yielding varieties supports commercial rice cultivation.
+● In Odisha, rice farming is more traditional and focused on family
+sustenance rather than large-scale production, which reflects the
+subsistence nature of cultivation.
+Or any other relevant point(s) (Any 2 point to be considered out of which at least
+one should be related to climate and one economic)
+17A. 1. Odisha was the largest bauxite producing state in India in 201617. Panchpatmali deposits in Koraput district are the most
+important bauxite deposits in the state.
+2. Aluminium is an important metal because it combines the
+strength of metals such as iron,
+3. It is a good alternative to other metals due to its extreme
+lightness and
+4. also has good conductivity and
+5. great malleability (any other relevant point - 5 points)
+OR
+17B. Significance:
+-It is used for power generation,
+-To supply energy to industry as well as for domestic needs.
+-India is highly dependent on coal for meeting its commercial energy
+requirements.e.g., in metallurgy
+- any other relevant point (at least 2)
+Variety of coal typesCoal, is found in a variety of forms depending on the degrees of compression and
+the depth and time of burial.
+
+4
+
+5
+
+1. Peat - Decaying plants in swamps produce peat. Which has a low carbon and
+high moisture contents and low heating capacity.
+2. Lignite - is a low grade brown coal, which is soft with high moisture content. The
+principal lignite reserves are in Neyveli in Tamil Nadu and are used for
+generation of electricity.
+3. Bituminous coal-Coal that has been buried deep and subjected to increased
+temperatures. It is the most popular coal in commercial use. Metallurgical coal
+is high grade bituminous coal which has a special value for smelting iron in blast
+furnaces.
+4. Anthracite -is the highest quality hard coal.
+18.
+
+18.1 Due to intensive material production and consumption.
+18.2 Manufacturing industries are a major cause for-
+
+(1+2+
+1=4)
+
+1) air pollution – Smoke is emitted by chemical and paper factories, brick kilns,
+refineries and smelting plants, and burning of fossil fuels in big and small factories
+that ignore pollution norms. Toxic gas leaks can be very hazardous with long-term
+effects.
+2) Water pollution is caused by organic and inorganic industrial wastes and
+affluents discharged into rivers. The main culprits in this regard are paper, pulp,
+chemical, textile and dyeing, petroleum refineries, tanneries and electroplating
+industries that let out dyes, detergents, acids, salts and heavy metals like lead
+and mercury pesticides, fertilisers, synthetic chemicals with carbon, plastics and
+rubber, etc. into the water bodies.
+3) Thermal pollution of water occurs when hot water from factories and thermal
+plants is drained into rivers and ponds before cooling.
+4) Dumping of wastes specially glass, harmful chemicals, industrial effluents,
+packaging, salts and garbage renders the soil useless.
+5)Rain water percolates to the soil carrying the pollutants to the ground and the
+ground water also gets contaminated.
+6) Industrial and construction activities, machinery, factory equipment, generators,
+saws and pneumatic and electric drills also make a lot of noise. (Or any other
+relevant point) – Any two points
+18.3 Poor people, cannot afford to protect themselves from the negative impacts
+of pollution, end up suffering the most. This also leads to social disparity/inequality
+due to the ill effects of poverty. (Can be explained with the help of an example)
+19.
+
+Marked on the map.
+(1+2=
+(Answers to the questions for the V.I candidates are also the same-though only
+3)
+naming of the locations is required.)
+SECTION C
+POLITICAL SCIENCE (20 marks)
+
+20.
+
+B- III and IV
+
+1
+
+21.
+
+A – Coalition Government.
+V.I candidates – D. II and III
+
+1
+
+5
+
+22.
+
+B - No, because Currency is a subject of Union List
+
+1
+
+23.
+
+A - Both A and R are true, and R is the correct explanation of A.
+
+1
+
+24.
+
+Features of federalism:
+
+2
+
+1. There are two or more levels (or tiers) of government.
+2. Different tiers of government govern the same citizens, but each tier has its own
+jurisdiction in specific matters of legislation, taxation and administration.
+3. The jurisdictions of the respective levels or tiers of government are specified in
+the constitution. So the existence and authority of each tier of government is
+constitutionally guaranteed.
+4. The fundamental provisions of the constitution cannot be unilaterally changed
+by one level of government. Such changes require the consent of both the levels
+of government.
+5. Courts have the power to interpret the constitution and the powers of different
+levels of government. The highest court acts as an umpire if disputes arise
+between different levels of government in the exercise of their respective
+powers.
+6. Sources of revenue for each level of government are clearly specified to ensure
+its financial autonomy.
+7. The federal system thus has dual objectives: to safeguard and promote unity of
+the country, while at the same time accommodate regional diversity. Therefore,
+two aspects are crucial for the institutions and practice of federalism.
+Governments at different levels should agree to some rules of power sharing.
+They should also trust that each would abide by its part of the agreement. An
+ideal federal system has both aspects: mutual trust and agreement to live
+together.
+(Any two point to be considered)
+25.
+
+1. Education – Literacy rate among women is only 54% as compared with 76%
+among men. Parents prefer to spend their resources for their sons’ education rather
+than daughters.
+2. Low Proportion of women in highly paid and valued jobs – Women still have
+a small share in the highly paid jobs. Even if a woman works for more hours than a
+man, her work is not given importance. This results in low paid and low valued jobs
+for women.
+3. Women are paid less than men – Despite the Equal Wages of Act women are
+paid less than men, even when both do exactly the same work.
+4. Preference for Son – In many parts of India parents prefer to have sons and
+find ways to have the girl child aborted before she is born. This has led to decline
+in child sex – ratio (927)
+5. Exploitation at workplace and domestic violence – Women are exploited and
+harassed at the workplace. They have to face different forms of domestic violence
+at home.
+(Any 2 point to be considered)
+
+6
+
+2
+
+26.
+
+1. Democracies accommodate various social divisions. For example, Belgium has
+peacefully solved her ethnic problems and solved the differences.
+2. All democracies usually develop a procedure to conduct competition, i.e. conduct
+elections, power-sharing, etc. This reduces the possibility of tensions, due to social
+divisions, turning violent or explosive.
+3. Democracy teaches people to respect the differences and resolve conflicts
+among different groups peacefully. In non-democratic countries, rulers either turn a
+blind eye to or suppress internal differences. For example, Sri Lanka. The plus point
+in democratic regime is the ability to handle social differences, divisions and
+conflicts.
+4. A democracy is not just a rule by majority opinion. The majority always needs to
+work with the minority so that the government represents the general view.
+5. A democratic government ensures that the rule by the majority does not become
+autocratic in terms of religion, race or linguistic group etc. It tries to show that in
+every election, different persons and groups can form a majority. It tries to see that
+every citizen has a chance to be in majority at some point of time and is not barred
+on the basis of birth. All these things ensured by a democratic regime lead to a
+peaceful and harmonious life.
+(Any three points to be considered)
+
+3
+
+27A
+
+Political parties play a significant role in the effective working of a democracy. To
+fill political offices and exercise political power, political parties are needed to
+perform a series of functions, which are the following
+
+5
+
+1. Parties contest elections. Elections are fought mainly among candidates put up
+by political parties.
+In India, top party leaders choose candidates for contesting elections.
+2. Parties put forward different policies and programmes. Political parties in a
+democracy group together similar opinions, to provide a direction in which
+government policies can be formulated.
+3. Parties make laws for a country. Laws are debated and passed in the legislature.
+4. Parties that lose elections play the role of the opposition. Opposition parties voice
+their views by criticizing the government for its failure or wrong policies.
+5. Parties shape public opinion. They raise and highlight issues and resolve
+people’s problems. Many pressure groups are the extensions of political parties.
+6. Parties provide people access to government machinery and welfare schemes.
+For an ordinary citizen it is easier to approach a local party leader than a
+government officer. (Any 5 points)
+OR
+27B
+
+1. Most political parties do not practice open and transparent procedures for their
+functioning. So there are very few ways for an ordinary worker to rise to the top
+in a party.
+2. Those who happen to be the leaders are in a position of unfair advantage as
+they favour people close to them or even their family members.
+3. In many parties in India, we see a trend of dynastic succession. The top positions
+are always controlled by members of a particular family, which is unfair to other
+7
+
+members of the party, and bad for democracy.
+4. This is so because people who do not have adequate experience or popular
+support come to occupy positions of power.
+5. More than loyalty to party principles and policies, personal loyalty to the leader
+becomes more important. This tendency is seen all over the world, even in older
+democracies.
+28.
+
+28.1(a) To recognise Tamil as official language
+(b) Regional autonomy
+(c) Equality of opportunities in securing education and jobs.
+
+(1+1+
+2=4)
+
+(Any one to be considered)
+28.2- The Majoritarian Government in Sri Lanka created a distrust between Tamils
+and Sinhala communities which resulted in civil war. As a result, thousands of
+people of both communities were killed and many families were forced to leave the
+country as refugees.
+28.3
+1. The Constitution prescribed that the number of Dutch and French Any two
+speaking ministers shall be equal in the central government.
+Some special laws require the support of majority of members
+from each linguistic group. Thus, no single community can make decisions
+unilaterally.
+2. Many powers of the central government have been given to state governments
+of the two regions of the country. The state governments are not subordinate to the
+Central Government.
+3. Brussels has a separate government in which Dutch and French have equal
+representation.
+4. Apart from the Central and the State Government, there is a third kind of
+Government. This 'community government' is elected by people belonging to one
+language community - Dutch, French and German - speaking - no matter where
+they live. This government has the power regarding cultural, educational and
+language - related issues.
+(Any two to be considered)
+SECTION D
+ECONOMICS (20 marks)
+29.
+
+A - More workers are employed than actually required
+
+1
+
+30.
+
+C - It gives a basic idea of economic well-being but hides the income inequality,
+cost of living, or access to essential services.
+
+1
+
+31.
+
+B - A factory makes shoes and uses raw materials like leather to create the product,
+relying on transport and retail stores to distribute the shoes.
+
+1
+
+8
+
+32.
+
+B – Reserve Bank of India
+
+1
+
+33.
+
+A - It makes trade more complicated, as each person must have what the other
+person wants, limiting the pool of potential trade partners.
+
+1
+
+34.
+
+D - 1-i, 2-iii, 3-ii, 4-iv
+
+1
+
+35.
+
+Healthcare and Public Health:
+
+1½+
+1½
+● Accessible and quality public healthcare, is fundamental for maintaining, a
+=3
+productive and healthy population. It reduces mortality rates, ensures the wellbeing of the workforce, and allows individuals to contribute meaningfully to the
+economy. Inadequate healthcare can result in a higher burden of disease, lower
+life expectancy, and economic inefficiencies.
+Education and Skill Development:
+● Public education systems are essential for providing equal learning opportunities
+to all citizens, regardless of socioeconomic status. A well-educated population
+leads to increased literacy rates, skill development, and innovation, all of which
+are crucial for economic growth, reducing inequality, and fostering social
+cohesion.
+Sanitation and Clean Water:
+● Proper sanitation and access to clean water are vital for maintaining public
+health and preventing diseases such as cholera and dysentery. These services
+significantly improve life expectancy, reduce healthcare costs, and increase
+productivity, especially in rural or underserved areas.
+Infrastructure Development:
+● Public infrastructure, including roads, transportation, and energy, supports the
+functioning of markets, businesses, and industries. It enhances connectivity,
+stimulates economic activities, and improves the quality of life for individuals by
+providing easy access to essential goods and services.
+Or any other relevant point(s) - Any two
+
+36.
+
+- Higher cost of borrowing from informal sources means a larger part of the earnings
+of the borrowers is used to repay the loan. Hence, borrowers have less income left
+for themselves (as we saw for Shyamal in Sonpur).
+- In certain cases, the high interest rate for borrowing can mean that the amount to
+be repaid is greater than the income of the borrower. -This could lead to increasing
+debt (as we saw for Rama in Sonpur) and debt trap.
+-Also, people who might wish to start an enterprise by borrowing may not do so
+because of the high cost of borrowing.
+-For these reasons, banks and cooperative societies need to lend more. This would
+lead to higher incomes and many people could then borrow cheaply for a variety of
+needs.
+-They could grow crops, do business, set up small-scale industries etc. They could
+set up new industries or trade in goods. Cheap and affordable credit is crucial for
+9
+
+3
+
+the country’s development
+37.
+
+-Or any other relevant point(s) - Any 3
+
+1. the movements of goods and services,
+2. information and communication technology
+3. Transportation technology
+4. movement of people between countries
+5. Liberalisation of foreign trade and foreign investment policy
+Any other relevant point (any 3 well explained)
+
+38A. Working conditions of person M would have the following features:
+Regular Employment: Workers have assured, regular work with fixed terms of
+employment.
+Government Regulation: Enterprises are registered with the government and
+follow legal rules and regulations (e.g., Factories Act, Minimum Wages Act).
+Security of Employment: Workers enjoy job security with clear working hours and
+benefits.
+Overtime Compensation: If workers work beyond regular hours, they are paid
+overtime.
+Employee Benefits: Workers receive benefits like paid leave, holidays, provident
+fund, gratuity, and medical benefits.
+Safe Working Conditions: Employers are required to provide safe working
+environments (e.g., clean drinking water).
+Retirement Benefits: Workers are entitled to pensions after retirement.
+Formal Processes: The sector follows formal processes and procedures for
+employment.
+Working conditions of person N would have the following features:
+Irregular Employment: Jobs are low-paid and often irregular, with no guarantee of
+continuous work.
+Lack of Government Regulation: The sector operates largely outside government
+control, with few or no legal protections.
+No Employee Benefits: Workers do not receive benefits like paid leave, overtime
+pay, or medical benefits.
+Job Insecurity: Employment is not secure; workers can be dismissed without
+notice or reason.
+Seasonal Work: Employment is often dependent on seasons, and workers may be
+laid off during off-peak periods.
+Informal Jobs: Many workers are self-employed, doing small jobs like street
+vending or repair work.
+Dependence on Employer: Employment conditions are influenced by the
+employer's whims and needs.
+No Legal Protections: There is little enforcement of rules or regulations related
+to working conditions or benefits.
+OR
+38B. Privatization: Positive Effects1. Increased Efficiency and Productivity
+10
+
+3
+
+5
+
+2. Improved Quality of Services
+3. Reduced Government Burden
+4. Any other relevant point(s)
+Privatization: Negative Effects1. Exclusion of Public Welfare - Profit being the only motive
+2. Loss of Employment Security
+3. Wide gap between rich and poor - due to inaccessibility of basic facilities
+4. Lower government accountability
+5. Any other relevant point(s)
+(ANY 5 points to be accepted. However, at least 2 positive and 2 negative effects
+must be included in the response)
+
+Map for Q. no. 9 (Section A) & Q. no. 19 (Section B)
+
+11
+2025-11-24 16:20:46 - src.routes - DEBUG - [routes.py:70] - Found 13 subtopics for 1
+2025-11-24 16:20:50 - src.routes - INFO - [routes.py:61] - GET /get_topics/CBSE/10/Hindi
+2025-11-24 16:20:50 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CBSE/10/Hindi: 14 topics found
+2025-11-24 16:20:50 - src.routes - DEBUG - [routes.py:63] - Found 14 topics for CBSE class 10 Hindi
+2025-11-24 16:20:53 - src.routes - INFO - [routes.py:68] - GET /get_subtopics/CBSE/10/Hindi/12
+2025-11-24 16:20:53 - src.components.content_fetcher - INFO - [content_fetcher.py:183] - Fetching content for: Board=CBSE, Class=10, Subject=Hindi, Topic=12, Subtopics=None
+2025-11-24 16:20:53 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CBSE/10/Hindi: 14 topics found
+2025-11-24 16:20:53 - src.components.content_fetcher - DEBUG - [content_fetcher.py:202] - Topic name found: भदंत आनंद कौसल्यायन
+2025-11-24 16:20:53 - src.components.content_fetcher - INFO - [content_fetcher.py:214] - Searching in 2 book(s)...
+2025-11-24 16:20:53 - src.components.content_fetcher - DEBUG - [content_fetcher.py:224] - Checking book: Kshitij-2 (ID: C10HIN0KSHITIJ20NCERT)
+2025-11-24 16:20:53 - src.components.content_fetcher - DEBUG - [content_fetcher.py:271] - Topic ###12## not found in book: Kshitij-2
+2025-11-24 16:20:53 - src.components.content_fetcher - DEBUG - [content_fetcher.py:224] - Checking book: Sample Paper (ID: C10HIN0KSHITIJ20NCERT)
+2025-11-24 16:20:53 - src.components.content_fetcher - DEBUG - [content_fetcher.py:271] - Topic ###12## not found in book: Sample Paper
+2025-11-24 16:20:53 - src.components.content_fetcher - WARNING - [content_fetcher.py:278] - Topic 12 not found in any available books. Checked: C10HIN0KSHITIJ20NCERT, C10HIN0KSHITIJ20NCERT
+2025-11-24 16:20:53 - src.routes - DEBUG - [routes.py:70] - Found 0 subtopics for 12
+2025-11-24 16:21:01 - src.routes - INFO - [routes.py:61] - GET /get_topics/CBSE/10/Maths
+2025-11-24 16:21:01 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CBSE/10/Maths: 15 topics found
+2025-11-24 16:21:01 - src.routes - DEBUG - [routes.py:63] - Found 15 topics for CBSE class 10 Maths
+2025-11-24 16:21:05 - src.routes - INFO - [routes.py:68] - GET /get_subtopics/CBSE/10/Maths/10
+2025-11-24 16:21:05 - src.components.content_fetcher - INFO - [content_fetcher.py:183] - Fetching content for: Board=CBSE, Class=10, Subject=Maths, Topic=10, Subtopics=None
+2025-11-24 16:21:05 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CBSE/10/Maths: 15 topics found
+2025-11-24 16:21:05 - src.components.content_fetcher - DEBUG - [content_fetcher.py:202] - Topic name found: Circles
+2025-11-24 16:21:05 - src.components.content_fetcher - INFO - [content_fetcher.py:214] - Searching in 3 book(s)...
+2025-11-24 16:21:05 - src.components.content_fetcher - DEBUG - [content_fetcher.py:224] - Checking book: Mathematics (ID: C10MATHS0MATHS0NCERT)
+2025-11-24 16:21:05 - src.components.content_fetcher - INFO - [content_fetcher.py:267] - Topic found in book: Mathematics
+2025-11-24 16:21:05 - src.components.content_fetcher - INFO - [content_fetcher.py:268] - Retrieved Content:
+144
+
+MATHEMATICS
+
+CIRCLES
+
+10
+
+10.1 Introduction
+You have studied in Class IX that a circle is a collection of all points in a plane
+which are at a constant distance (radius) from a fixed point (centre). You have
+also studied various terms related to a circle like chord, segment, sector, arc etc.
+Let us now examine the different situations that can arise when a circle and a line
+are given in a plane.
+So, let us consider a circle and a line PQ. There can be three possibilities given
+in Fig. 10.1 below:
+
+Fig. 10.1
+In Fig. 10.1 (i), the line PQ and the circle have no common point. In this case,
+PQ is called a non-intersecting line with respect to the circle. In Fig. 10.1 (ii), there
+are two common points A and B that the line PQ and the circle have. In this case, we
+call the line PQ a secant of the circle. In Fig. 10.1 (iii), there is only one point A which
+is common to the line PQ and the circle. In this case, the line is called a tangent to the
+circle.
+
+Reprint 2025-26
+
+CIRCLES
+
+145
+
+You might have seen a pulley fitted over a well which is used
+in taking out water from the well. Look at Fig. 10.2. Here the rope
+on both sides of the pulley, if considered as a ray, is like a tangent
+to the circle representing the pulley.
+Is there any position of the line with respect to the circle
+other than the types given above? You can see that there cannot
+be any other type of position of the line with respect to the circle.
+In this chapter, we will study about the existence of the tangents
+to a circle and also study some of their properties.
+
+Fig. 10.2
+
+10.2 Tangent to a Circle
+In the previous section, you have seen that a tangent* to a circle is a line that
+intersects the circle at only one point.
+To understand the existence of the tangent to a circle at a point, let us perform
+the following activities:
+Activity 1 : Take a circular wire and attach a straight wire AB at a point P of the
+circular wire so that it can rotate about the point P in a plane. Put the system on a table
+and gently rotate the wire AB about the point P to get different positions of the straight
+wire [see Fig. 10.3(i)].
+In various positions, the wire intersects the
+circular wire at P and at another point Q1 or Q2 or
+Q3, etc. In one position, you will see that it will
+intersect the circle at the point P only (see position
+AB of AB). This shows that a tangent exists at
+the point P of the circle. On rotating further, you
+can observe that in all other positions of AB, it will
+intersect the circle at P and at another point, say R1
+or R2 or R3, etc. So, you can observe that there is
+only one tangent at a point of the circle.
+Fig. 10.3 (i)
+While doing activity above, you must have observed that as the position AB
+moves towards the position A B, the common point, say Q1, of the line AB and the
+circle gradually comes nearer and nearer to the common point P. Ultimately, it coincides
+with the point P in the position AB of AB. Again note, what happens if ‘AB’ is
+rotated rightwards about P? The common point R3 gradually comes nearer and nearer
+to P and ultimately coincides with P. So, what we see is:
+The tangent to a circle is a special case of the secant, when the two end
+points of its corresponding chord coincide.
+*The word ‘tangent’ comes from the Latin word ‘tangere’, which means to touch and was
+introduced by the Danish mathematician Thomas Fineke in 1583.
+
+Reprint 2025-26
+
+146
+
+MATHEMATICS
+
+Activity 2 : On a paper, draw a circle and a
+secant PQ of the circle. Draw various lines
+parallel to the secant on both sides of it. You
+will find that after some steps, the length of
+the chord cut by the lines will gradually
+decrease, i.e., the two points of intersection of
+the line and the circle are coming closer and
+closer [see Fig. 10.3(ii)]. In one case, it
+becomes zero on one side of the secant and in
+another case, it becomes zero on the other side
+of the secant. See the positions PQ and PQ
+of the secant in Fig. 10.3 (ii). These are the
+tangents to the circle parallel to the given secant
+PQ. This also helps you to see that there cannot
+be more than two tangents parallel to a given
+secant.
+
+Fig. 10.3 (ii)
+
+This activity also establishes, what you must have observed, while doing
+Activity 1, namely, a tangent is the secant when both of the end points of the
+corresponding chord coincide.
+The common point of the tangent and the circle is called the point of contact
+[the point A in Fig. 10.1 (iii)]and the tangent is said to touch the circle at the
+common point.
+Now look around you. Have you seen a bicycle
+or a cart moving? Look at its wheels. All the spokes
+of a wheel are along its radii. Now note the position
+of the wheel with respect to its movement on the
+ground. Do you see any tangent anywhere?
+(See Fig. 10.4). In fact, the wheel moves along a line
+which is a tangent to the circle representing the wheel.
+Also, notice that in all positions, the radius through
+the point of contact with the ground appears to be at
+right angles to the tangent (see Fig. 10.4). We shall
+now prove this property of the tangent.
+
+Fig. 10.4
+
+Theorem 10.1 : The tangent at any point of a circle is perpendicular to the
+radius through the point of contact.
+Proof : We are given a circle with centre O and a tangent XY to the circle at a
+point P. We need to prove that OP is perpendicular to XY.
+
+Reprint 2025-26
+
+CIRCLES
+
+147
+
+Take a point Q on XY other than P and join OQ (see Fig. 10.5).
+The point Q must lie outside the circle.
+(Why? Note that if Q lies inside the circle, XY
+will become a secant and not a tangent to the
+circle). Therefore, OQ is longer than the radius
+OP of the circle. That is,
+OQ > OP.
+Since this happens for every point on the
+line XY except the point P, OP is the
+shortest of all the distances of the point O to the
+points of XY. So OP is perpendicular to XY.
+(as shown in Theorem A1.7.)
+
+Fig. 10.5
+
+Remarks
+1. By theorem above, we can also conclude that at any point on a circle there can be
+one and only one tangent.
+2. The line containing the radius through the point of contact is also sometimes called
+the ‘normal’ to the circle at the point.
+
+EXERCISE 10.1
+1. How many tangents can a circle have?
+2. Fill in the blanks :
+(i) A tangent to a circle intersects it in
+
+point (s).
+
+(ii) A line intersecting a circle in two points is called a
+(iii) A circle can have
+
+.
+
+parallel tangents at the most.
+
+(iv) The common point of a tangent to a circle and the circle is called
+
+.
+
+3. A tangent PQ at a point P of a circle of radius 5 cm meets a line through the centre O at
+a point Q so that OQ = 12 cm. Length PQ is :
+(A) 12 cm
+(B) 13 cm
+(C) 8.5 cm
+(D) 119 cm.
+4. Draw a circle and two lines parallel to a given line such that one is a tangent and the
+other, a secant to the circle.
+
+10.3 Number of Tangents from a Point on a Circle
+To get an idea of the number of tangents from a point on a circle, let us perform the
+following activity:
+
+Reprint 2025-26
+
+148
+
+MATHEMATICS
+
+Activity 3 : Draw a circle on a paper. Take a
+point P inside it. Can you draw a tangent to the
+circle through this point? You will find that all
+the lines through this point intersect the circle in
+two points. So, it is not possible to draw any
+tangent to a circle through a point inside it
+[see Fig. 10.6 (i)].
+Next take a point P on the circle and draw
+tangents through this point. You have already
+observed that there is only one tangent to the
+circle at such a point [see Fig. 10.6 (ii)].
+
+(i)
+
+Finally, take a point P outside the circle and
+try to draw tangents to the circle from this point.
+What do you observe? You will find that you
+can draw exactly two tangents to the circle
+through this point [see Fig. 10.6 (iii)].
+We can summarise these facts as follows:
+Case 1 : There is no tangent to a circle passing
+through a point lying inside the circle.
+
+(ii)
+
+Case 2 : There is one and only one tangent to a
+circle passing through a point lying on the circle.
+Case 3 : There are exactly two tangents to a
+circle through a point lying outside the circle.
+In Fig. 10.6 (iii), T1and T2 are the points of
+contact of the tangents PT 1 and PT 2
+respectively.
+The length of the segment of the tangent
+from the external point P and the point of contact
+with the circle is called the length of the tangent
+from the point P to the circle.
+
+(iii)
+Fig. 10.6
+
+Note that in Fig. 10.6 (iii), PT1 and PT2 are the lengths of the tangents from P to
+the circle. The lengths PT1 and PT2 have a common property. Can you find this?
+Measure PT1 and PT2. Are these equal? In fact, this is always so. Let us give a proof
+of this fact in the following theorem.
+
+Reprint 2025-26
+
+CIRCLES
+
+149
+
+Theorem 10.2 : The lengths of tangents drawn
+from an external point to a circle are equal.
+Proof : We are given a circle with centre O, a
+point P lying outside the circle and two tangents
+PQ, PR on the circle from P (see Fig. 10.7). We
+are required to prove that PQ = PR.
+For this, we join OP, OQ and OR. Then
+∠ OQP and ∠ ORP are right angles, because
+these are angles between the radii and tangents,
+and according to Theorem 10.1 they are right
+angles. Now in right triangles OQP and ORP,
+OQ = OR
+
+Fig. 10.7
+(Radii of the same circle)
+
+OP = OP
+
+(Common)
+
+Therefore,
+
+∆ OQP ≅ ∆ ORP
+
+(RHS)
+
+This gives
+
+PQ = PR
+
+(CPCT)
+
+Remarks
+1. The theorem can also be proved by using the Pythagoras Theorem as follows:
+PQ2 = OP2 – OQ2 = OP2 – OR2 = PR2 (As OQ = OR)
+which gives PQ = PR.
+2. Note also that ∠ OPQ = ∠ OPR. Therefore, OP is the angle bisector of ∠ QPR,
+i.e., the centre lies on the bisector of the angle between the two tangents.
+Let us take some examples.
+Example 1 : Prove that in two concentric circles,
+the chord of the larger circle, which touches the
+smaller circle, is bisected at the point of contact.
+Solution : We are given two concentric circles
+C1 and C2 with centre O and a chord AB of the
+larger circle C1 which touches the smaller circle
+C2 at the point P (see Fig. 10.8). We need to prove
+that AP = BP.
+Let us join OP. Then, AB is a tangent to C2 at P
+and OP is its radius. Therefore, by Theorem 10.1,
+OP ⊥ AB
+
+Reprint 2025-26
+
+Fig. 10.8
+
+150
+
+MATHEMATICS
+
+Now AB is a chord of the circle C1 and OP  AB. Therefore, OP is the bisector of the
+chord AB, as the perpendicular from the centre bisects the chord,
+i.e.,
+
+AP = BP
+
+Example 2 : Two tangents TP and TQ are drawn
+to a circle with centre O from an external point T.
+Prove that  PTQ = 2  OPQ.
+Solution : We are given a circle with centre O,
+an external point T and two tangents TP and TQ
+to the circle, where P, Q are the points of contact
+(see Fig. 10.9). We need to prove that
+ PTQ = 2  OPQ
+
+Fig. 10.9
+
+ PTQ = 
+
+Let
+
+Now, by Theorem 10.2, TP = TQ. So, TPQ is an isosceles triangle.
+ TPQ =  TQP =
+
+Therefore,
+
+Also, by Theorem 10.1,
+
+1
+1
+(180°  )  90°  
+2
+2
+
+ OPT = 90°
+
+1 
+
+ OPQ =  OPT –  TPQ = 90°   90° –  
+2 
+
+
+So,
+
+=
+This gives
+
+1
+1
+   PTQ
+2
+2
+
+ PTQ = 2  OPQ
+
+Example 3 : PQ is a chord of length 8 cm of a
+circle of radius 5 cm. The tangents at P and Q
+intersect at a point T (see Fig. 10.10). Find the
+length TP.
+Solution : Join OT. Let it intersect PQ at the
+point R. Then  TPQ is isosceles and TO is the
+angle bisector of  PTQ. So, OT  PQ
+and therefore, OT bisects PQ which gives
+PR = RQ = 4 cm.
+Also,
+
+OR =
+
+OP 2  PR 2  52  42 cm  3 cm.
+
+Reprint 2025-26
+
+Fig. 10.10
+
+CIRCLES
+
+151
+
+Now,  TPR +  RPO = 90° =  TPR +  PTR
+So,
+
+(Why?)
+
+ RPO =  PTR
+
+Therefore, right triangle TRP is similar to the right triangle PRO by AA similarity.
+
+TP
+RP
+TP
+4
+20
+=
+, i.e.,
+=
+or TP =
+cm.
+PO
+RO
+5
+3
+3
+
+This gives
+
+Note : TP can also be found by using the Pythagoras Theorem, as follows:
+Let
+
+TP = x and TR = y.
+x2 = y2 + 16
+2
+
+2
+
+x + 5 = (y + 3)
+
+Then
+
+(Taking right  PRT)
+
+(1)
+
+(Taking right  OPT)
+
+(2)
+
+2
+
+Subtracting (1) from (2), we get
+25 = 6y – 7
+
+or
+
+y=
+
+32 16
+
+6
+3
+
+Therefore,
+
+16
+16  25
+ 16 
+x =    16  (16  9) 
+9
+9
+ 3
+
+or
+
+x=
+
+2
+
+2
+
+[From (1)]
+
+20
+3
+
+EXERCISE 10.2
+In Q.1 to 3, choose the correct option and give justification.
+1. From a point Q, the length of the tangent to a circle is 24 cm and the distance of Q from
+the centre is 25 cm. The radius of the circle is
+(A) 7 cm
+
+(B) 12 cm
+
+(C) 15 cm
+
+(D) 24.5 cm
+
+2. In Fig. 10.11, if TP and TQ are the two tangents
+to a circle with centre O so that  POQ = 110°,
+then PTQ is equal to
+(A) 60°
+
+(B) 70°
+
+(C) 80°
+
+(D) 90°
+
+Fig. 10.11
+
+3. If tangents PA and PB from a point P to a circle with centre O are inclined to each other
+at angle of 80°, then  POA is equal to
+(A) 50°
+
+(B) 60°
+
+(C) 70°
+
+(D) 80°
+
+Reprint 2025-26
+
+152
+
+MATHEMATICS
+
+4. Prove that the tangents drawn at the ends of a diameter of a circle are parallel.
+5. Prove that the perpendicular at the point of contact to the tangent to a circle passes
+through the centre.
+6. The length of a tangent from a point A at distance 5 cm from the centre of the circle is 4
+cm. Find the radius of the circle.
+7. Two concentric circles are of radii 5 cm and 3 cm. Find the length of the chord of the
+larger circle which touches the smaller circle.
+8. A quadrilateral ABCD is drawn to circumscribe a circle (see Fig. 10.12). Prove that
+AB + CD = AD + BC
+
+Fig. 10.12
+
+Fig. 10.13
+
+9. In Fig. 10.13, XY and XY are two parallel tangents to a circle with centre O and
+another tangent AB with point of contact C intersecting XY at A and XY at B. Prove
+that  AOB = 90°.
+10. Prove that the angle between the two tangents drawn from an external point to a circle
+is supplementary to the angle subtended by the line-segment joining the points of
+contact at the centre.
+11. Prove that the parallelogram circumscribing a
+circle is a rhombus.
+12. A triangle ABC is drawn to circumscribe a circle
+of radius 4 cm such that the segments BD and
+DC into which BC is divided by the point of
+contact D are of lengths 8 cm and 6 cm
+respectively (see Fig. 10.14). Find the sides AB
+and AC.
+13. Prove that opposite sides of a quadrilateral
+circumscribing a circle subtend supplementary
+angles at the centre of the circle.
+
+Reprint 2025-26
+
+Fig. 10.14
+
+CIRCLES
+
+153
+
+10.4 Summary
+In this chapter, you have studied the following points :
+1.
+
+The meaning of a tangent to a circle.
+
+2.
+
+The tangent to a circle is perpendicular to the radius through the point of contact.
+
+3.
+
+The lengths of the two tangents from an external point to a circle are equal.
+
+Reprint 2025-26
+2025-11-24 16:21:05 - src.routes - DEBUG - [routes.py:70] - Found 4 subtopics for 10
+2025-11-24 16:21:13 - src.routes - INFO - [routes.py:75] - POST /generate - MCQ generation request received
+2025-11-24 16:21:13 - src.routes - DEBUG - [routes.py:78] - Request data: {'board': 'CBSE', 'class': '10', 'subject': 'Maths', 'topic': '10', 'subtopics': ['10.2', '10.3'], 'num_questions': '5', 'difficulty_level': 'hard'}
+2025-11-24 16:21:13 - src.components.content_fetcher - INFO - [content_fetcher.py:183] - Fetching content for: Board=CBSE, Class=10, Subject=Maths, Topic=10, Subtopics=['10.2', '10.3']
+2025-11-24 16:21:13 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CBSE/10/Maths: 15 topics found
+2025-11-24 16:21:13 - src.components.content_fetcher - DEBUG - [content_fetcher.py:202] - Topic name found: Circles
+2025-11-24 16:21:13 - src.components.content_fetcher - INFO - [content_fetcher.py:214] - Searching in 3 book(s)...
+2025-11-24 16:21:13 - src.components.content_fetcher - DEBUG - [content_fetcher.py:224] - Checking book: Mathematics (ID: C10MATHS0MATHS0NCERT)
+2025-11-24 16:21:13 - src.components.content_fetcher - INFO - [content_fetcher.py:267] - Topic found in book: Mathematics
+2025-11-24 16:21:13 - src.components.content_fetcher - INFO - [content_fetcher.py:268] - Retrieved Content:
+
+
+--- Subtopic 10.2 ---
+
+
+10.2 Tangent to a Circle
+In the previous section, you have seen that a tangent* to a circle is a line that
+intersects the circle at only one point.
+To understand the existence of the tangent to a circle at a point, let us perform
+the following activities:
+Activity 1 : Take a circular wire and attach a straight wire AB at a point P of the
+circular wire so that it can rotate about the point P in a plane. Put the system on a table
+and gently rotate the wire AB about the point P to get different positions of the straight
+wire [see Fig. 10.3(i)].
+In various positions, the wire intersects the
+circular wire at P and at another point Q1 or Q2 or
+Q3, etc. In one position, you will see that it will
+intersect the circle at the point P only (see position
+AB of AB). This shows that a tangent exists at
+the point P of the circle. On rotating further, you
+can observe that in all other positions of AB, it will
+intersect the circle at P and at another point, say R1
+or R2 or R3, etc. So, you can observe that there is
+only one tangent at a point of the circle.
+Fig. 10.3 (i)
+While doing activity above, you must have observed that as the position AB
+moves towards the position A B, the common point, say Q1, of the line AB and the
+circle gradually comes nearer and nearer to the common point P. Ultimately, it coincides
+with the point P in the position AB of AB. Again note, what happens if ‘AB’ is
+rotated rightwards about P? The common point R3 gradually comes nearer and nearer
+to P and ultimately coincides with P. So, what we see is:
+The tangent to a circle is a special case of the secant, when the two end
+points of its corresponding chord coincide.
+*The word ‘tangent’ comes from the Latin word ‘tangere’, which means to touch and was
+introduced by the Danish mathematician Thomas Fineke in 1583.
+
+Reprint 2025-26
+
+146
+
+MATHEMATICS
+
+Activity 2 : On a paper, draw a circle and a
+secant PQ of the circle. Draw various lines
+parallel to the secant on both sides of it. You
+will find that after some steps, the length of
+the chord cut by the lines will gradually
+decrease, i.e., the two points of intersection of
+the line and the circle are coming closer and
+closer [see Fig. 10.3(ii)]. In one case, it
+becomes zero on one side of the secant and in
+another case, it becomes zero on the other side
+of the secant. See the positions PQ and PQ
+of the secant in Fig. 10.3 (ii). These are the
+tangents to the circle parallel to the given secant
+PQ. This also helps you to see that there cannot
+be more than two tangents parallel to a given
+secant.
+
+Fig. 10.3 (ii)
+
+This activity also establishes, what you must have observed, while doing
+Activity 1, namely, a tangent is the secant when both of the end points of the
+corresponding chord coincide.
+The common point of the tangent and the circle is called the point of contact
+[the point A in Fig. 10.1 (iii)]and the tangent is said to touch the circle at the
+common point.
+Now look around you. Have you seen a bicycle
+or a cart moving? Look at its wheels. All the spokes
+of a wheel are along its radii. Now note the position
+of the wheel with respect to its movement on the
+ground. Do you see any tangent anywhere?
+(See Fig. 10.4). In fact, the wheel moves along a line
+which is a tangent to the circle representing the wheel.
+Also, notice that in all positions, the radius through
+the point of contact with the ground appears to be at
+right angles to the tangent (see Fig. 10.4). We shall
+now prove this property of the tangent.
+
+Fig. 10.4
+
+Theorem 10.1 : The tangent at any point of a circle is perpendicular to the
+radius through the point of contact.
+Proof : We are given a circle with centre O and a tangent XY to the circle at a
+point P. We need to prove that OP is perpendicular to XY.
+
+Reprint 2025-26
+
+CIRCLES
+
+147
+
+Take a point Q on XY other than P and join OQ (see Fig. 10.5).
+The point Q must lie outside the circle.
+(Why? Note that if Q lies inside the circle, XY
+will become a secant and not a tangent to the
+circle). Therefore, OQ is longer than the radius
+OP of the circle. That is,
+OQ > OP.
+Since this happens for every point on the
+line XY except the point P, OP is the
+shortest of all the distances of the point O to the
+points of XY. So OP is perpendicular to XY.
+(as shown in Theorem A1.7.)
+
+Fig. 10.5
+
+Remarks
+1. By theorem above, we can also conclude that at any point on a circle there can be
+one and only one tangent.
+2. The line containing the radius through the point of contact is also sometimes called
+the ‘normal’ to the circle at the point.
+
+EXERCISE 10.1
+1. How many tangents can a circle have?
+2. Fill in the blanks :
+(i) A tangent to a circle intersects it in
+
+point (s).
+
+(ii) A line intersecting a circle in two points is called a
+(iii) A circle can have
+
+.
+
+parallel tangents at the most.
+
+(iv) The common point of a tangent to a circle and the circle is called
+
+.
+
+3. A tangent PQ at a point P of a circle of radius 5 cm meets a line through the centre O at
+a point Q so that OQ = 12 cm. Length PQ is :
+(A) 12 cm
+(B) 13 cm
+(C) 8.5 cm
+(D) 119 cm.
+4. Draw a circle and two lines parallel to a given line such that one is a tangent and the
+other, a secant to the circle.
+
+--- Subtopic 10.3 ---
+
+
+10.3 Number of Tangents from a Point on a Circle
+To get an idea of the number of tangents from a point on a circle, let us perform the
+following activity:
+
+Reprint 2025-26
+
+148
+
+MATHEMATICS
+
+Activity 3 : Draw a circle on a paper. Take a
+point P inside it. Can you draw a tangent to the
+circle through this point? You will find that all
+the lines through this point intersect the circle in
+two points. So, it is not possible to draw any
+tangent to a circle through a point inside it
+[see Fig. 10.6 (i)].
+Next take a point P on the circle and draw
+tangents through this point. You have already
+observed that there is only one tangent to the
+circle at such a point [see Fig. 10.6 (ii)].
+
+(i)
+
+Finally, take a point P outside the circle and
+try to draw tangents to the circle from this point.
+What do you observe? You will find that you
+can draw exactly two tangents to the circle
+through this point [see Fig. 10.6 (iii)].
+We can summarise these facts as follows:
+Case 1 : There is no tangent to a circle passing
+through a point lying inside the circle.
+
+(ii)
+
+Case 2 : There is one and only one tangent to a
+circle passing through a point lying on the circle.
+Case 3 : There are exactly two tangents to a
+circle through a point lying outside the circle.
+In Fig. 10.6 (iii), T1and T2 are the points of
+contact of the tangents PT 1 and PT 2
+respectively.
+The length of the segment of the tangent
+from the external point P and the point of contact
+with the circle is called the length of the tangent
+from the point P to the circle.
+
+(iii)
+Fig. 10.6
+
+Note that in Fig. 10.6 (iii), PT1 and PT2 are the lengths of the tangents from P to
+the circle. The lengths PT1 and PT2 have a common property. Can you find this?
+Measure PT1 and PT2. Are these equal? In fact, this is always so. Let us give a proof
+of this fact in the following theorem.
+
+Reprint 2025-26
+
+CIRCLES
+
+149
+
+Theorem 10.2 : The lengths of tangents drawn
+from an external point to a circle are equal.
+Proof : We are given a circle with centre O, a
+point P lying outside the circle and two tangents
+PQ, PR on the circle from P (see Fig. 10.7). We
+are required to prove that PQ = PR.
+For this, we join OP, OQ and OR. Then
+∠ OQP and ∠ ORP are right angles, because
+these are angles between the radii and tangents,
+and according to Theorem 10.1 they are right
+angles. Now in right triangles OQP and ORP,
+OQ = OR
+
+Fig. 10.7
+(Radii of the same circle)
+
+OP = OP
+
+(Common)
+
+Therefore,
+
+∆ OQP ≅ ∆ ORP
+
+(RHS)
+
+This gives
+
+PQ = PR
+
+(CPCT)
+
+Remarks
+1. The theorem can also be proved by using the Pythagoras Theorem as follows:
+PQ2 = OP2 – OQ2 = OP2 – OR2 = PR2 (As OQ = OR)
+which gives PQ = PR.
+2. Note also that ∠ OPQ = ∠ OPR. Therefore, OP is the angle bisector of ∠ QPR,
+i.e., the centre lies on the bisector of the angle between the two tangents.
+Let us take some examples.
+Example 1 : Prove that in two concentric circles,
+the chord of the larger circle, which touches the
+smaller circle, is bisected at the point of contact.
+Solution : We are given two concentric circles
+C1 and C2 with centre O and a chord AB of the
+larger circle C1 which touches the smaller circle
+C2 at the point P (see Fig. 10.8). We need to prove
+that AP = BP.
+Let us join OP. Then, AB is a tangent to C2 at P
+and OP is its radius. Therefore, by Theorem 10.1,
+OP ⊥ AB
+
+Reprint 2025-26
+
+Fig. 10.8
+
+150
+
+MATHEMATICS
+
+Now AB is a chord of the circle C1 and OP  AB. Therefore, OP is the bisector of the
+chord AB, as the perpendicular from the centre bisects the chord,
+i.e.,
+
+AP = BP
+
+Example 2 : Two tangents TP and TQ are drawn
+to a circle with centre O from an external point T.
+Prove that  PTQ = 2  OPQ.
+Solution : We are given a circle with centre O,
+an external point T and two tangents TP and TQ
+to the circle, where P, Q are the points of contact
+(see Fig. 10.9). We need to prove that
+ PTQ = 2  OPQ
+
+Fig. 10.9
+
+ PTQ = 
+
+Let
+
+Now, by Theorem 10.2, TP = TQ. So, TPQ is an isosceles triangle.
+ TPQ =  TQP =
+
+Therefore,
+
+Also, by Theorem 10.1,
+
+1
+1
+(180°  )  90°  
+2
+2
+
+ OPT = 90°
+
+1 
+
+ OPQ =  OPT –  TPQ = 90°   90° –  
+2 
+
+
+So,
+
+=
+This gives
+
+1
+1
+   PTQ
+2
+2
+
+ PTQ = 2  OPQ
+
+Example 3 : PQ is a chord of length 8 cm of a
+circle of radius 5 cm. The tangents at P and Q
+intersect at a point T (see Fig. 10.10). Find the
+length TP.
+Solution : Join OT. Let it intersect PQ at the
+point R. Then  TPQ is isosceles and TO is the
+angle bisector of  PTQ. So, OT  PQ
+and therefore, OT bisects PQ which gives
+PR = RQ = 4 cm.
+Also,
+
+OR =
+
+OP 2  PR 2  52  42 cm  3 cm.
+
+Reprint 2025-26
+
+Fig. 10.10
+
+CIRCLES
+
+151
+
+Now,  TPR +  RPO = 90° =  TPR +  PTR
+So,
+
+(Why?)
+
+ RPO =  PTR
+
+Therefore, right triangle TRP is similar to the right triangle PRO by AA similarity.
+
+TP
+RP
+TP
+4
+20
+=
+, i.e.,
+=
+or TP =
+cm.
+PO
+RO
+5
+3
+3
+
+This gives
+
+Note : TP can also be found by using the Pythagoras Theorem, as follows:
+Let
+
+TP = x and TR = y.
+x2 = y2 + 16
+2
+
+2
+
+x + 5 = (y + 3)
+
+Then
+
+(Taking right  PRT)
+
+(1)
+
+(Taking right  OPT)
+
+(2)
+
+2
+
+Subtracting (1) from (2), we get
+25 = 6y – 7
+
+or
+
+y=
+
+32 16
+
+6
+3
+
+Therefore,
+
+16
+16  25
+ 16 
+x =    16  (16  9) 
+9
+9
+ 3
+
+or
+
+x=
+
+2
+
+2
+
+[From (1)]
+
+20
+3
+
+EXERCISE 10.2
+In Q.1 to 3, choose the correct option and give justification.
+1. From a point Q, the length of the tangent to a circle is 24 cm and the distance of Q from
+the centre is 25 cm. The radius of the circle is
+(A) 7 cm
+
+(B) 12 cm
+
+(C) 15 cm
+
+(D) 24.5 cm
+
+2. In Fig. 10.11, if TP and TQ are the two tangents
+to a circle with centre O so that  POQ = 110°,
+then PTQ is equal to
+(A) 60°
+
+(B) 70°
+
+(C) 80°
+
+(D) 90°
+
+Fig. 10.11
+
+3. If tangents PA and PB from a point P to a circle with centre O are inclined to each other
+at angle of 80°, then  POA is equal to
+(A) 50°
+
+(B) 60°
+
+(C) 70°
+
+(D) 80°
+
+Reprint 2025-26
+
+152
+
+MATHEMATICS
+
+4. Prove that the tangents drawn at the ends of a diameter of a circle are parallel.
+5. Prove that the perpendicular at the point of contact to the tangent to a circle passes
+through the centre.
+6. The length of a tangent from a point A at distance 5 cm from the centre of the circle is 4
+cm. Find the radius of the circle.
+7. Two concentric circles are of radii 5 cm and 3 cm. Find the length of the chord of the
+larger circle which touches the smaller circle.
+8. A quadrilateral ABCD is drawn to circumscribe a circle (see Fig. 10.12). Prove that
+AB + CD = AD + BC
+
+Fig. 10.12
+
+Fig. 10.13
+
+9. In Fig. 10.13, XY and XY are two parallel tangents to a circle with centre O and
+another tangent AB with point of contact C intersecting XY at A and XY at B. Prove
+that  AOB = 90°.
+10. Prove that the angle between the two tangents drawn from an external point to a circle
+is supplementary to the angle subtended by the line-segment joining the points of
+contact at the centre.
+11. Prove that the parallelogram circumscribing a
+circle is a rhombus.
+12. A triangle ABC is drawn to circumscribe a circle
+of radius 4 cm such that the segments BD and
+DC into which BC is divided by the point of
+contact D are of lengths 8 cm and 6 cm
+respectively (see Fig. 10.14). Find the sides AB
+and AC.
+13. Prove that opposite sides of a quadrilateral
+circumscribing a circle subtend supplementary
+angles at the centre of the circle.
+
+Reprint 2025-26
+
+Fig. 10.14
+
+CIRCLES
+
+153
+2025-11-24 16:21:13 - src.components.mcq_generator - INFO - [mcq_generator.py:38] - Generating 5 MCQs at hard difficulty for topic: Circles
+2025-11-24 16:21:13 - src.components.mcq_generator - DEBUG - [mcq_generator.py:45] - Content length: 12462 characters
+2025-11-24 16:21:13 - src.components.mcq_generator - DEBUG - [mcq_generator.py:49] - Content escaped for template processing
+2025-11-24 16:21:13 - src.components.mcq_generator - INFO - [mcq_generator.py:115] - Invoking LLM to generate MCQs...
+2025-11-24 16:21:16 - src.components.mcq_generator - DEBUG - [mcq_generator.py:118] - LLM response received
+2025-11-24 16:21:16 - src.components.mcq_generator - INFO - [mcq_generator.py:148] - Successfully generated 5 MCQs
+2025-11-24 16:21:16 - src.routes - INFO - [routes.py:107] - Successfully generated 5 MCQs
+2025-11-24 16:29:57 - src.routes - INFO - [routes.py:47] - GET /get_classes/CISCE
+2025-11-24 16:29:57 - src.routes - DEBUG - [routes.py:49] - Found 6 classes for board: CISCE
+2025-11-24 16:29:59 - src.routes - INFO - [routes.py:54] - GET /get_subjects/CISCE/2
+2025-11-24 16:29:59 - src.routes - DEBUG - [routes.py:56] - Found 8 subjects for CISCE class 2
+2025-11-24 16:30:02 - src.routes - INFO - [routes.py:61] - GET /get_topics/CISCE/2/Hindi
+2025-11-24 16:30:02 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CISCE/2/Hindi: 17 topics found
+2025-11-24 16:30:02 - src.routes - DEBUG - [routes.py:63] - Found 17 topics for CISCE class 2 Hindi
+2025-11-24 16:30:09 - src.routes - INFO - [routes.py:68] - GET /get_subtopics/CISCE/2/Hindi/12
+2025-11-24 16:30:09 - src.components.content_fetcher - INFO - [content_fetcher.py:183] - Fetching content for: Board=CISCE, Class=2, Subject=Hindi, Topic=12, Subtopics=None
+2025-11-24 16:30:09 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CISCE/2/Hindi: 17 topics found
+2025-11-24 16:30:09 - src.components.content_fetcher - DEBUG - [content_fetcher.py:202] - Topic name found: मुझे सोने दो
+2025-11-24 16:30:09 - src.components.content_fetcher - INFO - [content_fetcher.py:214] - Searching in 1 book(s)...
+2025-11-24 16:30:09 - src.components.content_fetcher - DEBUG - [content_fetcher.py:224] - Checking book: Sunhari Dhoop (ID: C2HIN0SD0IB)
+2025-11-24 16:30:09 - src.components.content_fetcher - DEBUG - [content_fetcher.py:227] - Book file not found: data\C2HIN0SD0IB.txt
+2025-11-24 16:30:09 - src.components.content_fetcher - WARNING - [content_fetcher.py:278] - Topic 12 not found in any available books. Checked: C2HIN0SD0IB
+2025-11-24 16:30:09 - src.routes - DEBUG - [routes.py:70] - Found 0 subtopics for 12
+2025-11-24 16:30:18 - src.routes - INFO - [routes.py:47] - GET /get_classes/CBSE
+2025-11-24 16:30:18 - src.routes - DEBUG - [routes.py:49] - Found 12 classes for board: CBSE
+2025-11-24 16:30:20 - src.routes - INFO - [routes.py:54] - GET /get_subjects/CBSE/11
+2025-11-24 16:30:20 - src.routes - DEBUG - [routes.py:56] - Found 19 subjects for CBSE class 11
+2025-11-24 16:30:26 - src.routes - INFO - [routes.py:61] - GET /get_topics/CBSE/11/History
+2025-11-24 16:30:26 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CBSE/11/History: 7 topics found
+2025-11-24 16:30:26 - src.routes - DEBUG - [routes.py:63] - Found 7 topics for CBSE class 11 History
+2025-11-24 16:30:32 - src.routes - INFO - [routes.py:68] - GET /get_subtopics/CBSE/11/History/2
+2025-11-24 16:30:32 - src.components.content_fetcher - INFO - [content_fetcher.py:183] - Fetching content for: Board=CBSE, Class=11, Subject=History, Topic=2, Subtopics=None
+2025-11-24 16:30:32 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CBSE/11/History: 7 topics found
+2025-11-24 16:30:32 - src.components.content_fetcher - DEBUG - [content_fetcher.py:202] - Topic name found: EMPIRES
+2025-11-24 16:30:32 - src.components.content_fetcher - INFO - [content_fetcher.py:214] - Searching in 1 book(s)...
+2025-11-24 16:30:32 - src.components.content_fetcher - DEBUG - [content_fetcher.py:224] - Checking book: Themes in world History (NCERT) (ID: C11HIS0THEME0NCERT)
+2025-11-24 16:30:32 - src.components.content_fetcher - INFO - [content_fetcher.py:267] - Topic found in book: Themes in world History (NCERT)
+2025-11-24 16:30:32 - src.components.content_fetcher - INFO - [content_fetcher.py:268] - Retrieved Content:
+empires
+
+An Empire Across Three Continents
+
+The Central Islamic Lands
+2025-11-24 16:30:32 - src.routes - DEBUG - [routes.py:70] - Found 1 subtopics for 2
+2025-11-24 16:30:43 - src.routes - INFO - [routes.py:75] - POST /generate - MCQ generation request received
+2025-11-24 16:30:43 - src.routes - DEBUG - [routes.py:78] - Request data: {'board': 'CBSE', 'class': '11', 'subject': 'History', 'topic': '2', 'subtopics': [], 'num_questions': '10', 'difficulty_level': 'medium'}
+2025-11-24 16:30:43 - src.components.content_fetcher - INFO - [content_fetcher.py:183] - Fetching content for: Board=CBSE, Class=11, Subject=History, Topic=2, Subtopics=[]
+2025-11-24 16:30:43 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CBSE/11/History: 7 topics found
+2025-11-24 16:30:43 - src.components.content_fetcher - DEBUG - [content_fetcher.py:202] - Topic name found: EMPIRES
+2025-11-24 16:30:43 - src.components.content_fetcher - INFO - [content_fetcher.py:214] - Searching in 1 book(s)...
+2025-11-24 16:30:43 - src.components.content_fetcher - DEBUG - [content_fetcher.py:224] - Checking book: Themes in world History (NCERT) (ID: C11HIS0THEME0NCERT)
+2025-11-24 16:30:43 - src.components.content_fetcher - INFO - [content_fetcher.py:267] - Topic found in book: Themes in world History (NCERT)
+2025-11-24 16:30:43 - src.components.content_fetcher - INFO - [content_fetcher.py:268] - Retrieved Content:
+empires
+
+An Empire Across Three Continents
+
+The Central Islamic Lands
+2025-11-24 16:30:43 - src.components.mcq_generator - INFO - [mcq_generator.py:38] - Generating 10 MCQs at medium difficulty for topic: EMPIRES
+2025-11-24 16:30:43 - src.components.mcq_generator - DEBUG - [mcq_generator.py:45] - Content length: 69 characters
+2025-11-24 16:30:43 - src.components.mcq_generator - DEBUG - [mcq_generator.py:49] - Content escaped for template processing
+2025-11-24 16:30:43 - src.components.mcq_generator - INFO - [mcq_generator.py:115] - Invoking LLM to generate MCQs...
+2025-11-24 16:30:46 - src.components.mcq_generator - DEBUG - [mcq_generator.py:118] - LLM response received
+2025-11-24 16:30:46 - src.components.mcq_generator - INFO - [mcq_generator.py:148] - Successfully generated 10 MCQs
+2025-11-24 16:30:46 - src.routes - INFO - [routes.py:107] - Successfully generated 10 MCQs
+2025-11-24 16:32:09 - __main__ - INFO - [app.py:23] - ======================================================================
+2025-11-24 16:32:09 - __main__ - INFO - [app.py:24] - Starting Flask MCQ Generator Application
+2025-11-24 16:32:09 - __main__ - INFO - [app.py:25] - ======================================================================
+2025-11-24 16:32:09 - __main__ - INFO - [app.py:28] - Initializing Flask application...
+2025-11-24 16:32:09 - src.config - INFO - [config.py:20] - Initializing application configuration...
+2025-11-24 16:32:09 - src.config - DEBUG - [config.py:24] - Environment variables loaded
+2025-11-24 16:32:09 - src.config - DEBUG - [config.py:32] - Environment variables configured
+2025-11-24 16:32:09 - src.config - INFO - [config.py:37] - Configuration initialized successfully
+2025-11-24 16:32:09 - src.config - INFO - [config.py:51] - Initializing LLM with model: llama-3.3-70b-versatile, temperature: 0
+2025-11-24 16:32:10 - src.config - INFO - [config.py:53] - LLM initialized successfully
+2025-11-24 16:32:10 - __main__ - INFO - [app.py:36] - Initializing application components...
+2025-11-24 16:32:10 - src.components.content_fetcher - INFO - [content_fetcher.py:25] - Initializing EducationContentFetcher...
+2025-11-24 16:32:10 - src.components.content_fetcher - DEBUG - [content_fetcher.py:29] - Loading category file: category.json
+2025-11-24 16:32:10 - src.components.content_fetcher - DEBUG - [content_fetcher.py:33] - Loading topics file: topics.json
+2025-11-24 16:32:10 - src.components.content_fetcher - INFO - [content_fetcher.py:37] - EducationContentFetcher initialized successfully
+2025-11-24 16:32:10 - __main__ - INFO - [app.py:41] - Registering routes...
+2025-11-24 16:32:10 - __main__ - INFO - [app.py:44] - Application initialization complete!
+2025-11-24 16:32:10 - __main__ - INFO - [app.py:45] - ======================================================================
+2025-11-24 16:32:10 - __main__ - INFO - [app.py:52] - Starting Flask development server on http://localhost:5000
+2025-11-24 16:34:31 - __main__ - INFO - [app.py:23] - ======================================================================
+2025-11-24 16:34:31 - __main__ - INFO - [app.py:24] - Starting Flask MCQ Generator Application
+2025-11-24 16:34:31 - __main__ - INFO - [app.py:25] - ======================================================================
+2025-11-24 16:34:31 - __main__ - INFO - [app.py:28] - Initializing Flask application...
+2025-11-24 16:34:31 - src.config - INFO - [config.py:20] - Initializing application configuration...
+2025-11-24 16:34:31 - src.config - DEBUG - [config.py:24] - Environment variables loaded
+2025-11-24 16:34:31 - src.config - DEBUG - [config.py:32] - Environment variables configured
+2025-11-24 16:34:31 - src.config - INFO - [config.py:37] - Configuration initialized successfully
+2025-11-24 16:34:31 - src.config - INFO - [config.py:51] - Initializing LLM with model: llama-3.3-70b-versatile, temperature: 0
+2025-11-24 16:34:33 - src.config - INFO - [config.py:53] - LLM initialized successfully
+2025-11-24 16:34:33 - __main__ - INFO - [app.py:36] - Initializing application components...
+2025-11-24 16:34:33 - src.components.content_fetcher - INFO - [content_fetcher.py:25] - Initializing EducationContentFetcher...
+2025-11-24 16:34:33 - src.components.content_fetcher - DEBUG - [content_fetcher.py:29] - Loading category file: category.json
+2025-11-24 16:34:33 - src.components.content_fetcher - DEBUG - [content_fetcher.py:33] - Loading topics file: topics.json
+2025-11-24 16:34:33 - src.components.content_fetcher - INFO - [content_fetcher.py:37] - EducationContentFetcher initialized successfully
+2025-11-24 16:34:33 - __main__ - INFO - [app.py:41] - Registering routes...
+2025-11-24 16:34:33 - __main__ - INFO - [app.py:44] - Application initialization complete!
+2025-11-24 16:34:33 - __main__ - INFO - [app.py:45] - ======================================================================
+2025-11-24 16:34:33 - __main__ - INFO - [app.py:52] - Starting Flask development server on http://localhost:5000
