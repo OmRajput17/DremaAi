@@ -539,3 +539,18 @@ groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama-
 2025-11-24 12:22:05 - __main__ - INFO - [app.py:44] - Application initialization complete!
 2025-11-24 12:22:05 - __main__ - INFO - [app.py:45] - ======================================================================
 2025-11-24 12:22:05 - __main__ - INFO - [app.py:52] - Starting Flask development server on http://localhost:5000
+2025-11-24 12:22:37 - src.routes - INFO - [routes.py:67] - POST /generate - MCQ generation request received
+2025-11-24 12:22:37 - src.routes - DEBUG - [routes.py:70] - Request data: {'board': 'CBSE', 'class': '11', 'subject': 'Mathematics', 'topic': '5', 'num_questions': '10', 'difficulty_level': 'medium'}
+2025-11-24 12:22:37 - src.components.content_fetcher - INFO - [content_fetcher.py:99] - Fetching content for: Board=CBSE, Class=11, Subject=Mathematics, Topic=5
+2025-11-24 12:22:37 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CBSE/11/Mathematics: 14 topics found
+2025-11-24 12:22:37 - src.components.content_fetcher - DEBUG - [content_fetcher.py:118] - Topic name found: Linear Inequalities
+2025-11-24 12:22:37 - src.components.content_fetcher - INFO - [content_fetcher.py:130] - Searching in 1 book(s)...
+2025-11-24 12:22:37 - src.components.content_fetcher - DEBUG - [content_fetcher.py:140] - Checking book: Mathematics (NCERT) (ID: C11MATH0MATHE0NCERT)
+2025-11-24 12:22:37 - src.components.content_fetcher - INFO - [content_fetcher.py:159] - Topic found in book: Mathematics (NCERT)
+2025-11-24 12:22:37 - src.components.mcq_generator - INFO - [mcq_generator.py:38] - Generating 10 MCQs at medium difficulty for topic: Linear Inequalities
+2025-11-24 12:22:37 - src.components.mcq_generator - DEBUG - [mcq_generator.py:45] - Content length: 16744 characters
+2025-11-24 12:22:37 - src.components.mcq_generator - DEBUG - [mcq_generator.py:49] - Content escaped for template processing
+2025-11-24 12:22:37 - src.components.mcq_generator - INFO - [mcq_generator.py:115] - Invoking LLM to generate MCQs...
+2025-11-24 12:22:40 - src.components.mcq_generator - DEBUG - [mcq_generator.py:118] - LLM response received
+2025-11-24 12:22:40 - src.components.mcq_generator - INFO - [mcq_generator.py:148] - Successfully generated 10 MCQs
+2025-11-24 12:22:40 - src.routes - INFO - [routes.py:98] - Successfully generated 10 MCQs
