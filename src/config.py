@@ -43,7 +43,7 @@ class Config:
         Args:
             model (str): Model name
             temperature (float): Temperature for generation
-        
+         
         Returns:
             ChatGroq: Initialized LLM instance
         """

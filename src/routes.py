@@ -32,6 +32,7 @@ class Routes:
         self.app.add_url_rule('/get_classes/<board>', 'get_classes', self.get_classes)
         self.app.add_url_rule('/get_subjects/<board>/<class_num>', 'get_subjects', self.get_subjects)
         self.app.add_url_rule('/get_topics/<board>/<class_num>/<subject>', 'get_topics', self.get_topics)
+        self.app.add_url_rule('/get_subtopics/<board>/<class_num>/<subject>/<topic>', 'get_subtopics', self.get_subtopics)
         self.app.add_url_rule('/generate', 'generate', self.generate, methods=['POST'])
     
     def index(self):
@@ -61,6 +62,13 @@ class Routes:
         topics = self.fetcher.get_topics(board, class_num, subject)
         logger.debug(f"Found {len(topics)} topics for {board} class {class_num} {subject}")
         return jsonify(topics)
+
+    def get_subtopics(self, board, class_num, subject, topic):
+        """Get subtopics for a selected topic."""
+        logger.info(f"GET /get_subtopics/{board}/{class_num}/{subject}/{topic}")
+        subtopics = self.fetcher.get_subtopics(board, class_num, subject, topic)
+        logger.debug(f"Found {len(subtopics)} subtopics for {topic}")
+        return jsonify(subtopics)
     
     def generate(self):
         """Generate MCQs based on form input."""
@@ -73,11 +81,12 @@ class Routes:
             class_num = data.get('class')
             subject = data.get('subject')
             topic = data.get('topic')
+            subtopics = data.get('subtopics', []) # List of subtopic IDs
             num_questions = int(data.get('num_questions', 5))
             difficulty_level = data.get('difficulty_level', 'medium')
             
             # Fetch content
-            result = self.fetcher.fetch_content(board, class_num, subject, topic)
+            result = self.fetcher.fetch_content(board, class_num, subject, topic, subtopics)
             
             if result['status'] != 'success':
                 logger.warning(f"Content fetch failed: {result['message']}")

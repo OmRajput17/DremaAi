@@ -2,7 +2,7 @@
 MCQ Generator Component
 Handles MCQ generation using LLM
 """
-from langchain.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate
 import json
 from src.logging import get_logger
 
