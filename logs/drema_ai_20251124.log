@@ -1,0 +1,541 @@
+2025-11-24 12:06:56 - __main__ - INFO - [app.py:23] - ======================================================================
+2025-11-24 12:06:56 - __main__ - INFO - [app.py:24] - Starting Flask MCQ Generator Application
+2025-11-24 12:06:56 - __main__ - INFO - [app.py:25] - ======================================================================
+2025-11-24 12:06:56 - __main__ - INFO - [app.py:28] - Initializing Flask application...
+2025-11-24 12:06:56 - src.config - INFO - [config.py:20] - Initializing application configuration...
+2025-11-24 12:06:56 - src.config - DEBUG - [config.py:24] - Environment variables loaded
+2025-11-24 12:06:56 - src.config - DEBUG - [config.py:32] - Environment variables configured
+2025-11-24 12:06:56 - src.config - INFO - [config.py:37] - Configuration initialized successfully
+2025-11-24 12:06:56 - src.config - INFO - [config.py:51] - Initializing LLM with model: llama-3.1-70b-versatile, temperature: 0
+2025-11-24 12:06:57 - src.config - INFO - [config.py:53] - LLM initialized successfully
+2025-11-24 12:06:57 - __main__ - INFO - [app.py:36] - Initializing application components...
+2025-11-24 12:06:57 - src.components.content_fetcher - INFO - [content_fetcher.py:19] - Initializing EducationContentFetcher...
+2025-11-24 12:06:57 - src.components.content_fetcher - DEBUG - [content_fetcher.py:23] - Loading category file: category.json
+2025-11-24 12:06:57 - src.components.content_fetcher - DEBUG - [content_fetcher.py:27] - Loading topics file: topics.json
+2025-11-24 12:06:57 - src.components.content_fetcher - INFO - [content_fetcher.py:31] - EducationContentFetcher initialized successfully
+2025-11-24 12:06:57 - __main__ - INFO - [app.py:41] - Registering routes...
+2025-11-24 12:06:57 - __main__ - INFO - [app.py:44] - Application initialization complete!
+2025-11-24 12:06:57 - __main__ - INFO - [app.py:45] - ======================================================================
+2025-11-24 12:06:57 - __main__ - INFO - [app.py:52] - Starting Flask development server on http://localhost:5000
+2025-11-24 12:06:58 - __main__ - INFO - [app.py:23] - ======================================================================
+2025-11-24 12:06:58 - __main__ - INFO - [app.py:24] - Starting Flask MCQ Generator Application
+2025-11-24 12:06:58 - __main__ - INFO - [app.py:25] - ======================================================================
+2025-11-24 12:06:58 - __main__ - INFO - [app.py:28] - Initializing Flask application...
+2025-11-24 12:06:58 - src.config - INFO - [config.py:20] - Initializing application configuration...
+2025-11-24 12:06:58 - src.config - DEBUG - [config.py:24] - Environment variables loaded
+2025-11-24 12:06:58 - src.config - DEBUG - [config.py:32] - Environment variables configured
+2025-11-24 12:06:58 - src.config - INFO - [config.py:37] - Configuration initialized successfully
+2025-11-24 12:06:58 - src.config - INFO - [config.py:51] - Initializing LLM with model: llama-3.1-70b-versatile, temperature: 0
+2025-11-24 12:06:59 - src.config - INFO - [config.py:53] - LLM initialized successfully
+2025-11-24 12:06:59 - __main__ - INFO - [app.py:36] - Initializing application components...
+2025-11-24 12:06:59 - src.components.content_fetcher - INFO - [content_fetcher.py:19] - Initializing EducationContentFetcher...
+2025-11-24 12:06:59 - src.components.content_fetcher - DEBUG - [content_fetcher.py:23] - Loading category file: category.json
+2025-11-24 12:06:59 - src.components.content_fetcher - DEBUG - [content_fetcher.py:27] - Loading topics file: topics.json
+2025-11-24 12:06:59 - src.components.content_fetcher - INFO - [content_fetcher.py:31] - EducationContentFetcher initialized successfully
+2025-11-24 12:06:59 - __main__ - INFO - [app.py:41] - Registering routes...
+2025-11-24 12:06:59 - __main__ - INFO - [app.py:44] - Application initialization complete!
+2025-11-24 12:06:59 - __main__ - INFO - [app.py:45] - ======================================================================
+2025-11-24 12:06:59 - __main__ - INFO - [app.py:52] - Starting Flask development server on http://localhost:5000
+2025-11-24 12:07:18 - src.routes - INFO - [routes.py:39] - GET / - Rendering main page
+2025-11-24 12:07:18 - src.routes - DEBUG - [routes.py:41] - Found 19 boards
+2025-11-24 12:09:35 - src.routes - INFO - [routes.py:39] - GET / - Rendering main page
+2025-11-24 12:09:35 - src.routes - DEBUG - [routes.py:41] - Found 19 boards
+2025-11-24 12:09:39 - src.routes - INFO - [routes.py:46] - GET /get_classes/CBSE
+2025-11-24 12:09:39 - src.routes - DEBUG - [routes.py:48] - Found 12 classes for board: CBSE
+2025-11-24 12:09:43 - src.routes - INFO - [routes.py:53] - GET /get_subjects/CBSE/11
+2025-11-24 12:09:43 - src.routes - DEBUG - [routes.py:55] - Found 19 subjects for CBSE class 11
+2025-11-24 12:09:48 - src.routes - INFO - [routes.py:60] - GET /get_topics/CBSE/11/Mathematics
+2025-11-24 12:09:48 - src.routes - DEBUG - [routes.py:62] - Found 0 topics for CBSE class 11 Mathematics
+2025-11-24 12:11:04 - __main__ - INFO - [app.py:23] - ======================================================================
+2025-11-24 12:11:04 - __main__ - INFO - [app.py:24] - Starting Flask MCQ Generator Application
+2025-11-24 12:11:04 - __main__ - INFO - [app.py:25] - ======================================================================
+2025-11-24 12:11:04 - __main__ - INFO - [app.py:28] - Initializing Flask application...
+2025-11-24 12:11:04 - src.config - INFO - [config.py:20] - Initializing application configuration...
+2025-11-24 12:11:04 - src.config - DEBUG - [config.py:24] - Environment variables loaded
+2025-11-24 12:11:04 - src.config - DEBUG - [config.py:32] - Environment variables configured
+2025-11-24 12:11:04 - src.config - INFO - [config.py:37] - Configuration initialized successfully
+2025-11-24 12:11:04 - src.config - INFO - [config.py:51] - Initializing LLM with model: llama-3.1-70b-versatile, temperature: 0
+2025-11-24 12:11:05 - src.config - INFO - [config.py:53] - LLM initialized successfully
+2025-11-24 12:11:05 - __main__ - INFO - [app.py:36] - Initializing application components...
+2025-11-24 12:11:05 - src.components.content_fetcher - INFO - [content_fetcher.py:19] - Initializing EducationContentFetcher...
+2025-11-24 12:11:05 - src.components.content_fetcher - DEBUG - [content_fetcher.py:23] - Loading category file: category.json
+2025-11-24 12:11:05 - src.components.content_fetcher - DEBUG - [content_fetcher.py:27] - Loading topics file: topics.json
+2025-11-24 12:11:05 - src.components.content_fetcher - INFO - [content_fetcher.py:31] - EducationContentFetcher initialized successfully
+2025-11-24 12:11:05 - __main__ - INFO - [app.py:41] - Registering routes...
+2025-11-24 12:11:05 - __main__ - INFO - [app.py:44] - Application initialization complete!
+2025-11-24 12:11:05 - __main__ - INFO - [app.py:45] - ======================================================================
+2025-11-24 12:11:05 - __main__ - INFO - [app.py:52] - Starting Flask development server on http://localhost:5000
+2025-11-24 12:12:22 - __main__ - INFO - [app.py:23] - ======================================================================
+2025-11-24 12:12:22 - __main__ - INFO - [app.py:24] - Starting Flask MCQ Generator Application
+2025-11-24 12:12:22 - __main__ - INFO - [app.py:25] - ======================================================================
+2025-11-24 12:12:22 - __main__ - INFO - [app.py:28] - Initializing Flask application...
+2025-11-24 12:12:22 - src.config - INFO - [config.py:20] - Initializing application configuration...
+2025-11-24 12:12:22 - src.config - DEBUG - [config.py:24] - Environment variables loaded
+2025-11-24 12:12:22 - src.config - DEBUG - [config.py:32] - Environment variables configured
+2025-11-24 12:12:22 - src.config - INFO - [config.py:37] - Configuration initialized successfully
+2025-11-24 12:12:22 - src.config - INFO - [config.py:51] - Initializing LLM with model: llama-3.1-70b-versatile, temperature: 0
+2025-11-24 12:12:23 - src.config - INFO - [config.py:53] - LLM initialized successfully
+2025-11-24 12:12:23 - __main__ - INFO - [app.py:36] - Initializing application components...
+2025-11-24 12:12:23 - src.components.content_fetcher - INFO - [content_fetcher.py:19] - Initializing EducationContentFetcher...
+2025-11-24 12:12:23 - src.components.content_fetcher - DEBUG - [content_fetcher.py:23] - Loading category file: category.json
+2025-11-24 12:12:23 - src.components.content_fetcher - DEBUG - [content_fetcher.py:27] - Loading topics file: topics.json
+2025-11-24 12:12:23 - src.components.content_fetcher - INFO - [content_fetcher.py:31] - EducationContentFetcher initialized successfully
+2025-11-24 12:12:23 - __main__ - INFO - [app.py:41] - Registering routes...
+2025-11-24 12:12:23 - __main__ - INFO - [app.py:44] - Application initialization complete!
+2025-11-24 12:12:23 - __main__ - INFO - [app.py:45] - ======================================================================
+2025-11-24 12:12:23 - __main__ - INFO - [app.py:52] - Starting Flask development server on http://localhost:5000
+2025-11-24 12:12:36 - __main__ - INFO - [app.py:23] - ======================================================================
+2025-11-24 12:12:36 - __main__ - INFO - [app.py:24] - Starting Flask MCQ Generator Application
+2025-11-24 12:12:36 - __main__ - INFO - [app.py:25] - ======================================================================
+2025-11-24 12:12:36 - __main__ - INFO - [app.py:28] - Initializing Flask application...
+2025-11-24 12:12:36 - src.config - INFO - [config.py:20] - Initializing application configuration...
+2025-11-24 12:12:36 - src.config - DEBUG - [config.py:24] - Environment variables loaded
+2025-11-24 12:12:36 - src.config - DEBUG - [config.py:32] - Environment variables configured
+2025-11-24 12:12:36 - src.config - INFO - [config.py:37] - Configuration initialized successfully
+2025-11-24 12:12:36 - src.config - INFO - [config.py:51] - Initializing LLM with model: llama-3.1-70b-versatile, temperature: 0
+2025-11-24 12:12:37 - src.config - INFO - [config.py:53] - LLM initialized successfully
+2025-11-24 12:12:37 - __main__ - INFO - [app.py:36] - Initializing application components...
+2025-11-24 12:12:37 - src.components.content_fetcher - INFO - [content_fetcher.py:25] - Initializing EducationContentFetcher...
+2025-11-24 12:12:37 - src.components.content_fetcher - DEBUG - [content_fetcher.py:29] - Loading category file: category.json
+2025-11-24 12:12:37 - src.components.content_fetcher - DEBUG - [content_fetcher.py:33] - Loading topics file: topics.json
+2025-11-24 12:12:37 - src.components.content_fetcher - INFO - [content_fetcher.py:37] - EducationContentFetcher initialized successfully
+2025-11-24 12:12:37 - __main__ - INFO - [app.py:41] - Registering routes...
+2025-11-24 12:12:37 - __main__ - INFO - [app.py:44] - Application initialization complete!
+2025-11-24 12:12:37 - __main__ - INFO - [app.py:45] - ======================================================================
+2025-11-24 12:12:37 - __main__ - INFO - [app.py:52] - Starting Flask development server on http://localhost:5000
+2025-11-24 12:13:06 - src.routes - INFO - [routes.py:39] - GET / - Rendering main page
+2025-11-24 12:13:06 - src.routes - DEBUG - [routes.py:41] - Found 19 boards
+2025-11-24 12:13:09 - src.routes - INFO - [routes.py:46] - GET /get_classes/CBSE
+2025-11-24 12:13:09 - src.routes - DEBUG - [routes.py:48] - Found 12 classes for board: CBSE
+2025-11-24 12:13:11 - src.routes - INFO - [routes.py:53] - GET /get_subjects/CBSE/11
+2025-11-24 12:13:11 - src.routes - DEBUG - [routes.py:55] - Found 19 subjects for CBSE class 11
+2025-11-24 12:13:15 - src.routes - INFO - [routes.py:60] - GET /get_topics/CBSE/11/Chemistry
+2025-11-24 12:13:15 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CBSE/11/Chemistry: 9 topics found
+2025-11-24 12:13:15 - src.routes - DEBUG - [routes.py:62] - Found 9 topics for CBSE class 11 Chemistry
+2025-11-24 12:13:20 - src.routes - INFO - [routes.py:60] - GET /get_topics/CBSE/11/Biology
+2025-11-24 12:13:20 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CBSE/11/Biology: 19 topics found
+2025-11-24 12:13:20 - src.routes - DEBUG - [routes.py:62] - Found 19 topics for CBSE class 11 Biology
+2025-11-24 12:13:24 - src.routes - INFO - [routes.py:60] - GET /get_topics/CBSE/11/Mathematics
+2025-11-24 12:13:24 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CBSE/11/Mathematics: 14 topics found
+2025-11-24 12:13:24 - src.routes - DEBUG - [routes.py:62] - Found 14 topics for CBSE class 11 Mathematics
+2025-11-24 12:13:37 - src.routes - INFO - [routes.py:67] - POST /generate - MCQ generation request received
+2025-11-24 12:13:37 - src.routes - DEBUG - [routes.py:70] - Request data: {'board': 'CBSE', 'class': '11', 'subject': 'Mathematics', 'topic': '5', 'num_questions': '15', 'difficulty_level': 'easy'}
+2025-11-24 12:13:37 - src.components.content_fetcher - INFO - [content_fetcher.py:99] - Fetching content for: Board=CBSE, Class=11, Subject=Mathematics, Topic=5
+2025-11-24 12:13:37 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CBSE/11/Mathematics: 14 topics found
+2025-11-24 12:13:37 - src.components.content_fetcher - DEBUG - [content_fetcher.py:118] - Topic name found: Linear Inequalities
+2025-11-24 12:13:37 - src.components.content_fetcher - INFO - [content_fetcher.py:130] - Searching in 1 book(s)...
+2025-11-24 12:13:37 - src.components.content_fetcher - DEBUG - [content_fetcher.py:140] - Checking book: Mathematics (NCERT) (ID: C11MATH0MATHE0NCERT)
+2025-11-24 12:13:37 - src.components.content_fetcher - INFO - [content_fetcher.py:159] - Topic found in book: Mathematics (NCERT)
+2025-11-24 12:13:37 - src.components.mcq_generator - INFO - [mcq_generator.py:38] - Generating 15 MCQs at easy difficulty for topic: Linear Inequalities
+2025-11-24 12:13:37 - src.components.mcq_generator - DEBUG - [mcq_generator.py:45] - Content length: 16744 characters
+2025-11-24 12:13:37 - src.routes - ERROR - [routes.py:112] - Error in generate endpoint: Invalid variable name '...,–3, –2,–1, 0, 1, 2, 3, 4, 5, 6' in f-string template. Variable names cannot contain attribute access (.) or indexing ([]).
+Traceback (most recent call last):
+  File "D:\Drema Ai\src\routes.py", line 87, in generate
+    mcqs = self.mcq_generator.generate_mcqs(
+        num_questions,
+    ...<2 lines>...
+        result['content']
+    )
+  File "D:\Drema Ai\src\components\mcq_generator.py", line 48, in generate_mcqs
+    mcq_prompt = ChatPromptTemplate.from_messages([
+        ("system",
+    ...<57 lines>...
+        ("human", f"Generate {num_questions} {difficulty_level} level MCQs from the chapter content provided.")
+    ])
+  File "C:\Users\rajpu\AppData\Roaming\Python\Python313\site-packages\langchain_core\prompts\chat.py", line 1191, in from_messages
+    return cls(messages, template_format=template_format)
+  File "C:\Users\rajpu\AppData\Roaming\Python\Python313\site-packages\langchain_core\prompts\chat.py", line 965, in __init__
+    _convert_to_message_template(message, template_format)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rajpu\AppData\Roaming\Python\Python313\site-packages\langchain_core\prompts\chat.py", line 1477, in _convert_to_message_template
+    message_ = _create_template_from_message_type(
+        message_type_str, template, template_format=template_format
+    )
+  File "C:\Users\rajpu\AppData\Roaming\Python\Python313\site-packages\langchain_core\prompts\chat.py", line 1384, in _create_template_from_message_type
+    message = SystemMessagePromptTemplate.from_template(
+        cast("str", template), template_format=template_format
+    )
+  File "C:\Users\rajpu\AppData\Roaming\Python\Python313\site-packages\langchain_core\prompts\chat.py", line 435, in from_template
+    prompt: Union[StringPromptTemplate, list] = PromptTemplate.from_template(
+                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template,
+        ^^^^^^^^^
+        template_format=template_format,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        partial_variables=partial_variables,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\rajpu\AppData\Roaming\Python\Python313\site-packages\langchain_core\prompts\prompt.py", line 304, in from_template
+    input_variables = get_template_variables(template, template_format)
+  File "C:\Users\rajpu\AppData\Roaming\Python\Python313\site-packages\langchain_core\prompts\string.py", line 336, in get_template_variables
+    raise ValueError(msg)
+ValueError: Invalid variable name '...,–3, –2,–1, 0, 1, 2, 3, 4, 5, 6' in f-string template. Variable names cannot contain attribute access (.) or indexing ([]).
+2025-11-24 12:15:42 - __main__ - INFO - [app.py:23] - ======================================================================
+2025-11-24 12:15:42 - __main__ - INFO - [app.py:24] - Starting Flask MCQ Generator Application
+2025-11-24 12:15:42 - __main__ - INFO - [app.py:25] - ======================================================================
+2025-11-24 12:15:42 - __main__ - INFO - [app.py:28] - Initializing Flask application...
+2025-11-24 12:15:42 - src.config - INFO - [config.py:20] - Initializing application configuration...
+2025-11-24 12:15:42 - src.config - DEBUG - [config.py:24] - Environment variables loaded
+2025-11-24 12:15:42 - src.config - DEBUG - [config.py:32] - Environment variables configured
+2025-11-24 12:15:42 - src.config - INFO - [config.py:37] - Configuration initialized successfully
+2025-11-24 12:15:42 - src.config - INFO - [config.py:51] - Initializing LLM with model: llama-3.1-70b-versatile, temperature: 0
+2025-11-24 12:15:43 - src.config - INFO - [config.py:53] - LLM initialized successfully
+2025-11-24 12:15:43 - __main__ - INFO - [app.py:36] - Initializing application components...
+2025-11-24 12:15:43 - src.components.content_fetcher - INFO - [content_fetcher.py:25] - Initializing EducationContentFetcher...
+2025-11-24 12:15:43 - src.components.content_fetcher - DEBUG - [content_fetcher.py:29] - Loading category file: category.json
+2025-11-24 12:15:43 - src.components.content_fetcher - DEBUG - [content_fetcher.py:33] - Loading topics file: topics.json
+2025-11-24 12:15:43 - src.components.content_fetcher - INFO - [content_fetcher.py:37] - EducationContentFetcher initialized successfully
+2025-11-24 12:15:43 - __main__ - INFO - [app.py:41] - Registering routes...
+2025-11-24 12:15:43 - __main__ - INFO - [app.py:44] - Application initialization complete!
+2025-11-24 12:15:43 - __main__ - INFO - [app.py:45] - ======================================================================
+2025-11-24 12:15:43 - __main__ - INFO - [app.py:52] - Starting Flask development server on http://localhost:5000
+2025-11-24 12:17:50 - __main__ - INFO - [app.py:23] - ======================================================================
+2025-11-24 12:17:50 - __main__ - INFO - [app.py:24] - Starting Flask MCQ Generator Application
+2025-11-24 12:17:50 - __main__ - INFO - [app.py:25] - ======================================================================
+2025-11-24 12:17:50 - __main__ - INFO - [app.py:28] - Initializing Flask application...
+2025-11-24 12:17:50 - src.config - INFO - [config.py:20] - Initializing application configuration...
+2025-11-24 12:17:50 - src.config - DEBUG - [config.py:24] - Environment variables loaded
+2025-11-24 12:17:50 - src.config - DEBUG - [config.py:32] - Environment variables configured
+2025-11-24 12:17:50 - src.config - INFO - [config.py:37] - Configuration initialized successfully
+2025-11-24 12:17:50 - src.config - INFO - [config.py:51] - Initializing LLM with model: llama-3.1-70b-versatile, temperature: 0
+2025-11-24 12:17:51 - src.config - INFO - [config.py:53] - LLM initialized successfully
+2025-11-24 12:17:51 - __main__ - INFO - [app.py:36] - Initializing application components...
+2025-11-24 12:17:51 - src.components.content_fetcher - INFO - [content_fetcher.py:25] - Initializing EducationContentFetcher...
+2025-11-24 12:17:51 - src.components.content_fetcher - DEBUG - [content_fetcher.py:29] - Loading category file: category.json
+2025-11-24 12:17:51 - src.components.content_fetcher - DEBUG - [content_fetcher.py:33] - Loading topics file: topics.json
+2025-11-24 12:17:51 - src.components.content_fetcher - INFO - [content_fetcher.py:37] - EducationContentFetcher initialized successfully
+2025-11-24 12:17:51 - __main__ - INFO - [app.py:41] - Registering routes...
+2025-11-24 12:17:51 - __main__ - INFO - [app.py:44] - Application initialization complete!
+2025-11-24 12:17:51 - __main__ - INFO - [app.py:45] - ======================================================================
+2025-11-24 12:17:51 - __main__ - INFO - [app.py:52] - Starting Flask development server on http://localhost:5000
+2025-11-24 12:18:14 - src.routes - INFO - [routes.py:39] - GET / - Rendering main page
+2025-11-24 12:18:14 - src.routes - DEBUG - [routes.py:41] - Found 19 boards
+2025-11-24 12:18:17 - src.routes - INFO - [routes.py:46] - GET /get_classes/CBSE
+2025-11-24 12:18:17 - src.routes - DEBUG - [routes.py:48] - Found 12 classes for board: CBSE
+2025-11-24 12:18:19 - src.routes - INFO - [routes.py:53] - GET /get_subjects/CBSE/11
+2025-11-24 12:18:19 - src.routes - DEBUG - [routes.py:55] - Found 19 subjects for CBSE class 11
+2025-11-24 12:18:24 - src.routes - INFO - [routes.py:60] - GET /get_topics/CBSE/11/Mathematics
+2025-11-24 12:18:24 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CBSE/11/Mathematics: 14 topics found
+2025-11-24 12:18:24 - src.routes - DEBUG - [routes.py:62] - Found 14 topics for CBSE class 11 Mathematics
+2025-11-24 12:18:31 - src.routes - INFO - [routes.py:67] - POST /generate - MCQ generation request received
+2025-11-24 12:18:31 - src.routes - DEBUG - [routes.py:70] - Request data: {'board': 'CBSE', 'class': '11', 'subject': 'Mathematics', 'topic': '7', 'num_questions': '10', 'difficulty_level': 'medium'}
+2025-11-24 12:18:31 - src.components.content_fetcher - INFO - [content_fetcher.py:99] - Fetching content for: Board=CBSE, Class=11, Subject=Mathematics, Topic=7
+2025-11-24 12:18:31 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CBSE/11/Mathematics: 14 topics found
+2025-11-24 12:18:31 - src.components.content_fetcher - DEBUG - [content_fetcher.py:118] - Topic name found: Binomial Theorem
+2025-11-24 12:18:31 - src.components.content_fetcher - INFO - [content_fetcher.py:130] - Searching in 1 book(s)...
+2025-11-24 12:18:31 - src.components.content_fetcher - DEBUG - [content_fetcher.py:140] - Checking book: Mathematics (NCERT) (ID: C11MATH0MATHE0NCERT)
+2025-11-24 12:18:31 - src.components.content_fetcher - INFO - [content_fetcher.py:159] - Topic found in book: Mathematics (NCERT)
+2025-11-24 12:18:31 - src.components.mcq_generator - INFO - [mcq_generator.py:38] - Generating 10 MCQs at medium difficulty for topic: Binomial Theorem
+2025-11-24 12:18:31 - src.components.mcq_generator - DEBUG - [mcq_generator.py:45] - Content length: 12852 characters
+2025-11-24 12:18:31 - src.components.mcq_generator - DEBUG - [mcq_generator.py:49] - Content escaped for template processing
+2025-11-24 12:18:31 - src.components.mcq_generator - INFO - [mcq_generator.py:115] - Invoking LLM to generate MCQs...
+2025-11-24 12:18:31 - src.routes - ERROR - [routes.py:112] - Error in generate endpoint: 'Input to ChatPromptTemplate is missing variables {\'\\\\n  "mcqs"\'}.  Expected: [\'\\\\n  "mcqs"\'] Received: []\nNote: if you intended {\\n  "mcqs"} to be part of the string and not a variable, please escape it with double curly braces like: \'{{\\n  "mcqs"}}\'.\nFor troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT '
+Traceback (most recent call last):
+  File "D:\Drema Ai\src\routes.py", line 87, in generate
+    mcqs = self.mcq_generator.generate_mcqs(
+        num_questions,
+    ...<2 lines>...
+        result['content']
+    )
+  File "D:\Drema Ai\src\components\mcq_generator.py", line 117, in generate_mcqs
+    response = chain.invoke({})
+  File "C:\Users\rajpu\AppData\Roaming\Python\Python313\site-packages\langchain_core\runnables\base.py", line 3244, in invoke
+    input_ = context.run(step.invoke, input_, config, **kwargs)
+  File "C:\Users\rajpu\AppData\Roaming\Python\Python313\site-packages\langchain_core\prompts\base.py", line 214, in invoke
+    return self._call_with_config(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        self._format_prompt_with_error_handling,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        serialized=self._serialized,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\rajpu\AppData\Roaming\Python\Python313\site-packages\langchain_core\runnables\base.py", line 2092, in _call_with_config
+    context.run(
+    ~~~~~~~~~~~^
+        call_func_with_variable_args,  # type: ignore[arg-type]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ),
+    ^
+  File "C:\Users\rajpu\AppData\Roaming\Python\Python313\site-packages\langchain_core\runnables\config.py", line 430, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+  File "C:\Users\rajpu\AppData\Roaming\Python\Python313\site-packages\langchain_core\prompts\base.py", line 187, in _format_prompt_with_error_handling
+    inner_input_ = self._validate_input(inner_input)
+  File "C:\Users\rajpu\AppData\Roaming\Python\Python313\site-packages\langchain_core\prompts\base.py", line 181, in _validate_input
+    raise KeyError(
+        create_message(message=msg, error_code=ErrorCode.INVALID_PROMPT_INPUT)
+    )
+KeyError: 'Input to ChatPromptTemplate is missing variables {\'\\\\n  "mcqs"\'}.  Expected: [\'\\\\n  "mcqs"\'] Received: []\nNote: if you intended {\\n  "mcqs"} to be part of the string and not a variable, please escape it with double curly braces like: \'{{\\n  "mcqs"}}\'.\nFor troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT '
+2025-11-24 12:19:07 - __main__ - INFO - [app.py:23] - ======================================================================
+2025-11-24 12:19:07 - __main__ - INFO - [app.py:24] - Starting Flask MCQ Generator Application
+2025-11-24 12:19:07 - __main__ - INFO - [app.py:25] - ======================================================================
+2025-11-24 12:19:07 - __main__ - INFO - [app.py:28] - Initializing Flask application...
+2025-11-24 12:19:07 - src.config - INFO - [config.py:20] - Initializing application configuration...
+2025-11-24 12:19:07 - src.config - DEBUG - [config.py:24] - Environment variables loaded
+2025-11-24 12:19:07 - src.config - DEBUG - [config.py:32] - Environment variables configured
+2025-11-24 12:19:07 - src.config - INFO - [config.py:37] - Configuration initialized successfully
+2025-11-24 12:19:07 - src.config - INFO - [config.py:51] - Initializing LLM with model: llama-3.1-70b-versatile, temperature: 0
+2025-11-24 12:19:07 - src.config - INFO - [config.py:53] - LLM initialized successfully
+2025-11-24 12:19:07 - __main__ - INFO - [app.py:36] - Initializing application components...
+2025-11-24 12:19:07 - src.components.content_fetcher - INFO - [content_fetcher.py:25] - Initializing EducationContentFetcher...
+2025-11-24 12:19:07 - src.components.content_fetcher - DEBUG - [content_fetcher.py:29] - Loading category file: category.json
+2025-11-24 12:19:07 - src.components.content_fetcher - DEBUG - [content_fetcher.py:33] - Loading topics file: topics.json
+2025-11-24 12:19:07 - src.components.content_fetcher - INFO - [content_fetcher.py:37] - EducationContentFetcher initialized successfully
+2025-11-24 12:19:07 - __main__ - INFO - [app.py:41] - Registering routes...
+2025-11-24 12:19:07 - __main__ - INFO - [app.py:44] - Application initialization complete!
+2025-11-24 12:19:07 - __main__ - INFO - [app.py:45] - ======================================================================
+2025-11-24 12:19:07 - __main__ - INFO - [app.py:52] - Starting Flask development server on http://localhost:5000
+2025-11-24 12:19:18 - src.routes - INFO - [routes.py:67] - POST /generate - MCQ generation request received
+2025-11-24 12:19:18 - src.routes - DEBUG - [routes.py:70] - Request data: {'board': 'CBSE', 'class': '11', 'subject': 'Mathematics', 'topic': '7', 'num_questions': '10', 'difficulty_level': 'medium'}
+2025-11-24 12:19:18 - src.components.content_fetcher - INFO - [content_fetcher.py:99] - Fetching content for: Board=CBSE, Class=11, Subject=Mathematics, Topic=7
+2025-11-24 12:19:18 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CBSE/11/Mathematics: 14 topics found
+2025-11-24 12:19:18 - src.components.content_fetcher - DEBUG - [content_fetcher.py:118] - Topic name found: Binomial Theorem
+2025-11-24 12:19:18 - src.components.content_fetcher - INFO - [content_fetcher.py:130] - Searching in 1 book(s)...
+2025-11-24 12:19:18 - src.components.content_fetcher - DEBUG - [content_fetcher.py:140] - Checking book: Mathematics (NCERT) (ID: C11MATH0MATHE0NCERT)
+2025-11-24 12:19:18 - src.components.content_fetcher - INFO - [content_fetcher.py:159] - Topic found in book: Mathematics (NCERT)
+2025-11-24 12:19:18 - src.components.mcq_generator - INFO - [mcq_generator.py:38] - Generating 10 MCQs at medium difficulty for topic: Binomial Theorem
+2025-11-24 12:19:18 - src.components.mcq_generator - DEBUG - [mcq_generator.py:45] - Content length: 12852 characters
+2025-11-24 12:19:18 - src.components.mcq_generator - DEBUG - [mcq_generator.py:49] - Content escaped for template processing
+2025-11-24 12:19:18 - src.components.mcq_generator - INFO - [mcq_generator.py:115] - Invoking LLM to generate MCQs...
+2025-11-24 12:19:20 - src.routes - ERROR - [routes.py:112] - Error in generate endpoint: Error code: 400 - {'error': {'message': 'The model `llama-3.1-70b-versatile` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+Traceback (most recent call last):
+  File "D:\Drema Ai\src\routes.py", line 87, in generate
+    mcqs = self.mcq_generator.generate_mcqs(
+        num_questions,
+    ...<2 lines>...
+        result['content']
+    )
+  File "D:\Drema Ai\src\components\mcq_generator.py", line 117, in generate_mcqs
+    response = chain.invoke({})
+  File "C:\Users\rajpu\AppData\Roaming\Python\Python313\site-packages\langchain_core\runnables\base.py", line 3246, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "C:\Users\rajpu\AppData\Roaming\Python\Python313\site-packages\langchain_core\language_models\chat_models.py", line 395, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "C:\Users\rajpu\AppData\Roaming\Python\Python313\site-packages\langchain_core\language_models\chat_models.py", line 1025, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rajpu\AppData\Roaming\Python\Python313\site-packages\langchain_core\language_models\chat_models.py", line 842, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\rajpu\AppData\Roaming\Python\Python313\site-packages\langchain_core\language_models\chat_models.py", line 1091, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "C:\Users\rajpu\AppData\Roaming\Python\Python313\site-packages\langchain_groq\chat_models.py", line 533, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+  File "C:\Users\rajpu\AppData\Roaming\Python\Python313\site-packages\groq\resources\chat\completions.py", line 464, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/openai/v1/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<45 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\rajpu\AppData\Roaming\Python\Python313\site-packages\groq\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rajpu\AppData\Roaming\Python\Python313\site-packages\groq\_base_client.py", line 1044, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': 'The model `llama-3.1-70b-versatile` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2025-11-24 12:20:27 - __main__ - INFO - [app.py:23] - ======================================================================
+2025-11-24 12:20:27 - __main__ - INFO - [app.py:24] - Starting Flask MCQ Generator Application
+2025-11-24 12:20:27 - __main__ - INFO - [app.py:25] - ======================================================================
+2025-11-24 12:20:27 - __main__ - INFO - [app.py:28] - Initializing Flask application...
+2025-11-24 12:20:27 - src.config - INFO - [config.py:20] - Initializing application configuration...
+2025-11-24 12:20:27 - src.config - DEBUG - [config.py:24] - Environment variables loaded
+2025-11-24 12:20:27 - src.config - DEBUG - [config.py:32] - Environment variables configured
+2025-11-24 12:20:27 - src.config - INFO - [config.py:37] - Configuration initialized successfully
+2025-11-24 12:20:27 - src.config - INFO - [config.py:51] - Initializing LLM with model: llama-3.3-70b-versatile, temperature: 0
+2025-11-24 12:20:28 - src.config - INFO - [config.py:53] - LLM initialized successfully
+2025-11-24 12:20:28 - __main__ - INFO - [app.py:36] - Initializing application components...
+2025-11-24 12:20:28 - src.components.content_fetcher - INFO - [content_fetcher.py:25] - Initializing EducationContentFetcher...
+2025-11-24 12:20:28 - src.components.content_fetcher - DEBUG - [content_fetcher.py:29] - Loading category file: category.json
+2025-11-24 12:20:28 - src.components.content_fetcher - DEBUG - [content_fetcher.py:33] - Loading topics file: topics.json
+2025-11-24 12:20:28 - src.components.content_fetcher - INFO - [content_fetcher.py:37] - EducationContentFetcher initialized successfully
+2025-11-24 12:20:28 - __main__ - INFO - [app.py:41] - Registering routes...
+2025-11-24 12:20:28 - __main__ - INFO - [app.py:44] - Application initialization complete!
+2025-11-24 12:20:28 - __main__ - INFO - [app.py:45] - ======================================================================
+2025-11-24 12:20:28 - __main__ - INFO - [app.py:52] - Starting Flask development server on http://localhost:5000
+2025-11-24 12:20:47 - src.routes - INFO - [routes.py:39] - GET / - Rendering main page
+2025-11-24 12:20:47 - src.routes - DEBUG - [routes.py:41] - Found 19 boards
+2025-11-24 12:20:48 - src.routes - INFO - [routes.py:46] - GET /get_classes/CBSE
+2025-11-24 12:20:48 - src.routes - DEBUG - [routes.py:48] - Found 12 classes for board: CBSE
+2025-11-24 12:20:52 - src.routes - INFO - [routes.py:53] - GET /get_subjects/CBSE/11
+2025-11-24 12:20:52 - src.routes - DEBUG - [routes.py:55] - Found 19 subjects for CBSE class 11
+2025-11-24 12:20:55 - src.routes - INFO - [routes.py:60] - GET /get_topics/CBSE/11/Mathematics
+2025-11-24 12:20:55 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CBSE/11/Mathematics: 14 topics found
+2025-11-24 12:20:55 - src.routes - DEBUG - [routes.py:62] - Found 14 topics for CBSE class 11 Mathematics
+2025-11-24 12:21:01 - src.routes - INFO - [routes.py:67] - POST /generate - MCQ generation request received
+2025-11-24 12:21:01 - src.routes - DEBUG - [routes.py:70] - Request data: {'board': 'CBSE', 'class': '11', 'subject': 'Mathematics', 'topic': '5', 'num_questions': '10', 'difficulty_level': 'medium'}
+2025-11-24 12:21:01 - src.components.content_fetcher - INFO - [content_fetcher.py:99] - Fetching content for: Board=CBSE, Class=11, Subject=Mathematics, Topic=5
+2025-11-24 12:21:01 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CBSE/11/Mathematics: 14 topics found
+2025-11-24 12:21:01 - src.components.content_fetcher - DEBUG - [content_fetcher.py:118] - Topic name found: Linear Inequalities
+2025-11-24 12:21:01 - src.components.content_fetcher - INFO - [content_fetcher.py:130] - Searching in 1 book(s)...
+2025-11-24 12:21:01 - src.components.content_fetcher - DEBUG - [content_fetcher.py:140] - Checking book: Mathematics (NCERT) (ID: C11MATH0MATHE0NCERT)
+2025-11-24 12:21:01 - src.components.content_fetcher - INFO - [content_fetcher.py:159] - Topic found in book: Mathematics (NCERT)
+2025-11-24 12:21:01 - src.components.mcq_generator - INFO - [mcq_generator.py:38] - Generating 10 MCQs at medium difficulty for topic: Linear Inequalities
+2025-11-24 12:21:01 - src.components.mcq_generator - DEBUG - [mcq_generator.py:45] - Content length: 16744 characters
+2025-11-24 12:21:01 - src.components.mcq_generator - DEBUG - [mcq_generator.py:49] - Content escaped for template processing
+2025-11-24 12:21:01 - src.components.mcq_generator - INFO - [mcq_generator.py:115] - Invoking LLM to generate MCQs...
+2025-11-24 12:21:04 - src.components.mcq_generator - DEBUG - [mcq_generator.py:118] - LLM response received
+2025-11-24 12:21:04 - src.components.mcq_generator - ERROR - [mcq_generator.py:133] - Error parsing MCQs: Expecting value: line 1 column 1 (char 0)
+2025-11-24 12:21:04 - src.components.mcq_generator - DEBUG - [mcq_generator.py:134] - Raw response: Here are 10 medium-level MCQs based on the chapter content provided:
+
+```
+{
+  "mcqs": [
+    {
+      "question": "What is the difference between a linear equation and a linear inequality?",
+      "options": {
+        "A": "A linear equation has an equal sign, while a linear inequality has a greater than or less than sign",
+        "B": "A linear equation has a greater than or less than sign, while a linear inequality has an equal sign",
+        "C": "A linear equation has two variables, while a linear inequality has one variable",
+        "D": "A linear equation has one variable, while a linear inequality has two variables"
+      },
+      "correct_answer": "A",
+      "explanation": "A linear equation has an equal sign, while a linear inequality has a greater than or less than sign"
+    },
+    {
+      "question": "Solve the inequality 2x + 5 > 11. What is the solution set?",
+      "options": {
+        "A": "x > 3",
+        "B": "x < 3",
+        "C": "x ≥ 3",
+        "D": "x ≤ 3"
+      },
+      "correct_answer": "A",
+      "explanation": "Subtracting 5 from both sides gives 2x > 6, and dividing both sides by 2 gives x > 3"
+    },
+    {
+      "question": "What is the rule for multiplying or dividing both sides of an inequality by a negative number?",
+      "options": {
+        "A": "The sign of the inequality remains the same",
+        "B": "The sign of the inequality is reversed",
+        "C": "The inequality becomes an equation",
+        "D": "The inequality becomes a linear equation"
+      },
+      "correct_answer": "B",
+      "explanation": "When both sides of an inequality are multiplied or divided by a negative number, the sign of the inequality is reversed"
+    },
+    {
+      "question": "Solve the inequality x - 3 < 2. What is the solution set?",
+      "options": {
+        "A": "x < 5",
+        "B": "x > 5",
+        "C": "x ≥ 5",
+        "D": "x ≤ 5"
+      },
+      "correct_answer": "A",
+      "explanation": "Adding 3 to both sides gives x < 5"
+    },
+    {
+      "question": "What is the definition of a linear inequality in one variable?",
+      "options": {
+        "A": "An inequality that can be written in the form ax + b = 0, where a and b are constants",
+        "B": "An inequality that can be written in the form ax + b > 0, where a and b are constants",
+        "C": "An inequality that can be written in the form ax + b < 0, where a and b are constants",
+        "D": "An inequality that can be written in the form ax + b ≤ 0, where a and b are constants"
+      },
+      "correct_answer": "B",
+      "explanation": "A linear inequality in one variable is an inequality that can be written in the form ax + b > 0, where a and b are constants"
+    },
+    {
+      "question": "Solve the inequality 4x - 2 > 10. What is the solution set?",
+      "options": {
+        "A": "x > 3",
+        "B": "x < 3",
+        "C": "x ≥ 3",
+        "D": "x ≤ 3"
+      },
+      "correct_answer": "A",
+      "explanation": "Adding 2 to both sides gives 4x > 12, and dividing both sides by 4 gives x > 3"
+    },
+    {
+      "question": "What is the difference between a strict inequality and a slack inequality?",
+      "options": {
+        "A": "A strict inequality has an equal sign, while a slack inequality has a greater than or less than sign",
+        "B": "A strict inequality has a greater than or less than sign, while a slack inequality has an equal sign",
+        "C": "A strict inequality has a greater than or less than sign, while a slack inequality has a greater than or equal to or less than or equal to sign",
+        "D": "A strict inequality has a greater than or equal to or less than or equal to sign, while a slack inequality has a greater than or less than sign"
+      },
+      "correct_answer": "C",
+      "explanation": "A strict inequality has a greater than or less than sign, while a slack inequality has a greater than or equal to or less than or equal to sign"
+    },
+    {
+      "question": "Solve the inequality x + 2 < 5. What is the solution set?",
+      "options": {
+        "A": "x < 3",
+        "B": "x > 3",
+        "C": "x ≥ 3",
+        "D": "x ≤ 3"
+      },
+      "correct_answer": "A",
+      "explanation": "Subtracting 2 from both sides gives x < 3"
+    },
+    {
+      "question": "What is the rule for adding or subtracting the same value to both sides of an inequality?",
+      "options": {
+        "A": "The sign of the inequality is reversed",
+        "B": "The sign of the inequality remains the same",
+        "C": "The inequality becomes an equation",
+        "D": "The inequality becomes a linear equation"
+      },
+      "correct_answer": "B",
+      "explanation": "When the same value is added or subtracted from both sides of an inequality, the sign of the inequality remains the same"
+    },
+    {
+      "question": "Solve the inequality 3x + 1 > 7. What is the solution set?",
+      "options": {
+        "A": "x > 2",
+        "B": "x < 2",
+        "C": "x ≥ 2",
+        "D": "x ≤ 2"
+      },
+      "correct_answer": "A",
+      "explanation": "Subtracting 1 from both sides gives 3x > 6, and dividing both sides by 3 gives x > 2"
+    }
+  ]
+}
+```
+2025-11-24 12:21:04 - src.routes - ERROR - [routes.py:95] - MCQ generation failed
+2025-11-24 12:22:04 - __main__ - INFO - [app.py:23] - ======================================================================
+2025-11-24 12:22:04 - __main__ - INFO - [app.py:24] - Starting Flask MCQ Generator Application
+2025-11-24 12:22:04 - __main__ - INFO - [app.py:25] - ======================================================================
+2025-11-24 12:22:04 - __main__ - INFO - [app.py:28] - Initializing Flask application...
+2025-11-24 12:22:04 - src.config - INFO - [config.py:20] - Initializing application configuration...
+2025-11-24 12:22:04 - src.config - DEBUG - [config.py:24] - Environment variables loaded
+2025-11-24 12:22:04 - src.config - DEBUG - [config.py:32] - Environment variables configured
+2025-11-24 12:22:04 - src.config - INFO - [config.py:37] - Configuration initialized successfully
+2025-11-24 12:22:04 - src.config - INFO - [config.py:51] - Initializing LLM with model: llama-3.3-70b-versatile, temperature: 0
+2025-11-24 12:22:05 - src.config - INFO - [config.py:53] - LLM initialized successfully
+2025-11-24 12:22:05 - __main__ - INFO - [app.py:36] - Initializing application components...
+2025-11-24 12:22:05 - src.components.content_fetcher - INFO - [content_fetcher.py:25] - Initializing EducationContentFetcher...
+2025-11-24 12:22:05 - src.components.content_fetcher - DEBUG - [content_fetcher.py:29] - Loading category file: category.json
+2025-11-24 12:22:05 - src.components.content_fetcher - DEBUG - [content_fetcher.py:33] - Loading topics file: topics.json
+2025-11-24 12:22:05 - src.components.content_fetcher - INFO - [content_fetcher.py:37] - EducationContentFetcher initialized successfully
+2025-11-24 12:22:05 - __main__ - INFO - [app.py:41] - Registering routes...
+2025-11-24 12:22:05 - __main__ - INFO - [app.py:44] - Application initialization complete!
+2025-11-24 12:22:05 - __main__ - INFO - [app.py:45] - ======================================================================
+2025-11-24 12:22:05 - __main__ - INFO - [app.py:52] - Starting Flask development server on http://localhost:5000
