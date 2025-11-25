@@ -36,7 +36,7 @@ class Config:
         self.embeddings = None
         logger.info("Configuration initialized successfully")
         
-    def initialize_llm(self, model="qwen/qwen3-32b", temperature=0):
+    def initialize_llm(self, model="moonshotai/kimi-k2-instruct", temperature=0):
         """
         Initialize the language model.
         

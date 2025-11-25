@@ -137,7 +137,12 @@ form.addEventListener('submit', async function (e) {
             throw new Error(data.error || 'Failed to generate MCQs');
         }
 
-        displayResults(data);
+        // Redirect to results page
+        if (data.success && data.redirect) {
+            window.location.href = data.redirect;
+        } else {
+            throw new Error('Unexpected response format');
+        }
     } catch (error) {
         document.getElementById('loading').style.display = 'none';
         document.getElementById('formContainer').style.display = 'block';

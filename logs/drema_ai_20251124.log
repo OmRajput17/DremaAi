@@ -6551,3 +6551,4730 @@ Traceback (most recent call last):
   File "D:\Drema Ai\src\routes.py", line 158, in download_pdf
     from reportlab.lib.pagesizes import letter, A4
 ModuleNotFoundError: No module named 'reportlab'
+2025-11-24 17:57:44 - __main__ - INFO - [app.py:23] - ======================================================================
+2025-11-24 17:57:44 - __main__ - INFO - [app.py:24] - Starting Flask MCQ Generator Application
+2025-11-24 17:57:44 - __main__ - INFO - [app.py:25] - ======================================================================
+2025-11-24 17:57:44 - __main__ - INFO - [app.py:28] - Initializing Flask application...
+2025-11-24 17:57:44 - src.config - INFO - [config.py:20] - Initializing application configuration...
+2025-11-24 17:57:44 - src.config - DEBUG - [config.py:24] - Environment variables loaded
+2025-11-24 17:57:44 - src.config - DEBUG - [config.py:32] - Environment variables configured
+2025-11-24 17:57:44 - src.config - INFO - [config.py:37] - Configuration initialized successfully
+2025-11-24 17:57:44 - src.config - INFO - [config.py:51] - Initializing LLM with model: qwen/qwen3-32b, temperature: 0
+2025-11-24 17:57:45 - src.config - INFO - [config.py:53] - LLM initialized successfully
+2025-11-24 17:57:45 - __main__ - INFO - [app.py:36] - Initializing application components...
+2025-11-24 17:57:45 - src.components.content_fetcher - INFO - [content_fetcher.py:25] - Initializing EducationContentFetcher...
+2025-11-24 17:57:45 - src.components.content_fetcher - DEBUG - [content_fetcher.py:29] - Loading category file: category.json
+2025-11-24 17:57:45 - src.components.content_fetcher - DEBUG - [content_fetcher.py:33] - Loading topics file: topics.json
+2025-11-24 17:57:45 - src.components.content_fetcher - INFO - [content_fetcher.py:37] - EducationContentFetcher initialized successfully
+2025-11-24 17:57:45 - __main__ - INFO - [app.py:41] - Registering routes...
+2025-11-24 17:57:45 - __main__ - INFO - [app.py:44] - Application initialization complete!
+2025-11-24 17:57:45 - __main__ - INFO - [app.py:45] - ======================================================================
+2025-11-24 17:57:45 - __main__ - INFO - [app.py:52] - Starting Flask development server on http://localhost:5000
+2025-11-24 17:57:51 - __main__ - INFO - [app.py:23] - ======================================================================
+2025-11-24 17:57:51 - __main__ - INFO - [app.py:24] - Starting Flask MCQ Generator Application
+2025-11-24 17:57:51 - __main__ - INFO - [app.py:25] - ======================================================================
+2025-11-24 17:57:51 - __main__ - INFO - [app.py:28] - Initializing Flask application...
+2025-11-24 17:57:51 - src.config - INFO - [config.py:20] - Initializing application configuration...
+2025-11-24 17:57:51 - src.config - DEBUG - [config.py:24] - Environment variables loaded
+2025-11-24 17:57:51 - src.config - DEBUG - [config.py:32] - Environment variables configured
+2025-11-24 17:57:51 - src.config - INFO - [config.py:37] - Configuration initialized successfully
+2025-11-24 17:57:51 - src.config - INFO - [config.py:51] - Initializing LLM with model: qwen/qwen3-32b, temperature: 0
+2025-11-24 17:57:51 - src.config - INFO - [config.py:53] - LLM initialized successfully
+2025-11-24 17:57:51 - __main__ - INFO - [app.py:36] - Initializing application components...
+2025-11-24 17:57:51 - src.components.content_fetcher - INFO - [content_fetcher.py:25] - Initializing EducationContentFetcher...
+2025-11-24 17:57:51 - src.components.content_fetcher - DEBUG - [content_fetcher.py:29] - Loading category file: category.json
+2025-11-24 17:57:51 - src.components.content_fetcher - DEBUG - [content_fetcher.py:33] - Loading topics file: topics.json
+2025-11-24 17:57:51 - src.components.content_fetcher - INFO - [content_fetcher.py:37] - EducationContentFetcher initialized successfully
+2025-11-24 17:57:51 - __main__ - INFO - [app.py:41] - Registering routes...
+2025-11-24 17:57:51 - __main__ - INFO - [app.py:44] - Application initialization complete!
+2025-11-24 17:57:51 - __main__ - INFO - [app.py:45] - ======================================================================
+2025-11-24 17:57:51 - __main__ - INFO - [app.py:52] - Starting Flask development server on http://localhost:5000
+2025-11-24 17:58:00 - __main__ - INFO - [app.py:23] - ======================================================================
+2025-11-24 17:58:00 - __main__ - INFO - [app.py:24] - Starting Flask MCQ Generator Application
+2025-11-24 17:58:00 - __main__ - INFO - [app.py:25] - ======================================================================
+2025-11-24 17:58:00 - __main__ - INFO - [app.py:28] - Initializing Flask application...
+2025-11-24 17:58:00 - src.config - INFO - [config.py:20] - Initializing application configuration...
+2025-11-24 17:58:00 - src.config - DEBUG - [config.py:24] - Environment variables loaded
+2025-11-24 17:58:00 - src.config - DEBUG - [config.py:32] - Environment variables configured
+2025-11-24 17:58:00 - src.config - INFO - [config.py:37] - Configuration initialized successfully
+2025-11-24 17:58:00 - src.config - INFO - [config.py:51] - Initializing LLM with model: openai/gpt-oss-120b, temperature: 0
+2025-11-24 17:58:01 - src.config - INFO - [config.py:53] - LLM initialized successfully
+2025-11-24 17:58:01 - __main__ - INFO - [app.py:36] - Initializing application components...
+2025-11-24 17:58:01 - src.components.content_fetcher - INFO - [content_fetcher.py:25] - Initializing EducationContentFetcher...
+2025-11-24 17:58:01 - src.components.content_fetcher - DEBUG - [content_fetcher.py:29] - Loading category file: category.json
+2025-11-24 17:58:01 - src.components.content_fetcher - DEBUG - [content_fetcher.py:33] - Loading topics file: topics.json
+2025-11-24 17:58:01 - src.components.content_fetcher - INFO - [content_fetcher.py:37] - EducationContentFetcher initialized successfully
+2025-11-24 17:58:01 - __main__ - INFO - [app.py:41] - Registering routes...
+2025-11-24 17:58:01 - __main__ - INFO - [app.py:44] - Application initialization complete!
+2025-11-24 17:58:01 - __main__ - INFO - [app.py:45] - ======================================================================
+2025-11-24 17:58:01 - __main__ - INFO - [app.py:52] - Starting Flask development server on http://localhost:5000
+2025-11-24 17:58:05 - __main__ - INFO - [app.py:23] - ======================================================================
+2025-11-24 17:58:05 - __main__ - INFO - [app.py:24] - Starting Flask MCQ Generator Application
+2025-11-24 17:58:05 - __main__ - INFO - [app.py:25] - ======================================================================
+2025-11-24 17:58:05 - __main__ - INFO - [app.py:28] - Initializing Flask application...
+2025-11-24 17:58:05 - src.config - INFO - [config.py:20] - Initializing application configuration...
+2025-11-24 17:58:05 - src.config - DEBUG - [config.py:24] - Environment variables loaded
+2025-11-24 17:58:05 - src.config - DEBUG - [config.py:32] - Environment variables configured
+2025-11-24 17:58:05 - src.config - INFO - [config.py:37] - Configuration initialized successfully
+2025-11-24 17:58:05 - src.config - INFO - [config.py:51] - Initializing LLM with model: openai/gpt-oss-120b, temperature: 0
+2025-11-24 17:58:06 - src.config - INFO - [config.py:53] - LLM initialized successfully
+2025-11-24 17:58:06 - __main__ - INFO - [app.py:36] - Initializing application components...
+2025-11-24 17:58:06 - src.components.content_fetcher - INFO - [content_fetcher.py:25] - Initializing EducationContentFetcher...
+2025-11-24 17:58:06 - src.components.content_fetcher - DEBUG - [content_fetcher.py:29] - Loading category file: category.json
+2025-11-24 17:58:06 - src.components.content_fetcher - DEBUG - [content_fetcher.py:33] - Loading topics file: topics.json
+2025-11-24 17:58:06 - src.components.content_fetcher - INFO - [content_fetcher.py:37] - EducationContentFetcher initialized successfully
+2025-11-24 17:58:06 - __main__ - INFO - [app.py:41] - Registering routes...
+2025-11-24 17:58:06 - __main__ - INFO - [app.py:44] - Application initialization complete!
+2025-11-24 17:58:06 - __main__ - INFO - [app.py:45] - ======================================================================
+2025-11-24 17:58:06 - __main__ - INFO - [app.py:52] - Starting Flask development server on http://localhost:5000
+2025-11-24 17:58:06 - src.routes - INFO - [routes.py:40] - GET / - Rendering main page
+2025-11-24 17:58:06 - src.routes - DEBUG - [routes.py:42] - Found 19 boards
+2025-11-24 17:58:08 - src.routes - INFO - [routes.py:47] - GET /get_classes/CBSE
+2025-11-24 17:58:08 - src.routes - DEBUG - [routes.py:49] - Found 12 classes for board: CBSE
+2025-11-24 17:58:10 - src.routes - INFO - [routes.py:54] - GET /get_subjects/CBSE/7
+2025-11-24 17:58:10 - src.routes - DEBUG - [routes.py:56] - Found 6 subjects for CBSE class 7
+2025-11-24 17:58:13 - src.routes - INFO - [routes.py:61] - GET /get_topics/CBSE/7/English
+2025-11-24 17:58:13 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CBSE/7/English: 5 topics found
+2025-11-24 17:58:13 - src.routes - DEBUG - [routes.py:63] - Found 5 topics for CBSE class 7 English
+2025-11-24 17:58:16 - src.routes - INFO - [routes.py:68] - POST /generate - MCQ generation request received
+2025-11-24 17:58:16 - src.routes - DEBUG - [routes.py:71] - Request data: {'board': 'CBSE', 'class': '7', 'subject': 'English', 'topics': ['1', '2'], 'num_questions': '5', 'difficulty_level': 'medium'}
+2025-11-24 17:58:16 - src.routes - INFO - [routes.py:92] - Generating MCQs for 2 chapter(s): ['1', '2']
+2025-11-24 17:58:16 - src.routes - DEBUG - [routes.py:100] - Fetching content for chapter 1
+2025-11-24 17:58:16 - src.components.content_fetcher - INFO - [content_fetcher.py:99] - Fetching content for: Board=CBSE, Class=7, Subject=English, Topic=1
+2025-11-24 17:58:16 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CBSE/7/English: 5 topics found
+2025-11-24 17:58:16 - src.components.content_fetcher - DEBUG - [content_fetcher.py:118] - Topic name found: Learning Together
+2025-11-24 17:58:16 - src.components.content_fetcher - INFO - [content_fetcher.py:130] - Searching in 1 book(s)...
+2025-11-24 17:58:16 - src.components.content_fetcher - DEBUG - [content_fetcher.py:140] - Checking book: Poorvi (NCERT) (ID: C7ENG0POORVI0NCERT)
+2025-11-24 17:58:16 - src.components.content_fetcher - INFO - [content_fetcher.py:159] - Topic found in book: Poorvi (NCERT)
+2025-11-24 17:58:16 - src.components.content_fetcher - INFO - [content_fetcher.py:160] - Retrieved Content Unit 1
+LEARNING TOGETHER
+
+The Day the River Spoke
+Let us do these activities before we read.
+I Close your eyes and quietly listen to the sounds around you for a minute.
+1. Are they trying to tell you something?
+2. Do you think the things around you also listen to you all day long?
+		 Share your answers with your classmates and the teacher.
+II Jahnavi was a bright young girl who lived with her parents and three
+brothers in a coastal village in India. Her parents worked on the farm.
+She had a dream.
+1. What could that dream be?
+2. How could she make her dream come true?
+3. What is your dream?
+dream come true?
+
+What
+
+can
+
+you
+
+do
+
+to
+
+make
+
+your
+
+		 Share your answers with your classmates and the teacher.
+
+Unit 1.indd 1
+
+06-Mar-25 2:47:07 PM
+
+Poorvi
+
+Let us read
+
+splashed: fell in
+drops, making a
+sound
+slithered: moved
+by sliding from
+side to side
+murmuring:
+speaking in a
+low voice
+startled:
+surprised
+thicket: a dense
+group of bushes
+and trees
+shrieked: made
+a high-pitched
+sound
+
+I
+A big bright tear splashed down her nose. And another.
+A kingfisher swept down, its wings an arrow of blue in the
+sunlight. And a green lizard slithered down to the river’s edge
+to bask in the sun.
+“Dear, dear!” said a sleepy, murmuring voice, “What’s the
+matter?”
+Jahnavi was startled, because she was sure she had been quite
+alone. It couldn’t have been the lizard. And the kingfisher was
+up in the thicket of bamboo eating the fish it had caught. It
+couldn’t be the parrots, because parrots shrieked and this was
+such a sleepy voice. She looked around her. There wasn’t a
+soul in sight. She was rather scared and wanted to run away.
+“You shouldn’t cry, you know,” the voice went on. “And you
+really shouldn’t be scared, when you have been coming here
+to see me every day, well, almost every day.”
+
+2
+
+Unit 1.indd 2
+
+06-Mar-25 2:47:08 PM
+
+Learning Together
+
+She was puzzled. It was such a voice, like
+the river. It couldn’t be the river!
+“Well, tell me all about it,” said the River,
+for it was the River. “I’ve got to hurry to reach
+the sea, you know.”
+“They won’t let me go to school,” said Jahnavi.
+“I asked my mother, ‘Why can’t I go to school
+like Ettan and Meena?’ And Mother had
+replied, ‘You are too small, baby. Maybe
+later.’ ” But when she was five, little
+Ramu was born and Mother still said,
+“Maybe next year. Jahnavi, mind your
+little brother while I go to the fields.”
+Now, she was nearly ten and minding
+Little Appu, who was the smallest. “They
+don’t want me. They only...”—she stopped with a sob...
+“I am scared to go to school. And I’m so old now, they’ll never
+let me go. But I want to go. I want to learn to read like Ettan
+and Meena.” Jahnavi called her brother ‘Ettan’. Ettan means
+‘Elder brother’, but his real name was Gopi. “I want to know
+why spiders are yellow in yellow flowers, why bamboo
+trees rustle, why the moon always comes from
+behind the hills, never the other way, why
+the baby fish in the field water become
+frogs, why...”
+“Stop!” said the River. “You make me
+breathless. So many whys! I can tell
+you where the moon goes,” the River
+said conspiratorially. “It goes down
+towards the sea. I’ve seen; it always
+takes the same way—over the
+mountains and down to the sea,
+like me!”
+
+rustle: light
+sound made by
+leaves rubbing
+against each
+other
+
+conspiratorially:
+secretly
+
+Let us discuss
+1. What was Jahnavi’s dream? Was it
+important to her? Why?
+2. Do you think the river can help
+her in fulfilling her dream? How?
+
+3
+
+Unit 1.indd 3
+
+06-Mar-25 2:47:10 PM
+
+Poorvi
+
+II
+
+clump:
+a small group of
+trees growing
+together
+
+rattling: noise
+made by shaking
+things
+
+catamaran: a
+kind of boat
+
+wailed: (here)
+complained in a
+loud voice
+
+“Even little Ramu goes to school,” said Jahnavi, “pity, the school
+isn’t by the sea,” said the River. “Then I could take you along,
+you know. But, I suppose I couldn’t really. You’d get your feet
+wet. And that would never do! I’m afraid there’s only one thing
+you can do.”
+“Can I do something?” asked Jahnavi. “Well, it’s up to you,”
+said the River. “Seems to me little girls can do as much as little
+boys—they swim as fast as little boys. You just slip along one
+morning and sit there in the school and listen to what’s going
+on, and maybe the teacher will let you stay.”
+“I couldn’t,” gasped Jahnavi. “I couldn’t! They’d scare me!
+They’d chase me out.”
+The River laughed. “You? Scared?” the River said, “when you’re
+not afraid of the green lizard, or of the snake in the bamboo
+clump, (Jahnavi startled) or the big trains rattling past that
+bridge.” “Trains are noisy; I prefer ships,” said the River.
+Jahnavi never knew the snake lived in the bamboo clump.
+“What are ships?” she asked.
+“Big boats,” said the River, “so big that they can take hundreds
+of people, and they sail along the sea with lights that shine all
+night.”
+Jahnavi held her breath. “Will they come here?” she asked.
+“I’m afraid not,” said the River. “Too large, you know. Chandu’s
+catamaran is good enough for me. Chandu can take you to see
+a ship, someday.”
+“They’d never let me!” wailed Jahnavi.
+“Try going to school first,” said the River. “Remember—it’s up
+to you!”
+
+4
+
+Unit 1.indd 4
+
+06-Mar-25 2:47:10 PM
+
+Learning Together
+
+Jahnavi gathered courage. The next day she reached the school,
+panting and out of breath and stood by the door listening while
+the teacher read out the lesson. It was a story about a prince
+called Asˊ hoka, who became a great king. Little Appu had fallen
+asleep on her shoulder. She crept nearer and nearer till she was
+in the back row, squatting with the others on the earthen floor.
+Little Appu made no noise and she listened.
+“Where did you spring from, little girl?” asked the teacher. “And
+what is your name? You’re new in my class.”
+“She’s Gopi’s sister, Gopi is in the next class,” said one of the boys.
+“It’s Jahnavi,” said another. “So, you’re Gopi’s little sister? Nice
+lad, Gopi.”
+“If you really, really want to come to my school, Jahnavi,” the
+teacher had said, “we’ll talk to your father about it. Don’t you
+worry. We’ll find a way.”
+
+Jahnavi saw the teacher walking up the steps to their gate the
+next evening when she was lighting the lamp. She could see her
+father scratching his cheek the way he did when he was worried
+and the teacher was nodding and saying something she couldn’t
+make out. And Mother said, “Little Jahnavi, I shall miss you when
+you go to school. Girls should learn as much as they want. When I
+was your age, I wanted to go to school, but your grandmother said
+‘No’, but now, I am glad the teacher came to talk to your father.”
+5
+
+Unit 1.indd 5
+
+06-Mar-25 2:47:12 PM
+
+Poorvi
+
+And Jahnavi said, “Mother, when I grow up, I’ll be
+a teacher and I’ll go from house to house in our
+village and ask all the little girls to come to my
+school. And I’ll teach them all that I’m going to
+learn.”
+And she went down the path between the fields
+the next morning before school began, to meet
+the River. “I did it!” she told the River. “I was
+scared, but I did it! And they’re letting me go. I’m
+going to learn to write my name and do sums and
+find out why our little fishes in the rice fields turn
+into frogs.” She heard the river’s sleepy chuckle,
+“Come again, little girl, and I’ll tell you all about
+the ships that sail the sea.”
+Kamala Nair
+(An extract adapted from The Day the River Spoke)
+
+Let us discuss
+Complete the table given below with Jahnavi’s questions in Column 1 and
+the River’s answers in Column 2. Check your answers with the teacher.
+Column 1
+
+Column 2
+
+...why the moon always comes
+from behind the hills…?
+… little girls can do as much as
+little boys.
+Big boats, so big that they can take
+hundreds of people, and they sail
+along the sea with lights that shine
+all night.
+Will they come here?
+
+6
+
+Unit 1.indd 6
+
+06-Mar-25 2:47:13 PM
+
+Learning Together
+
+Let us think and reflect
+I Read the extracts given below and answer the questions that follow.
+1. “You shouldn’t cry, you know,” the voice went on. “And you really
+shouldn’t be scared, when you have been coming here to see me every
+day, well, almost every day.” She was puzzled. It was such a voice,
+like the river. It couldn’t be the river! “Well, tell me all about it,” said
+the River, for it was the River. “I’ve got to hurry to reach the sea, you
+know.”
+(i)
+		
+
+Complete the sentence with the correct option from those given
+in the brackets.
+The tone of the River in the given extract is __________________.
+(assuring/sympathising)
+
+(ii) Select a phrase from the extract which shows that Jahnavi was
+a frequent visitor to the spot.
+(iii) Choose the correct option to complete the sentence.
+		
+
+The use of an exclamation mark at the end of the line, ‘It
+couldn’t be the river!’ expresses __________________.
+A. excitement
+
+B. hesitation
+
+C. irritation
+
+D. disbelief
+
+(iv) Choose three qualities of the River highlighted in the extract
+from the words in the box given below.
+affectionate forgiving thoughtful impatient kind-hearted
+2. “Can I do something?” asked Jahnavi. “Well, it’s up to you,” said the
+River. “Seems to me little girls can do as much as little boys—they swim
+as fast as little boys. You just slip along one morning and sit there in
+the school and listen to what’s going on, and maybe the teacher will let
+you stay.”
+		 “I couldn’t,” gasped Jahnavi. “I couldn’t! They’d scare me! They’d chase
+me out.”
+(i)
+		
+
+Complete the sentence with an appropriate reason.
+According to the River, there was no difference between girls
+and boys because __________________.
+
+(ii) Identify whether the following statement is true or false.
+		
+
+The River encourages Jahnavi to have faith in herself and fulfill
+her desire to go to school.
+
+7
+
+Unit 1.indd 7
+
+06-Mar-25 2:47:13 PM
+
+Poorvi
+
+(iii) Choose the correct option to complete the sentence.
+		
+
+When the River suggests that Jahnavi should ‘slip along’, it
+means that she should move __________________.
+A. quickly
+
+B. casually
+
+C. quietly
+
+D. confidently
+
+(iv) What does the repetition of the phrase I couldn’t, tell us?
+II Answer the following questions.
+1. Why does the writer describe different aspects of nature in great
+detail at the beginning of the story? Why do you think the writer
+does this?
+2. How did the River know so much about Jahnavi?
+3. Jahnavi says, “And I’m so old now, they’ll never let me go.” What can
+you infer about Jahnavi and the school from this line?
+4. Why did the River laugh when Jahnavi said she would be scared at
+school?
+5. Why should Jahnavi follow the River’s advice?
+6. How does the conversation between Jahnavi and the River make the
+story more appealing?
+7. What is the main message that the writer intends to convey?
+
+Let us learn
+I You have learnt that naming words are called nouns and only
+proper nouns begin with a capital letter. Why has the author used
+a capital letter for the ‘River’ even when it is a common noun?
+(Clue: Has the River been given qualities of a human being?)
+II There are a few words related to sound in the text. Pick the words from
+the text and write them next to the correct definition.
+1. made a high-pitched piercing sound
+2. to cause liquid to strike or fall on something
+3. a low continuous background noise
+4. cry with loud uncontrollable gasps
+5. to make a soft dry sound, like paper or leaves moving
+6. took a short quick breath through the mouth due to surprise, pain or
+shock
+7. shaking rapidly to make continuous short, sharp sounds
+
+8
+
+Unit 1.indd 8
+
+06-Mar-25 2:47:13 PM
+
+Learning Together
+
+8. making a lot of noise
+9. made a long, high cry, usually because of pain or sadness
+		 Now, fill in the blanks with suitable sound words from exercise (II).
+		The classroom grew (i) _______ as the students noticed the teacher
+carrying the answer papers. As the teacher turned the pages with a (ii)
+_______, the children (iii) _______, wondering what comments awaited.
+Someone (iv) _______ in frustration, and the (v) _______of the students
+steadily increased. Finally, when the teacher praised the students for
+their excellent performance, the students (vi) _______ with excitement.
+III The word ‘catamaran’ is used in the text. The word originates from Tamil
+language ‘kattu maram’ meaning ‘tied wood’.
+		Find out the meanings of these words. From which Indian language
+these words were borrowed. An example has been given.
+1. karma (Sanskrit)
+
+2. sahib
+
+3. chutney
+
+4. guru
+
+5. verandah
+
+6. jungle
+
+7. areca
+
+8. palanquin
+
+IV Chandu, the fisherman, has a catamaran that the River preferred to a ship.
+Given below are some boats that are used in different parts of our country.
+
+1. canoe
+
+2. catamaran
+
+3. coracle
+
+4. shikara
+
+(i) Which one would you like to travel in?
+(ii) Make a colourful drawing of a boat that you would like to travel in.
+
+9
+
+Unit 1.indd 9
+
+06-Mar-25 2:47:15 PM
+
+Poorvi
+
+V Solve the crossword puzzle based on words related to water transport.
+5.
+
+1.
+
+6.
+
+C
+
+T
+U
+
+S
+
+G
+7.
+
+3.
+
+2.
+
+Y
+
+O
+
+T
+
+B
+
+R
+
+H
+T
+
+T
+4.
+
+M
+
+E
+
+R
+
+		
+Across
+1. a large vessel used for transporting goods or passengers by sea
+2. a small vessel for travelling on water, typically propelled by oars, sails,
+or an engine
+3. a flat floating structure for travelling across water
+4. a boat or ship driven by steam
+		
+Down
+5. a small, light, narrow boat, pointed at both ends and moved using a
+paddle
+6. a boat with a powerful engine which can change direction easily and
+is used to pull large ships into and out of port
+7. a boat with sails and sometimes an engine, used for either racing or
+travelling for pleasure, rhymes with ‘cot’
+VI Read the highlighted words in the following lines from the text.
+		 “She goes down towards the sea. I’ve seen her; she always takes the
+same way—over the mountains and down to the sea, like me!”
+		
+Prepositions are words that indicate the relationship between nouns
+or pronouns and other elements in a sentence. They show direction,
+location, time or logical relationships between ideas.
+
+10
+
+Unit 1.indd 10
+
+06-Mar-25 2:47:15 PM
+
+Learning Together
+
+		 Now, fill in the blanks with suitable prepositions given within the
+brackets.
+		 Jahnavi takes the River’s advice and goes to school. On her first day
+1. _________ (at/in/on) school, Jahnavi stood nervously 2. _________ (in/
+outside/above) the gate, clutching her bag close to her. The bell rang and
+she hurried 3. _________ (outside/through/inside) the bustling classroom.
+She found a seat 4. _________ (among/between/from) two friendly
+classmates. The teacher greeted them warmly and started the lesson 5.
+_________ (about/in/for) numbers. Jahnavi listened attentively, feeling
+excited 6. _________ (at/about/for) the new adventure ahead.
+VII Read the highlighted words in the following sentence from the text.
+		 A kingfisher swept down, its wings an
+arrow of blue in the sunlight.
+		 Words like on, off, up, down can function
+both as preposition and as adverb.
+		 For example:
+• She ran up the stairs. (preposition)
+
+• She rang me up. (adverb)
+
+Remember, a preposition will always be followed by an object (noun)
+whereas an adverb will tell you more about the action (verb).
+		 Fill in the blanks with prepositions or adverbs.
+1. The cat jumped ___________ the table. (preposition)
+2. The children played ___________ until dark. (adverb)
+3. She quickly ran ___________ the park. (preposition)
+
+11
+
+Unit 1.indd 11
+
+06-Mar-25 2:47:16 PM
+
+Poorvi
+
+4. The helicopter was hovering ___________. (adverb)
+5. We were just walking ___________, chatting. (adverb)
+6. After thoroughly wiping his shoes, he stepped ___________. (adverb)
+7. She drove slowly ___________ the sharp curve. (preposition)
+8. He placed the keys ___________ the mat before leaving. (preposition)
+
+Let us listen
+I Read the words given in the box below. You will listen to five people
+speak about school life. As you listen, circle the words that are used by
+the speakers. There are two words you do not need. (Transcript for the
+teacher on pg. 39 )
+lawyer
+newspapers
+
+desks
+marriage
+
+homemaker
+advertisements
+
+principal
+careers
+
+posters
+books
+
+II You will once again listen to the five speakers. As you listen, match each
+statement 1–7 to each speaker (i)–(v). There are two statements that you
+do not need.
+		
+
+Statements
+
+Speaker No.
+
+1. Promotes active participation for all
+in school activities
+2. Comments on how school makes
+learning Mathematics joyful
+3. Believes in the power of education
+that leads to freedom of choice
+4. Shares that school
+companionship
+
+also
+
+means
+
+5. Understands that boys and girls have
+different abilities
+6. Persuades the parent to
+permission to attend school
+
+grant
+
+7. Believes that learning skills is not
+gender-based
+
+12
+
+Unit 1.indd 12
+
+06-Mar-25 2:47:16 PM
+
+Learning Together
+
+Let us speak
+I Read the sentence given below.
+		 “Dear, dear! What’s the matter? … You shouldn’t cry, you know. And you
+really shouldn’t be scared, when you have been coming here to see me
+every day, well, almost every day.”
+		 The River spoke to Jahnavi in a ‘sleepy’ voice. Work in pairs and take
+turns to speak the same sentence in ‘other’ voices. Some hints are given
+below.
+happy
+
+surprised
+
+angry
+
+scared sad
+
+worried
+
+II Janhavi asks the River for advice and the River gives
+advice. Read the given situations and work in pairs to ask
+for and give advice. Take turns to change your roles. Use
+the prompts given below.
+1. Situation (i) : You wish to play football at school but
+it has an all-boys’ team only.
+2. Situation (ii) : You have been unable to score well
+in Mathematics due to nervousness
+during exams.
+3. Situation (iii) : You really enjoy music classes but do
+not get enough time to practise for it.
+4. Situation (iv) : You cannot see the blackboard
+clearly from the last bench.
+Asking for advice
+• _______ problem _______.
+What do you think I
+should do?
+• _______ problem _______.
+Do you think I should...?
+• _______ problem _______.
+What would you do in my
+position?
+
+		
+
+Giving advice
+• I think you should...
+• Why don’t you...?
+• The best thing to do is...
+• If I were you,
+I would / wouldn’t...
+
+• _______ problem _______.
+I’d appreciate your
+advice on this issue.
+
+13
+
+Unit 1.indd 13
+
+06-Mar-25 2:47:17 PM
+
+Poorvi
+
+Let us write
+Observing Nature
+Take some time to observe the world around
+you. Over the next few days, pay attention to
+the colours, shapes, patterns, and textures
+found in nature. Look closely at the plants,
+trees, flowers, birds, and even the sky. Make
+detailed notes of what you observe, focusing on
+textures, movements, and how light plays with
+these elements. Record your observations in
+detail and the features that draw your attention
+the most—whether it’s the soft ripple of water,
+the vibrant flutter of a butterfly or the colour of
+the birds or flowers.
+Now, write a descriptive paragraph based on
+what you’ve observed. Highlight the colours,
+shapes, textures, and unique details that made
+an impression on you.
+Give a title to your paragraph.
+Ideas
+
+Prompts
+
+• What do you observe?
+
+• Every day, I see...
+• I find it very interesting that...
+
+• How do you feel? Why?
+
+• I like... because...
+• I feel... as...
+
+• What is your message to everyone
+around you?
+
+• I want to tell you that...
+• My advice to all is...
+
+Let us explore
+I Discuss why rivers in India are considered to be sacred and most of
+them are referred to as female. Some rivers are referred to as male, for
+example, the Brahmaputra and the Sone.
+II Whole Class Activity
+1. India is a multilingual country, and many of us can speak two to
+three languages easily. Make a list of the languages that everyone in
+the class can speak and display it on a chart paper in the classroom.
+
+14
+
+Unit 1.indd 14
+
+2. In which language do you enjoy reading and learning the most?
+
+06-Mar-25 2:47:17 PM
+
+Learning Together
+
+III Read the poster given below and answer the questions that follow.
+
+1. What are the things you can observe in the poster?
+2. Why do you think the girls look happy?
+3. Dignity means ‘self-respect’. What is the relation between ‘dignity’
+and ‘happiness’ ?
+4. How does a Nation prosper when its daughters are happy?
+IV The Government has launched many schemes
+for the education of the girl child. Some of them
+are ‘Beti Bachao Beti Padhao’, ‘Balika Samridhi
+Yojana’, ‘Samagra Shiksha Scheme – Kasturba
+Gandhi Balika Vidyalayas’, etc.
+		Find out more such schemes
+from the internet or from your
+teacher and spread awareness
+in your neighbourhood.
+
+15
+
+Unit 1.indd 15
+
+06-Mar-25 2:47:19 PM
+
+Poorvi
+
+Try Again
+Let us do these activities before we read.
+I Who inspires you to do your best?
+II Work in pairs, identify what you see in the pictures given below. What
+can we learn from them? Share your answers with your classmates and
+the teacher.
+
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+6.
+
+16
+
+Unit 1.indd 16
+
+06-Mar-25 2:47:21 PM
+
+Learning Together
+
+Let us read
+King Bruce of Scotland flung himself down
+In a lonely mood to think;
+‘Tis true he was monarch, and wore a crown,
+But his heart was beginning to sink.
+For he had been trying to do a great deed,
+To make his people glad;
+He had tried and tried, but couldn’t succeed
+And so he became quite sad.
+He flung himself down in low despair,
+As grieved as man could be;
+And after a while he pondered there,
+“I’ll give it all up,” said he.
+Now just at that moment a spider dropped,
+With its silken, filmy clue;
+And the King, in the midst of his thinking, stopped
+To see what the spider would do.
+‘Twas a long way up to the ceiling dome,
+And it hung by a rope so fine;
+That how it would get to its cobweb home,
+King Bruce could not divine.
+
+17
+
+Unit 1.indd 17
+
+06-Mar-25 2:47:22 PM
+
+Poorvi
+
+It soon began to cling and crawl
+Straight up with strong endeavour;
+But down it came with a slippery sprawl,
+As near to the ground as ever.
+Up, up it ran, not a second to stay,
+To utter the least complaint;
+Till it fell still lower, and there it lay,
+A little dizzy and faint.
+Its head grew steady — again it went,
+And travelled a half-yard higher;
+‘Twas a delicate thread it had to tread,
+And a road where its feet would tire.
+Again it fell and swung below,
+But again it quickly mounted;
+Till up and down, now fast, now slow,
+Nine brave attempts were counted.
+“Sure,” cried the King, “that foolish thing
+Will strive no more to climb;
+When it toils so hard to reach and cling,
+And tumbles every time.”
+But up the insect went once more,
+Ah me! ‘tis an anxious minute;
+He’s only a foot from his cobweb door,
+Oh say, will he lose or win it?
+Steadily, steadily, inch by inch,
+Higher and higher he got;
+And a bold little run at the very last pinch
+Put him into his native cot.
+“Bravo, bravo!” the King cried out,
+“All honour to those who try;
+The spider up there, defied despair;
+He conquered, and why shouldn’t I?”
+And Bruce of Scotland braced his mind,
+And gossips tell the tale,
+That he tried once more as he tried before,
+And that time did not fail.
+Eliza Cook
+18
+
+Unit 1.indd 18
+
+06-Mar-25 2:47:24 PM
+
+Learning Together
+
+Let us discuss
+I Complete the summary of the poem by filling in the blanks with suitable
+words from the text given in the box below. Share your answers with the
+teacher. An example has been given.
+tried
+conquered
+
+mounted
+low
+
+despair
+strive
+
+attempts
+
+great
+
+		 The poem, written in a narrative style, tells the story of King Bruce of
+Scotland, who was feeling 1. _____________ after failing multiple times
+to achieve something 2. _____________ for his people. In a moment of
+3. _____________, he observed a spider trying to reach its web high above.
+The spider 4. _____________ every time it fell after getting close to its
+goal. It made nine 5. _____________ and finally succeeded. The king said
+that the spider had 6. _____________ and so would he. Inspired by the
+spider’s determination, King Bruce decided to 7. _____________. When he
+8. _____________ this time, he ultimately succeeded.
+II Complete the following sentences suitably.
+1. We can say that the poet uses the narrative style because ________.
+2. The central idea of the poem is ________.
+III Pick three examples from the poem for each of the following:
+1. lines that describe the spider’s efforts
+2. alliteration (the repetition of the same consonant sounds at the
+beginning of closely connected words)
+IV Why does the poet repeat the following words or phrases in the poem?
+		 tried and tried; steadily, steadily; up, up
+V Fill in the blanks by choosing the correct answer from within the
+brackets.
+1. The rhyme scheme of the poem is ____________. (AABB/ABBA/ABAB)
+2. ‘Bravo’ is an example of ____________. (conjunction/interjection/
+adjective)
+3. The poet uses ‘twas and ‘tis for the sake of ____________. (rhythm/
+rhyme/contraction)
+
+19
+
+Unit 1.indd 19
+
+06-Mar-25 2:47:25 PM
+
+Poorvi
+
+VI The spider’s climbing is compared to King Bruce’s own
+struggles. Just as the spider repeatedly attempts to reach its
+web, Bruce is trying to achieve a great deed for his people.
+This poetic device is called metaphor. It strengthens the poem’s message
+about perseverance—keep trying till we succeed.
+A metaphor is a figure of speech that involves an implied comparison
+between two unlike things without using ‘like’, ‘as’, or ‘as...as’. It
+suggests that one thing is another, highlighting similarities between
+them to add deeper meaning or understanding.
+1. Read the following sentences and identify metaphors and similes.
+Write M for metaphor and S for simile.
+(i)
+
+He ran as fast as a cheetah.
+
+(ii)
+
+The world is a stage.
+
+(iii)
+
+The night was as dark as coal.
+
+(iv)
+
+He sang like an angel.
+
+(v)
+
+Her voice was music to his ears.
+
+(vi)
+
+The classroom was a zoo.
+
+(vii) The baby slept like a log.
+(viii) Her smile was as bright as the sun.
+(ix)
+
+The lake was a mirror, reflecting the sky.
+
+2. Read the following sentences and transform the similes to metaphors
+and metaphors to similes. Two examples have been given.
+(i)
+
+Knowledge spreads like the branches of a mighty tree.
+
+		
+Knowledge is a spreading branch of a mighty tree.
+(ii) His courage was a beacon, guiding us through the storm.
+• His courage was as bright as a beacon guiding us through the
+storm.
+• His courage was like a beacon guiding us through the storm.
+(iii) The book was a treasure chest, filled with endless adventures.
+(iv) Her laughter was a melody that brightened the darkest days.
+
+20
+
+Unit 1.indd 20
+
+06-Mar-25 2:47:25 PM
+
+Learning Together
+
+(v) The mountain stood as a guard, watching over the valley below.
+(vi) The night was like a velvet cloak, wrapping the world in mystery.
+(vii) Her thoughts were like butterflies in a summer meadow.
+
+Let us think and reflect
+I Read the extracts given below and answer the questions that follow.
+1. He flung himself down in low despair,
+As grieved as man could be;
+And after a while he pondered there,
+“I’ll give it all up,” said he.
+		 Now just at that moment a spider dropped,
+With its silken, filmy clue;
+(i)
+
+Select the phrase which shows the physical
+expression of the King’s emotional state.
+
+(ii) Why does the poet use the word ‘low’ before despair?
+(iii) Choose the correct option to complete the sentence.
+		
+
+In the line, ‘And after a while he pondered there’, the word
+‘pondered’ means _____________________.
+A. paused
+
+B. thought
+
+C. noticed
+
+D. rested
+
+(iv) Choose the correct option from the words given in the brackets.
+		
+
+The phrase ‘silken filmy clue’ creates an image of something
+that is _____________________ (long and light/very delicate and
+soft).
+
+2. “...when it toils so hard to reach and cling, And tumbles every time.”
+		 But up the insect went once more,
+Ah me! ‘tis an anxious minute;
+He’s only a foot from his cobweb door,
+Oh say, will he lose or win it?
+(i)
+		
+
+Choose the correct option to complete the analogy.
+toil: hard::_______________: _______________
+A. roll: tumble
+
+B. tumble: circle
+
+C. compress: roll
+
+D. jump: tumble
+
+21
+
+Unit 1.indd 21
+
+06-Mar-25 2:47:26 PM
+
+Poorvi
+
+(ii) List any two characteristics of the spider highlighted in the line,
+‘But up the insect went once more’.
+(iii) Choose the correct option to complete the sentence.
+		
+
+The expression ‘Ah me!’ in the extract indicates a sense of
+_______________.
+A. happiness
+
+B. stress
+
+C. relief
+
+D. loneliness
+
+(iv) Complete the sentence with an appropriate reason.
+		
+
+Readers are able to relate to this extract because ____________.
+
+II Answer the following questions.
+1. How does the first stanza help in setting the mood of the poem?
+2. Describe how King Bruce’s attitude changes from the beginning
+towards the end of the poem.
+3. The poet describes every action of the spider in great detail. What
+does this tell us about his attitude towards the spider?
+4. How does the spider inspire us to overcome despair and not give up?
+5. The poem teaches us that failures are stepping stones to success.
+Explain.
+6. The spider’s journey tells us that anyone can be a source of inspiration
+in our lives. Elaborate.
+
+Let us learn
+I Write the opposites of the following words
+taken from the poem.
+1. up
+
+x _____________
+
+2. fast
+
+x _____________
+
+3. glad
+
+x _____________
+
+4. win
+
+x _____________
+
+5. succeed
+
+x _____________
+
+22
+
+Unit 1.indd 22
+
+06-Mar-25 2:47:26 PM
+
+Learning Together
+
+II Choose the correct meaning of the underlined words in the following
+sentences from the box given below. Frame sentences of your own for
+these words.
+1. work very hard and/or for a long time
+2. prepared themselves for something difficult
+3. an attempt to do something new or difficult
+4. to try very hard to achieve something
+(i)
+
+Please make every endeavour to arrive on time.
+
+(ii) Ants toil tirelessly to save food for rainy season.
+(iii) We encourage all students to strive to do their best.
+(iv) The sailors braced themselves against the strong wind.
+III The poem uses words that show distance.
+		 For example:
+		 a long way up, inch by inch, higher and higher, half-yard higher
+		Classify the words or phrases in the box given below based on the
+distance (far or near) and write in the space provided. You may take the
+help of a dictionary.
+proximity
+remoteness
+light year
+
+middle of nowhere
+yonder
+hairline
+
+Far
+
+vicinity
+afar
+farther
+
+adjacent
+a stone’s throw
+
+Near
+
+23
+
+Unit 1.indd 23
+
+06-Mar-25 2:47:26 PM
+
+Poorvi
+
+IV Read the following line from the poem.
+		 ‘Twas a delicate thread it had to tread,
+		 Now repeat the lines five to six times. Are you able to say it clearly?
+Create more tongue twisters of your own.
+
+Let us listen
+I You will listen to a story about an ant. Read the questions given below
+and before you listen, guess the answers to these questions. (Transcript
+for the teacher on pg. 40)
+1. What was the ant known for?
+(i) determination
+
+(ii) strength
+
+(iii) wisdom
+
+2. Why was the ant unable to take the roti home?
+(i)
+
+It was stuck under a rock.
+
+(ii) It was too heavy to carry.
+(iii) It was pulled by other ants.
+3. What was the bird doing?
+(i)
+
+playing with the ant
+
+(ii) searching for food
+(iii) picking up leaves
+4. How did the bird make the ant feel?
+(i)
+
+proud
+
+(ii)
+
+inspired
+
+(iii)
+
+relaxed
+
+5. How did the fellow ants help?
+(i)
+
+by advising the ant continuously
+
+(ii) by standing still near the ant
+(iii) by joining the ant in her efforts
+II Now, listen to the story once again and as you listen, check whether your
+answers are correct.
+
+24
+
+Unit 1.indd 24
+
+06-Mar-25 2:47:27 PM
+
+Learning Together
+
+Let us speak
+Narrate a personal experience about a time when you were
+motivated by someone or something to carry on and never give up.
+Your perseverance helped you.
+Use the following sentence prompts as a guide for your narration.
+Use as per your topic.
+1. Introduction:
+• I remember a time when I felt like giving up. It was when...
+• There was a moment in my life when I faced a big challenge. It
+happened when…
+2. Describe the challenge:
+• The challenge I faced was...
+• I was struggling with...
+• The problem seemed too big because...
+3. Feeling disheartened:
+• At first, I felt discouraged and thought about giving up because...
+• I didn’t think I could succeed because...
+• I felt upset and wanted to leave because...
+4. The source of motivation:
+• But then, I saw/heard/read about...
+• Someone/something inspired me to keep going. It was...
+• I remembered the poem... do not quit…
+5. Taking action:
+• After feeling inspired, I decided to...
+• I gathered my strength and...
+• With a new sense of willpower, I...
+• I asked for help from...
+6. The result:
+• In the end, I was able to...
+• Thanks to standing firm and never giving up, I achieved...
+• I felt proud because...
+• It was worth it because...
+7. Reflection:
+• This experience taught me that...
+• I learned that perseverance is the key to success…
+• Now, I always remember to...
+• The lesson I learnt from this is...
+
+Unit 1.indd 25
+
+25
+
+06-Mar-25 2:47:27 PM
+
+Poorvi
+
+Let us write
+King Bruce was inspired by the spider that kept on trying till it was successful.
+Think about the steps you can take to overcome a difficult situation and write
+them down.
+Now, write a letter to your cousin on how you plan to overcome any difficult
+situation. Also, advise not to quit and persevere.
+Remember to use transition words like ‘To begin with…,’ ‘Next…,’ ‘After
+that…,’ ‘Then...,’ ‘Finally...,’ to share the steps of your plan.
+You may begin this way:
+
+		 20, Rajendra Nagar
+		Jeevanpur
+		 23 August 20XX
+		 Dear Monika,
+		 Thank you for your letter asking me about…
+You may end this way:
+
+		 Yours affectionately,
+		Deepa
+
+Let us explore
+I Collect folk songs in your own language that connect us with nature and
+compile them as a class project.
+II Did you know that spiders are not insects? They belong to a group called
+the arachnids. Observe a spider and an ant from a distance and note
+down the differences between them. Share your observations with your
+classmates. Ask your Science teacher for more information to know
+about spiders better.
+III Let us learn how to weave a spider web.
+1. Take three sticks (each about eight inches long) and a roll of old wool.
+2. Tie the sticks together in the centre with the wool (Fig. 1).
+3. Start weaving the web by putting a loop around every stick
+(Figs. 2 and 3).
+
+26
+
+Unit 1.indd 26
+
+06-Mar-25 2:47:28 PM
+
+Learning Together
+
+4. Complete the web and tie the thread in a knot on the stick where the
+web is complete (Fig. 4).
+		 Now, decorate it with words and phrases you learnt about the spider in
+the poem or anything else that you like.
+
+Fig. 1
+
+Fig. 2
+
+Fig. 3
+
+Fig. 4
+
+27
+
+Unit 1.indd 27
+
+06-Mar-25 2:47:29 PM
+
+Poorvi
+
+Three Days to See
+Let us do these activities before we read.
+I Work in pairs. Recall a visit to a place that you liked. Discuss the details
+of that place and write about the following:
+1. Name of the place
+2. The person(s) you went with
+3. The things that you could:
+• see
+
+• listen
+
+• smell
+
+• taste
+
+• touch and feel
+
+II How does this memory make you feel?
+III Do you think your visit/experience would be different if you could not
+see or hear? Share your answers with your classmates and the teacher.
+		 Did you know that our five senses are essential for us to experience and
+make sense of the world around us?
+
+Unit 1.indd 28
+
+06-Mar-25 2:47:30 PM
+
+Learning Together
+
+Let us read
+I, who cannot see, find hundreds of things to interest me
+through mere touch. I feel the delicate symmetry of a
+leaf. I pass my hands lovingly about
+the smooth skin of a silver birch, or
+the rough, shaggy bark of a pine. In
+spring, I touch the branches of trees
+hopefully in search of a bud, the first
+sign of awakening Nature after her
+winter’s sleep. Occasionally, I am very
+fortunate; I place my hand gently on a
+small tree and feel the happy quiver of
+a bird in full song.
+
+symmetry:
+evenness
+birch: a slender
+tree with thin
+peeling bark
+shaggy: hairy
+
+quiver: shiver
+
+At times, my heart cries out with
+longing to see all these things. If I can
+get so much pleasure from mere touch,
+how much more beauty must be revealed by sight. And
+I have imagined what I should most like to see if I were
+given the use of my eyes, say, for just three days.
+I should divide the period into three parts. On the first
+day, I should want to see the people whose kindness and
+companionship have made my life worth living. I do not
+know what it is to see into the heart of a friend through
+that ‘window of the soul’, the eye.
+I can only ‘see’ through my fingertips the outline of a face.
+I can detect laughter, sorrow and other obvious emotions.
+I know my friends from the feel of their faces.
+
+29
+
+Unit 1.indd 29
+
+06-Mar-25 2:47:30 PM
+
+Poorvi
+
+behold: see
+panorama: scene
+glimpse: brief
+look
+pageant: display
+condensed:
+brief
+carcasses:
+remains
+mastodons: a
+large animal
+similar to an
+elephant, but
+with fur
+stature:
+physique, build
+haunts: regular
+meeting places
+merely: just
+
+The next day I should arise with the dawn and see the thrilling
+miracle by which night is transformed into day. I should
+behold with awe the magnificent panorama of light with
+which the sun awakens the sleeping earth. This day I should
+devote to a hasty glimpse of the world, past and present. I
+should want to see the pageant of man’s progress, and so I
+should go to the museums. There my eyes would see the
+condensed history of the earth—animals and the races
+of men pictured in their native environment; gigantic
+carcasses of dinosaurs and mastodons that roamed
+the earth before man appeared, with his
+tiny stature and powerful brain, to
+conquer the animal kingdom.
+The following morning, I should again
+greet the dawn, anxious to discover
+new delights, new revelations of
+beauty. Today, this third day, I shall
+spend in the workaday world, amid the
+haunts of men going about the business
+of life. The city becomes my destination.
+First, I stand at a busy corner, merely
+looking at people, trying by sight of them
+to understand something of their daily
+lives. I see smiles, and I am happy.
+I see serious determination, and
+I am proud. I see suffering, and I
+am compassionate.
+
+Unit 1.indd 30
+
+06-Mar-25 2:47:31 PM
+
+Learning Together
+
+At midnight, permanent night would close in on me again.
+Naturally in those three short days I should not have seen all
+I wanted to see. Only when darkness had again descended
+upon me should I realise how much I had left unseen.
+I who am blind can give one hint to those who can see: use
+your eyes as if tomorrow you would be stricken blind. And
+the same method can be applied to your other senses. Hear
+the music of voice, the song of a bird, the mighty strains of an
+orchestra, as if you would be stricken deaf tomorrow. Touch
+each object as if tomorrow your tactile sense would fail. Smell
+the perfume of flowers, taste with relish each morsel, as if
+tomorrow you could never smell and taste again. Make the
+most of every sense; glory in all the facets of pleasure and
+beauty, which the world reveals to you through the several
+means of contact, which Nature provides. But of all the senses,
+I am sure that sight must be the most delightful.
+
+strains: tunes
+tactile sense:
+sense of touch
+morsel: a small
+piece of food
+facets: aspects
+
+Helen Keller
+Let us discuss
+I Work in pairs. Identify the statements that are true from the ones
+given below. Share your answers with the teacher.
+1. The author expresses a deep longing to experience the world
+through the sense of hearing.		
+			
+2. The author would like exploring the city only to observe how
+people are suffering.
+3. The author would spend the first day seeing the people whose
+kind-heartedness and friendship have enriched her life.
+4. The author acknowledges that even in three days, she would not
+be able to see everything.
+5. The author feels that everyone can find the greatest joy merely by
+the sense of touch.
+6. The author advises those who can see to appreciate every moment
+as if they might lose their senses tomorrow.
+7. On the third day, the author would like to observe people in their
+daily lives and understand their experiences.
+
+31
+
+Unit 1.indd 31
+
+06-Mar-25 2:47:31 PM
+
+Poorvi
+
+II Complete the table given below with what Helen Keller wanted to do on
+the three days if she had sight.
+Day 1
+
+Day 2
+
+see the people, know
+her friends from the
+feel of their faces, …
+
+arise with the dawn,
+…
+
+Day 3
+
+III The author says that you need eyes to be able to ‘see’ the true self of
+a person. Therefore, she refers to the eye as ‘window of the soul’.
+How is the narrator able to understand the feelings of a person?
+
+Let us think and reflect
+I Read the extracts given below and answer the questions that follow.
+1. I feel the delicate symmetry of a leaf. I pass my hands lovingly about
+the smooth skin of a silver birch, or the rough, shaggy bark of a pine.
+In spring, I touch the branches of trees hopefully in search of a bud, the
+first sign of awakening Nature after her winter’s sleep. Occasionally, I
+am very fortunate; I place my hand gently on a small tree and feel the
+happy quiver of a bird in full song.
+(i)
+
+What does the ‘delicate symmetry of a leaf’ symbolise?
+
+(ii) List two phrases from the extract that describe the texture of
+objects in nature.
+(iii) Complete the sentence appropriately.
+		
+
+The phrase ‘awakening Nature after her winter’s sleep’ refers
+to __________________.
+
+(iv) What is the tone of the writer in this extract?
+A. nostalgic
+
+B. proud
+
+C. admiring
+
+D. celebratory
+
+2. The next day I should arise with the dawn and see the thrilling miracle
+by which night is transformed into day. I should behold with awe
+the magnificent panorama of light with which the sun awakens the
+sleeping earth. This day I should devote to a hasty glimpse of the world,
+past and present. I should want to see the pageant of man’s progress,
+and so I should go to the museums.
+
+32
+
+Unit 1.indd 32
+
+06-Mar-25 2:47:31 PM
+
+Learning Together
+
+(i)
+		
+
+The word ‘thrilling’ has been used with ‘miracle’.
+Which of the following words does not match with the word
+‘thrilling’?
+A. experience
+
+B. tale
+
+C. knowledge
+
+D. adventure
+
+(ii) Why does the writer refer to the earth as ‘sleeping earth’?
+(iii) Complete the sentence with an appropriate reason.
+		
+
+The writer wishes to dedicate the day to a brief look at the
+present and past world because __________________.
+
+(iv) Why does the writer use ‘should’ multiple times in the extract?
+II Answer the following questions.
+1. The sense of touch makes up for the loss of sight and hearing. Explain
+this statement with reference to the text.
+2. Why does the author believe that the sense of sight is the most
+wonderful?
+3. How might the author’s opinion on making the most of our senses
+guide us to be kinder towards people with special abilities?
+4. What is the significance of imagining the loss of a sense, according to
+the author?
+5. How does the author encourage people to approach their everyday
+sensory experiences?
+6. What do the author’s choices for the three days tell us about her
+values and priorities?
+
+33
+
+Unit 1.indd 33
+
+06-Mar-25 2:47:32 PM
+
+Poorvi
+
+Let us learn
+I Sensory words are descriptive—they describe how we experience the
+world: how we see, hear, smell, taste or feel something.
+		 Complete the following table with sensory words from the text in Column
+2 for the five senses in Column 1. Add new words in Column 3.
+Column 1
+
+Column 2
+
+What you see
+
+panorama
+
+What you hear
+
+music
+
+What you smell
+
+perfume
+
+What you taste
+
+relish
+
+What you feel
+
+rough
+
+Column 3
+
+II Read the following sentences from the text and underline the verbs.
+• I should divide the period into three parts.
+• On the first day, I should want to see…
+• The next day I should arise with the dawn…
+• I should behold with awe…
+		The words you have underlined are a combination of two verbs. In
+each of these sentences, ‘should’ is the modal verb (suggestion), and the
+second verb (divide, want, arise, behold) is the main verb.
+Modal verbs are auxiliary verbs that express necessity, possibility,
+permission, or ability. They are used before the main verb to give
+additional information about the function of the main verb. Common
+modal verbs include can, could, may, might, shall, should, will, would,
+must, and ought to.
+III Identify the modal verbs in the following sentences. Choose the functions
+they express from those given in the box below.
+possibility
+
+necessity
+
+polite request
+
+ability
+
+moral obligation
+
+1. You can learn a lot from this experience.
+2. They might arrive late due to traffic.
+
+34
+
+Unit 1.indd 34
+
+06-Mar-25 2:47:32 PM
+
+Learning Together
+
+3. She must finish her homework before dinner.
+4. They ought to apologise for their mistake.
+5. He would like to have some lassi, please.
+IV Read the situations in Column 1 and functions in Column 2. Fill in the
+blanks in the sentences in Column 4 with appropriate modal verbs from
+Column 3. After filling in the blanks, explain the function of each modal
+verb you used to your classmates and the teacher.
+Column 1
+
+Column 2
+
+Column 3
+
+1. You want to
+leave work
+early.
+
+permission
+
+(i) 		 ____________ I
+leave early today
+if I finish all my
+tasks?
+
+2. You have an
+important
+deadline
+tomorrow.
+
+obligation
+
+(ii) I ____________
+finish this report
+by tomorrow.
+
+3. Your friend
+is thinking
+whether to join
+Art class.
+
+advice
+
+(iii) You ____________
+consider all the
+pros and cons
+before making a
+decision.
+
+can,
+could, may,
+might,
+
+4. There are dark
+clouds in the
+sky.
+
+possibility
+
+Column 4
+
+must, ought (iv) It ____________
+rain later today.
+to,
+shall,
+
+5. Asking someone polite
+to pass the salt
+request
+at the dinner
+table
+
+should,
+will, would
+
+(v) 		 ____________ you
+pass the salt,
+please?
+
+6. Advising
+someone to
+apologise for a
+mistake
+
+moral
+obligation
+
+(vi) You ____________
+apologise for
+the mistake you
+made.
+
+7. Deciding where
+to go for picnic
+
+suggestion
+
+(vii) We ____________
+go to any park
+nearby for
+picnic.
+
+35
+
+Unit 1.indd 35
+
+06-Mar-25 2:47:32 PM
+
+Poorvi
+
+Let us listen
+You will listen to a conversation between a mother and son. As you listen,
+select four true statements from 1–7 given below. (Transcript for the teacher
+on pg. 41)
+				
+
+Statements
+
+True or False
+
+1. Anuj finds the concept of Braille fascinating and
+wants to learn more about it.
+
+______________
+
+2. Mother is unsure of the school’s efforts to include
+students with visual impairment.
+
+______________
+
+3. Anuj initially thinks that Digital India is only
+about learning how to use computers.
+
+______________
+
+4. Mother believes that screen readers are very
+effective for persons who are visually impaired.
+
+______________
+
+5. Anuj already knew that persons who are visually
+impaired can use computers and smartphones.
+
+______________
+
+6. Anuj wants to know about the effectiveness
+of assistive technologies for persons who are
+visually impaired.
+
+______________
+
+7. Mother believes a right mindset is the best support
+for persons who are visually impaired.
+
+______________
+
+Let us speak
+Work in pairs. Take turns to speak for a minute on any one of the senses you
+value the most. Use the given prompts to frame your response before you
+speak.
+• I value my sense of sight/ sound/ touch/ smell / taste the most because...
+• One of my favourite experiences is...
+• This is so because...
+• I appreciate being able to see/ hear/touch/ smell/ taste...
+• God forbid, if I were to lose the sense of sight/ sound/ touch/ smell /
+taste, it would make me feel...
+• I would not be able to...
+• I thank God that I am able to see/ hear/ touch/ smell / taste.
+
+36
+
+Unit 1.indd 36
+
+06-Mar-25 2:47:32 PM
+
+Learning Together
+
+Remember to
+• speak clearly and confidently
+• glance at your notes for reference rather than reading
+• make eye contact
+• use gestures if you wish to
+• pronounce words clearly and avoid mumbling
+• speak at a steady, moderate pace
+
+Let us write
+A descriptive paragraph describes a person, place, object or event to create
+a memorable experience for the reader. Write a descriptive paragraph
+describing a place that you visited recently.
+Follow the guidelines given below to draft this paragraph.
+1. In the opening line, begin with something interesting to capture the
+reader’s attention. Introduce the place you visited.
+2. In the supporting lines, describe the place using adjectives and specific
+details that appealed to your five senses—sight, sound, smell, taste, and
+touch. You may include alliterations, similes, and personifications to
+hold the reader’s attention.
+3. In the concluding lines, summarise the description to provide a final
+impression. Mention what was the most important thing about that
+place which others should also experience.
+
+Let us explore
+I Do you know how persons with
+visual challenges are able to read
+and write? They read through
+touch with the help of Braille, a
+code of raised dots that represents
+the letters of the alphabet. This
+tactile code was developed over
+a period of nine years by Louis
+Braille, who became blind at a very
+young age due to an accident.
+Louis Braille
+(Courtesy FMT)
+
+Unit 1.indd 37
+
+37
+
+06-Mar-25 2:47:33 PM
+
+Poorvi
+
+		 Study the code given below and write your name using it. You may use
+bindis or grains of daal to make the dots that you can touch and feel.
+A B
+
+C
+
+D
+
+E
+
+F
+
+G
+
+H
+
+I
+
+J
+
+K
+
+L
+
+M
+
+N O
+
+P
+
+Q
+
+R
+
+S
+
+T
+
+U
+
+V
+
+W
+
+X
+
+Y
+
+Z
+
+2
+
+3
+
+6
+
+7
+
+0
+
+1
+
+4
+
+5
+
+8
+
+9
+
+II Have you heard about the International Day of Persons with Disabilities?
+Find out when and how it is observed in India. Write your findings on a
+sheet and put it up on the class board.
+III Do you want to know about sign language? Go to the link given below to
+learn about the Indian sign language.
+		https://ncert.nic.in/pdf/accessibility/ISL_200word_v15.pdf
+
+38
+
+Unit 1.indd 38
+
+06-Mar-25 2:47:33 PM
+
+Learning Together
+
+TRANSCRIPTS
+The Day the River Spoke
+Let us listen (refer to page 12)
+I Read the words given in the box below. You will listen to five people
+speak about school life. As you listen, circle the words that are used by
+the speakers. There are two words you do not need.
+
+Speaker (i):		(Father) Should girls attend school? Yes, they
+should. I do my best to ensure that both my son and
+daughter get equal opportunities. I look forward
+to their successful careers and rewarding lives. I
+feel education gives freedom to make choices in
+life. Whether my daughter wants to work in an
+organisation or be a homemaker, it should be her
+choice and the same applies to my son.
+Speaker (ii): (Grandmother) I went to school but many girls at
+that time could not attend school because some
+elders in the village felt that girls should help in
+the house and take care of their little brothers and
+sisters. I am happy that the situation has changed
+today.
+Speaker (iii): (Teacher) The school prepares students for
+meaningful and useful participation in the world
+of work by learning hands-on abilities and skills,
+developing equal respect for head-hands-heart,
+valuing the dignity of labour, and understanding
+vocational choices for the future.
+Speaker (iv): (Student) I like to go to school. I feel that by coming
+to school and reading the books, I learn about things
+from all over the world. I also have friends with
+whom I can share my feelings.
+39
+
+Unit 1.indd 39
+
+06-Mar-25 2:47:33 PM
+
+Poorvi
+
+Speaker (v) : (Principal) Everyone should attend school. You
+must’ve noticed that the girls are doing very well.
+However, as the Head of an institution, I know that
+all students can work hard. My message to students
+is that they should attend school regularly and take
+part in every school activity without bothering
+whether it is for girls or boys. The idea is to focus on
+learning.
+II You will once again listen to the five speakers. As you listen, match each
+statement 1–7 to each speaker (i)–(v). There are two statements that you
+do not need.
+
+Try Again
+Let us listen (refer to page 24)
+1. You will listen to a story about an ant. Read the questions given below
+and before you listen, guess the answers to these questions.
+		 Hello everyone,
+		 I’m sure you have enjoyed learning about King Bruce and the spider. Let
+me share another story with you.
+
+In a thick green forest, there lived a little ant. She was known for
+her determination and never-give-up attitude. One sunny day,
+the ant found a delicious piece of roti that was too big for her to
+carry alone.
+“This crumb is huge, but I must get it back to the anthill. My
+family will be so happy!” she thought to herself.
+She tried to lift the crumb with all her might, but it was too heavy.
+She tried pushing it, pulling it and even rolling it, but nothing
+seemed to work. Exhausted and saddened, she sat down and
+began to cry.
+
+40
+
+Unit 1.indd 40
+
+As the ant sat there, feeling beaten, she noticed a small bird
+nearby. The bird was trying to build a nest. It picked up twigs
+and leaves, but every time it tried to place them, the wind would
+blow them away. However, the bird did not give up. It kept trying,
+over and over again, until finally, it managed to build a strong
+nest.
+
+06-Mar-25 2:47:33 PM
+
+Learning Together
+
+“If that bird can keep trying and succeed, then I shouldn’t give
+up either,” she thought, feeling inspired.
+Determined once more, the ant gathered all her strength and
+decided to try again. She called her fellow ants for help. Together,
+they formed a chain and lifted the crumb with their combined
+strength. Slowly but surely, they carried the crumb back to the
+anthill.
+“We did it! Thank you, everyone! We showed that with teamwork
+and never giving up, we can achieve anything!” the ant shouted,
+excited and grateful.
+She and her friends celebrated their success.
+We too should learn this lesson from the ant’s experience—never
+give up, no matter how difficult the situation may seem.
+Hope you all liked the story.
+Thank you!
+2. Now, listen to the story once again and as you listen, check whether your
+answers are correct. Rectify wherever needed.
+
+Three Days to See
+Let us listen (refer to page 36)
+		 You will listen to a conversation between a mother and son. As you listen,
+select four true statements from 1–7 given below.
+
+Anuj
+
+: Ma, we have a new student in our class, Tara. She’s
+quite talkative and pleasant. You know, the writing in
+her books doesn’t look like ours. It’s different. She told
+us that it’s called Braille.
+
+Mother : It’s great to know that your school has facilities to
+address the needs of the visually impaired. Thanks to
+the Digital India Initiative, which is paving the way for
+inclusion of the visually impaired.
+41
+
+Unit 1.indd 41
+
+06-Mar-25 2:47:34 PM
+
+Poorvi
+
+Anuj
+
+: Oh, Digital India! That’s about being computer literate,
+isn’t it?
+
+Mother : Well, Digital India is about more than just internet
+access. It aims to include everyone, including people
+with disabilities, by providing digital infrastructure
+and services. For the visually impaired, it means access
+to assistive technologies like screen readers, voice-overenabled smartphones and apps that can make daily
+activities easier.
+Anuj
+
+: Ohh... interesting. What is a screen reader, Ma?
+
+Mother : I knew you’d ask about it! Well, a screen reader is a
+software application that helps people who are visually
+impaired use computers and smartphones. It reads out
+the text displayed on the screen and provides audio
+feedback.
+Anuj
+
+: That’s amazing! So, Tara can use a computer just like
+we do?
+
+Mother : Yes, she can.
+Anuj
+
+: So, it makes a big difference in their daily lives.
+
+Mother : It certainly does. It ensures that people who are visually
+impaired can use digital services independently, without
+help from others. This can improve their quality of life.
+It also opens up more job opportunities in fields like IT,
+banking, and more, where they can work just efficiently
+like anybody else.
+Anuj
+
+: Wow! So that means people who are visually impaired
+can work and do things on their own? I’m so proud of
+my school.
+
+Mother : Yes, and this way, we can ensure that the benefits of
+Digital India reach everyone, helping them to participate
+fully in all areas of life.
+		 Remember, inclusion is not just about having the right tools, but also
+about having the right mindset.
+
+42
+
+Unit 1.indd 42
+
+06-Mar-25 2:47:34 PM
+
+Wit and Humour
+2025-11-24 17:58:16 - src.routes - INFO - [routes.py:108] - Successfully fetched chapter 1: Learning Together
+2025-11-24 17:58:16 - src.routes - DEBUG - [routes.py:100] - Fetching content for chapter 2
+2025-11-24 17:58:16 - src.components.content_fetcher - INFO - [content_fetcher.py:99] - Fetching content for: Board=CBSE, Class=7, Subject=English, Topic=2
+2025-11-24 17:58:16 - src.components.content_fetcher - DEBUG - [content_fetcher.py:57] - Retrieved topics for CBSE/7/English: 5 topics found
+2025-11-24 17:58:16 - src.components.content_fetcher - DEBUG - [content_fetcher.py:118] - Topic name found: Wit and Humour
+2025-11-24 17:58:16 - src.components.content_fetcher - INFO - [content_fetcher.py:130] - Searching in 1 book(s)...
+2025-11-24 17:58:16 - src.components.content_fetcher - DEBUG - [content_fetcher.py:140] - Checking book: Poorvi (NCERT) (ID: C7ENG0POORVI0NCERT)
+2025-11-24 17:58:16 - src.components.content_fetcher - INFO - [content_fetcher.py:159] - Topic found in book: Poorvi (NCERT)
+2025-11-24 17:58:16 - src.components.content_fetcher - INFO - [content_fetcher.py:160] - Retrieved Content Unit 2
+WIT AND HUMOUR
+
+Animals, Birds, and Dr. Dolittle
+Let us do these activities before we read.
+I Do you have a pet or a domestic animal? If yes, why? If not, why not?
+How do people usually spend time with a pet or domestic animal? Share
+your thoughts with your classmates and the teacher.
+II You must have read stories where animals and birds talk. If you had a
+chance to communicate with an animal or a bird, who would you like
+to speak to and why? Share your thoughts with your classmates and the
+teacher.
+III If we closely observe the body language of animals and birds, we can
+understand what they want to tell us. Work in pairs and study the
+pictures given below. Find out what emotions these animals and birds
+are trying to convey. Share your observations with your classmates and
+the teacher.
+
+1.
+
+Unit 2.indd 43
+
+2.
+
+3.
+
+4.
+
+06-Mar-25 2:50:35 PM
+
+Poorvi
+
+Let us read
+
+I
+Doctor Dolittle was sitting in his kitchen talking with the Cat’sfood-Man who had come to see him with a stomach-ache.
+“Why don’t you give up being a people’s doctor, and be an
+animal doctor?” asked the Cat’s-food-Man.
+The parrot, Polynesia, was sitting in the window looking out
+at the rain and singing a sailor song to herself. She stopped
+singing and started to listen.
+
+scholar: a
+learned person
+
+“You see, Doctor,” the Cat’s-food-Man went on, “you know all
+about animals—much more than what these vets here do.
+That book you wrote—about cats, why, it’s wonderful! I can’t
+read or write myself—my wife, Theodosia, is a scholar, and
+she read your book to me. You might have been a cat yourself.
+You know the way they think.”
+When the Cat’s-food-Man had gone the parrot flew off the
+window on to the Doctor’s table and said, “That man’s got
+sense. That’s what you ought to do. Be an animal doctor. Give
+the silly people up—if they haven’t brains enough to see you’re
+the best doctor in the world. Take care of animals instead—
+they’ll soon find it out. Be an animal doctor.”
+“Oh, there are plenty of animal doctors,” said John Dolittle,
+putting the flowerpots outside on the windowsill to get the
+rain.
+“Yes, there are plenty,” said Polynesia. “But none of them are
+
+44
+
+Unit 2.indd 44
+
+06-Mar-25 2:50:36 PM
+
+Wit and Humour
+
+any good at all. Now listen, Doctor, and I’ll tell you something.
+Did you know that animals can talk?”
+“I knew that parrots can talk,” said the Doctor.
+“Oh, we parrots can talk in two languages—people’s language
+and bird language,” said Polynesia proudly. “If I say, ‘Polly
+wants a cracker’, you understand me. But hear this: Ka-ka oiee, fee-fee?”
+
+cracker: a thin,
+dry biscuit
+usually eaten
+with cheese
+
+“Good Gracious!” cried the Doctor. “What does that mean?”
+“That means, ‘Is the porridge hot yet?’—in bird language.”
+“My! You don’t say so!” said the Doctor. “You never talked that
+way to me before.”
+“What would have been the good?” said Polynesia, dusting
+some cracker crumbs off her left wing. “You wouldn’t have
+understood me if I had.”
+“Tell me some more,” said the Doctor, all excited; and he
+rushed over to the drawer and came back with a book and
+a pencil. “Now don’t go too fast—and I’ll write it down.
+This is interesting—very interesting—something quite new.
+Give me the Birds’ A.B.C. first—slowly now.”
+
+Birds’ A.B.C.:
+(here) the
+language that
+birds speak
+
+So that was the way the Doctor came to know that animals
+had a language of their own and could talk to one
+another. And all that afternoon, while it was
+raining, Polynesia sat on the kitchen table
+giving him bird words to put down in the
+book.
+At teatime, when the dog, Jip, came in,
+the parrot said to the Doctor, “See, he’s
+talking to you.”
+“Looks to me as though he were
+scratching his ear,” said the Doctor.
+“But animals don’t always speak
+with their mouths,” said the parrot
+in a high voice, raising her eyebrows.
+“They talk with their ears, with their
+feet, with their tails—with everything.
+Sometimes they don’t want to make a
+45
+
+Unit 2.indd 45
+
+06-Mar-25 2:50:37 PM
+
+Poorvi
+
+noise. Do you see now the way he’s twitching up one side of his
+nose?”
+“What’s that mean?” asked the Doctor.
+“That means, ‘Can’t you see that it has stopped raining?’”
+Polynesia answered. “He is asking you a question. Dogs nearly
+always use their noses for asking questions.”
+After a while, with the parrot’s help, the Doctor got to learn the
+language of the animals so well that he could talk to them himself
+and understand everything they said. Then he gave up being a
+people’s doctor altogether.
+Let us discuss
+I Complete the following sentence by selecting a suitable reason.
+		The Cat’s-food-Man suggests to Doctor Dolittle that he should
+become an animal doctor because he believes that Dolittle
+______________________________________________________.
+1. earns less fee by treating human patients
+2. enjoys the company of animals as they speak less
+3. dislikes spending time with human patients
+4. knows more about animals than the local veterinarians
+II Fill in the blanks by choosing the suitable option given in the brackets.
+		 Doctor Dolittle reacts to Polynesia’s information about animal languages
+with both excitement and ____________ (certainty/curiosity). He rushes
+to ____________ (write/memorise) the bird words she provides and is
+interested in learning more.
+III Do you think Doctor Dolittle would be famous as an animal doctor?
+If yes, why? If not, why not?
+
+II
+As soon as the Cat’s-food-Man had told everyone that John Dolittle
+was going to become an animal doctor, old ladies began to bring
+him their pet pugs and poodles who had eaten too much cake;
+and farmers came many miles to show him sick cows and sheep.
+46
+
+Unit 2.indd 46
+
+06-Mar-25 2:50:38 PM
+
+Wit and Humour
+
+One day a plough horse was brought to him; and the poor thing
+was terribly glad to find a man who could talk in horse language.
+“You know, Doctor,” said the horse, “that vet over the hill knows
+nothing at all. He has been treating me six weeks now—for
+something or the other. What I need is spectacles. I am going
+blind in one eye. There’s no reason why horses shouldn’t wear
+glasses, the same as people. But that stupid man over the hill
+never even looked at my eyes. He kept on giving me big pills.
+I tried to tell him, but he couldn’t understand a word of horse
+language. What I need is spectacles.”
+“Of course—of course,” said the Doctor. “I’ll get you some at once.”
+“I would like a pair like yours,” said the horse—“only green.
+They’ll keep the Sun out of my eyes while I’m ploughing the field.”
+“Certainly,” said the Doctor. “Green ones you shall have.”
+“You know, the trouble is, Sir,” said the plough horse as the
+Doctor opened the front door to let him out—“the trouble is that
+anybody thinks he can doctor animals—just because the animals
+don’t complain. As a matter of fact, it takes a much cleverer man
+to be a really good animal doctor than it does to be a good people’s
+doctor.”
+“Well, well!” said the Doctor.
+“When will my glasses be ready?”
+47
+
+Unit 2.indd 47
+
+06-Mar-25 2:50:39 PM
+
+Poorvi
+
+“I’ll have them for you next week,” said the Doctor.
+“Come in again Tuesday—Good morning!”
+
+Then John Dolittle got a fine, big pair of green spectacles; and
+the plough horse stopped going blind in one eye and could see
+as well as ever.
+countryside:
+rural area
+
+And soon it became a common sight to see farm animals
+wearing glasses in the countryside, round Puddleby; and a
+blind horse was a thing unknown.
+And so it was with all the other animals that were brought to
+him. As soon as they found that he could talk their language,
+they told him where the pain was and how they felt, and of
+course it was easy for him to cure them.
+Now all these animals went back and told their brothers and
+friends that there was a doctor in the little house with the big
+garden who really was a doctor. And whenever any creatures
+got sick—not only horses and cows and dogs—but all the little
+things of the fields, like harvest mice, badgers, and bats, all
+came at once to his house on the edge of the town, so that his
+big garden was nearly always crowded with animals trying to
+get in to see him.
+There were so many that came that he had to have special
+doors made for the different kinds. He wrote ‘HORSES’ over
+
+48
+
+Unit 2.indd 48
+
+06-Mar-25 2:50:40 PM
+
+Wit and Humour
+
+the front door, ‘COWS’ over the side door, and ‘SHEEP’ on the
+kitchen door. Each kind of animal had a separate door—even
+the mice had a tiny tunnel made for them into the cellar, where
+they waited patiently in rows for the Doctor to come round
+to them.
+And so, in a few years’ time, every living thing for miles and
+miles got to know about John Dolittle, M.D. And the birds who
+flew to other countries in the winter told the animals in foreign
+lands about Dolittle who could understand their talk and help
+them in their troubles. In this way he became famous among
+the animals—all over the world. He was happy and liked his
+life very much.
+
+cellar: a room
+below ground
+level often used
+for storage
+
+Hugh Lofting
+Let us discuss
+I What became a common sight in Puddleby after Doctor Dolittle started
+treating animals?
+1. Humans talking to farm animals
+2. Farm animals wearing glasses
+3. Farm animals learning bird language
+4. Birds riding atop farm animals
+II What challenges do you think Doctor Dolittle might face if more and
+more animals come to him for help?
+1. How might he overcome these challenges to ensure that he
+provides good treatment?
+
+49
+
+Unit 2.indd 49
+
+06-Mar-25 2:50:41 PM
+
+Poorvi
+
+III Arrange the following events in correct order according to the story. Two
+have been done for you. Share your answers with your classmates and
+the teacher.
+1. Doctor Dolittle decides to stop being a doctor for people
+and becomes a doctor for animals.
+2. Animals from near and far come to Doctor Dolittle for
+help, crowding his garden.
+3. A man with a stomach-ache visits Doctor Dolittle and
+suggests he should treat animals instead of people.
+
+(i)
+
+4. Polynesia teaches Doctor Dolittle animal languages,
+and he starts understanding and communicating with
+animals.
+5. A plough horse with vision problems visits Doctor
+Dolittle, who prescribes green spectacles, to improve the
+horse’s eyesight.
+6. The parrot, Polynesia, encourages Doctor Dolittle to
+become an animal doctor, revealing that animals can talk.
+
+(ii)
+
+7. Doctor Dolittle installs special doors for different animals
+to enter his house for treatment.
+8. Doctor Dolittle’s ability to communicate with animals
+helps him diagnose and treat their illnesses effectively.
+9. Doctor Dolittle gains fame among animals worldwide,
+and they come to him from various places for his help.
+10. Word spreads, and people start bringing their sick pets
+and farm animals to Doctor Dolittle for treatment.
+
+Let us think and reflect
+I Read the extracts given below and answer the questions that follow.
+1. “If I say, ‘Polly wants a cracker’, you understand me. But hear this: Kaka oi-ee, fee-fee?”
+		 “Good Gracious!” cried the Doctor. “What does that mean?”
+		 “That means, ‘Is the porridge hot yet?’—in bird language.”
+		 “My! You don’t say so!” said the Doctor. “You never talked that way to
+me before.”
+
+50
+
+Unit 2.indd 50
+
+06-Mar-25 2:50:41 PM
+
+Wit and Humour
+
+		 “What would have been the good?” said Polynesia, dusting some cracker
+crumbs off her left wing. “You wouldn’t have understood me if I had.”
+(i)
+		
+
+Complete the sentence by choosing the correct option.
+In the line, “Good Gracious!” cried the Doctor, the expression
+‘Good Gracious’ can be replaced by ______________!
+A. bravo
+
+B. gosh
+
+C. alas
+
+D. hurray
+
+(ii) Why had Polynesia never used bird language with the Doctor
+earlier?
+(iii) Identify whether the following statement is true or false.
+		
+
+Polynesia had been munching on a food item while talking to
+Doctor Dolittle.
+
+(iv) How did Doctor Dolittle feel according to the extract?
+A. anxious
+
+B. surprised C. angry
+
+D. relaxed
+
+2. “I would like a pair like yours,” said the horse—“only green. They’ll
+keep the Sun out of my eyes while I’m ploughing the field.”
+		 “Certainly,” said the Doctor. “Green ones you shall have.”
+		 “You know, the trouble is, Sir,” said the plough horse as the Doctor
+opened the front door to let him out—“the trouble is that anybody thinks
+he can doctor animals—just because the animals don’t complain. As a
+matter of fact, it takes a much cleverer man to be a really good animal
+doctor than it does to be a good people’s doctor.”
+(i)
+		
+
+Choose a word from the extract to complete the analogy.
+digging: flower bed:: ______________: field
+
+(ii) Choose the correct word to complete the sentence.
+		
+
+Doctor Dolittle’s attitude in the extract is ______________.
+A. respectful
+
+B. sentimental
+
+C. understanding D. careful
+
+(iii) Complete the sentence with an appropriate reason.
+		
+
+Based on the extract, we can conclude that doctors take animals
+for granted because ______________.
+
+(iv) Do you agree with the concluding sentence of the extract?
+Why/why not?
+II Answer the following questions.
+1. How can we say that Polynesia was a good trainer of animal language?
+2. Explain how Doctor Dolittle gave equal and individual attention to
+each animal who came to him for treatment.
+
+51
+
+Unit 2.indd 51
+
+06-Mar-25 2:50:42 PM
+
+Poorvi
+
+3. How does Doctor Dolittle’s readiness to follow the parrot’s advice
+highlight the importance of listening to different viewpoints?
+4. Which qualities of Doctor Dolittle made him famous among the
+animals? Explain with evidence from the text.
+5. What changes do you think would happen in the world if people
+suddenly gained the ability like Doctor Dolittle, to understand and
+communicate with animals?
+
+Let us learn
+I Read the following words from the text.
+		
+Cat’s-food-Man, bird language, flowerpots
+		 Are all the words that are combined to form another word written the
+same way?
+Compound words are formed by combining two words of different
+parts of speech to create a new word that has an entirely new meaning.
+They are of three types─hyphenated (Cat’s-food-Man), open compound
+words (bird language) and closed compound words (flowerpots).
+		 Complete the following table correctly by choosing words from the box
+given below. An example has been done for you.
+sailor song
+harvest mice
+
+teatime
+windowsill
+
+Hyphenated Words
+
+check-in
+well-bred
+
+Open
+Compound Words
+
+plough horse
+
+Closed
+Compound Words
+
+check-in
+
+52
+
+Unit 2.indd 52
+
+06-Mar-25 2:50:43 PM
+
+Wit and Humour
+
+II Create compound words from the table given below.
+A
+
+B
+
+1. fun
+
+(i)
+
+head
+
+2. high
+
+(ii)
+
+birds
+
+3. never
+
+(iii) flying
+
+4. early
+
+(iv) loving
+
+5. song
+
+(v)
+
+6. over
+
+(vi) tops
+
+7. tree
+
+(vii) ending
+
+risers
+
+		 Now, complete the paragraph with suitable compound words from the
+table. An example has been done for you.
+		After being treated by Doctor Dolittle, the A. fun-loving dolphins
+danced playfully in his sanctuary. The B. _______________ chatter of
+monkeys echoed through the C. _______________, their ailments cured.
+D. ______________ eagles soared gracefully E. _______________ their health
+restored. F. _______________ among the G. _______________ chirped joyfully
+from the branches. All creatures were happy with Doctor Dolittle’s care.
+III Underline the names of animals that are hidden in the sentences given
+below. Clues are given within the brackets. An example has been done
+for you.
+1. Dr. Dolittle was eating oatmeal for his breakfast. (a farm animal)
+2. Old ladies began to bring him their pets. (an insect)
+3. The author sees the connection between humans and animals. (a
+farm animal)
+4. The three baby dinosaurs are from ice age. (field animal)
+5. The patients who came late didn’t know where to go. (ship of the desert)
+IV Read the following sentence from the text. Study the highlighted words.
+		 But that stupid man over the hill never even looked at my eyes.
+		 The highlighted words spell and read the same backwards too.
+A word, phrase, or sequence that reads the same backwards as
+forwards is a palindrome.
+
+53
+
+Unit 2.indd 53
+
+06-Mar-25 2:50:43 PM
+
+Poorvi
+
+Some of the common palindromes include ‘Was it a car or a cat
+I saw?’, ‘Madam, I’m Adam’ and ‘A man, a plan, a canal—Panama’.
+		Read the sentences below and identify the palindrome words and
+sentences.
+1. Step on no pets.
+2. Naman saw a race car at the show.
+3. Nitin speaks in Malayalam.
+4. The engineer used a rotator to check the surface level.
+5. The pilot relied on the radar to navigate safely.
+6. Eva can I see bees in a cave?
+		 Now, create your own palindrome and share it
+with your classmates and the teacher.
+V Underline the verbs and identify the tense
+form in the following sentences from the text.
+1. He is asking you a question.
+2. Oh, there are plenty of animal doctors.
+3. I am going blind in one eye.
+
+The verbs in 1. and
+3. are in present
+continuous
+form.
+The
+verbs
+in
+2. and 4. are in
+simple present.
+
+4. … the trouble is that anybody thinks he can
+doctor animals.
+VI Read the following sentences
+from the text.
+• That man’s (man has) got
+sense.
+• Can’t you see that it has
+stopped raining?
+		 In the first sentence the verbs,
+‘has got’ denote an action that is
+relevant at the time of speaking.
+		 In the second sentence, the verbs
+‘has stopped’ denote an action
+that is recently completed.
+
+We use present perfect tense to
+indicate:
+• a recently completed action
+• an action that started in the
+past and is relevant even at the
+moment of speaking
+• an action in the past where the
+focus is on the action and not
+on the time of occurrence (but
+relevant at the time of speaking)
+Structure of Present Perfect Tense:
+has/ have + V3 (past participle)
+
+54
+
+Unit 2.indd 54
+
+06-Mar-25 2:50:44 PM
+
+Wit and Humour
+
+		Fill in the blanks using the correct form of verbs (present
+perfect) given within brackets.
+		 Since becoming an animal doctor, Doctor Dolittle 1. _________
+(learn) to communicate with all animals and birds. He
+2. _________ (treat) countless farm animals and pets with care.
+The parrot, Polynesia, 3. _________ (teach) him bird-language,
+and he 4. _________ (write) books about his adventures. Many
+people 5. _________ (bring) their sick animals to his door. Over
+the years, Dolittle 6. _________ (become) renowned worldwide
+for his unique abilities.
+
+Let us listen
+I You will listen to an announcement. As you listen, state whether the
+following statement is true or false. (Transcript for the teacher on pg. 88)
+		 Dr. Dolittle’s new clinic presents an offer of free medicines.
+II You will listen to the announcement again. As you listen, complete the
+details given below with one or two exact words you hear.
+1. The new clinic is located in the town of ______________.
+2. The address is 12, ______________ Lane.
+3. The clinic is open Monday to Friday from ______________ a.m. to 5 p.m.
+4. Special timings for ______________ are on Saturdays from 11 a.m. to 2 p.m.
+5. Dr. Dolittle will ensure that animals get the ______________.
+6. All animals—horses, cows, ______________, wild animals, and others
+are welcome.
+
+Let us speak
+Conversation between a doctor and a patient
+• Read the information about the problems 1–4.
+• Use the cue cards provided to guide your conversation.
+• Take turns to play parts of doctor and patient.
+		Problem 1: Cough and cold
+• Solution: Ginger and honey mix
+• Additional Advice: Drink warm fluids and rest.
+
+55
+
+Unit 2.indd 55
+
+06-Mar-25 2:50:45 PM
+
+Poorvi
+
+		Problem 2: Dry lips
+• Solution: Apply ghee
+• Additional Advice: Stay hydrated and
+avoid wetting your lips.
+
+		Problem 3: Sore throat
+• Solution: Gargle with warm salt water.
+• Additional Advice: Drink herbal teas and
+avoid cold drinks.
+
+		Problem 4: Fatigue
+• Solution: Ensure adequate sleep and a
+balanced diet.
+• Additional Advice: Take short walks to
+increase energy levels.
+
+Cue Cards
+Doctor
+
+Patient
+
+Greet the patient
+
+Respond to the greeting
+
+Enquire about the problem
+
+Tell your problem
+
+Ask about symptoms
+
+Describe the symptoms
+
+Make a diagnosis
+and give solution
+
+Ask for clarification
+
+Provide additional advice
+Share details of next
+appointment
+
+Acknowledge the
+information and ask about
+the next appointment
+Express agreement and
+thank the doctor
+
+56
+
+Unit 2.indd 56
+
+06-Mar-25 2:50:47 PM
+
+Wit and Humour
+
+Let us write
+A notice is a means of formal communication for a particular group of
+persons. It informs them about some important event, such as an invitation
+to a meeting, an announcement, to give instructions, make appeals, etc.
+Write a notice in about 50 words about the Annual Health Check-up for
+students of Grades 6–8. Remind students to collect their health check-up
+cards from the class teacher. Include all other necessary details about date,
+time, and venue.
+Complete the draft of the notice by using the words and phrases given in the
+box below.
+inform
+queries
+assembly hall 		
+Thursday and Friday
+
+health card		 health check-up
+Grades 6–8		 please contact
+
+Name of the School
+NOTICE
+12 July 20XX		
+Mention Heading
+_____________________________
+This is to _________ all the students of
+Grades 6–8 about the Annual Health
+Check-up.
+Date: _____________, 27 and 28 July 20XX
+Time: 9:00 a.m. to 12:15 p.m.
+Venue: _____________________
+All students are requested to bring their
+_________ for the check-up.
+For _________ or further details _________
+the undersigned.
+Asma
+
+Remember to
+• use formal
+language in
+third person.
+• mention the
+reason for
+writing the
+notice and any
+other relevant
+information. For
+example, whom
+to contact, when
+and where, etc.
+• write the notice
+in a box.
+
+Asma
+In-charge
+
+57
+
+Unit 2.indd 57
+
+06-Mar-25 2:50:47 PM
+
+Poorvi
+
+Let us explore
+I The word ‘goshala’ translates to ‘cowshed’ in English. It is a Sanskrit
+word that is made up of the words ‘go’, which means ‘cow’, and śālā,
+which means ‘shed’ or ‘hall’.
+
+		 Plan a visit with the teacher to a ‘goshala’ and find out how the cows are
+looked after.
+II Ayurveda is the oldest existing medical system in India. Animals
+received good medicinal care in ancient India. Indian medical treatises
+like Charaka Samhita, Sushruta Samhita, and Harita Samhita contain
+references of care of animals. Find out names of different organisations
+that work for the welfare of animals with the help of the teacher.
+III What is the best way to take care of stray and abandoned animals?
+1. Provide food and water for the animal
+2. Take them to an animal shelter
+3. Adopt them by taking them home
+		 Give reasons for your responses.
+
+ANIMAL
+ADOPTION
+& CARE
+
+58
+
+Unit 2.indd 58
+
+06-Mar-25 2:50:51 PM
+
+Wit and Humour
+
+A Funny Man
+Let us do these activities before we read.
+Look around you for things or people that make you laugh. Write them in
+the bubbles given below. Share the reasons for your answers with your
+classmates and the teacher.
+
+Things
+I Find Funny
+
+Unit 2.indd 59
+
+06-Mar-25 2:50:52 PM
+
+Poorvi
+
+Let us read
+One day a funny kind of man
+Came walking down this street
+He wore a shoe upon his head
+And hats upon his feet.
+He raised the shoe and smiled at me,
+His manners were polite;
+But never had I seen before
+Such a funny sounding sight.
+He said, “Allow me to present
+Your Highness with a rose.”
+And taking out a currant bun
+He held it to my nose.
+I staggered back against the wall
+And then I answered, “Well!
+I never saw a rose with such
+A funny looking smell.”
+He then began to sing a song,
+And sat down on the ground;
+You never heard in all your life
+Such a funny feeling sound.
+“My friend, why do you wear two hats
+Upon your feet?” I said.
+He turned the other way about,
+And hopped home on his head.
+Natalie Joan
+
+60
+
+Unit 2.indd 60
+
+06-Mar-25 2:50:55 PM
+
+Wit and Humour
+
+Let us discuss
+I Work in pairs. Identify the true statements. Check your answers with
+the teacher.
+1. The poet says that she had never heard such an amusing song.
+2. The funny man was quite ill-mannered.
+3. The funny man wore two hats on his feet.
+4. The funny man hopped on his head to reach home.
+5. The funny man gave a rose to the poet.
+6. The funny man smiled at the poet.
+II Identify the words from the poem based on the meanings given.
+Share your answers with your classmates and the teacher.
+1. a small seedless raisin
+
+–
+
+C __ R __ __ __ T
+
+2. moved unsteadily
+
+–
+
+S __ __ G G __ __ __ D
+
+III Complete the following sentences with a reason.
+1. The tone of the poem is ___________ because ___________.
+2. The rhyme scheme of the poem is ___________; and it gives a ___________
+quality to the poem.
+3. The poet has frequently repeated the word ‘funny’ in order to
+___________.
+IV Choose the correct answer from the options given in the brackets.
+1. The poem uses vivid imagery to create a _______________________
+(humorous and nonsensical/ confusing but thought-provoking) scene.
+2. The structure of the poem is in ___________ (monologue/ dialogue) form.
+3. The phrases ‘sounding sight’ and ‘hopped home’ are examples of
+___________. (alliteration/simile)
+V Rewrite the following line from the poem in the correct order.
+1. But never had I seen before
+Such a funny sounding sight.
+Sometimes, the poets change the word order (inversion) in a line
+in order to maintain a rhythm.
+
+61
+
+Unit 2.indd 61
+
+06-Mar-25 2:50:55 PM
+
+Poorvi
+
+		 2. Why has the poet used phrases like ‘funny sounding sight’ and ‘funny
+feeling sound’ with reference to the funny man?
+VI Can you think of any real-world situations where people do similar things
+for fun, entertainment, or performance? Share with your classmates and
+the teacher.
+
+Let us think and reflect
+I Read the extracts given below and answer the questions that follow.
+1. He said, “Allow me to present
+Your
+Highness
+with
+a
+rose.”
+And taking out a currant bun
+He held it to my nose.
+		I staggered back against the wall
+And then I answered, “Well!”
+(i)
+
+Why does the funny man address
+the poet as ‘Your Highness’?
+
+(ii) Choose a phrase from the extract
+which indicates a polite request.
+(iii) Choose the option which shows a ‘currant bun’.
+
+A. Image 1
+
+B. Image 2
+
+C. Image 3
+
+D. Image 4
+
+(iv) Complete the sentence with an appropriate reason.
+		
+
+When the poet says, ‘Well!’, it expresses surprise. This was so
+because _________________.
+
+2. You never heard in all your life
+		 Such a funny feeling sound.
+		 “My friend, why do you wear two hats
+		 Upon your feet?” I said.
+		 He turned the other way about,
+
+62
+
+Unit 2.indd 62
+
+		 And hopped home on his head.
+
+06-Mar-25 2:50:57 PM
+
+Wit and Humour
+
+(i)
+
+Choose the line from the extract which tells us that
+the sound was unique.
+
+(ii) Complete the sentence with an appropriate reason.
+		
+
+The poet calls the funny man ‘my friend’ because
+_________________.
+
+(iii) What does the reaction of the funny man to the
+poet’s question tell us about him?
+(iv) Choose the correct option to complete the sentence.
+		
+
+The last line of the extract makes the readers feel
+_________________.
+A. dreamy
+
+B. impatient C. worried
+
+D. cheerful
+
+II Answer the following questions.
+1. Which character trait of the funny man was most
+appealing to you? Why?
+2. The funny man does unusual things in the poem. How
+does it affect the overall mood of the poem?
+3. What alternative title would you suggest for the poem?
+Give reason(s) for your choice.
+4. Why do you think the poet has included dialogues in
+the poem?
+5. What does the poet wish to convey by highlighting the
+unusual behaviour of the funny man?
+
+Let us learn
+Read the following phrases from the poem.
+• walking down
+
+• taking out
+
+• sat down
+
+These are phrasal verbs.
+Phrasal verbs are combinations of a verb with a preposition or
+adverb that together function as a single unit. They often have
+meanings that are different from the individual words used alone.
+The same verb followed by different prepositions or adverbs conveys
+different meanings.
+
+63
+
+Unit 2.indd 63
+
+06-Mar-25 2:51:00 PM
+
+Poorvi
+
+I Match the phrasal verbs in Column 1 with their correct meaning in
+Column 2.
+Column 1
+
+Column 2
+
+1. take up
+
+(i) to understand or comprehend
+something
+
+2. take after
+
+(ii) to assume control or
+responsibility for something
+
+3.
+
+(iii) to begin to study, practice, or
+do something
+
+take in
+
+4. take over
+
+(iv) to become successful or
+popular quickly
+
+5. take off
+
+(v) to resemble or look similar to
+(usually a family member)
+
+		 Now, fill in the blanks with suitable phrasal verbs from the table given
+in I. You may change the tense of the verb, if required.
+1. The new technology is set to _________________ traditional methods of
+communication.
+2. I tried hard to _________________ what the writer wanted to say but
+was unsuccessful.
+3. Arjun decided to _________________ painting as a hobby.
+4. The smartphone quickly _________________ the sales in the market.
+5. Sheela _________________ her father; they have the same smile.
+II Match the verbs in Column 1 with any suitable adverbs or prepositions
+in Column 2. Write their meanings in Column 3. An example has been
+done for you.
+Column 1
+
+Column 2
+
+1. look
+2. run
+3. put
+4. break
+
+Column 3
+look after: take care of,
+
+after, away, up,
+for, in, on, into,
+down, off, out
+
+5. call
+
+64
+
+Unit 2.indd 64
+
+06-Mar-25 2:51:01 PM
+
+Wit and Humour
+
+		 Now, frame sentences of your own using any five phrasal verbs.
+III Read the following words from the poem.
+		 walking, staggered, hopped
+		
+The given words denote the different ways of walking.
+Arrange the words given in the box in increasing order of pace.
+sprint,
+
+trot,
+
+jog
+3. _______
+run
+2. _______
+hop
+1. _______
+walk
+
+stagger
+
+Let us listen
+I You will listen to a girl narrate a personal incident. As you listen, select
+the picture related to the narration. (Transcript for the teacher on pg. 88)
+
+2.
+1.
+
+3.
+
+4.
+
+65
+
+Unit 2.indd 65
+
+06-Mar-25 2:51:03 PM
+
+Poorvi
+
+II You will once again listen to the girl narrate a personal incident. As you
+listen, arrange the events in order of occurrence.
+1. Ate lunch
+
+2. Took off shoes
+
+3. Put shoes in the room
+
+4. Laughed at the mistake
+
+5. Placed the plate in the room
+
+6. Prepared for the presentation
+
+7. Put the plate in the kitchen
+
+Let us speak
+		 Read the joke given below.
+		 A man is talking to God.
+		 The man says, “God, how long is a million years?”
+		 God replies, “For me, it’s about a minute.”
+		 The man asks, “How much is a million rupees?”
+		 God smiles and replies, “It’s less than a rupee for me.”
+		 The man quickly requests, “God, may I have a rupee?”
+		 God promptly says, “Wait a minute.”
+		 Work in pairs and take turns to tell the joke.
+		Remember:
+• Narrator’s voice – your own voice (speak in a matter-of-fact manner)
+• Man’s voice – change to louder voice (speak with respect)
+• God’s voice – deep voice (speak in a pleasant tone)
+		Now, work in pairs to create a joke and tell it in front of the class.
+
+Let us write
+I A limerick is a nonsensical and funny verse consisting of five lines.
+Study the limerick given below and identify the rhyme scheme.
+1. There was an Old Man with a beard,
+Who said, “It is just as I feared!
+Two Owls and a Hen,
+Four Larks and a Wren,
+Have all built their nests in my beard!”
+Edward Lear
+
+66
+
+Unit 2.indd 66
+
+06-Mar-25 2:51:08 PM
+
+Wit and Humour
+
+Now, read another limerick
+2. There were two friends in Bengaluru’s lanes,
+One loved books, the other flew planes.
+They’d laugh and they’d play,
+In their own unique way,
+Creating stories and flying in dreams’ trains.
+		 Remember all limericks have the same rhyme scheme AABBA.
+II Follow the structure given below and write a limerick on your own.
+		 Line 1
+
+: Introduction
+of a person or place
+
+There was a child from _______
+
+		 Lines 2–4: A silly story			
+
+Who _________________________
+______________________________
+She/He ______________________
+
+		 Line 5
+
+: An unexpected ending
+
+______________________________
+
+Let us explore
+I In ancient Indian literature and mythology, there are several humorous
+or funny characters who play important roles in the stories. These
+characters often represent wit, humour and mischief while conveying
+deeper moral lessons. Here are a few well-known funny characters:
+			 Tenali Rama
+
+Birbal
+
+Mullah Nasruddin
+
+			 King Vikramaditya and Betal
+		 Take any story to read and share it with your classmates and the teacher.
+II We can identify the acts of the funny man with certain modernday activities that have playfulness, or unconventional behaviour.
+For example:
+Street Performers or Clowns: Like the funny man in the poem, modernday street performers or clowns often dress in unusual ways and do
+unexpected acts to entertain people.
+
+67
+
+Unit 2.indd 67
+
+06-Mar-25 2:51:09 PM
+
+Poorvi
+
+Performance Art or Abstract Theatre: The funny man’s actions, such
+as singing a song and hopping on his head, resemble performance art
+or abstract theatre, where artists break conventional rules to create
+thought-provoking, often humorous experiences.
+		
+Children’s Entertainment and Comedy Shows: The funny man’s behaviour
+is reflected in children’s shows to evoke laughter.
+		In these examples, the common theme is humour, imagination, and
+defying logic or expectation, which is exactly what the funny man in the
+poem represents.
+III Sukumar Ray, an Indian poet and illustrator, wrote poems in a similar
+style in his book Abol Tabol.
+		 You may also share a similar poem from your native language with your
+classmates and the teacher.
+
+68
+
+Unit 2.indd 68
+
+06-Mar-25 2:51:12 PM
+
+Wit and Humour
+
+IV Read and enjoy the poem.
+
+My Lost Pencil
+Oh pencil, dear pencil, where have you gone?
+I just had you here a minute at dawn!
+You were sharp and perfect, ready to write,
+Now you’re missing—gone from sight!
+Did you roll off my desk? Did you fall to the floor?
+Did someone swipe you for sure?
+It’s always the same, I’ve lost fifty this year,
+By the end of the month, they just disappear!
+Next time, I’ll tie you with tape or a string,
+Because losing my pencils is a real thing.
+
+69
+
+Unit 2.indd 69
+
+06-Mar-25 2:51:17 PM
+
+Poorvi
+
+Say the Right Thing
+Let us do these activities before we read.
+I Work in pairs and discuss.
+
+vfrfFknsOkks HkOk
+
+1. What does ‘Athithi Devo Bhava’ mean?
+
+2. Why is it important to be polite to guests?
+II Choose the statements that display polite behaviour when you have
+guests at home.
+1. Offer the guests a glass of water.
+2. Enquire about the well-being of the guests.
+3. Ask the guests when they would leave.
+4. Comment critically about the habits of guests.
+5. Accompany the guests to the door when they leave.
+III Sometimes you find that a few friends in class are rude while disagreeing
+with each other on certain issues. Work in groups. How would you deal
+with such a situation? Share at least three ways in which you can do this.
+
+70
+
+Unit 2.indd 70
+
+06-Mar-25 2:51:21 PM
+
+Wit and Humour
+
+Let us read
+This is a humorous play in which a mother advises her
+daughter to say the right thing at the right time. However,
+when guests arrive, the daughter hilariously forgets her
+mother’s guidance.
+Read the play to find out how she commits blunders and
+embarrasses the guests as well as her mother.
+Characters
+Mary Shaw
+
+: a young girl
+
+Mrs. Shaw
+
+: Mary’s mother
+
+Mrs. Harding
+
+: the wife of Mr. Harding, a wealthy man
+
+Mrs. Lee
+
+: Mr. Harding’s married sister
+
+hilariously: in
+a very funny
+way
+blunders:
+careless
+mistakes
+embarrasses:
+makes (the
+guests)
+uncomfortable
+
+Scene I
+Mrs. Shaw : The room looks cleaner now. Put that coat away in
+your bedroom. This room isn’t the place for coats.
+71
+
+Unit 2.indd 71
+
+06-Mar-25 2:51:23 PM
+
+Poorvi
+
+Mrs. Harding and Mrs. Lee will soon be here, and
+they don’t want to see that.
+Mary
+
+: You’re always telling me to put things away.
+
+Mrs. Shaw : Yes, I am. You leave your clothes all over the house.
+Mary
+
+: I’m not a child!
+
+Mrs. Shaw : No, you’re not. So please keep your clothes in your
+own room.
+Mary
+
+: Why are those two women coming here? Who’s Mrs.
+Harding?
+
+Mrs. Shaw : She’s the wife of a wealthy man, Mr. Harding. He
+has just bought a big house in Lanfield. They lived in
+London before. She’s coming to have a talk. I met her
+in a shop and asked her to come.
+Mary
+
+: Oh, I’ve seen her children. They often come along the
+road. Who’s Mrs. Lee?
+
+Mrs. Shaw : She’s Mr. Harding’s sister. She has been staying with
+them for a while.
+Mary
+
+: What are you going to talk about?
+
+Mrs. Shaw : I don’t know. All kinds of things. One day you’ll have
+to go to some of these houses yourself and talk to the
+people there.
+Mary
+
+: I can talk now. I’ve been able to talk for a long time.
+
+Mrs. Shaw : Yes, that’s true. You always talk too much. But does
+anyone want to hear the things that you say?
+Mary
+
+: I can talk very well when I like. I’ll stay with you
+today and talk to them when they come.
+
+Mrs. Shaw : Oh, I don’t think so. You can go out for a walk. It will
+be better if you do that.
+Mary
+
+: Why?
+
+Mrs. Shaw : If you stay with me, you may not say the right thing.
+Mary
+
+: I know the right things to say: “Good afternoon”,
+“How are you?” and things like that. Let me stay
+today. I can do it very well. I’ll show you. Anyone
+can talk.
+
+72
+
+Unit 2.indd 72
+
+06-Mar-25 2:51:23 PM
+
+Wit and Humour
+
+Mrs. Shaw : You may stay if you like. But take
+care. I want to know Mrs. Harding
+well. I want her to ask me to go to
+their house. There isn’t much to
+do here in Lanfield, and I want to
+know some more people. I want
+some more friends here. So take
+care when you say anything.
+Mary
+
+: Tell me what to say.
+
+Mrs. Shaw : I can’t tell you everything, but
+you’ll always be right if you’re
+kind to people. Say things that
+will please them. Then they’ll like
+you. Laugh a lot, and try to make
+them laugh too. And if everyone stops talking, say
+something to make them talk again. They don’t want
+to sit here and look at the floor without speaking.
+Think of something to say.
+Mary
+
+: I can do that. There’s always something to say. Must I
+do anything else?
+
+Mrs. Shaw : When they are ready to leave, don’t jump out of your
+chair and look gladly at the door. You must look sorry
+when they want to leave.
+Mary
+
+: What shall I do when they want to go?
+
+Mrs. Shaw : Ask them to stay a little while longer. Just say, “Must
+you go? Can’t you stay?” or something like that. You
+like them and you want them to stay, and you must
+let them understand that.
+Mary
+
+: That’s not very hard, is it? I’ll remember that. “Must
+you go? Can’t you stay? Must you go? Can’t you stay?”
+
+Mrs. Shaw : That’s right. Now take your coat to your room
+and change into a clean dress. You must look nice
+when they come. And if everyone stops talking, say
+something kind to make them talk again. And don’t
+say anything that will make them angry.
+Mary
+
+: I will remember. I’ve often done harder things than this.
+
+73
+
+Unit 2.indd 73
+
+06-Mar-25 2:51:25 PM
+
+Poorvi
+
+Let us discuss
+I Complete the table given below based on Scene I of the play. An example
+has been done for you. Share your answers with your classmates and the
+teacher.
+Speaker
+
+Words of the Speaker
+
+Reason
+
+Mrs. Shaw
+
+The room looks cleaner
+now. Put that coat away in
+your bedroom.
+
+To instruct Mary to keep
+the room tidy
+
+Mary
+
+You’re always telling me to
+put things away.
+I’m not a child!
+
+Mrs. Shaw
+
+To highlight the
+importance of being kind
+as a way to ensure Mary
+says the appropriate things
+when guests arrive
+
+II Do you think Mary will be able to follow her mother’s advice successfully
+when Mrs. Harding and Mrs. Lee visit? Why or why not?
+
+Scene II
+
+74
+
+Unit 2.indd 74
+
+06-Mar-25 2:51:30 PM
+
+Wit and Humour
+
+Mrs. Shaw
+
+: So you like Lanfield, Mrs. Harding! I’m very glad.
+
+Mrs. Harding : Yes, we like it very much. It’s not the same as
+London, but there are some very nice people
+here, and we’ve found a good house. (No one says
+anything more, and Mrs. Shaw looks at Mary.)
+Mary
+
+: What beautiful children you have, Mrs. Harding!
+I’ve often seen them walking along the road.
+
+Mrs. Harding : Oh, I haven’t any children.
+Mary
+
+: Oh, yes, you have! I’ve seen them: a little boy and
+a little girl.
+
+Mrs. Harding : (not very pleased) I have no children; believe me.
+Mary
+
+: Oh!
+
+Mrs. Shaw
+
+: (quietly) They must be someone else’s children.
+Have you met Mr. Best? He’s a nice man. He lives
+near you.
+
+Mary
+
+: Oh, Mr. Best! He lives here and he works in
+London. He goes all the way to London by train
+every morning, and then he comes all the way
+back by train every night. He lives in trains! (she
+laughs) What kind of life is that? Why do people
+do things like that? They do not know how to live.
+And he reads two newspapers in the train every
+day. He never reads a book. But he’s only a banker,
+and bankers can’t think.
+
+Mrs. Lee
+
+: My brother’s a banker. He goes to London by train
+every morning and comes back every night. He
+reads two newspapers in the train in the morning,
+and another every night.
+
+Mary
+
+: Oh, I’m sorry. I didn’t know.
+
+Mrs. Shaw
+
+: Bankers always have to read a lot of newspapers.
+Do you know Mrs. Best? She’s a nice woman. I like
+her.
+
+Mary
+
+: But have you seen her clothes? She goes out in a
+blue dress with a red coat over it. (she laughs)
+
+75
+
+Unit 2.indd 75
+
+06-Mar-25 2:51:30 PM
+
+Poorvi
+
+Mrs. Harding : I have a blue dress, and I often put on my red coat
+at the same time.
+Mrs. Shaw
+
+: (quickly) I like blue dresses and red coats. (No one
+says anything.)
+
+Mary
+
+: I saw Mrs. Cotter this afternoon. I met her in the
+street. No one sees her in the morning because she
+always stays in bed then. And she’s always asking
+the doctor to go to see her. I can’t understand
+women who stay in bed in the morning. And why
+must she always ask for the doctor? I’ve never
+been to a doctor in my life.
+
+Mrs. Harding : I stay in bed in the morning myself.
+Mrs. Lee
+
+: I often go to the doctor.
+
+Mary :
+
+Oh, I’m sorry. (No one speaks.)
+
+Mrs. Shaw :
+
+Do you know Mrs. Grantley? She’s
+one of my best friends.
+
+Mary :
+
+But she’s so talkative!
+Talkative women aren’t
+very interesting, are they?
+
+Mrs. Lee : My mother’s a
+talkative woman.
+
+very
+
+Mary : Oh, I’m sorry. I didn’t know.
+(No one says anything.)
+Mary : (looking out of the window):
+Oh, there’s that dog again! It
+always looks very dirty. I don’t
+like dogs, do you? Who wants
+a dog? That dog’s always near
+our house. Why do people
+keep dogs? Who wants a dog?
+Why doesn’t its owner keep it
+clean? Have you seen it?
+Mrs. Harding : (looking out of
+the window) Yes, I’ve seen it.
+That’s Towzer. It’s our dog.
+76
+
+Unit 2.indd 76
+
+06-Mar-25 2:51:32 PM
+
+Wit and Humour
+
+Mary
+
+: (with a red face) Oh, I didn’t know! (No one speaks.)
+
+Mary
+
+: (still looking out of the window) There’s Mr.
+Pomeroy on his horse. He’s always talking about
+horses. He rides a horse every day, and practises
+shooting. Why must he do that? What have they
+done to Mr. Pomeroy? Why do some men like
+horses more than they like people? It’s hard to
+understand men.
+
+Mrs. Lee
+
+: My brother practises shooting when he has the
+time, and he rides his horse when he can. He sold
+his house in London and bought a house here
+because he wanted to ride and practise shooting.
+
+Mrs. Harding : (looking at Mrs. Lee) It’s getting a little late. We
+must go now, Mrs. Shaw. It has been very nice to
+have a little talk. (She looks at Mary.)
+Mrs. Lee
+
+: Very nice. (She looks at Mary.)
+
+Mrs. Shaw
+
+: It was very good of you to come to see us. Please
+stay a little longer.
+
+Mary
+
+: (unable to say the right thing even now) Oh, must
+you stay? Can’t you go?
+
+G.C. Thornley
+Let us discuss
+I Rectify the false statements given below from Scene II of the play.
+An example has been done for you. Share your answers with your
+classmates and the teacher.
+1. Mrs. Harding states that they do not like London as it is not the same
+as Lanfield.
+		 Rectification: Mrs. Harding states that they like Lanfield very much
+even though it is not the same as London.
+2. Mrs. Harding was pleased to know that Mary was familiar with her
+children.
+3. Mrs. Shaw shared that she liked Mrs. Best as she read a lot of
+newspapers.
+4. Mrs. Harding and Mrs. Shaw agree that wearing a blue dress with a
+red coat is unfashionable.
+5. Mary shares that she finds the dog outside the window cute.
+
+77
+
+Unit 2.indd 77
+
+06-Mar-25 2:51:32 PM
+
+Poorvi
+
+Let us think and reflect
+I Read the extracts given below and answer the questions that follow.
+1. Mary
+
+: What are you going to talk about?
+
+		
+Mrs. Shaw : I don’t know. All kinds of things. One day you’ll have to
+go to some of these houses yourself and talk to the people
+there.
+		
+Mary
+
+: I can talk now. I’ve been able to talk for a long time.
+
+		
+Mrs. Shaw : Yes, that’s true. You always talk too much. But does anyone
+want to hear the things that you say?
+Mary
+
+: I can talk very well when I like. I’ll stay with you today and
+talk to them when they come.
+
+		
+Mrs. Shaw : Oh, I don’t think so. You can go out for a walk. It will be
+better if you do that.
+(i)
+
+What does Mrs. Shaw imply when she says, “One day you’ll have
+to go to some of these houses yourself and talk to the people
+there”?
+A. She believes Mary should start learning about hosting
+guests then.
+B. She thinks Mary is ready to visit these houses independently.
+C. She wants Mary to develop social skills for the future.
+D. She hopes Mary will avoid these social interactions entirely.
+
+(ii) Complete the following sentence with the correct option from
+the brackets.
+		
+
+Mrs. Shaw and Mary are discussing how to _____________________.
+(have a polite conversation/ get to know people better)
+
+(iii) Why did Mary insist on staying with her mother when the guests
+arrived?
+(iv) Match the following character traits to the characters in the
+extract:
+A. eager
+		
+
+B. inexperienced
+
+C. cautious
+
+Mary		 Mrs. Shaw
+
+78
+
+Unit 2.indd 78
+
+06-Mar-25 2:51:33 PM
+
+Wit and Humour
+
+2. Mary
+
+: I saw Mrs. Cotter this afternoon. I met her in the street.
+No one sees her in the morning because she always
+stays in bed then. And she’s always asking the doctor
+to go to see her. I can’t understand women who stay in
+bed in the morning. And why must she always ask for
+the doctor? I’ve never been to a doctor in my life.
+
+Mrs. Harding : I stay in bed in the morning myself.
+(i)
+		
+
+Complete the following sentence suitably.
+Mary could spot Mrs. Cotter in the street because _________.
+
+(ii) What does Mary’s comment about Mrs. Cotter staying in bed and
+calling the doctor suggest about her understanding?
+A. She is worried about why Mrs. Cotter stays in bed all morning.
+B. She is unable to understand why people need medical help.
+C. She thinks Mrs. Cotter is scared and lonely for staying in bed.
+D. She believes Mrs. Cotter is right to rest and take care of herself.
+(iii) How can we say that Mary enjoyed good health?
+(iv) Identify whether the following statement is true or false.
+		
+
+Mary might have unintentionally offended Mrs. Harding.
+
+II Answer the following questions.
+1. What does Mary’s comment about Mr. Best’s routine and profession
+reveal about her viewpoint on bankers and their way of life?
+2. What can we infer about Mary’s understanding of polite conversation
+based on her interactions with the guests?
+3. What do you think the repeated stage direction ‘no one speaks’
+indicates about the atmosphere in the room when Mary speaks?
+4. How does Mary’s attitude towards the guests change throughout
+the play?
+5. What do Mrs. Harding’s and Mrs. Lee’s responses to Mary’s blunders
+during their visit reveal about their characters?
+6. In what way does the play show the importance of knowing how to
+engage in polite conversation?
+
+79
+
+Unit 2.indd 79
+
+06-Mar-25 2:51:33 PM
+
+Poorvi
+
+Let us learn
+I Study the following words taken from the text.
+		
+humorous, hilariously, coming, beautiful
+		 The given words are made by adding word endings like -ous, -ly, -ing,
+and -ful to the root words humour, hilarious, come, and beauty. Such
+word endings are called suffixes.
+• humour
+
++ -ous
+
+• hilarious + -ly
+• come
+
++ -ing
+
+• beauty
+
++ -ful
+
+Note
+the spelling variant when the
+word ends in ‘e’ as in ‘come’
+and ‘y’ as in ‘beauty’.
+
+		 Now, divide the following words from the text as root words and suffixes.
+Check your answer with the teacher.
+gladly
+
+banker
+
+guidance
+
+quietly
+
+walking
+
+1. Study the words in Column 1. Match the suffixes in Column 2 with
+their meanings or purpose in Column 3. Write a few examples for
+each in Column 4. Share your answers with the teacher.
+Column 1
+
+Column 2
+
+Column 3
+
+Biology
+
+(i) -logy
+
+A. change to adverb
+
+tolerance
+
+(ii) -ance
+
+B. change to plural
+
+stopped
+
+(iii) -ed
+
+C. a study of
+
+backward
+
+(iv) -ward
+
+D. change to
+superlative
+
+courageous
+
+(v) -ous
+
+E. change to past tense
+
+quietly
+
+(vi) -ly
+
+F. change to a noun
+
+toughest
+
+(vii) -est
+
+G. in a certain direction
+
+tomatoes
+
+(viii) -es
+
+H. change to adjective
+
+Column 4
+Sociology
+
+80
+
+Unit 2.indd 80
+
+06-Mar-25 2:51:34 PM
+
+Wit and Humour
+
+2. Fill in the blanks using words given in the brackets by adding suitable
+suffixes.
+		 To communicate (i) ___________ (effective), choose your words and
+topics (ii) ___________ (wise). Avoid (iii) ___________ (discuss) things
+you don’t know much about or that could upset someone. Remember
+to be (iv) ___________ (respect) towards others, including yourself,
+and express your (v) ___________ (appreciate). Finally, always be
+(vi) ___________ (response) by replying promptly to communicate.
+II Read the highlighted words in the following sentences from the text.
+• But does anyone want to hear the things that you say?
+• I can’t tell you everything.
+		 Select the correct answer.
+		 Is there a difference in the meanings of ‘say’ and ‘tell’? (Yes/ No)
+• ‘Say’ focuses on the message and does not always require a listener.
+• ‘Tell’ focuses on who receives the message and always needs a
+listener.
+1. Fill in the blanks with suitable words from the sets of words given in
+the box below. Make changes in the verb forms (tense), if necessary.
+
+• fetch : go somewhere to get something and bring it back
+		 bring : take something with you to the place you are going
+• see
+
+: something that we view, whether or not we pay
+attention
+
+		look : focus your eyes in a certain direction by paying attention
+• live
+		 stay
+
+: permanent place of residence
+: temporary presence in a location as a guest or visitor
+
+• study : spend time learning something as part of formal
+education
+		 learn : gain knowledge or skill through study or experience
+• speak : express thoughts or ideas aloud, often in formal
+situations
+		 talk
+
+: engage in informal conversation with someone
+
+• hear : perceive sounds unintentionally through the ears
+		 listen : pay attention to sounds or speech intentionally
+
+81
+
+Unit 2.indd 81
+
+06-Mar-25 2:51:34 PM
+
+Poorvi
+
+(i) I _________ at the photo, but I didn’t _________ anyone familiar.
+(ii) I’d better go and _________ my mother from the station, and then
+_________ her home.
+(iii) I need to _________ for my mathematics exam this weekend, so I
+hope to _________ new concepts along the way.
+(iv) I can _________ the music from my neighbour’s house, but I need
+to _________ to it carefully to understand the lyrics.
+(v) “Could I _________ to Mrs. Kalpana, who is going to _________ to us
+about gardening,” said Ritu.
+(vi) I _________ in a small town, but I often _________ with my relatives
+in the city.
+III Read the following sentences from the text and underline the verbs.
+• They lived in London before.
+• I met her in a shop and asked her to come.
+		 As you know, the verbs you have underlined are in simple past tense.
+(actions that happened in the past or distant past)
+		 Read the following sentence from the text and underline the verb.
+		
+She has been staying with them for a while.
+		 The verb you have underlined is in present perfect continuous tense.
+
+We use present perfect continuous (has/have + been + verb + -ing)
+to indicate:
+The duration of an action that started in the past and continues up
+to the present moment.
+• Mrs. Shaw has been preparing the room since the morning for
+Mrs. Harding and Mrs. Lee’s visit.
+An action that was ongoing in the recent past, with its results
+evident now. The focus is on the ongoing activity rather than its
+completion.
+• Mrs. Shaw has been cleaning the room since the morning.
+(The room looks spotless now.)
+• The students have been practising a play about the story.
+(They are rehearsed and ready.)
+
+82
+
+Unit 2.indd 82
+
+06-Mar-25 2:51:35 PM
+
+Wit and Humour
+
+1. Fill in the blanks using the verbs given in brackets in present
+continuous or present perfect continuous tense.
+		 The students (i) ______________ (organise) a play and setting up the
+stage. They (ii) ______________ (prepare) for weeks to make everything
+perfect. The performers (iii) ______________ (rehearse) every day, and
+their excitement (iv) ______________ (grow). The sound in-charge (v)
+______________ (test) the microphones to check the sound quality.
+Everyone (vi) ______________ (work) hard, and now the place (vii)
+______________ (buzz) with energy and excitement.
+IV Read the explanation about the kinds of sentences given in the table
+below.
+Kinds of
+Sentences
+
+Function
+
+Punctuation
+
+Examples from
+the text
+
+Declarative
+sentences
+
+to state
+or convey
+information
+
+end with a full
+stop (.)
+
+There’s always
+something to say.
+
+Interrogative
+sentences
+
+to ask
+questions
+
+end with a
+question mark
+(?)
+
+What shall I do
+when they want to
+go?
+
+Exclamatory
+sentences
+
+to express
+strong feelings
+or emotions
+
+end with an
+exclamatory
+mark (!)
+
+What beautiful
+children you have,
+Mrs. Harding!
+
+Imperative
+sentences
+
+to give order,
+command or
+request
+
+end with a full
+stop (.)
+
+Put that coat away
+in your bedroom.
+
+1. Identify the kinds of sentences and punctuate them appropriately.
+(i) the meeting starts at 10.00 a.m. in the conference room
+(ii) what an exciting adventure it was
+(iii) how did you solve the problem so quickly
+(iv) what is the weather forecast today
+(v) how beautiful is the rainbow
+(vi) clean up your room before dinner
+(vii) the children are planning a surprise party for their mom
+(viii) turn off the music
+
+83
+
+Unit 2.indd 83
+
+06-Mar-25 2:51:35 PM
+
+Poorvi
+
+Let us listen
+I Mrs. Shaw wanted Mary to learn to say the right thing. You will listen to
+a conversation between a mother and her son about basic manners. As
+you listen, fill in the blanks given below by selecting the correct option.
+(Transcript for the teacher on pg. 89 )
+1. How did the son behave in the grocery queue?
+(i)
+
+strangely
+
+(ii) impatiently
+
+(iii) politely
+
+2. The mother finally refers to her son as a __________________.
+(i)
+
+polite young man
+
+(ii) responsible son
+
+(iii) grateful person
+
+II You will once again listen to the conversation. As you listen, select four
+true statements from 1– 7 given below.
+1. The mother uses the grocery store incident as an opportunity to teach
+her son about patience and fairness.
+2. The son recognises the value of apologising and understands that
+it shows he notices others.
+3. The son is gradually learning the importance of polite words and
+actions from his mother’s guidance.
+4. The mother discourages her son from speaking softly in public,
+suggesting that people should adjust to his voice level.
+5. The son feels that covering his mouth when coughing is only
+important when he’s at home.
+6. The son receives all advice readily while understanding its
+importance.
+7. The mother uses praise to support the polite behaviours she wants
+her son to continue practising.
+
+Let us speak
+		 As you know
+• Intonation is the rise and fall of the pitch of tone while speaking.
+		 Let us learn about sentence stress.
+• Sentence stress is laying emphasis on certain word(s) in a sentence.
+
+→ The emphasis on particular words helps to convey the meaning
+and importance of the sentence.
+
+84
+
+Unit 2.indd 84
+
+06-Mar-25 2:51:35 PM
+
+Wit and Humour
+
+→ Content words like book, run, beautiful, quickly, etc., are mostly
+stressed instead of function words like she, in, is, etc., in a sentence.
+I Speak the given declarative sentence aloud.
+I saw Mrs. Cotter this afternoon.
+• Use falling intonation towards end of the sentence as declarative
+sentences usually have falling intonation.
+• Stress the words ‘Mrs. Cotter’.
+		 Remember, stress does not mean to say the word louder than others. It
+means to say a word with more emphasis than others.
+II Speak the following declarative sentences with falling intonation and
+stress the highlighted words.
+1. The room looks cleaner now.
+
+2. You always talk too much.
+
+3. You leave your clothes all over the house.
+III Work in pairs and speak the following sentences 1–5 aloud, as Mary.
+Apply stress and falling intonation. Match each of the sentences to the
+meaning they convey in (i)–(v).
+		Sentences
+1. I didn’t hurt anyone today.
+
+2. I didn’t hurt anyone today.
+
+3. I didn’t hurt anyone today.
+
+4. I didn’t hurt anyone today.
+
+5. I didn’t hurt anyone today.
+		 Meaning conveyed
+(i)
+
+I might have done other things but did not hurt anyone.
+
+(ii) I might cause hurt usually, but not anyone on this day.
+(iii) The action of hurting anyone did not occur.
+(iv) I, specifically, did not hurt anyone, possibly implying someone
+else might have.
+(v) I may have spoken a lot many things but not a single person
+was hurt.
+
+85
+
+Unit 2.indd 85
+
+06-Mar-25 2:51:36 PM
+
+Poorvi
+
+IV Now, speak the given declarative sentence with rising intonation towards
+the end of sentence and stress the highlighted words.
+		 I saw Mrs. Cotter this afternoon.
+		 The rising intonation makes it sound like a question. It asks whether I
+was the person who actually saw Mrs. Cotter: Did I see Mrs. Cotter this
+afternoon?
+Remember
+The way we use stress and intonation in a sentence can change the
+meaning of what we wish to say if we are not careful.
+
+Let us write
+Rewrite the play ‘Say the Right Thing’ as a short story, focusing on Mary’s
+interactions with her mother and the guests.
+• Ensure the story captures the main events, character emotions, and
+humorous moments effectively.
+• Use paragraphs to organise your story and include descriptive language
+to bring the characters and events to life.
+You may refer to the following hints:
+• Begin with an introduction: describe Mary and Mrs. Shaw, their
+relationship and the setting of the story.
+• Explain Mrs. Shaw’s instructions to Mary before the guests arrive and
+Mary’s confidence in handling the situation.
+• Narrate the events when Mrs. Harding and Mrs. Lee visit, highlighting
+Mary’s remarks and the guests’ reactions.
+• Include key moments of humour and awkwardness to maintain the tone
+of the play.
+• Conclude by commenting on how the visit ended and Mary’s impact on
+the situation.
+
+		 Let us explore
+I Work in groups. Enact your favourite part of the play.
+		 Points to remember:
+
+86
+
+Unit 2.indd 86
+
+• Allot a specific role to each member in the group.
+For example: director, narrator, and characters
+
+06-Mar-25 2:51:36 PM
+
+Wit and Humour
+
+• Include the actions and expressions as indicated
+in brackets in the play.
+II Find out how people greet guests who visit their
+homes in different languages. Share it with your
+classmates and the teacher.
+III ‘Vasudhaiva Kuṭumbakaṁ’ (olq/So dq VqEcde) is a
+Sanskrit phrase which means the world is one family. Vasudha (olq/k)
+means Earth; eva (,o) translates to ‘is thus’ and Kuṭumbakaṁ (dq VqEcde)
+means ‘family’. The phrase originates from ancient Indian texts like
+the Maha Upanishad and the Hitopadesha.
+		This saying highlights the interconnectedness of all people,
+suggesting that humanity is part of a single global family. It
+encourages unity, cooperation, and treating others with kindness
+and empathy, regardless of differences in nationality, race, or
+religion. The message is often used to promote global peace and
+mutual understanding among diverse cultures and nations.
+‘Vasudhaiva Kutumbakam’ was chosen as the theme for the G20
+Summit which captured the essence of global unity, common bonds,
+and shared aspirations for a better future.
+
+87
+
+Unit 2.indd 87
+
+06-Mar-25 2:51:37 PM
+
+Poorvi
+
+TRANSCRIPTS
+Animals, Birds, and Dr. Dolittle
+Let us listen (refer to page 55)
+I You will listen to an announcement. As you listen, state whether the
+following statement is true or false.
+
+Greetings and attention everyone!
+We are excited to announce the opening of Dr. John Dolittle’s
+new clinic in the town of Woodstock. The clinic is located at
+12, Rose Lane. It will be open Monday to Friday from 9 a.m. to
+5 p.m. Special timings for birds are on Saturdays from 11 a.m. to
+2 p.m. Dr. Dolittle is renowned for his ability to communicate
+with animals and shall ensure that they receive the best care
+possible. All animals are welcome, from horses and cows to pets
+and wild animals. For the best veterinary care, visit Dr. John
+Dolittle’s new clinic in Woodstock.
+Thank you.
+II You will listen to the announcement again. As you listen, complete the
+details given below with one or two exact words you hear.
+
+A Funny Man
+Let us listen (refer to page 65)
+I You will listen to a girl narrate a personal incident. As you listen, select
+the picture related to the narration.
+
+Hello. This is quite a funny incident. One day, I was so preoccupied
+with preparing for my presentation. After a long day of studying
+at a friend’s place, I finally came home. Exhausted, I removed
+my shoes at the door and headed straight to the kitchen for some
+88
+
+Unit 2.indd 88
+
+06-Mar-25 2:51:37 PM
+
+Wit and Humour
+
+lunch. I served myself dal-chawal and ate it, still thinking about
+all the topics I needed to cover.
+Once I finished my lunch, I got up to put my shoes away in my
+room and placed my plate in the kitchen. However, being so
+preoccupied, I ended up doing the opposite! I walked to my room
+with my plate in hand and left it on my desk. Then, I took my
+shoes and placed them in the kitchen!
+As I stood there, confused, I realised what I had done. I couldn’t
+help but laugh at myself. I shook my head, recovered my shoes
+from the kitchen and kept the plate in the kitchen.
+II You will once again listen to the girl narrate a personal incident. As you
+listen, arrange the events in order of occurrence.
+
+Say the Right Thing
+Let us listen (refer to page 84)
+I Mrs. Shaw wanted Mary to learn to say the right thing. You will listen to
+a conversation between a mother and a son about basic manners. As you
+listen, fill in the blanks given below by selecting the correct option.
+
+Mother : Why were you getting impatient in the grocery store?
+Son
+
+: Was I really? I just didn’t like waiting so long.
+
+Mother : I know waiting can be boring, but remember, we
+always stand in queues and wait for our turn. It’s fair
+for everyone, right?
+Son
+
+: Hmm, I guess. Even if it takes a lot of time?
+
+Mother : Well, that’s when we practise patience. And when it’s
+our turn, what do we say to the shopkeeper?
+Son
+
+: We say, ‘Thank you’. And ‘Please’ if we ask for something,
+right?
+
+Mother : Yes! Those are polite words. Why do you think they’re
+important?
+
+89
+
+Unit 2.indd 89
+
+06-Mar-25 2:51:37 PM
+
+Poorvi
+
+Son
+
+: Maybe because they make people feel respected?
+
+Mother : Exactly! It shows gratitude and kindness. And what
+about yesterday when you bumped into that lady with
+the blue sari?
+Son
+
+: Oh, I said sorry right away. You always tell me it’s
+important to apologise.
+
+Mother : That’s true. Why do you think it’s important to
+apologise?
+Son
+
+: Um… so people know I didn’t mean to do it and that I
+care?
+
+Mother : Yes, it shows you’re responsible. And how about when
+we’re in places like the library? What kind of voice
+should we use?
+Son
+
+: Oh, I know this! We speak softly so we don’t bother
+others.
+
+Mother : Right again! It’s called using an ‘inside voice’.
+Son
+
+: I know. I also know that we should cover our mouth
+when we yawn, sneeze or cough in a gathering or a
+public place.
+
+Mother : Absolutely! You’re getting really good at remembering
+these things. And when we talk at home or school, what
+should we do when someone else is speaking?
+Son
+
+: We wait for our turn. It’s not well-mannered to
+interrupt.
+
+Mother : You’ve got it, Rohan. You’re becoming a really polite
+young man.
+Son
+
+: Thanks, Ma. So, do you think I’ll be ready to handle the
+grocery queue next time?
+
+Mother : Certainly! And maybe we can get some ice cream as a
+reward if you do it well.
+Son
+
+: Deal! And… thank you!
+
+II		 You will once again listen to the conversation. As you listen, select four
+true statements from 1–7 given below.
+
+90
+
+Unit 2.indd 90
+
+06-Mar-25 2:51:38 PM
+
+Dreams and Discoveries
+2025-11-24 17:58:16 - src.routes - INFO - [routes.py:108] - Successfully fetched chapter 2: Wit and Humour
+2025-11-24 17:58:16 - src.routes - INFO - [routes.py:121] - Merged content from 2 chapter(s), total length: 119335 characters
+2025-11-24 17:58:16 - src.components.mcq_generator - INFO - [mcq_generator.py:38] - Generating 5 MCQs at medium difficulty for topic: Learning Together, Wit and Humour
+2025-11-24 17:58:16 - src.components.mcq_generator - DEBUG - [mcq_generator.py:45] - Content length: 119335 characters
+2025-11-24 17:58:16 - src.components.mcq_generator - DEBUG - [mcq_generator.py:49] - Content escaped for template processing
+2025-11-24 17:58:16 - src.components.mcq_generator - INFO - [mcq_generator.py:115] - Invoking LLM to generate MCQs...
+2025-11-24 17:58:16 - src.routes - ERROR - [routes.py:150] - Error in generate endpoint: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01jrk6njhzf62admg3wk19gdqd` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 31146, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "D:\Drema Ai\src\routes.py", line 124, in generate
+    mcqs = self.mcq_generator.generate_mcqs(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Drema Ai\src\components\mcq_generator.py", line 117, in generate_mcqs
+    response = chain.invoke({})
+               ^^^^^^^^^^^^^^^^
+  File "D:\Drema Ai\vev\Lib\site-packages\langchain_core\runnables\base.py", line 3129, in invoke
+    input_ = context.run(step.invoke, input_, config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Drema Ai\vev\Lib\site-packages\langchain_core\language_models\chat_models.py", line 385, in invoke
+    self.generate_prompt(
+  File "D:\Drema Ai\vev\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1104, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Drema Ai\vev\Lib\site-packages\langchain_core\language_models\chat_models.py", line 914, in generate
+    self._generate_with_cache(
+  File "D:\Drema Ai\vev\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1208, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "D:\Drema Ai\vev\Lib\site-packages\langchain_groq\chat_models.py", line 571, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Drema Ai\vev\Lib\site-packages\groq\resources\chat\completions.py", line 464, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "D:\Drema Ai\vev\Lib\site-packages\groq\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Drema Ai\vev\Lib\site-packages\groq\_base_client.py", line 1044, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.APIStatusError: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01jrk6njhzf62admg3wk19gdqd` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 31146, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}

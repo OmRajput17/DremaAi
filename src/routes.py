@@ -2,7 +2,7 @@
 Flask Routes Module
 Handles all Flask route definitions
 """
-from flask import render_template, request, jsonify
+from flask import render_template, request, jsonify, session, redirect, url_for
 from src.logging import get_logger
 
 # Initialize logger
@@ -12,7 +12,7 @@ logger = get_logger(__name__)
 class Routes:
     """Flask routes handler."""
     
-    def __init__(self, app, fetcher, mcq_generator):
+    def __init__(self, app, fetcher, mcq_generator, content_processor):
         """
         Initialize routes with Flask app and components.
         
@@ -20,10 +20,12 @@ class Routes:
             app: Flask application instance
             fetcher: EducationContentFetcher instance
             mcq_generator: MCQGenerator instance
+            content_processor: ContentProcessor instance
         """
         self.app = app
         self.fetcher = fetcher
         self.mcq_generator = mcq_generator
+        self.content_processor = content_processor
         self.register_routes()
     
     def register_routes(self):
@@ -33,6 +35,7 @@ class Routes:
         self.app.add_url_rule('/get_subjects/<board>/<class_num>', 'get_subjects', self.get_subjects)
         self.app.add_url_rule('/get_topics/<board>/<class_num>/<subject>', 'get_topics', self.get_topics)
         self.app.add_url_rule('/generate', 'generate', self.generate, methods=['POST'])
+        self.app.add_url_rule('/results', 'results', self.results, methods=['GET'])
         self.app.add_url_rule('/download_pdf', 'download_pdf', self.download_pdf, methods=['POST'])
     
     def index(self):
@@ -114,26 +117,56 @@ class Routes:
                 logger.error(f"No content found for any of the selected chapters: {topics}")
                 return jsonify({'error': f'Could not find content for the selected chapter(s)'}), 400
             
-            # Merge content from all chapters
-            merged_content = '\n\n=== CHAPTER SEPARATOR ===\n\n'.join(all_content)
+            # Calculate questions distribution
+            num_topics = len(all_content)
+            base_questions = num_questions // num_topics
+            remainder = num_questions % num_topics
+            
+            mcqs = []
             merged_topic_names = ', '.join(topic_names)
             
-            logger.info(f"Merged content from {len(all_content)} chapter(s), total length: {len(merged_content)} characters")
+            logger.info(f"Processing {num_topics} topics iteratively for better context retention")
             
-            # Generate MCQs
-            mcqs = self.mcq_generator.generate_mcqs(
-                num_questions, 
-                difficulty_level, 
-                merged_topic_names,  # Combined chapter names
-                merged_content
-            )
-            
+            for i, (content, topic_name) in enumerate(zip(all_content, topic_names)):
+                # Calculate questions for this specific topic
+                # Distribute remainder among the first few topics
+                questions_for_topic = base_questions + (1 if i < remainder else 0)
+                
+                if questions_for_topic == 0:
+                    logger.info(f"Skipping topic {topic_name} (0 questions allocated)")
+                    continue
+                
+                logger.info(f"Processing topic: {topic_name} (Allocated questions: {questions_for_topic})")
+                
+                # Process content through RAG for focused retrieval
+                focused_content = self.content_processor.process_for_mcqs(
+                    content=content,
+                    topic_name=topic_name,
+                    difficulty=difficulty_level,
+                    num_questions=questions_for_topic
+                )
+                
+                # Generate MCQs for this topic
+                topic_mcqs = self.mcq_generator.generate_mcqs(
+                    questions_for_topic, 
+                    difficulty_level, 
+                    topic_name,
+                    focused_content
+                )
+                
+                if topic_mcqs:
+                    mcqs.extend(topic_mcqs)
+                else:
+                    logger.warning(f"Failed to generate MCQs for topic: {topic_name}")
+
             if not mcqs:
-                logger.error("MCQ generation failed")
+                logger.error("MCQ generation failed for all topics")
                 return jsonify({'error': 'Failed to generate MCQs'}), 500
             
-            logger.info(f"Successfully generated {len(mcqs)} MCQs")
-            return jsonify({
+            logger.info(f"Successfully generated {len(mcqs)} MCQs across {num_topics} topics")
+            
+            # Store data in session
+            session['mcq_data'] = {
                 'success': True,
                 'topic_info': {
                     'board': board,
@@ -144,11 +177,31 @@ class Routes:
                     'chapters_selected': len(topic_names)
                 },
                 'mcqs': mcqs
+            }
+            
+            # Return success response with redirect URL for AJAX
+            return jsonify({
+                'success': True,
+                'redirect': url_for('results')
             })
         
         except Exception as e:
             logger.error(f"Error in generate endpoint: {str(e)}", exc_info=True)
             return jsonify({'error': str(e)}), 500
+    
+    def results(self):
+        """Render the results page with MCQ data from session."""
+        logger.info("GET /results - Rendering results page")
+        
+        # Get MCQ data from session
+        mcq_data = session.get('mcq_data')
+        
+        if not mcq_data:
+            logger.warning("No MCQ data found in session, redirecting to home")
+            return redirect(url_for('index'))
+        
+        logger.info(f"Displaying results with {len(mcq_data.get('mcqs', []))} MCQs")
+        return render_template('results.html', data=mcq_data)
     
     def download_pdf(self):
         """Generate and download PDF of MCQs."""
