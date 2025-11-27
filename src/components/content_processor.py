@@ -270,7 +270,7 @@ class ContentProcessor:
         # Base chunk counts for each difficulty
         base_chunks = {
             "easy": 6,
-            "medium": 10,
+            "medium": 12,
             "hard": 16
         }
         

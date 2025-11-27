@@ -36,7 +36,7 @@ class Config:
         self.embeddings = None
         logger.info("Configuration initialized successfully")
         
-    def initialize_llm(self, model="moonshotai/kimi-k2-instruct", temperature=0):
+    def initialize_llm(self, model="llama-3.1-8b-instant", temperature=0):
         """
         Initialize the language model.
         
@@ -50,7 +50,7 @@ class Config:
         if not self.llm:
             logger.info(f"Initializing LLM with model: {model}, temperature: {temperature}")
             self.llm = ChatGroq(model=model, temperature=temperature)
-            logger.info("LLM initialized successfully")
+            logger.info("LLM initialized successfully.")
         return self.llm
     
     def initialize_embeddings(self, model_name="sentence-transformers/all-MiniLM-L6-v2"):
@@ -65,8 +65,8 @@ class Config:
         """
         if not self.embeddings:
             logger.info(f"Initializing embeddings with model: {model_name}")
-            self.embeddings = HuggingFaceEmbeddings(model_name=model_name)
-            logger.info("Embeddings initialized successfully")
+            self.embeddings = HuggingFaceEmbeddings(model_name = model_name)
+            logger.info("Embeddings initialized successfully.")
         return self.embeddings
     
     def get_llm(self):

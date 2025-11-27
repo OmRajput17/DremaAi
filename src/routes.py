@@ -4,6 +4,7 @@ Handles all Flask route definitions
 """
 from flask import render_template, request, jsonify, session, redirect, url_for
 from src.logging import get_logger
+import concurrent.futures
 
 # Initialize logger
 logger = get_logger(__name__)
@@ -125,39 +126,43 @@ class Routes:
             mcqs = []
             merged_topic_names = ', '.join(topic_names)
             
-            logger.info(f"Processing {num_topics} topics iteratively for better context retention")
+            logger.info(f"Processing {num_topics} topics concurrently with ThreadPoolExecutor")
             
+            # Prepare arguments for parallel processing
+            topic_tasks = []
             for i, (content, topic_name) in enumerate(zip(all_content, topic_names)):
                 # Calculate questions for this specific topic
-                # Distribute remainder among the first few topics
                 questions_for_topic = base_questions + (1 if i < remainder else 0)
                 
-                if questions_for_topic == 0:
-                    logger.info(f"Skipping topic {topic_name} (0 questions allocated)")
-                    continue
-                
-                logger.info(f"Processing topic: {topic_name} (Allocated questions: {questions_for_topic})")
-                
-                # Process content through RAG for focused retrieval
-                focused_content = self.content_processor.process_for_mcqs(
-                    content=content,
-                    topic_name=topic_name,
-                    difficulty=difficulty_level,
-                    num_questions=questions_for_topic
-                )
-                
-                # Generate MCQs for this topic
-                topic_mcqs = self.mcq_generator.generate_mcqs(
-                    questions_for_topic, 
-                    difficulty_level, 
-                    topic_name,
-                    focused_content
-                )
-                
-                if topic_mcqs:
-                    mcqs.extend(topic_mcqs)
+                if questions_for_topic > 0:
+                    topic_tasks.append({
+                        'content': content,
+                        'topic_name': topic_name,
+                        'difficulty': difficulty_level,
+                        'num_questions': questions_for_topic
+                    })
                 else:
-                    logger.warning(f"Failed to generate MCQs for topic: {topic_name}")
+                    logger.info(f"Skipping topic {topic_name} (0 questions allocated)")
+
+            # Execute tasks in parallel
+            with concurrent.futures.ThreadPoolExecutor(max_workers=min(len(topic_tasks), 10)) as executor:
+                # Submit all tasks
+                future_to_topic = {
+                    executor.submit(self._process_single_topic, **task): task['topic_name'] 
+                    for task in topic_tasks
+                }
+                
+                # Collect results as they complete
+                for future in concurrent.futures.as_completed(future_to_topic):
+                    topic_name = future_to_topic[future]
+                    try:
+                        topic_mcqs = future.result()
+                        if topic_mcqs:
+                            mcqs.extend(topic_mcqs)
+                        else:
+                            logger.warning(f"No MCQs generated for topic: {topic_name}")
+                    except Exception as exc:
+                        logger.error(f"Topic {topic_name} generated an exception: {exc}")
 
             if not mcqs:
                 logger.error("MCQ generation failed for all topics")
@@ -325,3 +330,26 @@ class Routes:
         except Exception as e:
             logger.error(f"Error generating PDF: {str(e)}", exc_info=True)
             return jsonify({'error': str(e)}), 500
+
+    def _process_single_topic(self, content, topic_name, difficulty, num_questions):
+        """
+        Process a single topic: RAG retrieval + MCQ generation.
+        Helper method for parallel execution.
+        """
+        logger.info(f"Processing topic: {topic_name} (Allocated questions: {num_questions})")
+        
+        # Process content through RAG for focused retrieval
+        focused_content = self.content_processor.process_for_mcqs(
+            content=content,
+            topic_name=topic_name,
+            difficulty=difficulty,
+            num_questions=num_questions
+        )
+        
+        # Generate MCQs for this topic
+        return self.mcq_generator.generate_mcqs(
+            num_questions, 
+            difficulty, 
+            topic_name,
+            focused_content
+        )
