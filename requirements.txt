@@ -10,4 +10,5 @@ python-dotenv
 scikit-learn
 faiss-cpu
 flask
-reportlab
+gunicorn
+sentence-transformers
