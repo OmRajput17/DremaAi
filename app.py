@@ -1,10 +1,10 @@
 """
-Flask MCQ Generator Application
+Flask Chunk Retrieval API Application
 Main application file using modularized structure
 """
 from flask import Flask
 from src.config import Config
-from src.components import EducationContentFetcher, MCQGenerator, ContentProcessor
+from src.components import EducationContentFetcher, ContentProcessor
 from src.routes import Routes
 from src.logging import get_logger
 from src.utils.vector_cache import VectorStoreCache
@@ -17,24 +17,19 @@ def create_app():
     """
     Application factory function.
     
-    
     Returns:
         Flask: Configured Flask application
     """
     logger.info("=" * 70)
-    logger.info("Starting Flask MCQ Generator Application")
+    logger.info("Starting Flask Chunk Retrieval API Application")
     logger.info("=" * 70)
     
     # Initialize Flask app
     logger.info("Initializing Flask application...")
     app = Flask(__name__)
     
-    # Set secret key for session management
-    app.secret_key = 'drema-ai-mcq-generator-secret-key-2024'  # In production, use environment variable
-    
-    # Initialize configuration and models
+    # Initialize configuration and embeddings
     config = Config()
-    llm = config.initialize_llm()
     embeddings = config.initialize_embeddings()
     
     # Initialize vector store cache
@@ -45,11 +40,10 @@ def create_app():
     logger.info("Initializing application components...")
     fetcher = EducationContentFetcher()
     content_processor = ContentProcessor(embeddings, vector_cache=vector_cache)
-    mcq_generator = MCQGenerator(llm)
     
     # Register routes
     logger.info("Registering routes...")
-    Routes(app, fetcher, mcq_generator, content_processor)
+    Routes(app, fetcher, content_processor)
     
     logger.info("Application initialization complete!")
     logger.info("=" * 70)
@@ -59,5 +53,5 @@ def create_app():
 
 if __name__ == '__main__':
     app = create_app()
-    logger.info("Starting Flask development server on http://localhost:5000")
+    logger.info("Starting Flask development server on http://localhost:8080")
     app.run(debug=True, port=8080)
