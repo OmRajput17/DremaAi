@@ -30,7 +30,7 @@ class Config:
         self.embeddings = None
         logger.info("Configuration initialized successfully")
     
-    def initialize_embeddings(self, model_name="text-embedding-3-small"):
+    def initialize_embeddings(self, model_name="text-embedding-3-large"):
         """
         Initialize embeddings model.
         
