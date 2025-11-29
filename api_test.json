@@ -1,0 +1,10 @@
+{
+    "board": "CBSE",
+    "class": "10",
+    "subject": "Science",
+    "topics": [
+        "1"
+    ],
+    "num_chunks": 5,
+    "difficulty": "medium"
+}
