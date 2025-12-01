@@ -16,7 +16,8 @@ def generate_cbse_prompt(
     topics: List[str],
     content: str,
     generate_answers: bool = False,
-    questions_text: Optional[str] = None
+    questions_text: Optional[str] = None,
+    user_prompt: Optional[str] = None
 ) -> Optional[str]:
     """
     Generate prompt for CBSE question paper generation.
@@ -79,6 +80,20 @@ Instructions:
         for idx, section in enumerate(cbse_pattern.sections)
     ])
     
+    # Build custom prompt section if provided
+    custom_instructions = ""
+    if user_prompt:
+        custom_instructions = f"""
+
+**USER'S CUSTOM REQUIREMENTS (FOLLOW STRICTLY):**
+{user_prompt}
+
+IMPORTANT: The user has provided custom requirements above. Follow them STRICTLY.
+- If the user specifies a particular number of questions for a section (e.g., "10 MCQs"), generate EXACTLY that number, overriding the default pattern.
+- For sections NOT mentioned in the user's custom requirements, follow the default CBSE pattern structure provided above.
+- This is a PARTIAL OVERRIDE - only modify what the user explicitly requests.
+"""
+    
     return f"""You are an experienced CBSE teacher creating a question paper for Class {class_num} {subject}.
 
 **Exam Pattern Details:**
@@ -88,7 +103,7 @@ Instructions:
 - Topics: {', '.join(topics)}
 
 **Section Structure:**
-{sections_description}
+{sections_description}{custom_instructions}
 
 **Context from NCERT Textbook:**
 {content}
@@ -135,7 +150,8 @@ def generate_general_prompt(
     difficulty: str,
     question_count: int,
     generate_answers: bool = False,
-    questions_text: Optional[str] = None
+    questions_text: Optional[str] = None,
+    user_prompt: Optional[str] = None
 ) -> str:
     """
     Generate prompt for general question paper (non-CBSE or custom format).
@@ -149,6 +165,7 @@ def generate_general_prompt(
         question_count: Total number of questions
         generate_answers: Whether to generate answer key
         questions_text: Question paper text (for answer key generation)
+        user_prompt: Optional custom prompt from user for partial override
     
     Returns:
         Generated prompt string
@@ -173,6 +190,20 @@ Instructions:
 
 Generate the answer key:"""
     
+    # Build custom prompt section if provided
+    custom_instructions = ""
+    if user_prompt:
+        custom_instructions = f"""
+
+**USER'S CUSTOM REQUIREMENTS (FOLLOW STRICTLY):**
+{user_prompt}
+
+IMPORTANT: The user has provided custom requirements above. Follow them STRICTLY.
+- If the user specifies a particular number/type of questions (e.g., "10 MCQs, 5 fill in the blanks"), generate EXACTLY that, overriding the default structure.
+- For question types NOT mentioned in the user's requirements, follow the default structure provided above.
+- This is a PARTIAL OVERRIDE - only modify what the user explicitly requests.
+"""
+    
     # Subject-specific prompts
     subject_lower = subject.lower()
     
@@ -196,7 +227,7 @@ Structure the question paper as follows:
 3. Fill in the Blanks ({question_count // 6} questions): Use statements from the chapter, asking to fill in the missing words.
 4. True or False ({question_count // 6} questions): Statements that need to be marked as true or false.
 5. Match the Following ({question_count // 6} questions): Pairs of items to be matched correctly. Ensure that the order of items in both columns is jumbled to prevent direct matching.
-6. Story-Based Problems ({question_count - 5 * (question_count // 6)} questions): Provide a story from which students must extract data to solve a mathematical problem. These problems should be engaging and contextually relevant.
+6. Story-Based Problems ({question_count - 5 * (question_count // 6)} questions): Provide a story from which students must extract data to solve a mathematical problem. These problems should be engaging and contextually relevant.{custom_instructions}
 
 Context:"""
     
@@ -220,7 +251,7 @@ Structure the question paper as follows:
 3. Fill in the Blanks ({question_count // 6} questions): Use statements from the chapter, asking to fill in the missing words.
 4. True or False ({question_count // 6} questions): Statements that need to be marked as true or false.
 5. Match the Following ({question_count // 6} questions): Pairs of items to be matched correctly. Ensure that the order of items in both columns is jumbled to prevent direct matching.
-6. Word Meaning ({question_count - 5 * (question_count // 6)} questions): Ask for the meanings of words used in the chapter.
+6. Word Meaning ({question_count - 5 * (question_count // 6)} questions): Ask for the meanings of words used in the chapter.{custom_instructions}
 
 Context:"""
     
@@ -256,7 +287,7 @@ Details:
 - Total Questions: {question_count}
 
 Structure the question paper as follows:
-{structure}
+{structure}{custom_instructions}
 
 Context:"""
     
@@ -279,7 +310,7 @@ Based on the provided context, create a well-structured question paper with the 
 3. **Fill in the Blanks** ({question_count // 6} questions): Statements with missing words
 4. **True or False** ({question_count // 6} questions): Statements to be marked as true or false
 5. **Match the Following** ({question_count // 6} questions): Pairs of items to be matched correctly
-6. **Short Answer Questions** ({question_count - 5 * (question_count // 6)} questions): Brief explanations required
+6. **Short Answer Questions** ({question_count - 5 * (question_count // 6)} questions): Brief explanations required{custom_instructions}
 
 Requirements:
 - Ensure questions are age-appropriate for Class {class_num}

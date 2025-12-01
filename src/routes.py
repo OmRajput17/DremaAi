@@ -208,6 +208,7 @@ class Routes:
             use_cbse_pattern = data.get('useCBSEPattern', False)
             generate_answers = data.get('generateAnswers', False)
             questions_text = data.get('questionsText')
+            custom_prompt = data.get('customPrompt')  # Custom user prompt
             
             # Validate
             if not all([board, class_num, subject]):
@@ -247,7 +248,8 @@ class Routes:
                     topics=topic_names,
                     content=combined_content,
                     generate_answers=generate_answers,
-                    questions_text=questions_text
+                    questions_text=questions_text,
+                    user_prompt=custom_prompt
                 )
                 
                 if prompt is None:
@@ -261,7 +263,8 @@ class Routes:
                         difficulty=difficulty,
                         question_count=question_count,
                         generate_answers=generate_answers,
-                        questions_text=questions_text
+                        questions_text=questions_text,
+                        user_prompt=custom_prompt
                     )
             else:
                 prompt = generate_general_prompt(
@@ -272,7 +275,8 @@ class Routes:
                     difficulty=difficulty,
                     question_count=question_count,
                     generate_answers=generate_answers,
-                    questions_text=questions_text
+                    questions_text=questions_text,
+                    user_prompt=custom_prompt
                 )
             
             # Add content to prompt
