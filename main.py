@@ -40,7 +40,7 @@ def create_app():
     content_processor = ContentProcessor(embeddings, vector_cache=vector_cache)
 
     logger.info("Registering routes...")
-    Routes(app, fetcher, content_processor)
+    Routes(app, fetcher, content_processor, config)
 
     logger.info("Application initialization complete!")
     logger.info("=" * 70)

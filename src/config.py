@@ -64,3 +64,35 @@ class Config:
         if not self.embeddings:
             return self.initialize_embeddings()
         return self.embeddings
+    
+    def initialize_llm(self, model_name="gpt-4o-mini"):
+        """
+        Initialize OpenAI LLM for question paper generation.
+        
+        Args:
+            model_name (str): OpenAI model name
+                Options:
+                - "gpt-4o" (recommended, latest GPT-4 optimized)
+                - "gpt-4o-mini" (faster, cheaper but may truncate)
+                - "gpt-4-turbo"
+        
+        Returns:
+            ChatOpenAI: Initialized LLM instance
+        """
+        logger.info(f"Initializing OpenAI LLM with model: {model_name}")
+        api_key = os.getenv("OPENAI_API_KEY")
+        
+        if not api_key:
+            logger.error("OPENAI_API_KEY not found in environment variables")
+            raise ValueError("OPENAI_API_KEY is required but not set")
+        
+        from langchain_openai import ChatOpenAI
+        
+        llm = ChatOpenAI(
+            model=model_name,
+            openai_api_key=api_key,
+            temperature=0.7,  # Balanced creativity for question generation
+            max_tokens=8000   # Increased for complete question papers
+        )
+        logger.info("OpenAI LLM initialized successfully")
+        return llm
