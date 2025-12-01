@@ -2,58 +2,56 @@
 Flask Chunk Retrieval API Application
 Main application file using modularized structure
 """
+import os
 from flask import Flask
+from flask_cors import CORS  # 👈 add this
+
 from src.config import Config
 from src.components import EducationContentFetcher, ContentProcessor
 from src.routes import Routes
 from src.logging import get_logger
 from src.utils.vector_cache import VectorStoreCache
 
-# Initialize logger
 logger = get_logger(__name__)
 
-
 def create_app():
-    """
-    Application factory function.
-    
-    Returns:
-        Flask: Configured Flask application
-    """
     logger.info("=" * 70)
     logger.info("Starting Flask Chunk Retrieval API Application")
     logger.info("=" * 70)
-    
-    # Initialize Flask app
-    logger.info("Initializing Flask application...")
+
     app = Flask(__name__)
-    
-    # Initialize configuration and embeddings
+
+    # ✅ Enable CORS BEFORE registering routes
+    # Allow your Vite dev server origin:
+    CORS(
+        app,
+        resources={r"/*": {"origins": "*"}},
+        supports_credentials=False,  # you are just using fetch, no cookies => False is fine
+    )
+
     config = Config()
     embeddings = config.initialize_embeddings()
-    
-    # Initialize vector store cache
+
     logger.info("Initializing vector store cache...")
     vector_cache = VectorStoreCache(cache_dir="cache/vector_stores")
-    
-    # Initialize components
+
     logger.info("Initializing application components...")
     fetcher = EducationContentFetcher()
     content_processor = ContentProcessor(embeddings, vector_cache=vector_cache)
-    
-    # Register routes
+
     logger.info("Registering routes...")
     Routes(app, fetcher, content_processor)
-    
+
     logger.info("Application initialization complete!")
     logger.info("=" * 70)
-    
+
     return app
 
+# created once, for gunicorn
 app = create_app()
 
-
 if __name__ == '__main__':
-    app = create_app()
-    logger.info("Starting Flask development server on http://localhost:8080")
-    app.run(debug=True, port=8080)
+    # LOCAL DEV ONLY
+    port = int(os.environ.get("PORT", 5000))
+    logger.info(f"Starting Flask development server on http://localhost:{port}")
+    app.run(debug=True, host="0.0.0.0", port=port)

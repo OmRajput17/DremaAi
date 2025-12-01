@@ -157,7 +157,6 @@ class EducationContentFetcher:
                     result['status'] = 'success'
                     result['message'] = 'Topic found successfully'
                     logger.info(f"Topic found in book: {book_name}")
-                    logger.info(f"Retrieved Content {result['content']}")
                     return result
                 else:
                     logger.debug(f"Topic ###{topic_num}## not found in book: {book_name}")

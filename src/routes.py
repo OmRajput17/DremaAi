@@ -195,3 +195,4 @@ class Routes:
             logger.error(f"RAG error: {str(e)}")
             # Fallback to first N chunks
             return [{'content': c.page_content, 'chunk_index': i} for i, c in enumerate(chunks[:num_chunks])]
+        
