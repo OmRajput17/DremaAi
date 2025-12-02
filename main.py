@@ -26,7 +26,9 @@ def create_app():
     CORS(
         app,
         resources={r"/*": {"origins": "*"}},
-        supports_credentials=False,  # you are just using fetch, no cookies => False is fine
+        supports_credentials=False, 
+        allow_methods=["*"],
+        allow_headers=["*"],
     )
 
     config = Config()
