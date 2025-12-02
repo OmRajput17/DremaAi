@@ -4,4 +4,4 @@ cache/
 logs/
 Dockerfile
 __pycache__/
-aws_credentials/
+aws credentials/
