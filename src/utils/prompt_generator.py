@@ -334,6 +334,7 @@ def generate_summary_prompt(
         topics: List[str],
         content: str
     ) -> str:
+
     """
     Generate prompt for chapter summarization.
     
@@ -342,46 +343,39 @@ def generate_summary_prompt(
         class_num: Class number
         subject: Subject name
         topics: List of topic names
-        content: Chapter content to summarize
+        content: Content to summarize
     
     Returns:
         Generated prompt string
     """
-    return f"""You are an expert teacher creating a comprehensive chapter summary for students.
+    return f"""You are an expert educational content summarizer specializing in creating concise chapter summaries for students. Create a comprehensive yet concise summary of the following content.
 
-        Details:
-        - Board: {board}
-        - Class: {class_num}
-        - Subject: {subject}
-        - Topics: {', '.join(topics)}
+    Details:
+    - Board: {board}
+    - Class: {class_num}
+    - Subject: {subject}
+    - Topics: {', '.join(topics)}
 
-        Task:
-        Create a detailed, well-structured summary of the provided content. The summary should be easy to understand and perfect for exam revision.
+    Instructions:
+    1. Create a well-structured chapter summary suitable for Class {class_num} students
+    2. Include all key concepts, definitions, and important points
+    3. Organize the summary with clear headings and subheadings
+    4. Use bullet points for listing important facts or steps
+    5. Highlight formulas, dates, names, or critical information
+    6. Keep the language clear and appropriate for the student's level
+    7. Include a brief conclusion or key takeaways section
+    8. Make it comprehensive but concise - aim for clarity over length
 
-        Format your response using Markdown with the following structure:
-        # [Chapter/Topic Name]
+    Format the summary with:
+    - Clear section headings (use ** for bold)
+    - Bullet points for key points (use • or -)
+    - Numbered lists for sequential information
+    - Proper spacing for readability
 
-        ## Key Concepts
-        [Explain the core concepts clearly]
+    Content to summarize:
+    {content}
 
-        ## Important Definitions
-        - **[Term]**: [Definition]
-
-        ## Key Formulas/Points (if applicable)
-        - [Point 1]
-        - [Point 2]
-
-        ## Summary
-        [Detailed paragraph summary of the chapter]
-
-        ## Exam Tips
-        - [Tip 1]
-        - [Tip 2]
-
-        Content to Summarize:
-        {content}
-
-        Generate the summary in Markdown format:
+    Generate a well-formatted chapter summary:
     """
 
 
@@ -391,7 +385,7 @@ def generate_flashcard_prompt(
     subject: str,
     topics: List[str],
     content: str,
-    card_count: int = 15
+    card_count: int = 20
 ) -> str:
     """
     Generate prompt for flashcard generation.
@@ -407,7 +401,7 @@ def generate_flashcard_prompt(
     Returns:
         Generated prompt string
     """
-    return f"""You are an expert teacher creating study flashcards for students.
+    return f"""You are an expert educational content creator specializing in creating flashcards for students. Create engaging and educational flashcards based on the provided content.
 
     Details:
     - Board: {board}
@@ -416,35 +410,37 @@ def generate_flashcard_prompt(
     - Topics: {', '.join(topics)}
     - Number of Cards: {card_count}
 
-    Task:
-    Create {card_count} high-quality flashcards based on the provided content.
-    - Front: A clear, concise question or concept.
-    - Back: A comprehensive but concise answer or explanation.
-    - Topic: The specific sub-topic this card belongs to.
+    Instructions:
+    1. Create {card_count} flashcards from the provided content
+    2. Each flashcard should have a clear FRONT (question/prompt) and BACK (answer/explanation)
+    3. Make questions age-appropriate for Class {class_num}
+    4. Cover different aspects of the topics: definitions, examples, applications, facts
+    5. Use varied question types: What is...?, Why does...?, How does...?, When did...?, etc.
+    6. Keep answers concise but informative
+    7. Include the topic name for each card
 
-    Content to use:
-    {content}
-
-    IMPORTANT: Return ONLY a valid JSON array of objects. No markdown formatting, no code blocks.
-    
-    Required JSON Structure:
+    Format your response as a JSON array with this exact structure:
     [
       {{
-        "id": "1",
-        "front": "Question or concept here",
+        "front": "Question or prompt here",
         "back": "Answer or explanation here",
-        "topic": "Specific sub-topic"
+        "topic": "Topic name here"
       }}
     ]
+
+    Content to create flashcards from:
+    {content}
+
+    Generate the flashcards in JSON format:
     """
 
 def generate_mindmap_prompt(
-        board: str,
-        class_num: str,
-        subject: str,
-        topics: List[str],
-        content: str
-    ) -> str:
+    board: str,
+    class_num: str,
+    subject: str,
+    topics: List[str],
+    content: str
+) -> str:
     """
     Generate prompt for mind map generation.
     
@@ -458,106 +454,99 @@ def generate_mindmap_prompt(
     Returns:
         Generated prompt string
     """
-    return f"""You are an expert teacher creating a mind map for students to revise concepts.
+    return f"""You are an expert educational content creator specializing in creating mind maps and flowcharts for students. Create a comprehensive mind map structure for quick revision.
 
-        Details:
-        - Board: {board}
-        - Class: {class_num}
-        - Subject: {subject}
-        - Topics: {', '.join(topics)}
+    Details:
+    - Board: {board}
+    - Class: {class_num}
+    - Subject: {subject}
+    - Topics: {', '.join(topics)}
 
-        Task:
-        Create a hierarchical mind map structure based on the provided content.
-        - The root node should be the main topic or subject.
-        - Branch nodes should be major sub-topics.
-        - Leaf nodes should be specific concepts or key points.
+    Instructions:
+    1. Create a hierarchical mind map structure with main topics, subtopics, and key points
+    2. Make it suitable for Class {class_num} students for quick revision
+    3. Include important concepts, definitions, examples, and relationships
+    4. Use clear, concise labels that are easy to understand
+    5. Organize information in a logical flow from general to specific
+    6. Include 3-4 main branches with 2-4 sub-branches each
+    7. Add key facts, formulas, or important points as leaf nodes
 
-        Content to use:
-        {content}
-
-        IMPORTANT: Return ONLY a valid JSON object. No markdown formatting, no code blocks.
-        
-        Required JSON Structure:
+    Format your response as a JSON object with this exact structure:
+    {{
+      "title": "Main topic title here",
+      "nodes": [
         {{
-        "title": "Main Title of Mind Map",
-        "nodes": [
-            {{ "id": "1", "label": "Main Topic", "type": "main" }},
-            {{ "id": "2", "label": "Sub Topic 1", "type": "branch" }},
-            {{ "id": "3", "label": "Concept A", "type": "leaf" }}
-        ],
-        "connections": [
-            {{ "from": "1", "to": "2" }},
-            {{ "from": "2", "to": "3" }}
-        ]
+          "id": "unique_id_here",
+          "label": "Node label here",
+          "type": "main|branch|leaf",
+          "children": ["child_id_1", "child_id_2"],
+          "color": "color_code_here"
         }}
-        
-        Ensure:
-        1. All nodes have unique IDs.
-        2. 'type' must be one of: 'main', 'branch', 'leaf'.
-        3. All connections reference valid node IDs.
-        4. The structure is logical and hierarchical.
+      ],
+      "connections": [
+        {{
+          "from": "parent_id",
+          "to": "child_id"
+        }}
+      ]
+    }}
+
+    Content to create mind map from:
+    {content}
+
+    Generate the mind map structure in JSON format:
     """
 
 def generate_study_tricks_prompt(
-        board: str,
-        class_num: str,
-        subject: str,
-        topics: List[str],
-        content: str
-    ) -> str:
-        """
-        Generate prompt for study tricks and mnemonics generation.
-        
-        Args:
-            board: Educational board
-            class_num: Class number
-            subject: Subject name
-            topics: List of topic names
-            content: Content to generate tricks from
-        
-        Returns:
-            Generated prompt string
-        """
-        return f"""You are an expert teacher creating study tricks, mnemonics, and memory aids for students.
+    board: str,
+    class_num: str,
+    subject: str,
+    topics: List[str],
+    content: str
+) -> str:
+    """
+    Generate prompt for study tricks and mnemonics generation.
+    
+    Args:
+        board: Educational board
+        class_num: Class number
+        subject: Subject name
+        topics: List of topic names
+        content: Content to generate tricks from
+    
+    Returns:
+        Generated prompt string
+    """
+    return f"""You are an expert educational content creator specializing in memory techniques, mnemonics, and study tricks. Create engaging and memorable study tricks and mnemonics for the following content.
 
-            Details:
-            - Board: {board}
-            - Class: {class_num}
-            - Subject: {subject}
-            - Topics: {', '.join(topics)}
+    Details:
+    - Board: {board}
+    - Class: {class_num}
+    - Subject: {subject}
+    - Topics: {', '.join(topics)}
 
-            Task:
-            Create creative and effective study tricks, mnemonics, and analogies to help students remember key concepts from the provided content.
+    Instructions:
+    1. Create clever mnemonics, acronyms, and memory tricks for key concepts
+    2. Use rhymes, stories, or visual associations to make information memorable
+    3. Include tricks for formulas, definitions, dates, names, and important facts
+    4. Make each trick fun, creative, and easy to remember
+    5. Use age-appropriate language for Class {class_num} students
+    6. Provide explanation for why each trick works
+    7. Include both general study tips and topic-specific memory techniques
+    8. Add practical examples of how to apply each trick
 
-            Content to use:
-            {content}
+    Format each trick as:
+    ### [Catchy Title for the Trick]
+    - What it helps remember
+    - The mnemonic/trick itself
+    - Why it works
+    - Example or practice tip
 
-            Output Format (Markdown):
-            - Use '# Main Title' for the overall title.
-            - Use '## Section Title' for grouping tricks by concept.
-            - Use '### Trick Name' for individual tricks/mnemonics.
-            - Use bullet points (* or -) for explanation steps.
-            - Use numbered lists (1.) for sequential steps.
-            - Be creative, funny, and memorable.
-            - Include "Pro Tip" sections where applicable.
+    Generate at least 5-10 different study tricks and mnemonics covering different aspects of the content.
 
-            Example Output Structure:
-            # Mastering Chemical Reactions
-            
-            ## Types of Reactions
-            
-            ### The "C-D-D-S" Mnemonic
-            * **C**ombination: Two become one (A+B -> AB)
-            * **D**ecomposition: One becomes two (AB -> A+B)
-            * **D**isplacement: The bully kicks out the weak (A+BC -> AC+B)
-            * **D**ouble **D**isplacement: The partner swap (AB+CD -> AD+CB)
-            
-            ## Reactivity Series
-            
-            ### Please Stop Calling Me A Zebra...
-            1. **P**otassium
-            2. **S**odium
-            3. **C**alcium
-            ...
-        """
+    Content to analyze:
+    {content}
+
+    Generate creative and memorable study tricks:
+    """
 
