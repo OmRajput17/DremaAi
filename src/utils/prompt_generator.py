@@ -113,8 +113,9 @@ CRITICAL INSTRUCTIONS:
 2. Generate questions STRICTLY from the provided textbook content and topics
 3. Ensure questions are age-appropriate for Class {class_num}
 4. Include competency-based questions (CBQs) as per CBSE guidelines
-5. For MCQs, provide 4 options with clear correct answers
+5. For MCQs, provide 4 options
 6. Return ONLY valid JSON, no additional text
+7. Do NOT include the correct answer or solution in the output
 
 **REQUIRED JSON FORMAT:**
 {{
@@ -130,7 +131,6 @@ CRITICAL INSTRUCTIONS:
             "questionNumber": 1,
             "question": "question text here",
             "options": ["A) option1", "B) option2", "C) option3", "D) option4"],
-            "correctAnswer": "A",
             "marks": 1
           }}
         ]
