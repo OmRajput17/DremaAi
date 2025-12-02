@@ -135,26 +135,9 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
 
-      # Option 1: Deploy to AWS ECS
-      - name: Deploy to ECS (if using ECS)
-        if: secrets.ECS_CLUSTER_NAME != ''
-        run: |
-          # Update ECS service to use new image
-          aws ecs update-service \
-            --cluster ${{ secrets.ECS_CLUSTER_NAME }} \
-            --service ${{ secrets.ECS_SERVICE_NAME }} \
-            --force-new-deployment \
-            --region ${{ env.AWS_REGION }}
-          
-          echo "Waiting for ECS service to stabilize..."
-          aws ecs wait services-stable \
-            --cluster ${{ secrets.ECS_CLUSTER_NAME }} \
-            --services ${{ secrets.ECS_SERVICE_NAME }} \
-            --region ${{ env.AWS_REGION }}
-
-      # Option 2: Deploy to EC2 via SSH
-      - name: Deploy to EC2 (if using EC2)
-        if: secrets.EC2_HOST != ''
+      # Deploy to EC2 via SSH
+      - name: Deploy to EC2
+        continue-on-error: true
         run: |
           # Set up SSH key
           mkdir -p ~/.ssh
@@ -163,22 +146,14 @@ jobs:
           
           # SSH into EC2 and pull new image
           ssh -o StrictHostKeyChecking=no -i ~/.ssh/deploy_key ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
-            cd /home/${{ secrets.EC2_USER }}/drema-ai || cd ~/drema-ai
+            cd "$HOME/Drema Ai" || cd ~/drema-ai || cd "Drema Ai"
             docker-compose pull
             docker-compose up -d --force-recreate
             docker image prune -f
           EOF
 
-      # Option 3: Deploy to AWS App Runner (if using App Runner)
-      - name: Deploy to App Runner
-        if: secrets.APP_RUNNER_SERVICE_ARN != ''
-        run: |
-          aws apprunner start-deployment \
-            --service-arn ${{ secrets.APP_RUNNER_SERVICE_ARN }} \
-            --region ${{ env.AWS_REGION }}
-
       - name: Deployment status
         run: |
-          echo "✅ Deployment completed successfully!"
+          echo "✅ Deployment completed!"
           echo "🐳 Docker image: ${{ env.DOCKER_IMAGE }}:latest"
           echo "🌍 AWS Region: ${{ env.AWS_REGION }}"
