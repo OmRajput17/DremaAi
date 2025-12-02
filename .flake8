@@ -1,0 +1,13 @@
+[flake8]
+max-line-length = 120
+exclude = 
+    .git,
+    __pycache__,
+    venv,
+    cache,
+    logs,
+    .github,
+    tests/__pycache__
+ignore = E203,E501,W503
+max-complexity = 15
+

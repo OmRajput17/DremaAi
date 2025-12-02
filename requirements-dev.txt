@@ -1,0 +1,5 @@
+pytest
+pytest-flask
+flake8
+black
+coverage

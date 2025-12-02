@@ -1,2 +1,0 @@
-username :-  devteam
-ip adress :- 13.201.108.13

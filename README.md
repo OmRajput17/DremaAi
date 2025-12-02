@@ -1,5 +1,9 @@
 # MCQ Generator Flask App
 
+![CI/CD Pipeline](https://github.com/OmRajput17/DremaAi/workflows/CI/CD%20Pipeline/badge.svg)
+![Docker Build](https://github.com/OmRajput17/DremaAi/workflows/Docker%20Publish/badge.svg)
+[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-drema--ai-blue)](https://hub.docker.com/r/YOUR_USERNAME/drema-ai)
+
 A Flask web application that generates Multiple Choice Questions (MCQs) based on educational content from various boards, classes, subjects, and topics.
 
 ## Features
@@ -7,17 +11,19 @@ A Flask web application that generates Multiple Choice Questions (MCQs) based on
 - 📚 Support for multiple educational boards (CBSE, ICSE, IB, etc.)
 - 🎓 Dynamic selection of classes, subjects, and topics
 - 🎯 Three difficulty levels: Easy, Medium, Hard
-- 🤖 AI-powered MCQ generation using LangChain and Groq
+- 🤖 AI-powered MCQ generation using LangChain and OpenAI
 - 💡 Clean and modern user interface
 - ✅ Instant results with explanations
+- 🚀 Automated CI/CD with GitHub Actions
+- 🐳 Docker containerization for easy deployment
+
 
 ## Prerequisites
 
 - Python 3.8 or higher
 - API keys for:
-  - Groq API
-  - LangChain (optional, for tracing)
-  - HuggingFace (for embeddings)
+  - OpenAI API (for embeddings and LLM inference)
+  - LangChain/LangSmith (optional, for tracing)
 
 ## Installation
 
@@ -33,10 +39,11 @@ pip install -r requirements.txt
 
 3. Create a `.env` file in the project root with your API keys:
 ```env
-GROQ_API_KEY=your_groq_api_key_here
-LANGCHAIN_API_KEY=your_langchain_api_key_here
-LANGCHAIN_PROJECT=your_project_name
-HF_TOKEN=your_huggingface_token_here
+OPENAI_API_KEY=your_openai_api_key_here
+LANGCHAIN_PROJECT=DremaAI
+LANGSMITH_ENDPOINT=https://api.smith.langchain.com
+PORT=5000
+FLASK_ENV=production
 ```
 
 ## Running the Application
@@ -121,9 +128,54 @@ pip install -r requirements.txt
 ## Technologies Used
 
 - **Backend**: Flask (Python web framework)
-- **AI/ML**: LangChain, Groq LLM, HuggingFace Embeddings
+- **AI/ML**: LangChain, OpenAI GPT-4o, OpenAI Embeddings
 - **Frontend**: HTML, CSS, JavaScript
 - **Data**: JSON for structure, Text files for content
+- **DevOps**: Docker, GitHub Actions CI/CD
+
+## CI/CD & Deployment
+
+This project uses GitHub Actions for automated CI/CD pipeline:
+
+### Quick Deploy with Docker
+
+```bash
+# Pull the latest image
+docker pull YOUR_USERNAME/drema-ai:latest
+
+# Run with environment variables
+docker run -d \
+  -p 5000:5000 \
+  -e OPENAI_API_KEY=your_openai_key \
+  -e LANGCHAIN_PROJECT=DremaAI \
+  --name drema-ai \
+  YOUR_USERNAME/drema-ai:latest
+```
+
+Or use docker-compose:
+
+```bash
+# Create .env file with your API keys
+cp .env.example .env
+# Edit .env with your actual keys
+
+# Start the application
+docker-compose up -d
+```
+
+### CI/CD Pipeline
+
+The pipeline automatically:
+- ✅ Runs linting and tests on every PR
+- 🐳 Builds Docker images
+- 📦 Publishes to Docker Hub on main branch
+- 🚀 Deploys to AWS automatically
+
+For detailed CI/CD setup instructions, see [.github/workflows/README.md](.github/workflows/README.md)
+
+### Manual Deployment
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions for various platforms.
 
 ## License
 
@@ -135,3 +187,6 @@ For issues or questions, please check:
 1. All dependencies are installed
 2. API keys are correctly set in `.env`
 3. Required data files (`category.json`, `topics.json`, `data/` folder) exist
+
+For CI/CD issues, see [.github/workflows/README.md](.github/workflows/README.md)
+
