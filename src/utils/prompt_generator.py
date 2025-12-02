@@ -211,113 +211,353 @@ IMPORTANT: The user has provided custom requirements above. Follow them STRICTLY
     if subject_lower in ['maths', 'mathematics', 'math']:
         return f"""You are an intelligent and experienced teacher with a deep understanding of the provided topics and context. Your task is to create a comprehensive question paper based on the details such as class, subject, and topics provided to you.
 
-The question paper should be mathematical in nature and do not ask questions based on any visual representation or story from the book, so that students can solve it based on their ability without depending on a book.
+            The question paper should be mathematical in nature and do not ask questions based on any visual representation or story from the book, so that students can solve it based on their ability without depending on a book.
 
-Details:
-- Board: {board}
-- Class: {class_num}
-- Subject: {subject}
-- Topics: {', '.join(topics)}
-- Difficulty Level: {difficulty}
-- Total Questions: {question_count}
+            Details:
+            - Board: {board}
+            - Class: {class_num}
+            - Subject: {subject}
+            - Topics: {', '.join(topics)}
+            - Difficulty Level: {difficulty}
+            - Total Questions: {question_count}
 
-Structure the question paper as follows:
-1. Word Problems ({question_count // 6} questions): Mathematical problems presented through stories or real-life situations. These should encourage problem-solving and critical thinking.
-2. Multiple Choice Questions ({question_count // 6} questions): Provide four options with only one correct answer.
-3. Fill in the Blanks ({question_count // 6} questions): Use statements from the chapter, asking to fill in the missing words.
-4. True or False ({question_count // 6} questions): Statements that need to be marked as true or false.
-5. Match the Following ({question_count // 6} questions): Pairs of items to be matched correctly. Ensure that the order of items in both columns is jumbled to prevent direct matching.
-6. Story-Based Problems ({question_count - 5 * (question_count // 6)} questions): Provide a story from which students must extract data to solve a mathematical problem. These problems should be engaging and contextually relevant.{custom_instructions}
+            Structure the question paper as follows:
+            1. Word Problems ({question_count // 6} questions): Mathematical problems presented through stories or real-life situations. These should encourage problem-solving and critical thinking.
+            2. Multiple Choice Questions ({question_count // 6} questions): Provide four options with only one correct answer.
+            3. Fill in the Blanks ({question_count // 6} questions): Use statements from the chapter, asking to fill in the missing words.
+            4. True or False ({question_count // 6} questions): Statements that need to be marked as true or false.
+            5. Match the Following ({question_count // 6} questions): Pairs of items to be matched correctly. Ensure that the order of items in both columns is jumbled to prevent direct matching.
+            6. Story-Based Problems ({question_count - 5 * (question_count // 6)} questions): Provide a story from which students must extract data to solve a mathematical problem. These problems should be engaging and contextually relevant.{custom_instructions}
 
-Context:"""
+            Context:
+        """
     
     # English Grammar
     elif subject_lower in ['english grammar', 'grammar']:
         return f"""You are an intelligent and experienced teacher with a deep understanding of the provided topics and context. Your task is to create a comprehensive question paper based on the details such as class, subject, and topics provided to you.
 
-The question paper should be practical in nature and ask questions with relations to application of grammatical concepts and not theory or definitions, so that students can solve it based on their ability and learn the applications.
+            The question paper should be practical in nature and ask questions with relations to application of grammatical concepts and not theory or definitions, so that students can solve it based on their ability and learn the applications.
 
-Details:
-- Board: {board}
-- Class: {class_num}
-- Subject: {subject}
-- Topics: {', '.join(topics)}
-- Difficulty Level: {difficulty}
-- Total Questions: {question_count}
+            Details:
+            - Board: {board}
+            - Class: {class_num}
+            - Subject: {subject}
+            - Topics: {', '.join(topics)}
+            - Difficulty Level: {difficulty}
+            - Total Questions: {question_count}
 
-Structure the question paper as follows:
-1. Comprehensive Questions ({question_count // 6} questions): Provide a paragraph and ask grammatical questions related to it. There will be only one paragraph from which you will be asking the questions.
-2. Multiple Choice Questions ({question_count // 6} questions): Provide four options with only one correct answer.
-3. Fill in the Blanks ({question_count // 6} questions): Use statements from the chapter, asking to fill in the missing words.
-4. True or False ({question_count // 6} questions): Statements that need to be marked as true or false.
-5. Match the Following ({question_count // 6} questions): Pairs of items to be matched correctly. Ensure that the order of items in both columns is jumbled to prevent direct matching.
-6. Word Meaning ({question_count - 5 * (question_count // 6)} questions): Ask for the meanings of words used in the chapter.{custom_instructions}
+            Structure the question paper as follows:
+            1. Comprehensive Questions ({question_count // 6} questions): Provide a paragraph and ask grammatical questions related to it. There will be only one paragraph from which you will be asking the questions.
+            2. Multiple Choice Questions ({question_count // 6} questions): Provide four options with only one correct answer.
+            3. Fill in the Blanks ({question_count // 6} questions): Use statements from the chapter, asking to fill in the missing words.
+            4. True or False ({question_count // 6} questions): Statements that need to be marked as true or false.
+            5. Match the Following ({question_count // 6} questions): Pairs of items to be matched correctly. Ensure that the order of items in both columns is jumbled to prevent direct matching.
+            6. Word Meaning ({question_count - 5 * (question_count // 6)} questions): Ask for the meanings of words used in the chapter.{custom_instructions}
 
-Context:"""
+            Context:
+        """
     
     # Hindi / Hindi Grammar
     elif subject_lower in ['hindi', 'hindi grammar']:
         if subject_lower == 'hindi':
             structure = f"""1. Descriptive Questions ({question_count // 6} questions): Questions that require detailed explanations
-2. MCQ Questions ({question_count // 6} questions): Multiple-choice questions with one correct answer out of four options.
-3. Fill in the Blanks ({question_count // 6} questions): Statements with missing words to be filled based on the chapter.
-4. True or False ({question_count // 6} questions): Statements that need to be marked as true or false.
-5. Match the Following ({question_count // 6} questions): Pairs of related items to be matched correctly. Ensure that the order of items in both columns is jumbled to prevent direct matching.
-6. Word Meaning ({question_count - 5 * (question_count // 6)} questions): Questions asking for the meaning of words used in the chapter.
+                2. MCQ Questions ({question_count // 6} questions): Multiple-choice questions with one correct answer out of four options.
+                3. Fill in the Blanks ({question_count // 6} questions): Statements with missing words to be filled based on the chapter.
+                4. True or False ({question_count // 6} questions): Statements that need to be marked as true or false.
+                5. Match the Following ({question_count // 6} questions): Pairs of related items to be matched correctly. Ensure that the order of items in both columns is jumbled to prevent direct matching.
+                6. Word Meaning ({question_count - 5 * (question_count // 6)} questions): Questions asking for the meaning of words used in the chapter.
 
-Question Paper should be in Hindi language and start directly with descriptive questions without providing any instructions."""
+                Question Paper should be in Hindi language and start directly with descriptive questions without providing any instructions.
+            """
         else:
             structure = f"""1. Comprehensive Questions ({question_count // 6} questions): Provide one paragraph only and ask grammatical questions related to it.
-2. MCQ Questions ({question_count // 6} questions): Multiple-choice questions with one correct answer out of four options.
-3. Fill in the Blanks ({question_count // 6} questions): Statements with missing words to be filled based on the chapter.
-4. True or False ({question_count // 6} questions): Statements that need to be marked as true or false.
-5. Match the Following ({question_count // 6} questions): Pairs of related items to be matched correctly. Ensure that the order of items in both columns is jumbled to prevent direct matching.
-6. Word Meaning ({question_count - 5 * (question_count // 6)} questions): Questions asking for the meaning of words used in the chapter.
+            2. MCQ Questions ({question_count // 6} questions): Multiple-choice questions with one correct answer out of four options.
+            3. Fill in the Blanks ({question_count // 6} questions): Statements with missing words to be filled based on the chapter.
+            4. True or False ({question_count // 6} questions): Statements that need to be marked as true or false.
+            5. Match the Following ({question_count // 6} questions): Pairs of related items to be matched correctly. Ensure that the order of items in both columns is jumbled to prevent direct matching.
+            6. Word Meaning ({question_count - 5 * (question_count // 6)} questions): Questions asking for the meaning of words used in the chapter.
 
-Question Paper should be in Hindi language and start directly with descriptive questions without providing any instructions."""
-        
+            Question Paper should be in Hindi language and start directly with descriptive questions without providing any instructions.        """
+                    
         return f"""You are an intelligent and experienced teacher with a deep understanding of the provided topics and context. Your task is to create a comprehensive question paper based on the details such as class, subject, and topics provided to you. Follow the context strictly and ensure the questions reflect the topics accurately without adding any personal interpretations.
 
-Details:
-- Board: {board}
-- Class: {class_num}
-- Subject: {subject}
-- Topics: {', '.join(topics)}
-- Difficulty Level: {difficulty}
-- Total Questions: {question_count}
+            Details:
+            - Board: {board}
+            - Class: {class_num}
+            - Subject: {subject}
+            - Topics: {', '.join(topics)}
+            - Difficulty Level: {difficulty}
+            - Total Questions: {question_count}
 
-Structure the question paper as follows:
-{structure}{custom_instructions}
+            Structure the question paper as follows:
+            {structure}{custom_instructions}
 
-Context:"""
+            Context:
+        """
     
     # Default/General subjects
     else:
         return f"""You are an intelligent and experienced teacher creating a comprehensive question paper for Class {class_num} {subject}.
 
-Details:
-- Board: {board}
-- Class: {class_num}
-- Subject: {subject}
-- Topics: {', '.join(topics)}
-- Difficulty Level: {difficulty}
-- Total Questions: {question_count}
+        Details:
+        - Board: {board}
+        - Class: {class_num}
+        - Subject: {subject}
+        - Topics: {', '.join(topics)}
+        - Difficulty Level: {difficulty}
+        - Total Questions: {question_count}
 
-Based on the provided context, create a well-structured question paper with the following sections:
+        Based on the provided context, create a well-structured question paper with the following sections:
 
-1. **Descriptive Questions** ({question_count // 6} questions): Questions requiring detailed explanations
-2. **Multiple Choice Questions** ({question_count // 6} questions): Four options with one correct answer
-3. **Fill in the Blanks** ({question_count // 6} questions): Statements with missing words
-4. **True or False** ({question_count // 6} questions): Statements to be marked as true or false
-5. **Match the Following** ({question_count // 6} questions): Pairs of items to be matched correctly
-6. **Short Answer Questions** ({question_count - 5 * (question_count // 6)} questions): Brief explanations required{custom_instructions}
+        1. **Descriptive Questions** ({question_count // 6} questions): Questions requiring detailed explanations
+        2. **Multiple Choice Questions** ({question_count // 6} questions): Four options with one correct answer
+        3. **Fill in the Blanks** ({question_count // 6} questions): Statements with missing words
+        4. **True or False** ({question_count // 6} questions): Statements to be marked as true or false
+        5. **Match the Following** ({question_count // 6} questions): Pairs of items to be matched correctly
+        6. **Short Answer Questions** ({question_count - 5 * (question_count // 6)} questions): Brief explanations required{custom_instructions}
 
-Requirements:
-- Ensure questions are age-appropriate for Class {class_num}
-- Maintain {difficulty.lower()} difficulty level throughout
-- Focus strictly on the provided topics: {', '.join(topics)}
-- Use clear, unambiguous language
-- For MCQs, ensure only one option is clearly correct
-- For Match the Following, scramble the order to prevent direct matching
+        Requirements:
+        - Ensure questions are age-appropriate for Class {class_num}
+        - Maintain {difficulty.lower()} difficulty level throughout
+        - Focus strictly on the provided topics: {', '.join(topics)}
+        - Use clear, unambiguous language
+        - For MCQs, ensure only one option is clearly correct
+        - For Match the Following, scramble the order to prevent direct matching
 
-Context:"""
+        Context:
+    """
+
+def generate_summary_prompt(
+        board: str,
+        class_num: str,
+        subject: str,
+        topics: List[str],
+        content: str
+    ) -> str:
+    """
+    Generate prompt for chapter summarization.
+    
+    Args:
+        board: Educational board
+        class_num: Class number
+        subject: Subject name
+        topics: List of topic names
+        content: Chapter content to summarize
+    
+    Returns:
+        Generated prompt string
+    """
+    return f"""You are an expert teacher creating a comprehensive chapter summary for students.
+
+        Details:
+        - Board: {board}
+        - Class: {class_num}
+        - Subject: {subject}
+        - Topics: {', '.join(topics)}
+
+        Task:
+        Create a detailed, well-structured summary of the provided content. The summary should be easy to understand and perfect for exam revision.
+
+        Format your response using Markdown with the following structure:
+        # [Chapter/Topic Name]
+
+        ## Key Concepts
+        [Explain the core concepts clearly]
+
+        ## Important Definitions
+        - **[Term]**: [Definition]
+
+        ## Key Formulas/Points (if applicable)
+        - [Point 1]
+        - [Point 2]
+
+        ## Summary
+        [Detailed paragraph summary of the chapter]
+
+        ## Exam Tips
+        - [Tip 1]
+        - [Tip 2]
+
+        Content to Summarize:
+        {content}
+
+        Generate the summary in Markdown format:
+    """
+
+
+def generate_flashcard_prompt(
+    board: str,
+    class_num: str,
+    subject: str,
+    topics: List[str],
+    content: str,
+    card_count: int = 15
+) -> str:
+    """
+    Generate prompt for flashcard generation.
+    
+    Args:
+        board: Educational board
+        class_num: Class number
+        subject: Subject name
+        topics: List of topic names
+        content: Content to generate flashcards from
+        card_count: Number of flashcards to generate
+    
+    Returns:
+        Generated prompt string
+    """
+    return f"""You are an expert teacher creating study flashcards for students.
+
+    Details:
+    - Board: {board}
+    - Class: {class_num}
+    - Subject: {subject}
+    - Topics: {', '.join(topics)}
+    - Number of Cards: {card_count}
+
+    Task:
+    Create {card_count} high-quality flashcards based on the provided content.
+    - Front: A clear, concise question or concept.
+    - Back: A comprehensive but concise answer or explanation.
+    - Topic: The specific sub-topic this card belongs to.
+
+    Content to use:
+    {content}
+
+    IMPORTANT: Return ONLY a valid JSON array of objects. No markdown formatting, no code blocks.
+    
+    Required JSON Structure:
+    [
+      {{
+        "id": "1",
+        "front": "Question or concept here",
+        "back": "Answer or explanation here",
+        "topic": "Specific sub-topic"
+      }}
+    ]
+    """
+
+def generate_mindmap_prompt(
+        board: str,
+        class_num: str,
+        subject: str,
+        topics: List[str],
+        content: str
+    ) -> str:
+    """
+    Generate prompt for mind map generation.
+    
+    Args:
+        board: Educational board
+        class_num: Class number
+        subject: Subject name
+        topics: List of topic names
+        content: Content to generate mind map from
+    
+    Returns:
+        Generated prompt string
+    """
+    return f"""You are an expert teacher creating a mind map for students to revise concepts.
+
+        Details:
+        - Board: {board}
+        - Class: {class_num}
+        - Subject: {subject}
+        - Topics: {', '.join(topics)}
+
+        Task:
+        Create a hierarchical mind map structure based on the provided content.
+        - The root node should be the main topic or subject.
+        - Branch nodes should be major sub-topics.
+        - Leaf nodes should be specific concepts or key points.
+
+        Content to use:
+        {content}
+
+        IMPORTANT: Return ONLY a valid JSON object. No markdown formatting, no code blocks.
+        
+        Required JSON Structure:
+        {{
+        "title": "Main Title of Mind Map",
+        "nodes": [
+            {{ "id": "1", "label": "Main Topic", "type": "main" }},
+            {{ "id": "2", "label": "Sub Topic 1", "type": "branch" }},
+            {{ "id": "3", "label": "Concept A", "type": "leaf" }}
+        ],
+        "connections": [
+            {{ "from": "1", "to": "2" }},
+            {{ "from": "2", "to": "3" }}
+        ]
+        }}
+        
+        Ensure:
+        1. All nodes have unique IDs.
+        2. 'type' must be one of: 'main', 'branch', 'leaf'.
+        3. All connections reference valid node IDs.
+        4. The structure is logical and hierarchical.
+    """
+
+def generate_study_tricks_prompt(
+        board: str,
+        class_num: str,
+        subject: str,
+        topics: List[str],
+        content: str
+    ) -> str:
+        """
+        Generate prompt for study tricks and mnemonics generation.
+        
+        Args:
+            board: Educational board
+            class_num: Class number
+            subject: Subject name
+            topics: List of topic names
+            content: Content to generate tricks from
+        
+        Returns:
+            Generated prompt string
+        """
+        return f"""You are an expert teacher creating study tricks, mnemonics, and memory aids for students.
+
+            Details:
+            - Board: {board}
+            - Class: {class_num}
+            - Subject: {subject}
+            - Topics: {', '.join(topics)}
+
+            Task:
+            Create creative and effective study tricks, mnemonics, and analogies to help students remember key concepts from the provided content.
+
+            Content to use:
+            {content}
+
+            Output Format (Markdown):
+            - Use '# Main Title' for the overall title.
+            - Use '## Section Title' for grouping tricks by concept.
+            - Use '### Trick Name' for individual tricks/mnemonics.
+            - Use bullet points (* or -) for explanation steps.
+            - Use numbered lists (1.) for sequential steps.
+            - Be creative, funny, and memorable.
+            - Include "Pro Tip" sections where applicable.
+
+            Example Output Structure:
+            # Mastering Chemical Reactions
+            
+            ## Types of Reactions
+            
+            ### The "C-D-D-S" Mnemonic
+            * **C**ombination: Two become one (A+B -> AB)
+            * **D**ecomposition: One becomes two (AB -> A+B)
+            * **D**isplacement: The bully kicks out the weak (A+BC -> AC+B)
+            * **D**ouble **D**isplacement: The partner swap (AB+CD -> AD+CB)
+            
+            ## Reactivity Series
+            
+            ### Please Stop Calling Me A Zebra...
+            1. **P**otassium
+            2. **S**odium
+            3. **C**alcium
+            ...
+        """
+

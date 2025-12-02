@@ -5,7 +5,7 @@ Handles all API route definitions for chunk retrieval and question paper generat
 from flask import request, jsonify
 import json
 from src.logging import get_logger
-from src.utils import generate_cbse_prompt, generate_general_prompt, get_cbse_pattern
+from src.utils import generate_cbse_prompt, generate_general_prompt, get_cbse_pattern, generate_summary_prompt, generate_flashcard_prompt, generate_mindmap_prompt, generate_study_tricks_prompt
 
 # Initialize logger
 logger = get_logger(__name__)
@@ -38,6 +38,10 @@ class Routes:
         self.app.add_url_rule('/api/topics/<board>/<class_num>/<subject>', 'get_topics', self.get_topics, methods=['GET'])
         self.app.add_url_rule('/api/retrieve_chunks', 'retrieve_chunks', self.retrieve_chunks, methods=['POST'])
         self.app.add_url_rule('/api/generate_question_paper', 'generate_question_paper', self.generate_question_paper, methods=['POST'])
+        self.app.add_url_rule('/api/summarize', 'generate_summary', self.generate_summary, methods=['POST'])
+        self.app.add_url_rule('/api/flash_cards', 'generate_flashcards', self.generate_flashcards, methods=['POST'])
+        self.app.add_url_rule('/api/mind_map', 'generate_mindmap', self.generate_mindmap, methods=['POST'])
+        self.app.add_url_rule('/api/study_tricks', 'generate_study_tricks', self.generate_study_tricks, methods=['POST'])
     
     def get_boards(self):
         """Get list of available boards."""
@@ -175,7 +179,7 @@ class Routes:
         except Exception as e:
             logger.error(f"Error: {str(e)}", exc_info=True)
             return jsonify({'success': False, 'error': str(e)}), 500
-    
+
     def generate_question_paper(self):
         """
         Generate question paper by retrieving chunks and using LLM.
@@ -339,7 +343,7 @@ class Routes:
         except Exception as e:
             logger.error(f"Error: {str(e)}", exc_info=True)
             return jsonify({'success': False, 'error': str(e)}), 500
-    
+
     def _extract_chunks(self, content, topic_name, difficulty, num_chunks):
         """Extract relevant chunks from content."""
         logger.debug(f"Extracting chunks for: {topic_name}")
@@ -364,3 +368,379 @@ class Routes:
             logger.error(f"RAG error: {str(e)}")
             # Fallback to first N chunks
             return [{'content': c.page_content, 'chunk_index': i} for i, c in enumerate(chunks[:num_chunks])]
+
+    def generate_summary(self):
+        """
+        Generate chapter summary.
+        
+        Expected JSON body:
+        {
+            "board": "CBSE",
+            "class": "10",
+            "subject": "Science",
+            "topics": ["Force"],
+            "content": "Full chapter content..."
+        }
+        """
+        logger.info("POST /api/summarize")
+        try:
+            data = request.json
+            logger.debug(f"Request keys: {list(data.keys())}")
+            
+            # Extract parameters
+            board = data.get('board')
+            class_num = str(data.get('class'))
+            subject = data.get('subject')
+            topics = data.get('topics', [])
+            content = data.get('content')
+            
+            # Validate
+            if not all([board, class_num, subject]):
+                return jsonify({'success': False, 'error': 'Missing required parameters'}), 400
+            
+            # Fetch content if not provided
+            if not content:
+                logger.info("Content not provided, fetching from source...")
+                all_content = []
+                for topic_num in topics:
+                    # Ensure topic is string if needed, fetcher expects it
+                    result = self.fetcher.fetch_content(board, class_num, subject, str(topic_num))
+                    if result['status'] == 'success':
+                        all_content.append(result['content'])
+                    else:
+                        logger.warning(f"Failed to fetch topic {topic_num}")
+                
+                if not all_content:
+                    return jsonify({'success': False, 'error': 'Could not retrieve content'}), 400
+                
+                content = "\n\n".join(all_content)
+            
+            logger.info(f"Generating summary for {subject} Class {class_num}")
+            
+            # Generate prompt
+            prompt = generate_summary_prompt(
+                board=board,
+                class_num=class_num,
+                subject=subject,
+                topics=topics,
+                content=content
+            )
+            
+            # Call LLM
+            logger.info("Initializing LLM...")
+            llm = self.config.initialize_llm()
+            
+            logger.info("Generating summary with GPT-4o...")
+            response = llm.invoke(prompt)
+            
+            # Extract content
+            summary = response.content if hasattr(response, 'content') else str(response)
+            
+            return jsonify({
+                'success': True,
+                'summary': summary,
+                'metadata': {
+                    'board': board,
+                    'class': class_num,
+                    'subject': subject,
+                    'topics': topics
+                }
+            })
+        
+        except Exception as e:
+            logger.error(f"Error: {str(e)}", exc_info=True)
+            return jsonify({'success': False, 'error': str(e)}), 500
+
+    def generate_flashcards(self):
+        """
+        Generate flashcards.
+        
+        Expected JSON body:
+        {
+            "board": "CBSE",
+            "class": "10",
+            "subject": "Science",
+            "topics": ["Chemical Reactions"],
+            "content": "Optional content...",
+            "cardCount": 15
+        }
+        """
+        logger.info("POST /api/flash_cards")
+        try:
+            data = request.json
+            logger.debug(f"Request keys: {list(data.keys())}")
+            
+            # Extract parameters
+            board = data.get('board')
+            class_num = str(data.get('class'))
+            subject = data.get('subject')
+            topics = data.get('topics', [])
+            content = data.get('content')
+            card_count = int(data.get('cardCount', 15))
+            
+            # Validate
+            if not all([board, class_num, subject]):
+                return jsonify({'success': False, 'error': 'Missing required parameters'}), 400
+            
+            # Fetch content if not provided
+            if not content:
+                logger.info("Content not provided, fetching from source...")
+                all_content = []
+                for topic_num in topics:
+                    # Ensure topic is string if needed, fetcher expects it
+                    result = self.fetcher.fetch_content(board, class_num, subject, str(topic_num))
+                    if result['status'] == 'success':
+                        all_content.append(result['content'])
+                    else:
+                        logger.warning(f"Failed to fetch topic {topic_num}")
+                
+                if not all_content:
+                    return jsonify({'success': False, 'error': 'Could not retrieve content'}), 400
+                
+                content = "\n\n".join(all_content)
+            
+            logger.info(f"Generating {card_count} flashcards for {subject} Class {class_num}")
+            
+            # Generate prompt
+            prompt = generate_flashcard_prompt(
+                board=board,
+                class_num=class_num,
+                subject=subject,
+                topics=topics,
+                content=content,
+                card_count=card_count
+            )
+            
+            # Call LLM
+            logger.info("Initializing LLM...")
+            llm = self.config.initialize_llm()
+            
+            logger.info("Generating flashcards with GPT-4o...")
+            response = llm.invoke(prompt)
+            
+            # Extract content
+            llm_output = response.content if hasattr(response, 'content') else str(response)
+            
+            # Try to parse as JSON
+            try:
+                # Clean the response (remove markdown code blocks if present)
+                cleaned_output = llm_output.strip()
+                if cleaned_output.startswith('```json'):
+                    cleaned_output = cleaned_output[7:]
+                if cleaned_output.startswith('```'):
+                    cleaned_output = cleaned_output[3:]
+                if cleaned_output.endswith('```'):
+                    cleaned_output = cleaned_output[:-3]
+                cleaned_output = cleaned_output.strip()
+                
+                flashcards = json.loads(cleaned_output)
+                
+                return jsonify({
+                    'success': True,
+                    'flashcards': flashcards,
+                    'metadata': {
+                        'board': board,
+                        'class': class_num,
+                        'subject': subject,
+                        'topics': topics,
+                        'count': len(flashcards)
+                    }
+                })
+            except json.JSONDecodeError as e:
+                logger.error(f"Failed to parse LLM output as JSON: {str(e)}")
+                # Return raw output if JSON parsing fails, but wrapped in a structure
+                return jsonify({
+                    'success': False, 
+                    'error': 'Failed to parse generated flashcards',
+                    'raw_output': llm_output
+                }), 500
+        
+        except Exception as e:
+            logger.error(f"Error: {str(e)}", exc_info=True)
+            return jsonify({'success': False, 'error': str(e)}), 500
+
+    def generate_mindmap(self):
+        """
+        Generate mind map.
+        
+        Expected JSON body:
+        {
+            "board": "CBSE",
+            "class": "10",
+            "subject": "Science",
+            "topics": ["Chemical Reactions"],
+            "content": "Optional content..."
+        }
+        """
+        logger.info("POST /api/mind_map")
+        try:
+            data = request.json
+            logger.debug(f"Request keys: {list(data.keys())}")
+            
+            # Extract parameters
+            board = data.get('board')
+            class_num = str(data.get('class'))
+            subject = data.get('subject')
+            topics = data.get('topics', [])
+            content = data.get('content')
+            
+            # Validate
+            if not all([board, class_num, subject]):
+                return jsonify({'success': False, 'error': 'Missing required parameters'}), 400
+            
+            # Fetch content if not provided
+            if not content:
+                logger.info("Content not provided, fetching from source...")
+                all_content = []
+                for topic_num in topics:
+                    # Ensure topic is string if needed, fetcher expects it
+                    result = self.fetcher.fetch_content(board, class_num, subject, str(topic_num))
+                    if result['status'] == 'success':
+                        all_content.append(result['content'])
+                    else:
+                        logger.warning(f"Failed to fetch topic {topic_num}")
+                
+                if not all_content:
+                    return jsonify({'success': False, 'error': 'Could not retrieve content'}), 400
+                
+                content = "\n\n".join(all_content)
+            
+            logger.info(f"Generating mind map for {subject} Class {class_num}")
+            
+            # Generate prompt
+            prompt = generate_mindmap_prompt(
+                board=board,
+                class_num=class_num,
+                subject=subject,
+                topics=topics,
+                content=content
+            )
+            
+            # Call LLM
+            logger.info("Initializing LLM...")
+            llm = self.config.initialize_llm()
+            
+            logger.info("Generating mind map with GPT-4o...")
+            response = llm.invoke(prompt)
+            
+            # Extract content
+            llm_output = response.content if hasattr(response, 'content') else str(response)
+            
+            # Try to parse as JSON
+            try:
+                # Clean the response (remove markdown code blocks if present)
+                cleaned_output = llm_output.strip()
+                if cleaned_output.startswith('```json'):
+                    cleaned_output = cleaned_output[7:]
+                if cleaned_output.startswith('```'):
+                    cleaned_output = cleaned_output[3:]
+                if cleaned_output.endswith('```'):
+                    cleaned_output = cleaned_output[:-3]
+                cleaned_output = cleaned_output.strip()
+                
+                mindmap_data = json.loads(cleaned_output)
+                
+                return jsonify({
+                    'success': True,
+                    'mindmap': mindmap_data,
+                    'metadata': {
+                        'board': board,
+                        'class': class_num,
+                        'subject': subject,
+                        'topics': topics
+                    }
+                })
+            except json.JSONDecodeError as e:
+                logger.error(f"Failed to parse LLM output as JSON: {str(e)}")
+                # Return raw output if JSON parsing fails
+                return jsonify({
+                    'success': False, 
+                    'error': 'Failed to parse generated mind map',
+                    'raw_output': llm_output
+                }), 500
+        
+        except Exception as e:
+            logger.error(f"Error: {str(e)}", exc_info=True)
+            return jsonify({'success': False, 'error': str(e)}), 500
+
+    def generate_study_tricks(self):
+        """
+        Generate study tricks and mnemonics.
+        
+        Expected JSON body:
+        {
+            "board": "CBSE",
+            "class": "10",
+            "subject": "Science",
+            "topics": ["Chemical Reactions"],
+            "content": "Optional content..."
+        }
+        """
+        logger.info("POST /api/study_tricks")
+        try:
+            data = request.json
+            logger.debug(f"Request keys: {list(data.keys())}")
+            
+            # Extract parameters
+            board = data.get('board')
+            class_num = str(data.get('class'))
+            subject = data.get('subject')
+            topics = data.get('topics', [])
+            content = data.get('content')
+            
+            # Validate
+            if not all([board, class_num, subject]):
+                return jsonify({'success': False, 'error': 'Missing required parameters'}), 400
+            
+            # Fetch content if not provided
+            if not content:
+                logger.info("Content not provided, fetching from source...")
+                all_content = []
+                for topic_num in topics:
+                    # Ensure topic is string if needed, fetcher expects it
+                    result = self.fetcher.fetch_content(board, class_num, subject, str(topic_num))
+                    if result['status'] == 'success':
+                        all_content.append(result['content'])
+                    else:
+                        logger.warning(f"Failed to fetch topic {topic_num}")
+                
+                if not all_content:
+                    return jsonify({'success': False, 'error': 'Could not retrieve content'}), 400
+                
+                content = "\n\n".join(all_content)
+            
+            logger.info(f"Generating study tricks for {subject} Class {class_num}")
+            
+            # Generate prompt
+            prompt = generate_study_tricks_prompt(
+                board=board,
+                class_num=class_num,
+                subject=subject,
+                topics=topics,
+                content=content
+            )
+            
+            # Call LLM
+            logger.info("Initializing LLM...")
+            llm = self.config.initialize_llm()
+            
+            logger.info("Generating study tricks with GPT-4o...")
+            response = llm.invoke(prompt)
+            
+            # Extract content
+            tricks = response.content if hasattr(response, 'content') else str(response)
+            
+            return jsonify({
+                'success': True,
+                'tricks': tricks,
+                'metadata': {
+                    'board': board,
+                    'class': class_num,
+                    'subject': subject,
+                    'topics': topics
+                }
+            })
+        
+        except Exception as e:
+            logger.error(f"Error: {str(e)}", exc_info=True)
+            return jsonify({'success': False, 'error': str(e)}), 500
