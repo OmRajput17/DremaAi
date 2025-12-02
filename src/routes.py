@@ -5,6 +5,7 @@ Handles all API route definitions for chunk retrieval and question paper generat
 from flask import request, jsonify
 import json
 from src.logging import get_logger
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from src.utils import generate_cbse_prompt, generate_general_prompt, get_cbse_pattern, generate_summary_prompt, generate_flashcard_prompt, generate_mindmap_prompt, generate_study_tricks_prompt
 
 # Initialize logger
@@ -368,6 +369,38 @@ class Routes:
             logger.error(f"RAG error: {str(e)}")
             # Fallback to first N chunks
             return [{'content': c.page_content, 'chunk_index': i} for i, c in enumerate(chunks[:num_chunks])]
+    
+    def _intelligent_content_filter(self, content: str, topics: list, max_chars: int = 12000) -> str:
+        """
+        Intelligently reduce content size using RAG instead of blind truncation.
+        
+        Args:
+            content (str): Full content
+            topics (list): List of topic names/numbers
+            max_chars (int): Target maximum characters
+            
+        Returns:
+            str: Filtered content with most relevant parts
+        """
+        if len(content) <= max_chars:
+            return content
+            
+        logger.info(f"Content size {len(content)} chars exceeds {max_chars}, using RAG to filter...")
+        
+        try:
+            # Use RAG to extract most relevant chunks
+            topic_name = " & ".join([str(t) for t in topics]) if isinstance(topics, list) else str(topics)
+            focused_content = self.content_processor.process_for_mcqs(
+                content=content,
+                topic_name=topic_name,
+                difficulty="medium",
+                num_questions=10  # Gets ~10 best chunks
+            )
+            logger.info(f"RAG filtered content to {len(focused_content)} chars ({100*(1-len(focused_content)/len(content)):.1f}% reduction)")
+            return focused_content
+        except Exception as e:
+            logger.error(f"RAG filtering failed: {e}, falling back to truncation")
+            return content[:max_chars] + "\n\n[Content truncated]"
 
     def generate_summary(self):
         """
@@ -414,6 +447,8 @@ class Routes:
                     return jsonify({'success': False, 'error': 'Could not retrieve content'}), 400
                 
                 content = "\n\n".join(all_content)
+            
+            content = self._intelligent_content_filter(content, topics, max_chars=15000)
             
             logger.info(f"Generating summary for {subject} Class {class_num}")
             
@@ -499,6 +534,8 @@ class Routes:
                 
                 content = "\n\n".join(all_content)
             
+            content = self._intelligent_content_filter(content, topics, max_chars=15000)
+            
             logger.info(f"Generating {card_count} flashcards for {subject} Class {class_num}")
             
             # Generate prompt
@@ -513,9 +550,9 @@ class Routes:
             
             # Call LLM
             logger.info("Initializing LLM...")
-            llm = self.config.initialize_llm()
+            llm = self.config.initialize_llm(model_name="gpt-4o-mini")
             
-            logger.info("Generating flashcards with GPT-4o...")
+            logger.info("Generating flashcards with GPT-4o-mini...")
             response = llm.invoke(prompt)
             
             # Extract content
@@ -605,6 +642,8 @@ class Routes:
                 
                 content = "\n\n".join(all_content)
             
+            content = self._intelligent_content_filter(content, topics, max_chars=15000)
+            
             logger.info(f"Generating mind map for {subject} Class {class_num}")
             
             # Generate prompt
@@ -618,9 +657,9 @@ class Routes:
             
             # Call LLM
             logger.info("Initializing LLM...")
-            llm = self.config.initialize_llm()
+            llm = self.config.initialize_llm(model_name="gpt-4o-mini")
             
-            logger.info("Generating mind map with GPT-4o...")
+            logger.info("Generating mind map with GPT-4o-mini...")
             response = llm.invoke(prompt)
             
             # Extract content
@@ -709,6 +748,8 @@ class Routes:
                 
                 content = "\n\n".join(all_content)
             
+            content = self._intelligent_content_filter(content, topics, max_chars=15000)
+            
             logger.info(f"Generating study tricks for {subject} Class {class_num}")
             
             # Generate prompt
@@ -722,9 +763,9 @@ class Routes:
             
             # Call LLM
             logger.info("Initializing LLM...")
-            llm = self.config.initialize_llm()
+            llm = self.config.initialize_llm(model_name="gpt-4o-mini")
             
-            logger.info("Generating study tricks with GPT-4o...")
+            logger.info("Generating study tricks with GPT-4o-mini...")
             response = llm.invoke(prompt)
             
             # Extract content
