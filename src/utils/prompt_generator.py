@@ -115,7 +115,8 @@ CRITICAL INSTRUCTIONS:
 4. Include competency-based questions (CBQs) as per CBSE guidelines
 5. For MCQs, provide 4 options
 6. Return ONLY valid JSON, no additional text
-7. Do NOT include the correct answer or solution in the output
+7. Do NOT INCLUDE the correct answer or solution in the output at anycost.
+8. CRITICAL: You MUST respond with ONLY valid JSON. Do not include any markdown formatting, code blocks, or explanations. Start your response with {{ and end with }}.
 
 **REQUIRED JSON FORMAT:**
 {{
@@ -123,23 +124,62 @@ CRITICAL INSTRUCTIONS:
     "title": "Class {class_num} {subject} Question Paper",
     "totalMarks": {cbse_pattern.total_marks},
     "duration": {cbse_pattern.time_limit},
-    "sections": [
+    "mcq": [
       {{
-        "sectionName": "Section A: MCQs & Assertion-Reason",
+        "questionNumber": 1,
+        "question": "question text here",
+        "options": ["A) option1", "B) option2", "C) option3", "D) option4"],
+        "marks": 1
+      }}
+    ],
+    "assertionReason": [
+      {{
+        "questionNumber": 2,
+        "assertion": "assertion statement here",
+        "reason": "reason statement here",
+        "options": [
+          "A) Both assertion and reason are true and reason is the correct explanation",
+          "B) Both assertion and reason are true but reason is not the correct explanation",
+          "C) Assertion is true but reason is false",
+          "D) Both assertion and reason are false"
+        ],
+        "marks": 1
+      }}
+    ],
+    "shortAnswer": [
+      {{
+        "questionNumber": 3,
+        "question": "question text here",
+        "marks": 2
+      }}
+    ],
+    "longAnswer": [
+      {{
+        "questionNumber": 4,
+        "question": "question text here",
+        "marks": 5
+      }}
+    ],
+    "caseStudy": [
+      {{
+        "questionNumber": 5,
+        "passage": "case study passage here",
         "questions": [
           {{
-            "questionNumber": 1,
-            "question": "question text here",
-            "options": ["A) option1", "B) option2", "C) option3", "D) option4"],
+            "subQuestionNumber": "5.1",
+            "question": "sub-question text here",
             "marks": 1
           }}
-        ]
+        ],
+        "marks": 4
       }}
     ]
   }}
 }}
 
-Generate the complete question paper in JSON format:"""
+Note: Include only the question types that are part of your question paper based on the section structure. If a section doesn't apply, omit that key from the JSON.
+
+CRITICAL : Generate the complete question paper in JSON format STRICTLY following the above format:"""
 
 
 def generate_general_prompt(
@@ -211,51 +251,168 @@ IMPORTANT: The user has provided custom requirements above. Follow them STRICTLY
     if subject_lower in ['maths', 'mathematics', 'math']:
         return f"""You are an intelligent and experienced teacher with a deep understanding of the provided topics and context. Your task is to create a comprehensive question paper based on the details such as class, subject, and topics provided to you.
 
-            The question paper should be mathematical in nature and do not ask questions based on any visual representation or story from the book, so that students can solve it based on their ability without depending on a book.
+The question paper should be mathematical in nature and do not ask questions based on any visual representation or story from the book, so that students can solve it based on their ability without depending on a book.
 
-            Details:
-            - Board: {board}
-            - Class: {class_num}
-            - Subject: {subject}
-            - Topics: {', '.join(topics)}
-            - Difficulty Level: {difficulty}
-            - Total Questions: {question_count}
+Details:
+- Board: {board}
+- Class: {class_num}
+- Subject: {subject}
+- Topics: {', '.join(topics)}
+- Difficulty Level: {difficulty}
+- Total Questions: {question_count}
 
-            Structure the question paper as follows:
-            1. Word Problems ({question_count // 6} questions): Mathematical problems presented through stories or real-life situations. These should encourage problem-solving and critical thinking.
-            2. Multiple Choice Questions ({question_count // 6} questions): Provide four options with only one correct answer.
-            3. Fill in the Blanks ({question_count // 6} questions): Use statements from the chapter, asking to fill in the missing words.
-            4. True or False ({question_count // 6} questions): Statements that need to be marked as true or false.
-            5. Match the Following ({question_count // 6} questions): Pairs of items to be matched correctly. Ensure that the order of items in both columns is jumbled to prevent direct matching.
-            6. Story-Based Problems ({question_count - 5 * (question_count // 6)} questions): Provide a story from which students must extract data to solve a mathematical problem. These problems should be engaging and contextually relevant.{custom_instructions}
+Structure the question paper as follows:
+1. Word Problems ({question_count // 6} questions): Mathematical problems presented through stories or real-life situations. These should encourage problem-solving and critical thinking.
+2. Multiple Choice Questions ({question_count // 6} questions): Provide four options with only one correct answer.
+3. Fill in the Blanks ({question_count // 6} questions): Use statements from the chapter, asking to fill in the missing words.
+4. True or False ({question_count // 6} questions): Statements that need to be marked as true or false.
+5. Match the Following ({question_count // 6} questions): Pairs of items to be matched correctly. Ensure that the order of items in both columns is jumbled to prevent direct matching.
+6. Story-Based Problems ({question_count - 5 * (question_count // 6)} questions): Provide a story from which students must extract data to solve a mathematical problem. These problems should be engaging and contextually relevant.{custom_instructions}
 
-            Context:
-        """
+CRITICAL: You MUST respond with ONLY valid JSON. Do not include any markdown formatting, code blocks, or explanations. Start your response with {{ and end with }}.
+
+**REQUIRED JSON FORMAT:**
+{{
+  "questionPaper": {{
+    "title": "Class {class_num} {subject} Question Paper",
+    "totalQuestions": {question_count},
+    "difficulty": "{difficulty}",
+    "wordProblems": [
+      {{
+        "questionNumber": 1,
+        "question": "question text here",
+        "marks": 2
+      }}
+    ],
+    "mcq": [
+      {{
+        "questionNumber": 2,
+        "question": "question text here",
+        "options": ["A) option1", "B) option2", "C) option3", "D) option4"],
+        "marks": 1
+      }}
+    ],
+    "fillInTheBlanks": [
+      {{
+        "questionNumber": 3,
+        "question": "question text with _____ blank",
+        "marks": 1
+      }}
+    ],
+    "trueOrFalse": [
+      {{
+        "questionNumber": 4,
+        "statement": "statement here",
+        "marks": 1
+      }}
+    ],
+    "matchTheFollowing": [
+      {{
+        "questionNumber": 5,
+        "columnA": ["Item 1", "Item 2", "Item 3"],
+        "columnB": ["Match 2", "Match 1", "Match 3"],
+        "marks": 2
+      }}
+    ],
+    "storyBasedProblems": [
+      {{
+        "questionNumber": 6,
+        "story": "story context here",
+        "question": "question based on story",
+        "marks": 3
+      }}
+    ]
+  }}
+}}
+
+Context:
+"""
     
     # English Grammar
     elif subject_lower in ['english grammar', 'grammar']:
         return f"""You are an intelligent and experienced teacher with a deep understanding of the provided topics and context. Your task is to create a comprehensive question paper based on the details such as class, subject, and topics provided to you.
 
-            The question paper should be practical in nature and ask questions with relations to application of grammatical concepts and not theory or definitions, so that students can solve it based on their ability and learn the applications.
+The question paper should be practical in nature and ask questions with relations to application of grammatical concepts and not theory or definitions, so that students can solve it based on their ability and learn the applications.
 
-            Details:
-            - Board: {board}
-            - Class: {class_num}
-            - Subject: {subject}
-            - Topics: {', '.join(topics)}
-            - Difficulty Level: {difficulty}
-            - Total Questions: {question_count}
+Details:
+- Board: {board}
+- Class: {class_num}
+- Subject: {subject}
+- Topics: {', '.join(topics)}
+- Difficulty Level: {difficulty}
+- Total Questions: {question_count}
 
-            Structure the question paper as follows:
-            1. Comprehensive Questions ({question_count // 6} questions): Provide a paragraph and ask grammatical questions related to it. There will be only one paragraph from which you will be asking the questions.
-            2. Multiple Choice Questions ({question_count // 6} questions): Provide four options with only one correct answer.
-            3. Fill in the Blanks ({question_count // 6} questions): Use statements from the chapter, asking to fill in the missing words.
-            4. True or False ({question_count // 6} questions): Statements that need to be marked as true or false.
-            5. Match the Following ({question_count // 6} questions): Pairs of items to be matched correctly. Ensure that the order of items in both columns is jumbled to prevent direct matching.
-            6. Word Meaning ({question_count - 5 * (question_count // 6)} questions): Ask for the meanings of words used in the chapter.{custom_instructions}
+Structure the question paper as follows:
+1. Comprehensive Questions ({question_count // 6} questions): Provide a paragraph and ask grammatical questions related to it. There will be only one paragraph from which you will be asking the questions.
+2. Multiple Choice Questions ({question_count // 6} questions): Provide four options with only one correct answer.
+3. Fill in the Blanks ({question_count // 6} questions): Use statements from the chapter, asking to fill in the missing words.
+4. True or False ({question_count // 6} questions): Statements that need to be marked as true or false.
+5. Match the Following ({question_count // 6} questions): Pairs of items to be matched correctly. Ensure that the order of items in both columns is jumbled to prevent direct matching.
+6. Word Meaning ({question_count - 5 * (question_count // 6)} questions): Ask for the meanings of words used in the chapter.{custom_instructions}
 
-            Context:
-        """
+CRITICAL: You MUST respond with ONLY valid JSON. Do not include any markdown formatting, code blocks, or explanations. Start your response with {{ and end with }}.
+
+**REQUIRED JSON FORMAT:**
+{{
+  "questionPaper": {{
+    "title": "Class {class_num} {subject} Question Paper",
+    "totalQuestions": {question_count},
+    "difficulty": "{difficulty}",
+    "comprehensiveQuestions": [
+      {{
+        "questionNumber": 1,
+        "paragraph": "paragraph text here",
+        "questions": [
+          {{
+            "subQuestionNumber": "1.1",
+            "question": "question based on paragraph",
+            "marks": 2
+          }}
+        ]
+      }}
+    ],
+    "mcq": [
+      {{
+        "questionNumber": 2,
+        "question": "question text here",
+        "options": ["A) option1", "B) option2", "C) option3", "D) option4"],
+        "marks": 1
+      }}
+    ],
+    "fillInTheBlanks": [
+      {{
+        "questionNumber": 3,
+        "question": "question text with _____ blank",
+        "marks": 1
+      }}
+    ],
+    "trueOrFalse": [
+      {{
+        "questionNumber": 4,
+        "statement": "statement here",
+        "marks": 1
+      }}
+    ],
+    "matchTheFollowing": [
+      {{
+        "questionNumber": 5,
+        "columnA": ["Item 1", "Item 2", "Item 3"],
+        "columnB": ["Match 2", "Match 1", "Match 3"],
+        "marks": 2
+      }}
+    ],
+    "wordMeaning": [
+      {{
+        "questionNumber": 6,
+        "word": "word here",
+        "marks": 1
+      }}
+    ]
+  }}
+}}
+
+Context:
+"""
     
     # Hindi / Hindi Grammar
     elif subject_lower in ['hindi', 'hindi grammar']:
@@ -281,51 +438,161 @@ IMPORTANT: The user has provided custom requirements above. Follow them STRICTLY
                     
         return f"""You are an intelligent and experienced teacher with a deep understanding of the provided topics and context. Your task is to create a comprehensive question paper based on the details such as class, subject, and topics provided to you. Follow the context strictly and ensure the questions reflect the topics accurately without adding any personal interpretations.
 
-            Details:
-            - Board: {board}
-            - Class: {class_num}
-            - Subject: {subject}
-            - Topics: {', '.join(topics)}
-            - Difficulty Level: {difficulty}
-            - Total Questions: {question_count}
+Details:
+- Board: {board}
+- Class: {class_num}
+- Subject: {subject}
+- Topics: {', '.join(topics)}
+- Difficulty Level: {difficulty}
+- Total Questions: {question_count}
 
-            Structure the question paper as follows:
-            {structure}{custom_instructions}
+Structure the question paper as follows:
+{structure}{custom_instructions}
 
-            Context:
-        """
+CRITICAL: You MUST respond with ONLY valid JSON. Do not include any markdown formatting, code blocks, or explanations. Start your response with {{ and end with }}. Question Paper should be in Hindi language.
+
+**REQUIRED JSON FORMAT:**
+{{
+  "questionPaper": {{
+    "title": "Class {class_num} {subject} Question Paper",
+    "totalQuestions": {question_count},
+    "difficulty": "{difficulty}",
+    "descriptiveQuestions": [
+      {{
+        "questionNumber": 1,
+        "question": "प्रश्न यहाँ",
+        "marks": 3
+      }}
+    ],
+    "mcq": [
+      {{
+        "questionNumber": 2,
+        "question": "प्रश्न यहाँ",
+        "options": ["A) विकल्प1", "B) विकल्प2", "C) विकल्प3", "D) विकल्प4"],
+        "marks": 1
+      }}
+    ],
+    "fillInTheBlanks": [
+      {{
+        "questionNumber": 3,
+        "question": "_____ के साथ प्रश्न",
+        "marks": 1
+      }}
+    ],
+    "trueOrFalse": [
+      {{
+        "questionNumber": 4,
+        "statement": "कथन यहाँ",
+        "marks": 1
+      }}
+    ],
+    "matchTheFollowing": [
+      {{
+        "questionNumber": 5,
+        "columnA": ["आइटम 1", "आइटम 2"],
+        "columnB": ["मिलान 2", "मिलान 1"],
+        "marks": 2
+      }}
+    ],
+    "wordMeaning": [
+      {{
+        "questionNumber": 6,
+        "word": "शब्द",
+        "marks": 1
+      }}
+    ]
+  }}
+}}
+
+Context:
+"""
     
-    # Default/General subjects
+    # Default/General subjects (including English)
     else:
         return f"""You are an intelligent and experienced teacher creating a comprehensive question paper for Class {class_num} {subject}.
 
-        Details:
-        - Board: {board}
-        - Class: {class_num}
-        - Subject: {subject}
-        - Topics: {', '.join(topics)}
-        - Difficulty Level: {difficulty}
-        - Total Questions: {question_count}
+Details:
+- Board: {board}
+- Class: {class_num}
+- Subject: {subject}
+- Topics: {', '.join(topics)}
+- Difficulty Level: {difficulty}
+- Total Questions: {question_count}
 
-        Based on the provided context, create a well-structured question paper with the following sections:
+Based on the provided context, create a well-structured question paper with the following sections:
 
-        1. **Descriptive Questions** ({question_count // 6} questions): Questions requiring detailed explanations
-        2. **Multiple Choice Questions** ({question_count // 6} questions): Four options with one correct answer
-        3. **Fill in the Blanks** ({question_count // 6} questions): Statements with missing words
-        4. **True or False** ({question_count // 6} questions): Statements to be marked as true or false
-        5. **Match the Following** ({question_count // 6} questions): Pairs of items to be matched correctly
-        6. **Short Answer Questions** ({question_count - 5 * (question_count // 6)} questions): Brief explanations required{custom_instructions}
+1. **Descriptive Questions** ({question_count // 6} questions): Questions requiring detailed explanations
+2. **Multiple Choice Questions** ({question_count // 6} questions): Four options with one correct answer
+3. **Fill in the Blanks** ({question_count // 6} questions): Statements with missing words
+4. **True or False** ({question_count // 6} questions): Statements to be marked as true or false
+5. **Match the Following** ({question_count // 6} questions): Pairs of items to be matched correctly
+6. **Short Answer Questions** ({question_count - 5 * (question_count // 6)} questions): Brief explanations required{custom_instructions}
 
-        Requirements:
-        - Ensure questions are age-appropriate for Class {class_num}
-        - Maintain {difficulty.lower()} difficulty level throughout
-        - Focus strictly on the provided topics: {', '.join(topics)}
-        - Use clear, unambiguous language
-        - For MCQs, ensure only one option is clearly correct
-        - For Match the Following, scramble the order to prevent direct matching
+Requirements:
+- Ensure questions are age-appropriate for Class {class_num}
+- Maintain {difficulty.lower()} difficulty level throughout
+- Focus strictly on the provided topics: {', '.join(topics)}
+- Use clear, unambiguous language
+- For MCQs, ensure only one option is clearly correct
+- For Match the Following, scramble the order to prevent direct matching
 
-        Context:
-    """
+CRITICAL: You MUST respond with ONLY valid JSON. Do not include any markdown formatting, code blocks, or explanations. Start your response with {{ and end with }}.
+
+**REQUIRED JSON FORMAT:**
+{{
+  "questionPaper": {{
+    "title": "Class {class_num} {subject} Question Paper",
+    "totalQuestions": {question_count},
+    "difficulty": "{difficulty}",
+    "descriptiveQuestions": [
+      {{
+        "questionNumber": 1,
+        "question": "question text here",
+        "marks": 5
+      }}
+    ],
+    "mcq": [
+      {{
+        "questionNumber": 2,
+        "question": "question text here",
+        "options": ["A) option1", "B) option2", "C) option3", "D) option4"],
+        "marks": 1
+      }}
+    ],
+    "fillInTheBlanks": [
+      {{
+        "questionNumber": 3,
+        "question": "question text with _____ blank",
+        "marks": 1
+      }}
+    ],
+    "trueOrFalse": [
+      {{
+        "questionNumber": 4,
+        "statement": "statement here",
+        "marks": 1
+      }}
+    ],
+    "matchTheFollowing": [
+      {{
+        "questionNumber": 5,
+        "columnA": ["Item 1", "Item 2", "Item 3"],
+        "columnB": ["Match 2", "Match 1", "Match 3"],
+        "marks": 2
+      }}
+    ],
+    "shortAnswer": [
+      {{
+        "questionNumber": 6,
+        "question": "question text here",
+        "marks": 2
+      }}
+    ]
+  }}
+}}
+
+Context:
+"""
 
 def generate_summary_prompt(
         board: str,
