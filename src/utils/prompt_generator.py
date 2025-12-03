@@ -15,8 +15,6 @@ def generate_cbse_prompt(
     subject: str,
     topics: List[str],
     content: str,
-    generate_answers: bool = False,
-    questions_text: Optional[str] = None,
     user_prompt: Optional[str] = None
 ) -> Optional[str]:
     """
@@ -28,45 +26,11 @@ def generate_cbse_prompt(
         subject: Subject name (e.g., 'Physics')
         topics: List of topic names
         content: Educational content from textbook
-        generate_answers: Whether to generate answer key
-        questions_text: Question paper text (for answer key generation)
+        user_prompt: Optional custom prompt from user for partial override
     
     Returns:
         Generated prompt string or None if pattern not found
     """
-    # If generating answers
-    if generate_answers and questions_text:
-        return f"""You are an experienced CBSE teacher creating answer keys.
-
-Generate comprehensive answers for this question paper following CBSE marking scheme format.
-
-Question Paper:
-{questions_text}
-
-Topics: {', '.join(topics)}
-Subject: {subject}
-Class: {class_num}
-
-IMPORTANT: Return your response as a valid JSON object with this structure:
-{{
-  "answerKey": [
-    {{
-      "section": "Section A",
-      "answers": [
-        {{"questionNumber": 1, "answer": "detailed answer text", "marks": 1}},
-        {{"questionNumber": 2, "answer": "detailed answer text", "marks": 1}}
-      ]
-    }}
-  ]
-}}
-
-Instructions:
-- Provide step-by-step solutions for all questions
-- For MCQs, explain why the correct option is right
-- For descriptive questions, provide comprehensive explanations with proper formatting
-- Follow CBSE marking scheme guidelines
-- Be pedagogically sound and educational"""
-    
     # Get CBSE pattern
     cbse_pattern = get_cbse_pattern(subject, class_num)
     
@@ -189,8 +153,6 @@ def generate_general_prompt(
     topics: List[str],
     difficulty: str,
     question_count: int,
-    generate_answers: bool = False,
-    questions_text: Optional[str] = None,
     user_prompt: Optional[str] = None
 ) -> str:
     """
@@ -203,33 +165,11 @@ def generate_general_prompt(
         topics: List of topic names
         difficulty: Difficulty level (easy/medium/hard)
         question_count: Total number of questions
-        generate_answers: Whether to generate answer key
-        questions_text: Question paper text (for answer key generation)
         user_prompt: Optional custom prompt from user for partial override
     
     Returns:
         Generated prompt string
     """
-    # If generating answers
-    if generate_answers and questions_text:
-        return f"""You are an experienced teacher providing detailed answer keys. Generate comprehensive answers for the following question paper.
-
-Question Paper:
-{questions_text}
-
-Topics: {', '.join(topics)}
-Subject: {subject}
-Class: {class_num}
-
-Instructions:
-- Provide detailed, accurate answers for each question
-- For MCQs, explain why the correct option is right
-- For descriptive questions, provide comprehensive explanations
-- Use clear formatting with question numbers
-- Be pedagogically sound and educational
-
-Generate the answer key:"""
-    
     # Build custom prompt section if provided
     custom_instructions = ""
     if user_prompt:
@@ -817,3 +757,229 @@ def generate_study_tricks_prompt(
     Generate creative and memorable study tricks:
     """
 
+def generate_answer_prompt(
+    board: str,
+    class_num: int,
+    subject: str,
+    topics: List[str],
+    questions: dict,
+    content: str,
+    use_cbse_pattern: bool = False
+) -> str:
+    """
+    Generate prompt for answer key generation based on question paper.
+    
+    Args:
+        board: Educational board
+        class_num: Class number
+        subject: Subject name
+        topics: List of topic names
+        questions: Question paper JSON object
+        content: Educational content from textbook
+        use_cbse_pattern: Whether the questions follow CBSE pattern
+    
+    Returns:
+        Generated prompt string for answer generation
+    """
+    # Convert questions dict to formatted string for better readability
+    import json
+    questions_text = json.dumps(questions, indent=2)
+    
+    if use_cbse_pattern:
+        return f"""You are an experienced CBSE teacher creating comprehensive answer keys.
+
+Generate detailed answers for this question paper following CBSE marking scheme format.
+
+**Subject Details:**
+- Board: {board}
+- Class: {class_num}
+- Subject: {subject}
+- Topics: {', '.join(topics)}
+
+**Question Paper (JSON):**
+{questions_text}
+
+**Educational Content (for reference):**
+{content[:8000]}
+
+CRITICAL: You MUST respond with ONLY valid JSON. Do not include any markdown formatting, code blocks, or explanations. Start your response with {{ and end with }}.
+
+**REQUIRED JSON FORMAT:**
+{{
+  "answerKey": {{
+    "mcq": [
+      {{
+        "questionNumber": 1,
+        "correctAnswer": "C",
+        "explanation": "Detailed explanation here",
+        "marks": 1
+      }}
+    ],
+    "assertionReason": [
+      {{
+        "questionNumber": 2,
+        "correctAnswer": "A",
+        "explanation": "Detailed explanation here",
+        "marks": 1
+      }}
+    ],
+    "shortAnswer": [
+      {{
+        "questionNumber": 3,
+        "answer": "Detailed answer with step-by-step solution",
+        "keyPoints": ["Point 1", "Point 2"],
+        "marks": 2
+      }}
+    ],
+    "longAnswer": [
+      {{
+        "questionNumber": 4,
+        "answer": "Comprehensive answer with detailed explanation",
+        "keyPoints": ["Main point 1", "Main point 2", "Main point 3"],
+        "marks": 5
+      }}
+    ],
+    "caseStudy": [
+      {{
+        "questionNumber": 5,
+        "subQuestions": [
+          {{
+            "subQuestionNumber": "5.1",
+            "answer": "Answer here",
+            "marks": 1
+          }}
+        ]
+      }}
+    ]
+  }}
+}}
+
+**Instructions:**
+- Provide step-by-step solutions for all questions
+- For MCQs, provide the correct answer option and explain why it's correct
+- For descriptive questions, provide comprehensive explanations with proper formatting
+- Follow CBSE marking scheme guidelines
+- Include all key points that would earn marks
+- Be pedagogically sound and educational
+- Only include answer sections for question types that exist in the question paper"""
+
+    else:
+        # General answer format for non-CBSE patterns
+        return f"""You are an experienced teacher creating comprehensive answer keys.
+
+Generate detailed answers for this question paper.
+
+**Subject Details:**
+- Board: {board}
+- Class: {class_num}
+- Subject: {subject}
+- Topics: {', '.join(topics)}
+
+**Question Paper (JSON):**
+{questions_text}
+
+**Educational Content (for reference):**
+{content[:8000]}
+
+CRITICAL: You MUST respond with ONLY valid JSON. Do not include any markdown formatting, code blocks, or explanations. Start your response with {{ and end with }}.
+
+**REQUIRED JSON FORMAT:**
+{{
+  "answerKey": {{
+    "descriptiveQuestions": [
+      {{
+        "questionNumber": 1,
+        "answer": "Detailed answer here",
+        "keyPoints": ["Point 1", "Point 2"],
+        "marks": 5
+      }}
+    ],
+    "mcq": [
+      {{
+        "questionNumber": 2,
+        "correctAnswer": "B",
+        "explanation": "Explanation why this is correct",
+        "marks": 1
+      }}
+    ],
+    "fillInTheBlanks": [
+      {{
+        "questionNumber": 3,
+        "answer": "correct word/phrase",
+        "marks": 1
+      }}
+    ],
+    "trueOrFalse": [
+      {{
+        "questionNumber": 4,
+        "correctAnswer": "True",
+        "explanation": "Brief explanation",
+        "marks": 1
+      }}
+    ],
+    "matchTheFollowing": [
+      {{
+        "questionNumber": 5,
+        "correctMatches": {{
+          "Item 1": "Match 1",
+          "Item 2": "Match 2",
+          "Item 3": "Match 3"
+        }},
+        "marks": 2
+      }}
+    ],
+    "shortAnswer": [
+      {{
+        "questionNumber": 6,
+        "answer": "Concise answer here",
+        "keyPoints": ["Point 1", "Point 2"],
+        "marks": 2
+      }}
+    ],
+    "wordProblems": [
+      {{
+        "questionNumber": 7,
+        "solution": "Step-by-step solution",
+        "steps": ["Step 1", "Step 2", "Final answer"],
+        "marks": 2
+      }}
+    ],
+    "storyBasedProblems": [
+      {{
+        "questionNumber": 8,
+        "solution": "Step-by-step solution",
+        "steps": ["Extract data", "Apply formula", "Calculate", "Final answer"],
+        "marks": 3
+      }}
+    ],
+    "comprehensiveQuestions": [
+      {{
+        "questionNumber": 9,
+        "subQuestions": [
+          {{
+            "subQuestionNumber": "9.1",
+            "answer": "Answer here",
+            "marks": 2
+          }}
+        ]
+      }}
+    ],
+    "wordMeaning": [
+      {{
+        "questionNumber": 10,
+        "word": "vocabulary word",
+        "meaning": "definition or meaning",
+        "marks": 1
+      }}
+    ]
+  }}
+}}
+
+**Instructions:**
+- Provide detailed, accurate answers for each question
+- For MCQs, provide the correct answer option and explain why
+- For descriptive questions, provide comprehensive explanations
+- For word problems and story-based problems, show step-by-step solutions
+- Use clear formatting and include all key points
+- Be pedagogically sound and educational
+- Only include answer sections for question types that exist in the question paper"""

@@ -6,7 +6,7 @@ from flask import request, jsonify
 import json
 from src.logging import get_logger
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from src.utils import generate_cbse_prompt, generate_general_prompt, get_cbse_pattern, generate_summary_prompt, generate_flashcard_prompt, generate_mindmap_prompt, generate_study_tricks_prompt
+from src.utils import generate_cbse_prompt, generate_general_prompt, generate_answer_prompt, get_cbse_pattern, generate_summary_prompt, generate_flashcard_prompt, generate_mindmap_prompt, generate_study_tricks_prompt
 
 # Initialize logger
 logger = get_logger(__name__)
@@ -43,6 +43,7 @@ class Routes:
         self.app.add_url_rule('/api/flash_cards', 'generate_flashcards', self.generate_flashcards, methods=['POST'])
         self.app.add_url_rule('/api/mind_map', 'generate_mindmap', self.generate_mindmap, methods=['POST'])
         self.app.add_url_rule('/api/study_tricks', 'generate_study_tricks', self.generate_study_tricks, methods=['POST'])
+        self.app.add_url_rule('/api/generate_answer', 'generate_answer', self.generate_answer, methods=['POST'])
     
     def get_boards(self):
         """Get list of available boards."""
@@ -194,8 +195,7 @@ class Routes:
             "difficulty": "medium",
             "questionCount": 30,
             "useCBSEPattern": true,
-            "generateAnswers": false,
-            "questionsText": null
+            "customPrompt": "optional custom instructions"
         }
         """
         logger.info("POST /api/generate_question_paper")
@@ -211,8 +211,6 @@ class Routes:
             difficulty = data.get('difficulty', 'medium')
             question_count = int(data.get('questionCount', 20))
             use_cbse_pattern = data.get('useCBSEPattern', False)
-            generate_answers = data.get('generateAnswers', False)
-            questions_text = data.get('questionsText')
             custom_prompt = data.get('customPrompt')  # Custom user prompt
             
             # Validate
@@ -252,8 +250,6 @@ class Routes:
                     subject=subject,
                     topics=topic_names,
                     content=combined_content,
-                    generate_answers=generate_answers,
-                    questions_text=questions_text,
                     user_prompt=custom_prompt
                 )
                 
@@ -267,8 +263,6 @@ class Routes:
                         topics=topic_names,
                         difficulty=difficulty,
                         question_count=question_count,
-                        generate_answers=generate_answers,
-                        questions_text=questions_text,
                         user_prompt=custom_prompt
                     )
             else:
@@ -279,8 +273,6 @@ class Routes:
                     topics=topic_names,
                     difficulty=difficulty,
                     question_count=question_count,
-                    generate_answers=generate_answers,
-                    questions_text=questions_text,
                     user_prompt=custom_prompt
                 )
             
@@ -337,6 +329,139 @@ class Routes:
                         'subject': subject,
                         'topics': topic_names,
                         'difficulty': difficulty,
+                        'warning': 'Output was not valid JSON, returning raw text'
+                    }
+                })
+        
+        except Exception as e:
+            logger.error(f"Error: {str(e)}", exc_info=True)
+            return jsonify({'success': False, 'error': str(e)}), 500
+
+    def generate_answer(self):
+        """
+        Generate answer key for a question paper.
+        
+        Expected JSON body:
+        {
+            "board": "CBSE",
+            "class": 11,
+            "subject": "Physics",
+            "topics": ["1", "2"],
+            "questions": {...},  # Question paper JSON object
+            "content": "...",     # Optional, will fetch if not provided
+            "useCBSEPattern": true
+        }
+        """
+        logger.info("POST /api/generate_answer")
+        try:
+            data = request.json
+            logger.debug(f"Request: {data}")
+            
+            # Extract parameters
+            board = data.get('board')
+            class_num = int(data.get('class'))
+            subject = data.get('subject')
+            topics = data.get('topics', [])
+            questions = data.get('questions')
+            content = data.get('content')
+            use_cbse_pattern = data.get('useCBSEPattern', False)
+            
+            # Validate
+            if not all([board, class_num, subject]):
+                return jsonify({'success': False, 'error': 'Missing required parameters'}), 400
+            if not questions:
+                return jsonify({'success': False, 'error': 'Questions parameter is required'}), 400
+            if not isinstance(topics, list) or len(topics) == 0:
+                return jsonify({'success': False, 'error': 'Please provide at least one topic'}), 400
+            
+            logger.info(f"Generating answers for {len(topics)} topic(s)")
+            
+            # Step 1: Retrieve content if not provided
+            if not content:
+                logger.info("Content not provided, fetching from source...")
+                all_content = []
+                topic_names = []
+                
+                for topic_num in topics:
+                    logger.debug(f"Fetching content for topic {topic_num}")
+                    result = self.fetcher.fetch_content(board, str(class_num), subject, topic_num)
+                    
+                    if result['status'] == 'success':
+                        all_content.append(result['content'])
+                        topic_names.append(result['topic_name'])
+                    else:
+                        logger.warning(f"Failed to fetch topic {topic_num}: {result['message']}")
+                
+                if not all_content:
+                    return jsonify({'success': False, 'error': 'Could not retrieve content for any topic'}), 400
+                
+                # Combine all content
+                content = "\n\n".join(all_content)
+            else:
+                # If content provided, still need topic names
+                topic_names = [f"Topic {t}" for t in topics]
+            
+            logger.info(f"Content length: {len(content)} characters")
+            
+            # Step 2: Generate prompt
+            prompt = generate_answer_prompt(
+                board=board,
+                class_num=class_num,
+                subject=subject,
+                topics=topic_names,
+                questions=questions,
+                content=content,
+                use_cbse_pattern=use_cbse_pattern
+            )
+            
+            # Step 3: Call LLM
+            logger.info("Initializing LLM...")
+            llm = self.config.initialize_llm()
+            
+            logger.info("Generating answer key with GPT-4o...")
+            response = llm.invoke(prompt)
+            
+            # Extract content from response
+            llm_output = response.content if hasattr(response, 'content') else str(response)
+            
+            logger.info(f"LLM response received: {len(llm_output)} characters")
+            
+            # Try to parse as JSON
+            try:
+                # Clean the response (remove markdown code blocks if present)
+                cleaned_output = llm_output.strip()
+                if cleaned_output.startswith('```json'):
+                    cleaned_output = cleaned_output[7:]
+                if cleaned_output.startswith('```'):
+                    cleaned_output = cleaned_output[3:]
+                if cleaned_output.endswith('```'):
+                    cleaned_output = cleaned_output[:-3]
+                cleaned_output = cleaned_output.strip()
+                
+                answer_key = json.loads(cleaned_output)
+                
+                return jsonify({
+                    'success': True,
+                    'answerKey': answer_key,
+                    'metadata': {
+                        'board': board,
+                        'class': class_num,
+                        'subject': subject,
+                        'topics': topic_names,
+                        'usedCBSEPattern': use_cbse_pattern
+                    }
+                })
+            except json.JSONDecodeError as e:
+                logger.error(f"Failed to parse LLM output as JSON: {str(e)}")
+                # Return raw output if JSON parsing fails
+                return jsonify({
+                    'success': True,
+                    'answerKey': {'raw_output': llm_output},
+                    'metadata': {
+                        'board': board,
+                        'class': class_num,
+                        'subject': subject,
+                        'topics': topic_names,
                         'warning': 'Output was not valid JSON, returning raw text'
                     }
                 })
