@@ -332,86 +332,86 @@ Context:
     elif subject_lower in ['english grammar', 'grammar']:
         return f"""You are an intelligent and experienced teacher with a deep understanding of the provided topics and context. Your task is to create a comprehensive question paper based on the details such as class, subject, and topics provided to you.
 
-The question paper should be practical in nature and ask questions with relations to application of grammatical concepts and not theory or definitions, so that students can solve it based on their ability and learn the applications.
+        The question paper should be practical in nature and ask questions with relations to application of grammatical concepts and not theory or definitions, so that students can solve it based on their ability and learn the applications.
 
-Details:
-- Board: {board}
-- Class: {class_num}
-- Subject: {subject}
-- Topics: {', '.join(topics)}
-- Difficulty Level: {difficulty}
-- Total Questions: {question_count}
+        Details:
+        - Board: {board}
+        - Class: {class_num}
+        - Subject: {subject}
+        - Topics: {', '.join(topics)}
+        - Difficulty Level: {difficulty}
+        - Total Questions: {question_count}
 
-Structure the question paper as follows:
-1. Comprehensive Questions ({question_count // 6} questions): Provide a paragraph and ask grammatical questions related to it. There will be only one paragraph from which you will be asking the questions.
-2. Multiple Choice Questions ({question_count // 6} questions): Provide four options with only one correct answer.
-3. Fill in the Blanks ({question_count // 6} questions): Use statements from the chapter, asking to fill in the missing words.
-4. True or False ({question_count // 6} questions): Statements that need to be marked as true or false.
-5. Match the Following ({question_count // 6} questions): Pairs of items to be matched correctly. Ensure that the order of items in both columns is jumbled to prevent direct matching.
-6. Word Meaning ({question_count - 5 * (question_count // 6)} questions): Ask for the meanings of words used in the chapter.{custom_instructions}
+        Structure the question paper as follows:
+        1. Comprehensive Questions ({question_count // 6} questions): Provide a paragraph and ask grammatical questions related to it. There will be only one paragraph from which you will be asking the questions.
+        2. Multiple Choice Questions ({question_count // 6} questions): Provide four options with only one correct answer.
+        3. Fill in the Blanks ({question_count // 6} questions): Use statements from the chapter, asking to fill in the missing words.
+        4. True or False ({question_count // 6} questions): Statements that need to be marked as true or false.
+        5. Match the Following ({question_count // 6} questions): Pairs of items to be matched correctly. Ensure that the order of items in both columns is jumbled to prevent direct matching.
+        6. Word Meaning ({question_count - 5 * (question_count // 6)} questions): Ask for the meanings of words used in the chapter.{custom_instructions}
 
-CRITICAL: You MUST respond with ONLY valid JSON. Do not include any markdown formatting, code blocks, or explanations. Start your response with {{ and end with }}.
+        CRITICAL: You MUST respond with ONLY valid JSON. Do not include any markdown formatting, code blocks, or explanations. Start your response with {{ and end with }}.
 
-**REQUIRED JSON FORMAT:**
-{{
-  "questionPaper": {{
-    "title": "Class {class_num} {subject} Question Paper",
-    "totalQuestions": {question_count},
-    "difficulty": "{difficulty}",
-    "comprehensiveQuestions": [
-      {{
-        "questionNumber": 1,
-        "paragraph": "paragraph text here",
-        "questions": [
-          {{
-            "subQuestionNumber": "1.1",
-            "question": "question based on paragraph",
-            "marks": 2
-          }}
-        ]
-      }}
-    ],
-    "mcq": [
-      {{
-        "questionNumber": 2,
-        "question": "question text here",
-        "options": ["A) option1", "B) option2", "C) option3", "D) option4"],
-        "marks": 1
-      }}
-    ],
-    "fillInTheBlanks": [
-      {{
-        "questionNumber": 3,
-        "question": "question text with _____ blank",
-        "marks": 1
-      }}
-    ],
-    "trueOrFalse": [
-      {{
-        "questionNumber": 4,
-        "statement": "statement here",
-        "marks": 1
-      }}
-    ],
-    "matchTheFollowing": [
-      {{
-        "questionNumber": 5,
-        "columnA": ["Item 1", "Item 2", "Item 3"],
-        "columnB": ["Match 2", "Match 1", "Match 3"],
-        "marks": 2
-      }}
-    ],
-    "wordMeaning": [
-      {{
-        "questionNumber": 6,
-        "word": "word here",
-        "marks": 1
-      }}
-    ]
-  }}
-}}
+        **REQUIRED JSON FORMAT:**
+        {{
+        "questionPaper": {{
+            "title": "Class {class_num} {subject} Question Paper",
+            "totalQuestions": {question_count},
+            "difficulty": "{difficulty}",
+            "comprehensiveQuestions": [
+            {{
+                "questionNumber": 1,
+                "paragraph": "paragraph text here",
+                "questions": [
+                {{
+                    "subQuestionNumber": "1.1",
+                    "question": "question based on paragraph",
+                    "marks": 2
+                }}
+                ]
+            }}
+            ],
+            "mcq": [
+            {{
+                "questionNumber": 2,
+                "question": "question text here",
+                "options": ["A) option1", "B) option2", "C) option3", "D) option4"],
+                "marks": 1
+            }}
+            ],
+            "fillInTheBlanks": [
+            {{
+                "questionNumber": 3,
+                "question": "question text with _____ blank",
+                "marks": 1
+            }}
+            ],
+            "trueOrFalse": [
+            {{
+                "questionNumber": 4,
+                "statement": "statement here",
+                "marks": 1
+            }}
+            ],
+            "matchTheFollowing": [
+            {{
+                "questionNumber": 5,
+                "columnA": ["Item 1", "Item 2", "Item 3"],
+                "columnB": ["Match 2", "Match 1", "Match 3"],
+                "marks": 2
+            }}
+            ],
+            "wordMeaning": [
+            {{
+                "questionNumber": 6,
+                "word": "word here",
+                "marks": 1
+            }}
+            ]
+        }}
+        }}
 
-Context:
+        Context:
 """
     
     # Hindi / Hindi Grammar
