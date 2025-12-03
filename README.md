@@ -14,8 +14,10 @@ A Flask web application that generates Multiple Choice Questions (MCQs) based on
 - 🤖 AI-powered MCQ generation using LangChain and OpenAI
 - 💡 Clean and modern user interface
 - ✅ Instant results with explanations
+- 🔒 **HTTPS with SSL certificates via Let's Encrypt**
 - 🚀 Automated CI/CD with GitHub Actions
 - 🐳 Docker containerization for easy deployment
+- 🔄 Automatic SSL certificate renewal
 
 
 ## Prerequisites
@@ -56,6 +58,15 @@ python app.py
 2. Open your web browser and navigate to:
 ```
 http://localhost:5000
+```
+
+## SSL Certificate Setup
+
+For production deployment with HTTPS, see the comprehensive [SSL Setup Guide](SSL_SETUP.md).
+
+**Production API**: The API is secured with SSL and available at:
+```
+https://api.simplifyingskills.live
 ```
 
 ## Usage
@@ -132,6 +143,7 @@ pip install -r requirements.txt
 - **Frontend**: HTML, CSS, JavaScript
 - **Data**: JSON for structure, Text files for content
 - **DevOps**: Docker, GitHub Actions CI/CD
+- **Infrastructure**: Nginx (reverse proxy), Let's Encrypt (SSL certificates)
 
 ## CI/CD & Deployment
 
@@ -152,16 +164,25 @@ docker run -d \
   YOUR_USERNAME/drema-ai:latest
 ```
 
-Or use docker-compose:
+Or use docker-compose (includes Nginx reverse proxy with SSL):
 
 ```bash
 # Create .env file with your API keys
 cp .env.example .env
 # Edit .env with your actual keys
 
-# Start the application
+# Start the application (HTTP only, for local development)
 docker-compose up -d
+
+# For production with HTTPS, see SSL_SETUP.md
+# You'll need to run init-letsencrypt.sh first
 ```
+
+**Note**: The docker-compose setup includes:
+- Flask application
+- Nginx reverse proxy
+- Certbot for SSL certificate management
+- Automatic HTTPS redirect (in production)
 
 ### CI/CD Pipeline
 
