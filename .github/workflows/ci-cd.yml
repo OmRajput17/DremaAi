@@ -119,25 +119,13 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
-  deploy-aws:
-    name: Deploy to AWS
+  deploy-ec2:
+    name: Deploy to EC2
     runs-on: ubuntu-latest
     needs: publish
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ env.AWS_REGION }}
-
-      # Deploy to EC2 via SSH
-      - name: Deploy to EC2
-        continue-on-error: true
+      - name: Deploy to EC2 via SSH
         run: |
           # Set up SSH key
           mkdir -p ~/.ssh
@@ -146,9 +134,9 @@ jobs:
           
           # SSH into EC2 and pull new image
           ssh -o StrictHostKeyChecking=no -i ~/.ssh/deploy_key ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
-            cd "$HOME/Drema Ai" || cd ~/drema-ai || cd "Drema Ai"
-            docker-compose pull
-            docker-compose up -d --force-recreate
+            cd "$HOME/DremaAi" || cd ~/DremaAi
+            docker compose pull
+            docker compose up -d --force-recreate
             docker image prune -f
           EOF
 
@@ -156,4 +144,3 @@ jobs:
         run: |
           echo "✅ Deployment completed!"
           echo "🐳 Docker image: ${{ env.DOCKER_IMAGE }}:latest"
-          echo "🌍 AWS Region: ${{ env.AWS_REGION }}"
