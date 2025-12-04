@@ -87,6 +87,44 @@ def get_cbse_pattern(subject: str, class_num: int) -> Optional[CBSEPattern]:
                 ]
             )
         
+        elif subject in ['english', 'english language', 'english literature']:
+            return CBSEPattern(
+                subject='English',
+                class_num=class_num,
+                total_marks=80,
+                time_limit=180,  # 3 hours
+                sections=[
+                    SectionPattern(
+                        name="Section A: Reading Comprehension",
+                        questions=10,
+                        marks_per_question=2,
+                        total_marks=20,
+                        description="Read the passage and answer questions based on it"
+                    ),
+                    SectionPattern(
+                        name="Section B: Writing Skills",
+                        questions=4,
+                        marks_per_question=5,
+                        total_marks=20,
+                        description="Letter writing, article writing, story writing"
+                    ),
+                    SectionPattern(
+                        name="Section C: Grammar",
+                        questions=10,
+                        marks_per_question=1,
+                        total_marks=10,
+                        description="MCQs, fill in the blanks, error correction"
+                    ),
+                    SectionPattern(
+                        name="Section D: Literature",
+                        questions=6,
+                        marks_per_question=5,
+                        total_marks=30,
+                        description="Questions from prescribed textbook lessons and poems"
+                    )
+                ]
+            )
+        
         elif subject in ['mathematics', 'maths', 'math']:
             return CBSEPattern(
                 subject='Mathematics',

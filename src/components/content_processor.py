@@ -48,12 +48,12 @@ class ContentProcessor:
         logger.info(f"ContentProcessor initialized with chunk_size={chunk_size}, overlap={chunk_overlap}, cache={cache_status}")
     
     def process_for_mcqs(
-        self, 
-        content: str, 
-        topic_name: str, 
-        difficulty: str, 
-        num_questions: int
-    ) -> str:
+            self, 
+            content: str, 
+            topic_name: str, 
+            difficulty: str, 
+            num_questions: int
+        ) -> str:
         """
         Process content and return focused chunks for MCQ generation.
         
@@ -180,11 +180,11 @@ class ContentProcessor:
             return vector_store
     
     def _retrieve_relevant_chunks(
-        self, 
-        vector_store: FAISS, 
-        query: str, 
-        k: int
-    ) -> List[Document]:
+            self, 
+            vector_store: FAISS, 
+            query: str, 
+            k: int
+        ) -> List[Document]:
         """
         Retrieve most relevant chunks using semantic search.
         

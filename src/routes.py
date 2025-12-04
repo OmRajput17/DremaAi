@@ -6,7 +6,7 @@ from flask import request, jsonify
 import json
 from src.logging import get_logger
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from src.utils import generate_cbse_prompt, generate_general_prompt, generate_answer_prompt, get_cbse_pattern, generate_summary_prompt, generate_flashcard_prompt, generate_mindmap_prompt, generate_study_tricks_prompt
+from src.utils import generate_cbse_prompt, generate_general_prompt, generate_answer_prompt, get_cbse_pattern, generate_summary_prompt, generate_flashcard_prompt, generate_mindmap_prompt, generate_study_tricks_prompt, generate_chat_prompt
 
 # Initialize logger
 logger = get_logger(__name__)
@@ -44,6 +44,7 @@ class Routes:
         self.app.add_url_rule('/api/mind_map', 'generate_mindmap', self.generate_mindmap, methods=['POST'])
         self.app.add_url_rule('/api/study_tricks', 'generate_study_tricks', self.generate_study_tricks, methods=['POST'])
         self.app.add_url_rule('/api/generate_answer', 'generate_answer', self.generate_answer, methods=['POST'])
+        self.app.add_url_rule('/api/chat_with_ai', 'chat_with_ai', self.chat_with_ai, methods=['POST'])
     
     def get_boards(self):
         """Get list of available boards."""
@@ -904,6 +905,115 @@ class Routes:
                     'class': class_num,
                     'subject': subject,
                     'topics': topics
+                }
+            })
+        
+        except Exception as e:
+            logger.error(f"Error: {str(e)}", exc_info=True)
+            return jsonify({'success': False, 'error': str(e)}), 500
+
+    def chat_with_ai(self):
+        """
+        Chat with AI tutor service with conversation history support.
+        
+        Expected JSON body:
+        {
+            "board": "CBSE",
+            "class": "10",
+            "subject": "Science",
+            "topics": ["Force"],
+            "message": "Can you explain Newton's third law?",
+            "conversationHistory": [
+                {
+                    "role": "user",
+                    "content": "What is force?",
+                    "timestamp": "2024-12-04T10:00:00Z"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Force is...",
+                    "timestamp": "2024-12-04T10:00:05Z"
+                }
+            ],
+            "content": "Optional textbook content..."
+        }
+        """
+        logger.info("POST /api/chat_with_ai")
+        try:
+            data = request.json
+            logger.debug(f"Request keys: {list(data.keys())}")
+            
+            # Extract parameters
+            board = data.get('board')
+            class_num = str(data.get('class'))
+            subject = data.get('subject')
+            topics = data.get('topics', [])
+            message = data.get('message')
+            conversation_history = data.get('conversationHistory', [])
+            content = data.get('content')
+            
+            # Validate required fields
+            if not all([board, class_num, subject, message]):
+                return jsonify({'success': False, 'error': 'Missing required parameters: board, class, subject, message'}), 400
+            
+            logger.info(f"Chat request for {subject} Class {class_num}, history length: {len(conversation_history)}")
+            
+            # Fetch content if not provided
+            if not content and topics:
+                logger.info("Content not provided, fetching from source...")
+                all_content = []
+                for topic_num in topics:
+                    # Ensure topic is string if needed, fetcher expects it
+                    result = self.fetcher.fetch_content(board, class_num, subject, str(topic_num))
+                    if result['status'] == 'success':
+                        all_content.append(result['content'])
+                    else:
+                        logger.warning(f"Failed to fetch topic {topic_num}")
+                
+                if all_content:
+                    content = "\n\n".join(all_content)
+                    logger.info(f"Fetched content: {len(content)} characters")
+                else:
+                    logger.warning("Could not retrieve content, proceeding without textbook reference")
+                    content = None
+            
+            # Apply intelligent content filtering if content is provided
+            if content:
+                content = self._intelligent_content_filter(content, topics, max_chars=12000)
+                logger.info(f"Filtered content: {len(content)} characters")
+            
+            # Generate chat prompt
+            prompt = generate_chat_prompt(
+                board=board,
+                class_num=class_num,
+                subject=subject,
+                topics=topics if topics else [subject],
+                message=message,
+                conversation_history=conversation_history,
+                content=content
+            )
+            
+            # Call LLM (using gpt-4o-mini for faster, cost-effective chat responses)
+            logger.info("Initializing LLM...")
+            llm = self.config.initialize_llm(model_name="gpt-4o-mini")
+            
+            logger.info("Generating chat response with GPT-4o-mini...")
+            response = llm.invoke(prompt)
+            
+            # Extract content
+            ai_response = response.content if hasattr(response, 'content') else str(response)
+            
+            logger.info(f"Chat response generated: {len(ai_response)} characters")
+            
+            return jsonify({
+                'success': True,
+                'response': ai_response,
+                'metadata': {
+                    'board': board,
+                    'class': class_num,
+                    'subject': subject,
+                    'topics': topics,
+                    'conversationLength': len(conversation_history) + 2  # +2 for current exchange
                 }
             })
         
