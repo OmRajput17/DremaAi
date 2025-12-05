@@ -58,136 +58,137 @@ def generate_cbse_prompt(
     - This is a PARTIAL OVERRIDE - only modify what the user explicitly requests.
     """
     
-    return f"""You are an experienced CBSE teacher creating a question paper for Class {class_num} {subject}.
+    return f"""You are an experienced CBSE teacher responsible for creating a question paper for Class {class_num} {subject}.
 
-    **Exam Pattern Details:**
-    - Total Marks: {cbse_pattern.total_marks}
-    - Time: {cbse_pattern.time_limit} minutes
-    - Board: {board}
-    - Topics: {', '.join(topics)}
+      **Exam Pattern Details:**
+      - Total Marks: {cbse_pattern.total_marks}
+      - Time: {cbse_pattern.time_limit} minutes
+      - Board: {board}
+      - Topics: {', '.join(topics)}
 
-    **Section Structure:**
-    {sections_description}{custom_instructions}
+      **Section Structure:**
+      {sections_description}{custom_instructions}
 
-    **Context from NCERT Textbook:**
-    {content}
+      **Context from NCERT Textbook:**
+      {content}
 
-    CRITICAL INSTRUCTIONS:
-    1. Follow the EXACT section structure provided above
-    2. Generate questions STRICTLY from the provided textbook content and topics
-    3. Ensure questions are age-appropriate for Class {class_num}
-    4. Include competency-based questions (CBQs) as per CBSE guidelines
-    5. For MCQs, provide 4 options
-    6. Return ONLY valid JSON, no additional text
-    7. Do NOT INCLUDE the correct answer or solution in the output at anycost.
-    8. CRITICAL: You MUST respond with ONLY valid JSON. Do not include any markdown formatting, code blocks, or explanations. Start your response with {{ and end with }}.
-    
-    **SPECIAL INSTRUCTIONS FOR CASE STUDY QUESTIONS:**
-    - Each case study passage MUST be substantial and educational
-    - Passage length: MINIMUM 100-150 words (4-6 sentences)
-    - The passage should present a real-world scenario, scientific phenomenon, or contextual information
-    - Include specific facts, data, or examples that can be analyzed
-    - Make the passage engaging and relevant to the topic
-    - The passage should contain enough information to answer all sub-questions
-    
-    **SPECIAL INSTRUCTIONS FOR "READ THE PASSAGE AND ANSWER" QUESTIONS:**
-    - This section should have ONE comprehensive passage (150-200 words)
-    - Multiple questions (4-6 questions) should be based on this SINGLE passage
-    - DO NOT create separate passages for each question
-    - The passage should be rich enough to support all the questions
-    - Questions should test comprehension, inference, and analysis of the SAME passage
+      CRITICAL INSTRUCTIONS:
+      1. Follow the EXACT section structure provided above.
+      2. Generate questions STRICTLY from the given textbook content and listed topics.
+      3. Ensure questions are age-appropriate for Class {class_num}.
+      4. Include competency-based questions (CBQs) as per CBSE norms.
+      5. For MCQs, ALWAYS provide 4 options.
+      6. Return ONLY valid JSON — no extra text or formatting.
+      7. Do NOT include the correct answer or solution anywhere.
+      8. CRITICAL: You MUST respond with ONLY valid JSON. Begin with {{ and end with }}. No markdown, no code blocks.
 
-    **REQUIRED JSON FORMAT:**
-    {{
-      "questionPaper": {{
-        "title": "Class {class_num} {subject} Question Paper",
-        "totalMarks": {cbse_pattern.total_marks},
-        "duration": {cbse_pattern.time_limit},
-        "mcq": [
-          {{
-            "questionNumber": 1,
-            "question": "question text here",
-            "options": ["A) option1", "B) option2", "C) option3", "D) option4"],
-            "marks": 1
-          }}
-        ],
-        "assertionReason": [
-          {{
-            "questionNumber": 2,
-            "assertion": "assertion statement here",
-            "reason": "reason statement here",
-            "options": [
-              "A) Both assertion and reason are true and reason is the correct explanation",
-              "B) Both assertion and reason are true but reason is not the correct explanation",
-              "C) Assertion is true but reason is false",
-              "D) Both assertion and reason are false"
-            ],
-            "marks": 1
-          }}
-        ],
-        "shortAnswer": [
-          {{
-            "questionNumber": 3,
-            "question": "question text here",
-            "marks": 2
-          }}
-        ],
-        "longAnswer": [
-          {{
-            "questionNumber": 4,
-            "question": "question text here",
-            "marks": 5
-          }}
-        ],
-        "caseStudy": [
-          {{
-            "questionNumber": 5,
-            "passage": "Write a detailed case study passage here (100-150 words minimum). The passage should present a real-world scenario related to the topic. Include specific examples, data, or phenomena that students need to analyze. For example: 'In a recent study on plant growth, researchers observed that certain plants showed enhanced growth rates when exposed to specific wavelengths of light. The experiment involved growing identical seedlings under different light conditions - natural sunlight, red LED lights, blue LED lights, and a combination of both. After 30 days, plants under blue light showed 40% more leaf growth, while those under red light developed stronger root systems. The control group under natural sunlight showed balanced growth across all parameters.' This passage provides enough context and information for students to answer analytical questions.",
-            "questions": [
-              {{
-                "subQuestionNumber": "5.1",
-                "question": "sub-question text here",
-                "marks": 1
-              }}
-            ],
-            "marks": 4
-          }}
-        ],
-        "readThePassageAndAnswer": [
-          {{
-            "questionNumber": 6,
-            "passage": "IMPORTANT: Write ONE comprehensive passage here (150-200 words). ALL questions below should be based on THIS SAME passage. Example: 'The young seagull stood alone on his ledge, watching his family soar through the sky. His two brothers and sister had flown away the day before, leaving him behind. He wanted to fly like them, but when he looked down at the vast green sea far below, fear gripped his heart. His mother and father circled around, calling to him, encouraging him to take the leap. He tried running forward and flapping his wings, but each time he reached the edge, he stopped. His legs wouldn't move forward. The drop was too scary. Hours passed, and hunger began to gnaw at him. He saw his mother flying towards him with a piece of fish in her beak. She came close but stopped just out of reach, holding the fish tantalizingly before him. He leaned out eagerly, trying to reach it, forgetting his fear in his hunger. Suddenly, he felt himself falling, tumbling through the air. But then, instinctively, he spread his wings and felt them catch the wind. He was flying! The sea no longer seemed scary but beautiful.'",
-            "questions": [
-              {{
-                "subQuestionNumber": "6.1",
-                "question": "What was the seagull's main fear?",
-               "marks": 2
-              }},
-              {{
-                "subQuestionNumber": "6.2",
-                "question": "How did the mother seagull help him overcome his fear?",
+      **SPECIAL INSTRUCTIONS FOR CASE STUDY QUESTIONS:**
+      - Each case study passage MUST be substantial and meaningful.
+      - Passage length: MINIMUM 100–150 words (at least 4–6 sentences).
+      - The passage should present a real-world scenario, scientific concept, or contextual explanation.
+      - Include specific facts, data, examples, or observations.
+      - Make it engaging and clearly connected to the topic.
+      - The passage must contain enough information for students to answer all sub-questions.
+
+      **SPECIAL INSTRUCTIONS FOR "READ THE PASSAGE AND ANSWER" QUESTIONS:**
+      - Provide ONE comprehensive passage only (150–200 words).
+      - All questions (4–6) should be based on THIS SINGLE passage.
+      - Do NOT create multiple passages.
+      - The passage should support comprehension, inference, and analysis.
+      - It must be rich enough for all sub-questions to be derived from it.
+
+      **REQUIRED JSON FORMAT:**
+      {{
+        "questionPaper": {{
+          "title": "Class {class_num} {subject} Question Paper",
+          "totalMarks": {cbse_pattern.total_marks},
+          "duration": {cbse_pattern.time_limit},
+          "mcq": [
+            {{
+              "questionNumber": 1,
+              "question": "question text here",
+              "options": ["A) option1", "B) option2", "C) option3", "D) option4"],
+              "marks": 1
+            }}
+          ],
+          "assertionReason": [
+            {{
+              "questionNumber": 2,
+              "assertion": "assertion statement here",
+              "reason": "reason statement here",
+              "options": [
+                "A) Both assertion and reason are true and reason is the correct explanation",
+                "B) Both assertion and reason are true but reason is not the correct explanation",
+                "C) Assertion is true but reason is false",
+                "D) Both assertion and reason are false"
+              ],
+              "marks": 1
+            }}
+          ],
+          "shortAnswer": [
+            {{
+              "questionNumber": 3,
+              "question": "question text here",
+              "marks": 2
+            }}
+          ],
+          "longAnswer": [
+            {{
+              "questionNumber": 4,
+              "question": "question text here",
+              "marks": 5
+            }}
+          ],
+          "caseStudy": [
+            {{
+              "questionNumber": 5,
+              "passage": "Write a detailed case study passage here (100–150 words minimum). The passage should present a real-world scenario related to the topic and include examples, data, or relevant observations to support analytical questioning.",
+              "questions": [
+                {{
+                  "subQuestionNumber": "5.1",
+                  "question": "sub-question text here",
+                  "marks": 1
+                }}
+              ],
+              "marks": 4
+            }}
+          ],
+          "readThePassageAndAnswer": [
+            {{
+              "questionNumber": 6,
+              "passage": "IMPORTANT: Write ONE comprehensive passage here (150–200 words). ALL sub-questions below must be based on THIS SAME passage.",
+              "questions": [
+                {{
+                  "subQuestionNumber": "6.1",
+                  "question": "What was the seagull's main fear?",
                 "marks": 2
-              }},
-              {{
-                "subQuestionNumber": "6.3",
-                "question": "What made the seagull finally take the leap?",
-                "marks": 2
-              }},
-              {{
-                "subQuestionNumber": "6.4",
-                "question": "What does this story teach us about overcoming fears?",
-                "marks": 2
-              }}
-            ],
-            "marks": 8
-          }}
-        ]
+                }},
+                {{
+                  "subQuestionNumber": "6.2",
+                  "question": "How did the mother seagull help him overcome his fear?",
+                  "marks": 2
+                }},
+                {{
+                  "subQuestionNumber": "6.3",
+                  "question": "What made the seagull finally take the leap?",
+                  "marks": 2
+                }},
+                {{
+                  "subQuestionNumber": "6.4",
+                  "question": "What does this story teach us about overcoming fears?",
+                  "marks": 2
+                }}
+              ],
+              "marks": 8
+            }}
+          ]
+        }}
       }}
-    }}
 
-    Note: Include only the question types that are part of your question paper based on the section structure. If a section doesn't apply, omit that key from the JSON.
+      Note: Include ONLY the question types that belong to your section structure. If a section doesn’t apply, omit that key entirely.
 
-    CRITICAL : Generate the complete question paper in JSON format STRICTLY following the above format:"""
+      CRITICAL: Generate the complete question paper as valid JSON strictly following the above structure.
+  """
 
 def generate_general_prompt(
       board: str,
@@ -232,9 +233,9 @@ def generate_general_prompt(
     
     # Mathematics
     if subject_lower in ['maths', 'mathematics', 'math']:
-        return f"""You are an intelligent and experienced teacher with a deep understanding of the provided topics and context. Your task is to create a comprehensive question paper based on the details such as class, subject, and topics provided to you.
+        return f"""You are an intelligent and experienced teacher with a strong understanding of the provided topics and context. Your task is to create a comprehensive question paper based on the class, subject, difficulty, and topics given to you.
 
-      The question paper should be mathematical in nature and do not ask questions based on any visual representation or story from the book, so that students can solve it based on their ability without depending on a book.
+      The question paper should remain mathematical in nature and must NOT rely on any visual representation or story taken directly from textbooks. Students should be able to solve every question purely through reasoning and conceptual understanding, without needing a book.
 
       Details:
       - Board: {board}
@@ -245,12 +246,12 @@ def generate_general_prompt(
       - Total Questions: {question_count}
 
       Structure the question paper as follows:
-      1. Word Problems ({question_count // 6} questions): Mathematical problems presented through stories or real-life situations. These should encourage problem-solving and critical thinking.
-      2. Multiple Choice Questions ({question_count // 6} questions): Provide four options with only one correct answer.
-      3. Fill in the Blanks ({question_count // 6} questions): Use statements from the chapter, asking to fill in the missing words.
-      4. True or False ({question_count // 6} questions): Statements that need to be marked as true or false.
-      5. Match the Following ({question_count // 6} questions): Pairs of items to be matched correctly. Ensure that the order of items in both columns is jumbled to prevent direct matching.
-      6. Story-Based Problems ({question_count - 5 * (question_count // 6)} questions): Provide a story from which students must extract data to solve a mathematical problem. These problems should be engaging and contextually relevant.{custom_instructions}
+      1. Word Problems ({question_count // 6} questions): Mathematical situations conveyed through simple real-life or story-like contexts. These should encourage logical thinking and clear problem-solving.
+      2. Multiple Choice Questions ({question_count // 6} questions): Provide exactly four options with one correct choice.
+      3. Fill in the Blanks ({question_count // 6} questions): Statements related to the chapter with one missing part to be completed.
+      4. True or False ({question_count // 6} questions): Concept-based statements that must be marked true or false.
+      5. Match the Following ({question_count // 6} questions): Two lists of mixed items that students should match correctly. Ensure both columns are jumbled to avoid direct pairing.
+      6. Story-Based Problems ({question_count - 5 * (question_count // 6)} questions): Provide a brief scenario from which students must extract numerical information to solve a mathematical question. These should be engaging and relevant.{custom_instructions}
 
       CRITICAL: You MUST respond with ONLY valid JSON. Do not include any markdown formatting, code blocks, or explanations. Start your response with {{ and end with }}.
 
@@ -310,12 +311,13 @@ def generate_general_prompt(
 
       Context:
       """
+
     
     # English Grammar
     elif subject_lower in ['english grammar', 'grammar']:
         return f"""You are an intelligent and experienced teacher with a deep understanding of the provided topics and context. Your task is to create a comprehensive question paper based on the details such as class, subject, and topics provided to you.
 
-        The question paper should be practical in nature and ask questions with relations to application of grammatical concepts and not theory or definitions, so that students can solve it based on their ability and learn the applications.
+        The question paper should be practical in nature and ask application-based grammatical questions rather than theory or definitions, ensuring that students learn through usage rather than memorization.
 
         Details:
         - Board: {board}
@@ -326,21 +328,21 @@ def generate_general_prompt(
         - Total Questions: {question_count}
 
         Structure the question paper as follows:
-        1. Comprehensive Questions ({question_count // 6} questions): Provide a paragraph and ask grammatical questions related to it. There will be only one paragraph from which you will be asking the questions.
-        2. Multiple Choice Questions ({question_count // 6} questions): Provide four options with only one correct answer.
-        3. Fill in the Blanks ({question_count // 6} questions): Use statements from the chapter, asking to fill in the missing words.
-        4. True or False ({question_count // 6} questions): Statements that need to be marked as true or false.
-        5. Match the Following ({question_count // 6} questions): Pairs of items to be matched correctly. Ensure that the order of items in both columns is jumbled to prevent direct matching.
-        6. Word Meaning ({question_count - 5 * (question_count // 6)} questions): Ask for the meanings of words used in the chapter.{custom_instructions}
+        1. Comprehensive Questions ({question_count // 6} questions): Provide a single paragraph and ask multiple grammar-based questions derived from it. Only one paragraph should be used for all sub-questions.
+        2. Multiple Choice Questions ({question_count // 6} questions): Provide four options with exactly one correct answer.
+        3. Fill in the Blanks ({question_count // 6} questions): Use context-based statements requiring students to fill in missing grammatical elements.
+        4. True or False ({question_count // 6} questions): Grammar-related statements that must be marked as true or false.
+        5. Match the Following ({question_count // 6} questions): Create two jumbled columns of items to be matched correctly.
+        6. Word Meaning ({question_count - 5 * (question_count // 6)} questions): Ask meanings of words from the chapter to test vocabulary understanding.{custom_instructions}
 
         **SPECIAL INSTRUCTIONS FOR COMPREHENSIVE QUESTIONS:**
-        - The paragraph MUST be substantial: MINIMUM 100-120 words (5-7 sentences)
-        - Use proper grammar and varied sentence structures
-        - The paragraph should contain multiple grammatical elements for analysis
-        - Include different parts of speech, tenses, and sentence types
-        - Make it engaging and age-appropriate for Class {class_num}
+        - The paragraph MUST be substantial: MINIMUM 100–120 words (5–7 sentences).
+        - Use varied sentence structures and proper grammar.
+        - Include multiple grammatical elements such as tenses, connectors, pronouns, conjunctions, and clauses.
+        - Make the paragraph engaging and age-appropriate for Class {class_num}.
+        - Ensure the paragraph naturally supports grammar-based questions.
 
-        CRITICAL: You MUST respond with ONLY valid JSON. Do not include any markdown formatting, code blocks, or explanations. Start your response with {{ and end with }}.
+        CRITICAL: You MUST respond with ONLY valid JSON. Do not include markdown formatting, code blocks, or explanations. Start with {{ and end with }}.
 
         **REQUIRED JSON FORMAT:**
         {{
@@ -351,7 +353,7 @@ def generate_general_prompt(
             "comprehensiveQuestions": [
             {{
                 "questionNumber": 1,
-                "paragraph": "Write a detailed paragraph here (100-120 words minimum). The paragraph should contain diverse grammatical elements for students to analyze. Example: 'Sarah woke up early on Saturday morning, feeling excited about her upcoming trip to the mountains. She had been planning this adventure for months, carefully selecting her equipment and studying the trail maps. Her younger brother, Tom, who usually loved outdoor activities, was surprisingly reluctant to join her this time. \"I have already committed to helping Dad with the garden,\" he explained apologetically. Sarah understood his decision and proceeded with her preparations independently. By noon, she had packed her backpack, checked the weather forecast, and informed her parents about her itinerary. The journey would be challenging, but she felt confident and well-prepared.' Use this as a reference for creating engaging, grammatically rich paragraphs.",
+                "paragraph": "Write a detailed paragraph here (100–120 words minimum). It must include diverse grammatical elements for analysis. Example: 'Sarah woke up early on Saturday morning, feeling excited about her upcoming trip to the mountains. She had been planning this adventure for months, carefully selecting her equipment and studying the trail maps. Her younger brother, Tom, who usually loved outdoor activities, was surprisingly reluctant to join her this time. \"I have already committed to helping Dad with the garden,\" he explained apologetically. Sarah respected his decision and continued her preparations independently. By noon, she had packed her backpack, checked the weather forecast, and informed her parents about her itinerary. The journey might be challenging, but she felt confident and ready.' Use this as inspiration to create a new, grammatically rich paragraph.",
                 "questions": [
                 {{
                     "subQuestionNumber": "1.1",
@@ -403,6 +405,7 @@ def generate_general_prompt(
 
         Context:
       """
+
     
     # Hindi / Hindi Grammar
     elif subject_lower in ['hindi', 'hindi grammar']:
