@@ -103,17 +103,52 @@ def generate_cbse_prompt(
           "title": "Class {class_num} {subject} Question Paper",
           "totalMarks": {cbse_pattern.total_marks},
           "duration": {cbse_pattern.time_limit},
-          "mcq": [
+          "caseStudy": [
             {{
               "questionNumber": 1,
-              "question": "question text here",
-              "options": ["A) option1", "B) option2", "C) option3", "D) option4"],
-              "marks": 1
+              "passage": "Write a detailed case study passage here (100–150 words minimum). The passage should present a real-world scenario related to the topic and include examples, data, or relevant observations to support analytical questioning.",
+              "questions": [
+                {{
+                  "subQuestionNumber": "1.1",
+                  "question": "sub-question text here",
+                  "marks": 1
+                }}
+              ],
+              "marks": 4
+            }}
+          ],
+          "readThePassageAndAnswer": [
+            {{
+              "questionNumber": 2,
+              "passage": "IMPORTANT: Write ONE comprehensive passage here (150–200 words). ALL sub-questions below must be based on THIS SAME passage.",
+              "questions": [
+                {{
+                  "subQuestionNumber": "2.1",
+                  "question": "What was the seagull's main fear?",
+                "marks": 2
+                }},
+                {{
+                  "subQuestionNumber": "2.2",
+                  "question": "How did the mother seagull help him overcome his fear?",
+                  "marks": 2
+                }},
+                {{
+                  "subQuestionNumber": "2.3",
+                  "question": "What made the seagull finally take the leap?",
+                  "marks": 2
+                }},
+                {{
+                  "subQuestionNumber": "2.4",
+                  "question": "What does this story teach us about overcoming fears?",
+                  "marks": 2
+                }}
+              ],
+              "marks": 8
             }}
           ],
           "assertionReason": [
             {{
-              "questionNumber": 2,
+              "questionNumber": 3,
               "assertion": "assertion statement here",
               "reason": "reason statement here",
               "options": [
@@ -125,13 +160,6 @@ def generate_cbse_prompt(
               "marks": 1
             }}
           ],
-          "shortAnswer": [
-            {{
-              "questionNumber": 3,
-              "question": "question text here",
-              "marks": 2
-            }}
-          ],
           "longAnswer": [
             {{
               "questionNumber": 4,
@@ -139,47 +167,19 @@ def generate_cbse_prompt(
               "marks": 5
             }}
           ],
-          "caseStudy": [
+          "mcq": [
             {{
               "questionNumber": 5,
-              "passage": "Write a detailed case study passage here (100–150 words minimum). The passage should present a real-world scenario related to the topic and include examples, data, or relevant observations to support analytical questioning.",
-              "questions": [
-                {{
-                  "subQuestionNumber": "5.1",
-                  "question": "sub-question text here",
-                  "marks": 1
-                }}
-              ],
-              "marks": 4
+              "question": "question text here",
+              "options": ["A) option1", "B) option2", "C) option3", "D) option4"],
+              "marks": 1
             }}
           ],
-          "readThePassageAndAnswer": [
+          "shortAnswer": [
             {{
               "questionNumber": 6,
-              "passage": "IMPORTANT: Write ONE comprehensive passage here (150–200 words). ALL sub-questions below must be based on THIS SAME passage.",
-              "questions": [
-                {{
-                  "subQuestionNumber": "6.1",
-                  "question": "What was the seagull's main fear?",
-                "marks": 2
-                }},
-                {{
-                  "subQuestionNumber": "6.2",
-                  "question": "How did the mother seagull help him overcome his fear?",
-                  "marks": 2
-                }},
-                {{
-                  "subQuestionNumber": "6.3",
-                  "question": "What made the seagull finally take the leap?",
-                  "marks": 2
-                }},
-                {{
-                  "subQuestionNumber": "6.4",
-                  "question": "What does this story teach us about overcoming fears?",
-                  "marks": 2
-                }}
-              ],
-              "marks": 8
+              "question": "question text here",
+              "marks": 2
             }}
           ]
         }}
@@ -261,40 +261,40 @@ def generate_general_prompt(
           "title": "Class {class_num} {subject} Question Paper",
           "totalQuestions": {question_count},
           "difficulty": "{difficulty}",
-          "wordProblems": [
-            {{
-              "questionNumber": 1,
-              "question": "question text here",
-              "marks": 2
-            }}
-          ],
           "mcq": [
             {{
-              "questionNumber": 2,
+              "questionNumber": 1,
               "question": "question text here",
               "options": ["A) option1", "B) option2", "C) option3", "D) option4"],
               "marks": 1
             }}
           ],
-          "fillInTheBlanks": [
+          "fillInTheBlanks":  [
             {{
-              "questionNumber": 3,
+              "questionNumber": 2,
               "question": "question text with _____ blank",
               "marks": 1
             }}
           ],
           "trueOrFalse": [
             {{
-              "questionNumber": 4,
+              "questionNumber": 3,
               "statement": "statement here",
               "marks": 1
             }}
           ],
           "matchTheFollowing": [
             {{
-              "questionNumber": 5,
+              "questionNumber": 4,
               "columnA": ["Item 1", "Item 2", "Item 3"],
               "columnB": ["Match 2", "Match 1", "Match 3"],
+              "marks": 2
+            }}
+          ],
+          "wordProblems": [
+            {{
+              "questionNumber": 5,
+              "question": "question text here",
               "marks": 2
             }}
           ],
@@ -350,22 +350,9 @@ def generate_general_prompt(
             "title": "Class {class_num} {subject} Question Paper",
             "totalQuestions": {question_count},
             "difficulty": "{difficulty}",
-            "comprehensiveQuestions": [
-            {{
-                "questionNumber": 1,
-                "paragraph": "Write a detailed paragraph here (100–120 words minimum). It must include diverse grammatical elements for analysis. Example: 'Sarah woke up early on Saturday morning, feeling excited about her upcoming trip to the mountains. She had been planning this adventure for months, carefully selecting her equipment and studying the trail maps. Her younger brother, Tom, who usually loved outdoor activities, was surprisingly reluctant to join her this time. \"I have already committed to helping Dad with the garden,\" he explained apologetically. Sarah respected his decision and continued her preparations independently. By noon, she had packed her backpack, checked the weather forecast, and informed her parents about her itinerary. The journey might be challenging, but she felt confident and ready.' Use this as inspiration to create a new, grammatically rich paragraph.",
-                "questions": [
-                {{
-                    "subQuestionNumber": "1.1",
-                    "question": "question based on paragraph",
-                    "marks": 2
-                }}
-                ]
-            }}
-            ],
             "mcq": [
             {{
-                "questionNumber": 2,
+                "questionNumber": 1,
                 "question": "question text here",
                 "options": ["A) option1", "B) option2", "C) option3", "D) option4"],
                 "marks": 1
@@ -373,24 +360,37 @@ def generate_general_prompt(
             ],
             "fillInTheBlanks": [
             {{
-                "questionNumber": 3,
+                "questionNumber": 2,
                 "question": "question text with _____ blank",
                 "marks": 1
             }}
             ],
             "trueOrFalse": [
             {{
-                "questionNumber": 4,
+                "questionNumber": 3,
                 "statement": "statement here",
                 "marks": 1
             }}
             ],
             "matchTheFollowing": [
             {{
-                "questionNumber": 5,
+                "questionNumber": 4,
                 "columnA": ["Item 1", "Item 2", "Item 3"],
                 "columnB": ["Match 2", "Match 1", "Match 3"],
                 "marks": 2
+            }}
+            ],
+            "comprehensiveQuestions": [
+            {{
+                "questionNumber": 5,
+                "paragraph": "Write a detailed paragraph here (100–120 words minimum). It must include diverse grammatical elements for analysis. Example: 'Sarah woke up early on Saturday morning, feeling excited about her upcoming trip to the mountains. She had been planning this adventure for months, carefully selecting her equipment and studying the trail maps. Her younger brother, Tom, who usually loved outdoor activities, was surprisingly reluctant to join her this time. \"I have already committed to helping Dad with the garden,\" he explained apologetically. Sarah respected his decision and continued her preparations independently. By noon, she had packed her backpack, checked the weather forecast, and informed her parents about her itinerary. The journey might be challenging, but she felt confident and ready.' Use this as inspiration to create a new, grammatically rich paragraph.",
+                "questions": [
+                {{
+                    "subQuestionNumber": "5.1",
+                    "question": "question based on paragraph",
+                    "marks": 2
+                }}
+                ]
             }}
             ],
             "wordMeaning": [
@@ -862,28 +862,36 @@ def generate_answer_prompt(
     **REQUIRED JSON FORMAT:**
     {{
       "answerKey": {{
-        "mcq": [
+        "caseStudy": [
           {{
             "questionNumber": 1,
-            "correctAnswer": "C",
-            "explanation": "Detailed explanation here",
-            "marks": 1
+            "subQuestions": [
+              {{
+                "subQuestionNumber": "1.1",
+                "answer": "Answer here",
+                "marks": 1
+              }}
+            ]
           }}
+        ],
+        "readThePassageAndAnswer": [
+          {{
+            "questionNumber": 2,
+            "subQuestions": [
+              {{
+                "subQuestionNumber": "2.1",
+                "answer": "Answer here",
+                "marks": 2
+              }}
+            ]
+         }}
         ],
         "assertionReason": [
           {{
-            "questionNumber": 2,
+            "questionNumber": 3,
             "correctAnswer": "A",
             "explanation": "Detailed explanation here",
             "marks": 1
-          }}
-        ],
-        "shortAnswer": [
-          {{
-            "questionNumber": 3,
-            "answer": "Detailed answer with step-by-step solution",
-            "keyPoints": ["Point 1", "Point 2"],
-            "marks": 2
           }}
         ],
         "longAnswer": [
@@ -894,16 +902,20 @@ def generate_answer_prompt(
             "marks": 5
           }}
         ],
-        "caseStudy": [
+        "mcq": [
           {{
             "questionNumber": 5,
-            "subQuestions": [
-              {{
-                "subQuestionNumber": "5.1",
-                "answer": "Answer here",
-                "marks": 1
-              }}
-            ]
+            "correctAnswer": "C",
+            "explanation": "Detailed explanation here",
+            "marks": 1
+          }}
+        ],
+        "shortAnswer": [
+          {{
+            "questionNumber": 6,
+            "answer": "Detailed answer with step-by-step solution",
+            "keyPoints": ["Point 1", "Point 2"],
+            "marks": 2
           }}
         ]
       }}
@@ -941,17 +953,57 @@ def generate_answer_prompt(
       **REQUIRED JSON FORMAT:**
       {{
         "answerKey": {{
-          "descriptiveQuestions": [
+          "caseStudy": [
             {{
               "questionNumber": 1,
+              "subQuestions": [
+                {{
+                  "subQuestionNumber": "1.1",
+                  "answer": "Answer here",
+                  "marks": 1
+                }}
+              ]
+            }}
+          ],
+          "readThePassageAndAnswer": [
+            {{
+              "questionNumber": 2,
+              "subQuestions": [
+                {{
+                  "subQuestionNumber": "2.1",
+                  "answer": "Answer here",
+                  "marks": 2
+                }}
+              ]
+            }}
+          ],
+          "assertionReason": [
+            {{
+              "questionNumber": 3,
+              "correctAnswer": "A",
+              "explanation": "Detailed explanation here",
+              "marks": 1
+            }}
+          ],
+          "descriptiveQuestions": [
+            {{
+              "questionNumber": 4,
               "answer": "Detailed answer here",
               "keyPoints": ["Point 1", "Point 2"],
               "marks": 5
             }}
           ],
+          "longAnswer": [
+            {{
+              "questionNumber": 5,
+              "answer": "Comprehensive answer with detailed explanation",
+              "keyPoints": ["Main point 1", "Main point 2", "Main point 3"],
+              "marks": 5
+            }}
+          ],
           "mcq": [
             {{
-              "questionNumber": 2,
+              "questionNumber": 6,
               "correctAnswer": "B",
               "explanation": "Explanation why this is correct",
               "marks": 1
@@ -959,14 +1011,14 @@ def generate_answer_prompt(
           ],
           "fillInTheBlanks": [
             {{
-              "questionNumber": 3,
+              "questionNumber": 7,
               "answer": "correct word/phrase",
               "marks": 1
             }}
           ],
           "trueOrFalse": [
             {{
-              "questionNumber": 4,
+              "questionNumber": 8,
               "correctAnswer": "True",
               "explanation": "Brief explanation",
               "marks": 1
@@ -974,7 +1026,7 @@ def generate_answer_prompt(
           ],
           "matchTheFollowing": [
             {{
-              "questionNumber": 5,
+              "questionNumber": 9,
               "correctMatches": {{
                 "Item 1": "Match 1",
                 "Item 2": "Match 2",
@@ -985,7 +1037,7 @@ def generate_answer_prompt(
           ],
           "shortAnswer": [
             {{
-              "questionNumber": 6,
+              "questionNumber": 10,
               "answer": "Concise answer here",
               "keyPoints": ["Point 1", "Point 2"],
               "marks": 2
@@ -993,7 +1045,7 @@ def generate_answer_prompt(
           ],
           "wordProblems": [
             {{
-              "questionNumber": 7,
+              "questionNumber": 11,
               "solution": "Step-by-step solution",
               "steps": ["Step 1", "Step 2", "Final answer"],
               "marks": 2
@@ -1001,7 +1053,7 @@ def generate_answer_prompt(
           ],
           "storyBasedProblems": [
             {{
-              "questionNumber": 8,
+              "questionNumber": 12,
               "solution": "Step-by-step solution",
               "steps": ["Extract data", "Apply formula", "Calculate", "Final answer"],
               "marks": 3
@@ -1009,10 +1061,10 @@ def generate_answer_prompt(
           ],
           "comprehensiveQuestions": [
             {{
-              "questionNumber": 9,
+              "questionNumber": 13,
               "subQuestions": [
                 {{
-                  "subQuestionNumber": "9.1",
+                  "subQuestionNumber": "13.1",
                   "answer": "Answer here",
                   "marks": 2
                 }}
@@ -1021,7 +1073,7 @@ def generate_answer_prompt(
           ],
           "wordMeaning": [
             {{
-              "questionNumber": 10,
+              "questionNumber": 14,
               "word": "vocabulary word",
               "meaning": "definition or meaning",
               "marks": 1
