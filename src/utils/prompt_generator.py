@@ -328,11 +328,11 @@ def generate_general_prompt(
         - Total Questions: {question_count}
 
         Structure the question paper as follows:
-        1. Comprehensive Questions ({question_count // 6} questions): Provide a single paragraph and ask multiple grammar-based questions derived from it. Only one paragraph should be used for all sub-questions.
-        2. Multiple Choice Questions ({question_count // 6} questions): Provide four options with exactly one correct answer.
-        3. Fill in the Blanks ({question_count // 6} questions): Use context-based statements requiring students to fill in missing grammatical elements.
-        4. True or False ({question_count // 6} questions): Grammar-related statements that must be marked as true or false.
-        5. Match the Following ({question_count // 6} questions): Create two jumbled columns of items to be matched correctly.
+        1. Multiple Choice Questions ({question_count // 6} questions): Provide four options with exactly one correct answer.
+        2. Fill in the Blanks ({question_count // 6} questions): Use context-based statements requiring students to fill in missing grammatical elements.
+        3. True or False ({question_count // 6} questions): Grammar-related statements that must be marked as true or false.
+        4. Match the Following ({question_count // 6} questions): Create two jumbled columns of items to be matched correctly.
+        5. Comprehensive Questions ({question_count // 6} questions): Provide a single paragraph and ask multiple grammar-based questions derived from it. Only one paragraph should be used for all sub-questions.
         6. Word Meaning ({question_count - 5 * (question_count // 6)} questions): Ask meanings of words from the chapter to test vocabulary understanding.{custom_instructions}
 
         **SPECIAL INSTRUCTIONS FOR COMPREHENSIVE QUESTIONS:**
@@ -342,9 +342,14 @@ def generate_general_prompt(
         - Make the paragraph engaging and age-appropriate for Class {class_num}.
         - Ensure the paragraph naturally supports grammar-based questions.
 
-        CRITICAL: You MUST respond with ONLY valid JSON. Do not include markdown formatting, code blocks, or explanations. Start with {{ and end with }}.
+        CRITICAL FORMATTING REQUIREMENTS:
+        1. You MUST respond with ONLY valid JSON. Do not include markdown formatting, code blocks, or explanations.
+        2. Start your response with {{ and end with }}.
+        3. DO NOT create a generic "grammar" array. Each question type MUST go in its specific section.
+        4. Use EXACTLY these section names: "mcq", "fillInTheBlanks", "trueOrFalse", "matchTheFollowing", "comprehensiveQuestions", "wordMeaning"
+        5. DO NOT invent new section names or group all questions together.
 
-        **REQUIRED JSON FORMAT:**
+        **REQUIRED JSON FORMAT - FOLLOW EXACTLY:**
         {{
         "questionPaper": {{
             "title": "Class {class_num} {subject} Question Paper",
@@ -402,6 +407,8 @@ def generate_general_prompt(
             ]
         }}
         }}
+
+        IMPORTANT: Generate questions in the EXACT format shown above. Each question type must be in its designated section with all required fields.
 
         Context:
       """
