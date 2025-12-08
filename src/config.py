@@ -91,7 +91,7 @@ class Config:
         llm = ChatOpenAI(
             model=model_name,
             openai_api_key=api_key,
-            temperature=0.7,  # Balanced creativity for question generation
+            temperature=0.6,  # Balanced creativity for question generation
             max_tokens=8000   # Increased for complete question papers
         )
         logger.info("OpenAI LLM initialized successfully")
