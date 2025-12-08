@@ -932,10 +932,17 @@ def generate_answer_prompt(
     - Provide step-by-step solutions for all questions
     - For MCQs, provide the correct answer option and explain why it's correct
     - For descriptive questions, provide comprehensive explanations with proper formatting
+    - For sections with sub-questions (caseStudy, readThePassageAndAnswer), answer ALL sub-questions
     - Follow CBSE marking scheme guidelines
     - Include all key points that would earn marks
     - Be pedagogically sound and educational
-    - Only include answer sections for question types that exist in the question paper"""
+    
+    **CRITICAL - Section Matching Rules:**
+    - You MUST include an answer section for EVERY question type that appears in the question paper
+    - Match section names EXACTLY as they appear in the question paper
+    - For sections with sub-questions, provide answers for ALL sub-questions
+    - Only EXCLUDE a section if it doesn't exist in the question paper at all"""
+
 
     else:
         # General answer format for non-CBSE patterns
@@ -1094,9 +1101,17 @@ def generate_answer_prompt(
       - For MCQs, provide the correct answer option and explain why
       - For descriptive questions, provide comprehensive explanations
       - For word problems and story-based problems, show step-by-step solutions
+      - For comprehensiveQuestions, provide detailed answers for each sub-question based on the paragraph
       - Use clear formatting and include all key points
       - Be pedagogically sound and educational
-      - Only include answer sections for question types that exist in the question paper"""
+      
+      **CRITICAL - Section Matching Rules:**
+      - You MUST include an answer section for EVERY question type that appears in the question paper
+      - Match section names EXACTLY as they appear in the question paper (e.g., if question paper has "comprehensiveQuestions", answer key must have "comprehensiveQuestions")
+      - For sections with sub-questions (caseStudy, readThePassageAndAnswer, comprehensiveQuestions), provide answers for ALL sub-questions
+      - Only EXCLUDE a section if it doesn't exist in the question paper at all
+      - DO NOT skip sections just because they seem unfamiliar - include answers for ALL question types present"""
+
 
 def generate_chat_prompt(
       board: str,
