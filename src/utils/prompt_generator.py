@@ -931,6 +931,14 @@ def generate_answer_prompt(
             "keyPoints": ["Point 1", "Point 2"],
             "marks": 2
           }}
+        ],
+        "grammar": [
+          {{
+            "questionNumber": 7,
+            "answer": "Answer to grammar question",
+            "explanation": "Grammatical explanation here",
+            "marks": 1
+          }}
         ]
       }}
     }}
@@ -1099,6 +1107,14 @@ def generate_answer_prompt(
               "meaning": "definition or meaning",
               "marks": 1
             }}
+          ],
+          "grammar": [
+            {{
+              "questionNumber": 15,
+              "answer": "Answer to grammar question",
+              "explanation": "Grammatical explanation here",
+              "marks": 1
+            }}
           ]
         }}
       }}
@@ -1109,6 +1125,7 @@ def generate_answer_prompt(
       - For descriptive questions, provide comprehensive explanations
       - For word problems and story-based problems, show step-by-step solutions
       - For comprehensiveQuestions, provide detailed answers for each sub-question based on the paragraph
+      - For grammar sections, provide clear answers with grammatical explanations
       - Use clear formatting and include all key points
       - Be pedagogically sound and educational
       
