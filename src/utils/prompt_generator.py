@@ -1216,3 +1216,87 @@ def generate_chat_prompt(
 
     return full_prompt
 
+def generate_olympiad_prompt(
+      grade: str,
+      subject: str,
+      sample_paper_content: str
+  ) -> str:
+    """
+    Generate prompt for Olympiad question paper generation based on sample paper.
+    
+    Args:
+        grade: Grade/class number (e.g., "4", "10")
+        subject: Subject name (e.g., "MATHS", "SCIENCE")
+        sample_paper_content: Text content extracted from sample PDF
+    
+    Returns:
+        Generated prompt string for Olympiad paper generation
+    """
+    return f"""You are an expert in creating Olympiad exam papers for Indian students. Create a high-quality Olympiad question paper for Grade {grade} {subject}.
+
+      **SAMPLE PAPER FOR REFERENCE:**
+      The following is a sample Olympiad paper that shows the expected format, structure, difficulty level, and question types. Use this as a reference to understand the pattern but generate COMPLETELY NEW QUESTIONS.
+
+      {sample_paper_content[:12000]}
+
+      **YOUR TASK:**
+      Generate a NEW Olympiad question paper for Grade {grade} {subject} that:
+      1. **Follows the same structure** as the sample paper (same sections, same number of questions per section)
+      2. **Maintains the same difficulty level** appropriate for Grade {grade} students
+      3. **Uses the same question format** (MCQ structure, marking scheme)
+      4. **Covers similar topics** but with DIFFERENT questions
+      5. **Maintains the same time limit** as indicated in the sample
+
+      **CRITICAL REQUIREMENTS:**
+      - ALL questions must be **COMPLETELY NEW** - do not copy from the sample
+      - Questions must be **grade-appropriate** for Grade {grade} students
+      - Each MCQ must have exactly **4 options (A, B, C, D)**
+      - Only **ONE option** should be correct
+      - Include a brief **explanation** for each correct answer
+      - Maintain the **same section structure** as the sample paper
+      - Questions should test **understanding, not just memorization**
+
+      **RESPONSE FORMAT:**
+      You MUST respond with ONLY valid JSON. Do not include any markdown formatting, code blocks, or explanations outside the JSON.
+
+      **REQUIRED JSON STRUCTURE:**
+      {{
+        "title": "Grade {grade} {subject} Olympiad Exam",
+        "grade": "{grade}",
+        "subject": "{subject}",
+        "sections": [
+          {{
+            "name": "Section Name (e.g., Logical Reasoning)",
+            "description": "Brief description of what this section tests",
+            "questions": [
+              {{
+                "questionNumber": 1,
+                "question": "Question text here?",
+                "options": [
+                  "A) First option",
+                  "B) Second option",
+                  "C) Third option",
+                  "D) Fourth option"
+                ],
+                "correctAnswer": "A",
+                "explanation": "Brief explanation of why A is correct",
+                "marks": 1
+              }}
+            ],
+            "totalMarks": 10
+          }}
+        ],
+        "totalQuestions": 35,
+        "totalMarks": 50,
+        "timeLimit": 60
+      }}
+
+      **IMPORTANT:**
+      - Analyze the sample paper structure carefully
+      - Count the questions per section in the sample
+      - Match the difficulty progression (easy → medium → hard)
+      - For "Achievers Section", make questions more challenging
+      - Ensure topics are relevant to Grade {grade} curriculum
+      - Generate questions that encourage critical thinking
+
+      Generate the complete Olympiad paper now as valid JSON:"""

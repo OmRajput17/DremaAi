@@ -45,6 +45,7 @@ class Routes:
         self.app.add_url_rule('/api/study_tricks', 'generate_study_tricks', self.generate_study_tricks, methods=['POST'])
         self.app.add_url_rule('/api/generate_answer', 'generate_answer', self.generate_answer, methods=['POST'])
         self.app.add_url_rule('/api/chat_with_ai', 'chat_with_ai', self.chat_with_ai, methods=['POST'])
+        self.app.add_url_rule('/api/olympiad', 'generate_olympiad_paper', self.generate_olympiad_paper, methods=['POST'])
     
     def get_boards(self):
         """Get list of available boards."""
@@ -1020,3 +1021,109 @@ class Routes:
         except Exception as e:
             logger.error(f"Error: {str(e)}", exc_info=True)
             return jsonify({'success': False, 'error': str(e)}), 500
+
+    def generate_olympiad_paper(self):
+        """
+        Generate Olympiad question paper using sample paper as reference.
+        
+        Expected JSON body:
+        {
+            "grade": "4",
+            "subject": "MATHS"
+        }
+        """
+        logger.info("POST /api/olympiad")
+        
+        try:
+            data = request.get_json()
+            grade = data.get('grade')
+            subject = data.get('subject')
+            
+            # Validate required fields
+            if not grade or not subject:
+                return jsonify({
+                    'success': False,
+                    'error': 'Missing required fields: grade and subject'
+                }), 400
+            
+            logger.info(f"Generating Olympiad paper for Grade {grade} {subject}")
+            
+            # Initialize olympiad fetcher
+            from src.components.olympiad_fetcher import OlympiadFetcher
+            olympiad_fetcher = OlympiadFetcher()
+            
+            # Check if sample paper exists
+            if not olympiad_fetcher.validate_paper_exists(grade, subject):
+                available_subjects = olympiad_fetcher.get_available_subjects(grade)
+                return jsonify({
+                    'success': False,
+                    'error': f'Sample paper not found for Grade {grade} {subject}',
+                    'availableSubjects': available_subjects
+                }), 404
+            
+            # Get sample paper content
+            try:
+                sample_paper = olympiad_fetcher.get_sample_paper(grade, subject)
+            except FileNotFoundError as e:
+                return jsonify({
+                    'success': False,
+                    'error': str(e)
+                }), 404
+            except Exception as e:
+                logger.error(f"Error reading sample paper: {str(e)}")
+                return jsonify({
+                    'success': False,
+                    'error': f'Failed to read sample paper: {str(e)}'
+                }), 500
+            
+            # Generate prompt using sample paper
+            from src.utils.prompt_generator import generate_olympiad_prompt
+            prompt = generate_olympiad_prompt(grade, subject, sample_paper)
+            
+            # Initialize LLM
+            llm = self.config.initialize_llm(model_name="gpt-4o-mini")  # Use mini for speed
+            
+            # Generate Olympiad paper
+            logger.info("Calling LLM to generate Olympiad paper")
+            response = llm.invoke(prompt)
+            response_text = response.content if hasattr(response, 'content') else str(response)
+            
+            logger.debug(f"LLM response length: {len(response_text)} characters")
+            
+            # Parse JSON response
+            try:
+                # Remove markdown code blocks if present
+                json_text = response_text.strip()
+                if json_text.startswith('```json'):
+                    json_text = json_text[7:]
+                if json_text.startswith('```'):
+                    json_text = json_text[3:]
+                if json_text.endswith('```'):
+                    json_text = json_text[:-3]
+                json_text = json_text.strip()
+                
+                olympiad_paper = json.loads(json_text)
+                
+                logger.info(f"Successfully generated Olympiad paper with {olympiad_paper.get('totalQuestions', 0)} questions")
+                
+                return jsonify({
+                    'success': True,
+                    'olympiadPaper': olympiad_paper
+                })
+                
+            except json.JSONDecodeError as e:
+                logger.error(f"JSON parsing error: {str(e)}")
+                logger.debug(f"Response text: {response_text[:500]}")
+                return jsonify({
+                    'success': False,
+                    'error': 'Failed to parse LLM response as JSON',
+                    'details': str(e)
+                }), 500
+                
+        except Exception as e:
+            logger.error(f"Error generating Olympiad paper: {str(e)}", exc_info=True)
+            return jsonify({
+                'success': False,
+                'error': f'Internal server error: {str(e)}'
+            }), 500
+
