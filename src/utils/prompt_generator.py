@@ -160,16 +160,23 @@ def generate_cbse_prompt(
               "marks": 1
             }}
           ],
-          "longAnswer": [
+          "descriptiveQuestions": [
             {{
               "questionNumber": 4,
+              "question": "question text here",
+              "marks": 3
+            }}
+          ],
+          "longAnswer": [
+            {{
+              "questionNumber": 5,
               "question": "question text here",
               "marks": 5
             }}
           ],
           "mcq": [
             {{
-              "questionNumber": 5,
+              "questionNumber": 6,
               "question": "question text here",
               "options": ["A) option1", "B) option2", "C) option3", "D) option4"],
               "marks": 1
@@ -177,7 +184,7 @@ def generate_cbse_prompt(
           ],
           "shortAnswer": [
             {{
-              "questionNumber": 6,
+              "questionNumber": 7,
               "question": "question text here",
               "marks": 2
             }}
