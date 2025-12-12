@@ -388,7 +388,7 @@
                 }
               }
             },
-           "Math": {
+           "Maths": {
               "Books": {
                 "Book1": {
                   "Name": "Mathematics",
@@ -830,7 +830,7 @@
                 }
               }
             },
-            "chemistry": {
+            "Chemistry": {
               "Books": {
                 "Book1": {
                   "Name": "chemistry-I",

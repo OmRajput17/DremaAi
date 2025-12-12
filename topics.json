@@ -1294,7 +1294,7 @@
   "9": "Amines",
   "10": "Biomolecules"
 },
-"PoliticalScience": {
+"Political Science": {
   "1": "The End of Bipolarity",
   "2": "Contemporary Centres of Power",
   "3": "Contemporary South Asia",
@@ -1318,7 +1318,7 @@
   "4": "The Theory of the Firm under Perfect Competition",
   "5": "Market Equilibrium"
 },
-"BusinessStudies": {
+"Business Studies": {
   "1": "Nature and Significance of Management",
   "2": "Principles of Management",
   "3": "Business Environment",
@@ -1331,7 +1331,7 @@
   "10": "Marketing",
   "11": "Consumer Protection"
 },
-"HomeScience": {
+"Home Science": {
   "1": "Work, Livelihood and Career",
   "2": "Nutrition, Food Science and Technology",
   "3": "Clinical Nutrition and Dietetics",
@@ -1351,7 +1351,7 @@
   "17": "Development Communication and Journalism",
   "18": "Corporate Communication and Public Relations"
 },
-"ComputerScience": {
+"Computer Science": {
   "1": "Exception Handling in Python",
   "2": "File Handling in Python",
   "3": "Stack",
@@ -1366,7 +1366,7 @@
   "12": "Security Aspects",
   "13": "Project Based Learning"
 },
-"InformaticsPractices": {
+"Informatics Practices": {
   "1": "Querying and SQL Functions",
   "2": "Data Handling Using Pandas - I",
   "3": "Data Handling Using Pandas - II",
