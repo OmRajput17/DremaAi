@@ -1353,7 +1353,7 @@ We know that 0, 1, 4, 5, 6, 9 are the only last digits possible for
 
 Math
 Talk
-
+##1##
 A Square and A Cube
 
 squares. What are the possible last digits of cubes?
@@ -1647,7 +1647,7 @@ Can you do the same with numbers from 1 to 32 (again, without
 repetition), but this time arranging all the numbers in a circle?
 
 2
-
+##2##
 POWER PLAY
 
 2.1 Experiencing the Power Play ...
@@ -4956,7 +4956,7 @@ Map not to scale
 The map shows the locations of the different civilisations. They existed in different time periods.
 
 80
-
+##3##
 A Story of Numbers
 
 SUMMARY
@@ -7955,7 +7955,7 @@ when divided by 6. He claims, “If you add any three such numbers,
 the sum will always be a multiple of 6.” Is Tathagat’s claim true?
 
 122
-
+##5##
 Number Play
 
 7. When divided by 7, the number 661 leaves a remainder of 3, and
@@ -10925,7 +10925,7 @@ The first term has increased from 6 to 18. To find the factor of change,
 we can divide 18 by 6 to get 3.
 
 162
-
+##7##
 Proportional Reasoning-1
 
 The second term should also change by the same factor. When 10

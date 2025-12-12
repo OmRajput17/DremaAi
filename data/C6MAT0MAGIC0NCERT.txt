@@ -835,7 +835,7 @@ Corresponding sequence: 3, 3×4, 3×4×4, 3×4×4×4×, 3×4×4×4×4,…
 
 [5]
 
-Unit - 2
+Unit - 2
 ##2##
 
 Lines and Angles
@@ -878,7 +878,7 @@ Chapter 2_Lines and Angles.indd 13
 
 13-08-2024 16:14:25
 
-Ganita Prakash | Grade 6
+Ganita Prakash | Grade 6
 
 Z, P and T. These points are read as ‘Point Z’, ‘Point P’ and ‘Point T’. Of
 course, the dots represent precise locations and must be imagined to be
@@ -933,7 +933,7 @@ Reprint 2025-26
 
 13-08-2024 16:14:25
 
-Lines and Angles
+Lines and Angles
 
 2.4 Ray
 A ray is a portion of a line that starts at one point (called the starting

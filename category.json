@@ -40,22 +40,6 @@
                 }
               }
             },
-            "Hindi Grammar": {
-              "Books": {
-                "Book1": {
-                  "Name": "Basic Hindi Grammar",
-                  "book_id": "C2HING0SD0IB"
-                }
-              }
-            },
-            "English Grammar": {
-              "Books": {
-                "Book1": {
-                  "Name": "Enhanced Collins English Grammar And Composition 2",
-                  "book_id": "C2ENG0ENGG0ICSE"
-                }
-              }
-            },
             "Maths": {
               "Books": {
                 "Book1": {
@@ -92,22 +76,7 @@
                 }
               }
             },
-            "English Grammar": {
-              "Books": {
-                "Book1": {
-                  "Name": "Basic English Grammar",
-                  "book_id": "C3ENG0BEG0IB"
-                }
-              }
-            },
-            "Hindi Grammar": {
-              "Books": {
-                "Book1": {
-                  "Name": "Basic Hindi Grammar",
-                  "book_id": "C3HING0SD0IB"
-                }
-              }
-            },
+           
             "Hindi": {
               "Books": {
                 "Book1": {
@@ -143,26 +112,10 @@
                   "book_id": "C4HIN0RIMJHIM0NCERT"
                 }
               }
-            },
-            "English Grammar": {
-              "Books": {
-                "Book1": {
-                  "Name": "Basic English Grammar",
-                  "book_id": "C4EGG0SD0IB"
-                }
-              }
-            },
-            "Hindi Grammar": {
-              "Books": {
-                "Book1": {
-                  "Name": "Basic Hindi Grammar",
-                  "book_id": "C4HING0SD0IB"
-                }
-              }
             }
           }
         },
-      "5": {
+       "5":{
         "Subjects": {
             "English": {
               "Books": {
@@ -187,31 +140,7 @@
                   "book_id": "C5HIN0VEENA0NCERT"
                 }
               }
-            },
-            "Hindi Grammar": {
-              "Books": {
-                "Book1": {
-                  "Name": "Basic Hindi Grammar",
-                  "book_id": "C5HING0BHGNCERT"
-                }
-              }
-            },
-            "English Grammar": {
-              "Books": {
-                "Book1": {
-                  "Name": "Basic English Grammar",
-                  "book_id": "C5ENG0BEG0NCERT"
-                }
-              }
-            },
-            "Environmental Science": {
-              "Books": {
-                "Book1": {
-                  "Name": "Look Around (NCERT)",
-                  "book_id": "C5EVS0LOOKARO0NCERT"
-                }
-              }
-            },
+            }, 
             "Social Science": {
               "Books": {
                 "Book1": {
@@ -238,22 +167,6 @@
                 "Book1": {
                   "Name": "Poorvi",
                   "book_id": "C6ENG0POORVI0NCERT"
-                }
-              }
-            },
-            "English Grammar": {
-              "Books": {
-                "Book1": {
-                  "Name": "Enhanced Collins English Grammar And Composition 2",
-                  "book_id": "C6ENGGIB"
-                }
-              }
-            },
-            "Hindi Grammar": {
-              "Books": {
-                "Book1": {
-                  "Name": "Basic Hindi Grammar",
-                  "book_id": "C5HING0SD0IB"
                 }
               }
             },
@@ -294,30 +207,6 @@
                 "Book1": {
                   "Name": "Exploring Society: India and Beyond",
                   "book_id": "C6SSC0EXPSO0NCERT"
-                }
-              }
-            },
-            "History": {
-              "Books": {
-                "Book1": {
-                  "Name": "Look Around (NCERT)",
-                  "book_id": "C6HIS0AROUND0NCERT"
-                }
-              }
-            },
-            "Civics": {
-              "Books": {
-                "Book1": {
-                  "Name": "Look Around (NCERT)",
-                  "book_id": "C6CIVICS0AROUND0NCERT"
-                }
-              }
-            },
-            "Geography": {
-              "Books": {
-                "Book1": {
-                  "Name": "Look Around (NCERT)",
-                  "book_id": "C5GEO0AROUND0NCERT"
                 }
               }
             }
@@ -385,14 +274,7 @@
           }
         }
       },
-      "English Grammar": {
-        "Books": {
-          "Book1": {
-            "Name": "Enhanced Collins English Grammar and Composition 2 (NCERT)",
-            "book_id": "C8ENGGRA0ECEG0NCERT"
-          }
-        }
-      },
+      
       "Hindi": {
         "Books": {
           "Book1": {
@@ -425,30 +307,7 @@
           }
         }
       },
-      "History": {
-        "Books": {
-          "Book1": {
-            "Name": "Look Around (NCERT)",
-            "book_id": "C8HIS0LOOK0NCERT"
-          }
-        }
-      },
-      "Civics": {
-        "Books": {
-          "Book1": {
-            "Name": "Look Around (NCERT)",
-            "book_id": "C8CIV0LOOK0NCERT"
-          }
-        }
-      },
-      "Geography": {
-        "Books": {
-          "Book1": {
-            "Name": "Look Around (NCERT)",
-            "book_id": "C8GEO0LOOK0NCERT"
-          }
-        }
-      },
+      
       "Sanskrit": {
         "Books": {
           "Book1": {
@@ -529,22 +388,6 @@
                 }
               }
             },
-            "English Grammar": {
-              "Books": {
-                "Book1": {
-                  "Name": "Enhanced Collins English Grammar And Composition 2",
-                  "book_id": "C6ENGGIB"
-                }
-              }
-            },
-            "Hindi Grammar": {
-              "Books": {
-                "Book1": {
-                  "Name": "Basic Hindi Grammar",
-                  "book_id": "C5HING0SD0IB"
-                }
-              }
-            },
            "Math": {
               "Books": {
                 "Book1": {
@@ -580,30 +423,6 @@
                   "book_id": "C9SC0DOMESTICPOL0NCERT"
                 }
  
-              }
-            },
-            "History": {
-              "Books": {
-                "Book1": {
-                  "Name": "Look Around (NCERT)",
-                  "book_id": "C6HIS0AROUND0NCERT"
-                }
-              }
-            },
-            "Civics": {
-              "Books": {
-                "Book1": {
-                  "Name": "Look Around (NCERT)",
-                  "book_id": "C6CIVICS0AROUND0NCERT"
-                }
-              }
-            },
-            "Geography": {
-              "Books": {
-                "Book1": {
-                  "Name": "Look Around (NCERT)",
-                  "book_id": "C5GEO0AROUND0NCERT"
-                }
               }
             }
           }
@@ -1095,6 +914,7 @@
         }
       }
     },
+    
     "ICSE": {
       "Classes": {
         "1": {
@@ -8801,4 +8621,3 @@
     }
   }
 }
-

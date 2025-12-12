@@ -1804,6 +1804,8 @@ speech is not just a theatre skill — it is a life skill!
 27-06-2025 11:16:39
 
 ASSESSMENT
+
+##1##
 CHAPTER 1: BRINGING WORDS ALIVE — PLAY READING
 Competencies
 C 1.2 Demonstrates flexibility in the process of collaboratively developing drama
@@ -2351,6 +2353,7 @@ ch-2_theater.indd 25
 19-06-2025 15:27:18
 
 ASSESSMENT
+##2##
 CHAPTER 2: ONE STAGE, MANY SCRIPTS
 C-2.1 Creates and performs drama based on situations or stories that challenge stereotypes observed in their
 surroundings
@@ -3266,6 +3269,7 @@ a team.
 19-06-2025 15:26:39
 
 ASSESSMENT
+##3##
 CHAPTER 3: FROM PAGE TO STAGE
 Competencies
 C-1.1 Expresses confidently their personal and everyday life experiences through various drama activities
@@ -3703,6 +3707,7 @@ ch-4_theater.indd 51
 27-06-2025 15:20:37
 
 ASSESSMENT
+##4##
 CHAPTER 4: APPLAUSE AND ADVICE
 Competencies
 C-3.2 Refines ideas and techniques from the stage of planning to the final presentation in drama for external
@@ -4643,6 +4648,7 @@ Credit: Sangeet Natak Akademi
 27-06-2025 16:52:10
 
 ASSESSMENT
+##5##
 CHAPTER 5: Discovering the Elements of Music
 CG
 
@@ -5516,6 +5522,7 @@ ch6_MUSIC8.indd 73
 18-Jun-25 12:28:20 PM
 
 ASSESSMENT
+##6##
 CHAPTER 6: Musical Instruments
 CG
 
@@ -8204,6 +8211,7 @@ Goswami Tulsidas, Awadhi, hindi poet
 18-Jun-25 12:41:01 PM
 
 ASSESSMENT
+##7##
 CHAPTER 7: Indian Classical Music
 CG
 
@@ -8534,6 +8542,7 @@ ch8_MUSIC.indd 93
 25-06-2025 12:29:31
 
 ASSESSMENT
+##8##
 CHAPTER 8: INSPIRATION AND IMAGINATION
 CG
 
@@ -8924,6 +8933,7 @@ ch9_MUSIC.indd 101
 102 | KRITI
 
 ASSESSMENT
+##9##
 CHAPTER 9: My World of Music
 CG
 
@@ -9596,6 +9606,7 @@ Manipuri dance from Manipur
 19-06-2025 16:28:37
 
 ASSESSMENT
+##10##
 Chapter 10: Inner Dynamics of Dance
 CG
 
@@ -10064,6 +10075,7 @@ Kaikottakali from Kerala
 19-06-2025 16:30:43
 
 ASSESSMENT
+##11##
 Chapter 11: Pan Indian Dance Forms
 CG
 
@@ -10495,6 +10507,7 @@ the song and then compile the dance together.
 19-06-2025 17:27:55
 
 ASSESSMENT
+##12##
 Chapter 12: Dance for Well-being
 CG
 
@@ -10827,6 +10840,7 @@ artist and present it in a journal.
 19-06-2025 17:31:03
 
 ASSESSMENT
+##13##
 Chapter 13: Innovation, Inclusivity and Inspiring Change
 CG
 2
@@ -11251,6 +11265,7 @@ ch14_DANCE.indd 159
 19-06-2025 16:37:41
 
 ASSESSMENT
+##14##
 Chapter 14: A Presentation of Dance and Choreography
 CG
 
@@ -11897,6 +11912,7 @@ CH-15_VA.indd 175
 19-06-2025 16:36:06
 
 ASSESSMENT
+##15##
 CHAPTER 15: ELEMENTS AND PRINCIPLES OF VISUAL ART AND DESIGN
 CG
 
@@ -12238,6 +12254,7 @@ CH-16_VA.indd 184
 18-06-2025 16:07:14
 
 ASSESSMENT
+##16##
 CHAPTER 16: STILL LIFE IN COLOUR
 CG
 
@@ -12673,6 +12690,7 @@ CH-17_VA.indd 196
 27-06-2025 16:55:54
 
 ASSESSMENT
+##17##
 CHAPTER 17: PEOPLE IN PLACES
 
 review.
@@ -13013,6 +13031,7 @@ CH-18_VA.indd 205
 18-06-2025 16:08:10
 
 ASSESSMENT
+##18##
 CHAPTER 18: ARTS OF THE PEOPLE, WITH THE PEOPLE, FOR THE PEOPLE
 CG
 
@@ -13349,6 +13368,7 @@ CH-19_VA.indd 211
 19-06-2025 17:13:49
 
 ASSESSMENT
+##19##
 CHAPTER 19: CAMPAIGN FOR ART AWARENESS
 CG
 
